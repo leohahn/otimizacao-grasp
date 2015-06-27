@@ -87,7 +87,7 @@ def genereateGlpkFileOLD(variables,top, clauses,outputFilename):
     out_string += formatGlpkVector("nh",clauses_names_hard, listToString(negation_count_hard))
     out_string += formatGlpkVector("ns",clauses_names_soft, listToString(negation_count_soft))
     out_string += formatGlpkVector("w",clauses_names_soft, listToString(weight))
-    
+    out_string += "\nend;\n"    
     outFile = open(outputFilename,"w")
     outFile.write(out_string)
 
