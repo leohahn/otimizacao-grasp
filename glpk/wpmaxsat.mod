@@ -11,11 +11,14 @@ param w{j in C};
 ##indicates if the clause j is soft
 param soft{j in C} binary;
 
+##matrices indicating the presence of each variable
+##cla contains indicates non negated variables while claN negated ones
 param cla {j in C, i in V} integer;
 param claN {j in C, i in V} integer;
-##vector containing assigned values for each variable
-var x{i in V} binary;
 
+##vectors containing assigned values for each variable and its negated value
+var x{i in V} binary;
+var xN{i in V} binary;
 
 ##indicates if clause j was satisfied
 var c{j in C} binary;
