@@ -26,6 +26,5 @@ s.t. softR{j in CS}: sum{i in V} (x[i] * s[j,i] - b[j]) >= ns[j];
 s.t. hardR{j in CH}: sum{i in V} (x[i] * h[j,i]) >= nh[j];
 
 
-data;
 
 end;
