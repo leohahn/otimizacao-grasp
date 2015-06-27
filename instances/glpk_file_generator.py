@@ -51,7 +51,9 @@ def genereateGlpkFile(variables,top, clauses,outputFilename):
     soft_matrix = []
     negation_count_hard = [] #number of negated variables for each clause
     negation_count_soft = []
-    for clause in clauses:
+    clauses_names_hard = []
+    clauses_names_soft = []
+    for clauseinx, clause in enumerate(clauses):
         line = [0]*num_var
         negated = 0
         for variable in clause[1:]:
@@ -63,21 +65,28 @@ def genereateGlpkFile(variables,top, clauses,outputFilename):
         if(clause[0]==top): #hard
             hard_matrix.append(line)
             negation_count_hard.append(negated)
+            clauses_names_hard.append(clauseinx)
         else: #soft
             soft_matrix.append(line)
             negation_count_soft.append(negated)
             weight.append(clause[0])
-
-
+            clauses_names_soft.append(clauseinx)    
+    clauses_names_hard = listToString(clauses_names_hard)
+    clauses_names_soft = listToString(clauses_names_soft)
+    
     out_string = ''
+    out_string += formatGlpkSet('CS', clauses_names_soft)
+    out_string += formatGlpkSet('CH', clauses_names_hard)
+    out_string += formatGlpkSet('V', listToString(variables))
     ##info for hard clauses
-    out_string += formatGlpkMatrix("h",listToString(variables),matrixToString(hard_matrix))
+    out_string += formatGlpkMatrix("h",clauses_names_hard,listToString(variables),matrixToString(hard_matrix))
     out_string += '\n'
     #info for soft clause
-    out_string += formatGlpkMatrix("s",listToString(variables),matrixToString(soft_matrix))
-    out_string += formatGlpkVector("nh", listToString(negation_count_hard))
-    out_string += formatGlpkVector("ns", listToString(negation_count_soft))
-    out_string += formatGlpkVector("w", listToString(weight))
+    out_string += formatGlpkMatrix("s",clauses_names_soft,listToString(variables),matrixToString(soft_matrix))
+    out_string += formatGlpkVector("nh",clauses_names_hard, listToString(negation_count_hard))
+    out_string += formatGlpkVector("ns",clauses_names_soft, listToString(negation_count_soft))
+    out_string += formatGlpkVector("w",clauses_names_soft, listToString(weight))
+    
     outFile = open(outputFilename,"w")
     outFile.write(out_string)
 
@@ -87,19 +96,22 @@ def listToString(lista):
 def matrixToString(matrix):
     return [listToString(x) for x in matrix]
 
-def formatGlpkMatrix(nameVar,colNames, matrix):
+def formatGlpkMatrix(nameVar,rowNames,colNames, matrix):
     out = 'param '+nameVar + " : " + " ".join(colNames)+" :="
-    for rowinx in range(len(matrix)):
-        out += "\n" + str(rowinx) + " " +  " ".join(matrix[rowinx])
+    for rowinx, row in enumerate(rowNames):
+        out += "\n" + str(row) + " " +  " ".join(matrix[rowinx])
     out +=';\n'
     return out
 
-def formatGlpkVector(nameVar, vector):
+def formatGlpkVector(nameVar,names, vector):
     out = 'param '+nameVar + " := "
-    for inx in range(len(vector)):
-        out += "\n" + str(inx) + " " +  vector[inx]
+    for inx, name in enumerate(names):
+        out += "\n" + str(name) + " " +  vector[inx]
     out +=';\n'
     return out
+    
+def formatGlpkSet(name,values):
+    return 'set '+name+" := " + " ".join(values)+";\n"
 
 #files to covert
 onlyfiles = [ f for f in listdir('original') if isfile(join('original',f)) ]
