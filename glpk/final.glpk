@@ -1,0 +1,31 @@
+set CS;  # Clausulas Soft (j)
+set CH;  # Clausulas Hard (j)
+set V;   # Variaveis (i)
+
+# numero de variaveis negativas na clausula soft j
+param ns{j in CS};
+
+# numero de variaveis negativas na clausula hard j
+param nh{j in CH};
+
+# peso da respectiva clausula
+param w {j in CS};
+
+# coeficiente da variavel i na clausula soft j (-1: negado, 1: normal, 0: não presente)
+param s {j in CS, i in V};
+
+# coeficiente da variavel i na clausula hard j
+param h {j in CH, i in V};
+
+var x{i in V} binary; # indica valor de x (1: true, 0: false)
+var b{j in CS} binary; # indica se clausula soft sera utilizada
+
+maximize weight: sum{j in CS} w[j] * b[j];
+
+s.t. softR{j in CS}: sum{i in V} (x[i] * s[j,i] - b[j]) >= ns[j];
+s.t. hardR{j in CH}: sum{i in V} (x[i] * h[j,i]) >= nh[j];
+
+
+data;
+
+end;

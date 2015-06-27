@@ -5,7 +5,7 @@
 set C;   # Cláusulas(j)
 set V;  # Variáveis(i)
 
-##weight of each clause j 
+##weight of each clause j
 param w{j in C};
 
 ##indicates if the clause j is soft
@@ -45,8 +45,7 @@ param claN :     0 1 2  :=
              c2  1  0  0
              c3  0  0  1
              c4  0  0  0;
-             
-             
+
 param w:=    c1 3
              c2 4
              c3 6
