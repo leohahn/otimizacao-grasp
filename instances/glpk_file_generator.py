@@ -24,17 +24,18 @@ def parseFile(filePath):
         clause = []
         tokens = line.split(' ')
         #updates top
-        if(tokens[0]>=top):
-            top = tokens[0]
+        if(int(tokens[0])>=top):
+            top = int(tokens[0])
 
-        clause.append(tokens[0]) #weight
-
+        clause.append(int(tokens[0])) #weight
+        
         #for each variable
         for var in tokens[1:-1]: #excludes first and last
             variables.add(abs(int(var)))
             clause.append(int(var))
         clauses.append(clause)
     variables = sorted(list(variables))
+    print "top is %d" % top    
     return (variables,top,clauses)
 
 def genereateGlpkFile(variables,top, clauses,outputFilename):
@@ -116,6 +117,7 @@ def formatGlpkSet(name,values):
 #files to covert
 onlyfiles = [ f for f in listdir('original') if isfile(join('original',f)) ]
 print onlyfiles
+onlyfiles = ['teste']
 for filename in onlyfiles:
     (variables,top,clauses) = parseFile("original/"+filename)
     genereateGlpkFile(variables,top, clauses,"glpk/"+filename)

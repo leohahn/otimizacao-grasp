@@ -1,0 +1,20 @@
+set CS := 0 1 2;
+set CH := 3;
+set V := 1 2 3;
+param h : 1 2 3 :=
+3 1 0 1;
+
+param s : 1 2 3 :=
+0 1 1 0
+1 -1 -1 0
+2 0 1 -1;
+param nh := 
+3 0;
+param ns := 
+0 0
+1 2
+2 1;
+param w := 
+0 3
+1 4
+2 6;

@@ -22,8 +22,8 @@ var b{j in CS} binary; # indica se clausula soft sera utilizada
 
 maximize weightSum: sum{j in CS} w[j] * b[j];
 
-s.t. softR{j in CS}: sum{i in V} (x[i] * s[j,i]) - b[j] >= ns[j];
-s.t. hardR{j in CH}: sum{i in V} (x[i] * h[j,i]) >= (nh[j]+1);
+s.t. softR{j in CS}: sum{i in V} (x[i] * s[j,i]) - b[j] >= -ns[j];
+s.t. hardR{j in CH}: sum{i in V} (x[i] * h[j,i]) >= (-nh[j]+1);
 
 /**
  *  Teste: (x1 V x2) ^ (~x1 V ~x2) ^ (x2 V ~x3) ^ (x1 V x3)
