@@ -29,28 +29,28 @@ s.t. hardR{j in CH}: sum{i in V} (x[i] * h[j,i]) >= (-nh[j]+1);
  *  Teste: (x1 V x2) ^ (~x1 V ~x2) ^ (x2 V ~x3) ^ (x1 V x3)
  *
  */
-data;
+# data;
 
-set CS := c1 c2 c3;
-set CH := c4;
-set V := x1 x2 x3;
+# set CS := c1 c2 c3;
+# set CH := c4;
+# set V := x1 x2 x3;
 
-param s :        x1 x2 x3  :=
-             c1   1  1  0
-             c2  -1 -1  0
-             c3   0  1 -1;
+# param s :        x1 x2 x3  :=
+#              c1   1  1  0
+#              c2  -1 -1  0
+#              c3   0  1 -1;
 
-param h :       x1 x2 x3  :=
-             c4  1  0  1;
+# param h :       x1 x2 x3  :=
+#              c4  1  0  1;
 
-param w :=   c1 3
-             c2 4
-             c3 6;
+# param w :=   c1 3
+#              c2 4
+#              c3 6;
 
-param ns :=  c1  0
-             c2 -2
-             c3 -1;
+# param ns :=  c1  0
+#              c2 -2
+#              c3 -1;
 
-param nh := c4 0;
+# param nh := c4 0;
 
-end;
+# end;
