@@ -26,7 +26,7 @@ var c{j in C} binary;
 maximize pesoSoft: sum{j in C} w[j]*soft[j]*c[j];
 
 s.t. clausSat{j in C}: sum{i in V} (cla[j,i] * x[i] + claN[j,i] * xN[i] ) >= (1 - soft[j]);
-s.t. clausBin{j in C}: c[j] <= sum{i in V} (cla[j,i] * x[i] + claN[j,i] * xN[i] );
+s.t. clausBin{j in C}:  sum{i in V} (cla[j,i] * x[i] + claN[j,i] * xN[i] ) >= c[j];
 s.t. negVar{i in V}  : x[i] + xN[i] = 1;
 
 /**

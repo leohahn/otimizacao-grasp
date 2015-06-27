@@ -1,22 +1,20 @@
-set C := c0 c1 c2 c3;
+set CS := 0 1 2;
+set CH := 3;
 set V := 1 2 3;
-param cla : 1 2 3 :=
-c0 1 1 0
-c1 0 0 0
-c2 0 1 0
-c3 1 0 1;
-param claN : 1 2 3 :=
-c0 0 0 0
-c1 1 1 0
-c2 0 0 1
-c3 0 0 0;
+param h : 1 2 3 :=
+3 1 0 1;
+
+param s : 1 2 3 :=
+0 1 1 0
+1 -1 -1 0
+2 0 1 -1;
+param nh := 
+3 0;
+param ns := 
+0 0
+1 2
+2 1;
 param w := 
-c0 3
-c1 4
-c2 6
-c3 0;
-param soft := 
-c0 1
-c1 1
-c2 1
-c3 0;
+0 3
+1 4
+2 6;

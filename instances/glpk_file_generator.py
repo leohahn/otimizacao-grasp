@@ -135,6 +135,7 @@ def genereateGlpkFile(variables,top, clauses,outputFilename):
 
     out_string += formatGlpkVector("w",clauses_names, listToString(weight))
     out_string += formatGlpkVector("soft",clauses_names, listToString(soft))
+    out_string += "\nend;\n"
     outFile = open(outputFilename,"w")
     outFile.write(out_string)
 
@@ -167,4 +168,4 @@ onlyfiles = [ f for f in listdir('original') if isfile(join('original',f)) ]
 print onlyfiles
 for filename in onlyfiles:
     (variables,top,clauses) = parseFile("original/"+filename)
-    genereateGlpkFile(variables,top, clauses,"glpk/"+filename)
+    genereateGlpkFileOLD(variables,top, clauses,"glpk/"+filename)

@@ -1,4593 +1,1153 @@
-Problem:    wpmaxsat
-Rows:       2321
-Columns:    1220 (1220 integer, 1220 binary)
-Non-zeros:  6810
+Problem:    final
+Rows:       1141
+Columns:    1070 (1070 integer, 1070 binary)
+Non-zeros:  4340
 Status:     INTEGER EMPTY
-Objective:  pesoSoft = 0 (MAXimum)
+Objective:  weightSum = 0 (MAXimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 pesoSoft                    0                             
-     2 clausSat[c0]                0            -0               
-     3 clausSat[c1]                0            -0               
-     4 clausSat[c2]                0            -0               
-     5 clausSat[c3]                0            -0               
-     6 clausSat[c4]                0            -0               
-     7 clausSat[c5]                0            -0               
-     8 clausSat[c6]                0            -0               
-     9 clausSat[c7]                0            -0               
-    10 clausSat[c8]                0             1               
-    11 clausSat[c9]                0             1               
-    12 clausSat[c10]
-                                   0            -0               
-    13 clausSat[c11]
-                                   0            -0               
-    14 clausSat[c12]
-                                   0            -0               
-    15 clausSat[c13]
-                                   0            -0               
-    16 clausSat[c14]
-                                   0            -0               
-    17 clausSat[c15]
-                                   0            -0               
-    18 clausSat[c16]
-                                   0            -0               
-    19 clausSat[c17]
-                                   0            -0               
-    20 clausSat[c18]
-                                   0            -0               
-    21 clausSat[c19]
-                                   0            -0               
-    22 clausSat[c20]
-                                   0            -0               
-    23 clausSat[c21]
-                                   0            -0               
-    24 clausSat[c22]
-                                   0            -0               
-    25 clausSat[c23]
-                                   0            -0               
-    26 clausSat[c24]
-                                   0            -0               
-    27 clausSat[c25]
-                                   0            -0               
-    28 clausSat[c26]
-                                   0            -0               
-    29 clausSat[c27]
-                                   0            -0               
-    30 clausSat[c28]
-                                   0             1               
-    31 clausSat[c29]
-                                   0             1               
-    32 clausSat[c30]
-                                   0             1               
-    33 clausSat[c31]
-                                   0             1               
-    34 clausSat[c32]
-                                   0            -0               
-    35 clausSat[c33]
-                                   0            -0               
-    36 clausSat[c34]
-                                   0            -0               
-    37 clausSat[c35]
-                                   0            -0               
-    38 clausSat[c36]
-                                   0            -0               
-    39 clausSat[c37]
-                                   0            -0               
-    40 clausSat[c38]
-                                   0            -0               
-    41 clausSat[c39]
-                                   0            -0               
-    42 clausSat[c40]
-                                   0            -0               
-    43 clausSat[c41]
-                                   0            -0               
-    44 clausSat[c42]
-                                   0            -0               
-    45 clausSat[c43]
-                                   0            -0               
-    46 clausSat[c44]
-                                   0            -0               
-    47 clausSat[c45]
-                                   0            -0               
-    48 clausSat[c46]
-                                   0            -0               
-    49 clausSat[c47]
-                                   0            -0               
-    50 clausSat[c48]
-                                   0            -0               
-    51 clausSat[c49]
-                                   0            -0               
-    52 clausSat[c50]
-                                   0            -0               
-    53 clausSat[c51]
-                                   0            -0               
-    54 clausSat[c52]
-                                   0            -0               
-    55 clausSat[c53]
-                                   0            -0               
-    56 clausSat[c54]
-                                   0            -0               
-    57 clausSat[c55]
-                                   0            -0               
-    58 clausSat[c56]
-                                   0             1               
-    59 clausSat[c57]
-                                   0             1               
-    60 clausSat[c58]
-                                   0            -0               
-    61 clausSat[c59]
-                                   0            -0               
-    62 clausSat[c60]
-                                   0            -0               
-    63 clausSat[c61]
-                                   0            -0               
-    64 clausSat[c62]
-                                   0            -0               
-    65 clausSat[c63]
-                                   0            -0               
-    66 clausSat[c64]
-                                   0            -0               
-    67 clausSat[c65]
-                                   0            -0               
-    68 clausSat[c66]
-                                   0            -0               
-    69 clausSat[c67]
-                                   0            -0               
-    70 clausSat[c68]
-                                   0            -0               
-    71 clausSat[c69]
-                                   0            -0               
-    72 clausSat[c70]
-                                   0            -0               
-    73 clausSat[c71]
-                                   0            -0               
-    74 clausSat[c72]
-                                   0            -0               
-    75 clausSat[c73]
-                                   0            -0               
-    76 clausSat[c74]
-                                   0             1               
-    77 clausSat[c75]
-                                   0             1               
-    78 clausSat[c76]
-                                   0            -0               
-    79 clausSat[c77]
-                                   0            -0               
-    80 clausSat[c78]
-                                   0            -0               
-    81 clausSat[c79]
-                                   0            -0               
-    82 clausSat[c80]
-                                   0            -0               
-    83 clausSat[c81]
-                                   0            -0               
-    84 clausSat[c82]
-                                   0            -0               
-    85 clausSat[c83]
-                                   0            -0               
-    86 clausSat[c84]
-                                   0            -0               
-    87 clausSat[c85]
-                                   0            -0               
-    88 clausSat[c86]
-                                   0            -0               
-    89 clausSat[c87]
-                                   0            -0               
-    90 clausSat[c88]
-                                   0            -0               
-    91 clausSat[c89]
-                                   0            -0               
-    92 clausSat[c90]
-                                   0            -0               
-    93 clausSat[c91]
-                                   0            -0               
-    94 clausSat[c92]
-                                   0            -0               
-    95 clausSat[c93]
-                                   0            -0               
-    96 clausSat[c94]
-                                   0             1               
-    97 clausSat[c95]
-                                   0             1               
-    98 clausSat[c96]
-                                   0            -0               
-    99 clausSat[c97]
-                                   0            -0               
-   100 clausSat[c98]
-                                   0             1               
-   101 clausSat[c99]
-                                   0             1               
-   102 clausSat[c100]
-                                   0            -0               
-   103 clausSat[c101]
-                                   0            -0               
-   104 clausSat[c102]
-                                   0            -0               
-   105 clausSat[c103]
-                                   0            -0               
-   106 clausSat[c104]
-                                   0            -0               
-   107 clausSat[c105]
-                                   0            -0               
-   108 clausSat[c106]
-                                   0            -0               
-   109 clausSat[c107]
-                                   0            -0               
-   110 clausSat[c108]
-                                   0            -0               
-   111 clausSat[c109]
-                                   0            -0               
-   112 clausSat[c110]
-                                   0            -0               
-   113 clausSat[c111]
-                                   0            -0               
-   114 clausSat[c112]
-                                   0            -0               
-   115 clausSat[c113]
-                                   0            -0               
-   116 clausSat[c114]
-                                   0            -0               
-   117 clausSat[c115]
-                                   0            -0               
-   118 clausSat[c116]
-                                   0            -0               
-   119 clausSat[c117]
-                                   0            -0               
-   120 clausSat[c118]
-                                   0            -0               
-   121 clausSat[c119]
-                                   0            -0               
-   122 clausSat[c120]
-                                   0            -0               
-   123 clausSat[c121]
-                                   0            -0               
-   124 clausSat[c122]
-                                   0             1               
-   125 clausSat[c123]
-                                   0             1               
-   126 clausSat[c124]
-                                   0             1               
-   127 clausSat[c125]
-                                   0             1               
-   128 clausSat[c126]
-                                   0            -0               
-   129 clausSat[c127]
-                                   0            -0               
-   130 clausSat[c128]
-                                   0            -0               
-   131 clausSat[c129]
-                                   0            -0               
-   132 clausSat[c130]
-                                   0            -0               
-   133 clausSat[c131]
-                                   0            -0               
-   134 clausSat[c132]
-                                   0            -0               
-   135 clausSat[c133]
-                                   0            -0               
-   136 clausSat[c134]
-                                   0            -0               
-   137 clausSat[c135]
-                                   0            -0               
-   138 clausSat[c136]
-                                   0            -0               
-   139 clausSat[c137]
-                                   0            -0               
-   140 clausSat[c138]
-                                   0            -0               
-   141 clausSat[c139]
-                                   0            -0               
-   142 clausSat[c140]
-                                   0            -0               
-   143 clausSat[c141]
-                                   0            -0               
-   144 clausSat[c142]
-                                   0            -0               
-   145 clausSat[c143]
-                                   0            -0               
-   146 clausSat[c144]
-                                   0            -0               
-   147 clausSat[c145]
-                                   0            -0               
-   148 clausSat[c146]
-                                   0             1               
-   149 clausSat[c147]
-                                   0             1               
-   150 clausSat[c148]
-                                   0             1               
-   151 clausSat[c149]
-                                   0             1               
-   152 clausSat[c150]
-                                   0            -0               
-   153 clausSat[c151]
-                                   0            -0               
-   154 clausSat[c152]
-                                   0            -0               
-   155 clausSat[c153]
-                                   0            -0               
-   156 clausSat[c154]
-                                   0            -0               
-   157 clausSat[c155]
-                                   0            -0               
-   158 clausSat[c156]
-                                   0            -0               
-   159 clausSat[c157]
-                                   0            -0               
-   160 clausSat[c158]
-                                   0            -0               
-   161 clausSat[c159]
-                                   0            -0               
-   162 clausSat[c160]
-                                   0            -0               
-   163 clausSat[c161]
-                                   0            -0               
-   164 clausSat[c162]
-                                   0            -0               
-   165 clausSat[c163]
-                                   0            -0               
-   166 clausSat[c164]
-                                   0            -0               
-   167 clausSat[c165]
-                                   0            -0               
-   168 clausSat[c166]
-                                   0            -0               
-   169 clausSat[c167]
-                                   0            -0               
-   170 clausSat[c168]
-                                   0            -0               
-   171 clausSat[c169]
-                                   0            -0               
-   172 clausSat[c170]
-                                   0            -0               
-   173 clausSat[c171]
-                                   0            -0               
-   174 clausSat[c172]
-                                   0            -0               
-   175 clausSat[c173]
-                                   0            -0               
-   176 clausSat[c174]
-                                   0            -0               
-   177 clausSat[c175]
-                                   0            -0               
-   178 clausSat[c176]
-                                   0            -0               
-   179 clausSat[c177]
-                                   0            -0               
-   180 clausSat[c178]
-                                   0            -0               
-   181 clausSat[c179]
-                                   0            -0               
-   182 clausSat[c180]
-                                   0             1               
-   183 clausSat[c181]
-                                   0             1               
-   184 clausSat[c182]
-                                   0            -0               
-   185 clausSat[c183]
-                                   0            -0               
-   186 clausSat[c184]
-                                   0            -0               
-   187 clausSat[c185]
-                                   0            -0               
-   188 clausSat[c186]
-                                   0            -0               
-   189 clausSat[c187]
-                                   0            -0               
-   190 clausSat[c188]
-                                   0            -0               
-   191 clausSat[c189]
-                                   0            -0               
-   192 clausSat[c190]
-                                   0             1               
-   193 clausSat[c191]
-                                   0             1               
-   194 clausSat[c192]
-                                   0            -0               
-   195 clausSat[c193]
-                                   0            -0               
-   196 clausSat[c194]
-                                   0            -0               
-   197 clausSat[c195]
-                                   0            -0               
-   198 clausSat[c196]
-                                   0            -0               
-   199 clausSat[c197]
-                                   0            -0               
-   200 clausSat[c198]
-                                   0             1               
-   201 clausSat[c199]
-                                   0             1               
-   202 clausSat[c200]
-                                   0            -0               
-   203 clausSat[c201]
-                                   0            -0               
-   204 clausSat[c202]
-                                   0            -0               
-   205 clausSat[c203]
-                                   0            -0               
-   206 clausSat[c204]
-                                   0             1               
-   207 clausSat[c205]
-                                   0             1               
-   208 clausSat[c206]
-                                   0             1               
-   209 clausSat[c207]
-                                   0             1               
-   210 clausSat[c208]
-                                   0            -0               
-   211 clausSat[c209]
-                                   0            -0               
-   212 clausSat[c210]
-                                   0            -0               
-   213 clausSat[c211]
-                                   0            -0               
-   214 clausSat[c212]
-                                   0            -0               
-   215 clausSat[c213]
-                                   0            -0               
-   216 clausSat[c214]
-                                   0            -0               
-   217 clausSat[c215]
-                                   0            -0               
-   218 clausSat[c216]
-                                   0            -0               
-   219 clausSat[c217]
-                                   0            -0               
-   220 clausSat[c218]
-                                   0            -0               
-   221 clausSat[c219]
-                                   0            -0               
-   222 clausSat[c220]
-                                   0            -0               
-   223 clausSat[c221]
-                                   0            -0               
-   224 clausSat[c222]
-                                   0            -0               
-   225 clausSat[c223]
-                                   0            -0               
-   226 clausSat[c224]
-                                   0            -0               
-   227 clausSat[c225]
-                                   0            -0               
-   228 clausSat[c226]
-                                   0            -0               
-   229 clausSat[c227]
-                                   0            -0               
-   230 clausSat[c228]
-                                   0            -0               
-   231 clausSat[c229]
-                                   0            -0               
-   232 clausSat[c230]
-                                   0            -0               
-   233 clausSat[c231]
-                                   0            -0               
-   234 clausSat[c232]
-                                   0            -0               
-   235 clausSat[c233]
-                                   0            -0               
-   236 clausSat[c234]
-                                   0            -0               
-   237 clausSat[c235]
-                                   0            -0               
-   238 clausSat[c236]
-                                   0            -0               
-   239 clausSat[c237]
-                                   0            -0               
-   240 clausSat[c238]
-                                   0             1               
-   241 clausSat[c239]
-                                   0             1               
-   242 clausSat[c240]
-                                   0            -0               
-   243 clausSat[c241]
-                                   0            -0               
-   244 clausSat[c242]
-                                   0            -0               
-   245 clausSat[c243]
-                                   0            -0               
-   246 clausSat[c244]
-                                   0            -0               
-   247 clausSat[c245]
-                                   0            -0               
-   248 clausSat[c246]
-                                   0            -0               
-   249 clausSat[c247]
-                                   0            -0               
-   250 clausSat[c248]
-                                   0             1               
-   251 clausSat[c249]
-                                   0             1               
-   252 clausSat[c250]
-                                   0             1               
-   253 clausSat[c251]
-                                   0             1               
-   254 clausSat[c252]
-                                   0            -0               
-   255 clausSat[c253]
-                                   0            -0               
-   256 clausSat[c254]
-                                   0            -0               
-   257 clausSat[c255]
-                                   0            -0               
-   258 clausSat[c256]
-                                   0            -0               
-   259 clausSat[c257]
-                                   0            -0               
-   260 clausSat[c258]
-                                   0            -0               
-   261 clausSat[c259]
-                                   0            -0               
-   262 clausSat[c260]
-                                   0            -0               
-   263 clausSat[c261]
-                                   0            -0               
-   264 clausSat[c262]
-                                   0            -0               
-   265 clausSat[c263]
-                                   0            -0               
-   266 clausSat[c264]
-                                   0            -0               
-   267 clausSat[c265]
-                                   0            -0               
-   268 clausSat[c266]
-                                   0            -0               
-   269 clausSat[c267]
-                                   0            -0               
-   270 clausSat[c268]
-                                   0            -0               
-   271 clausSat[c269]
-                                   0            -0               
-   272 clausSat[c270]
-                                   0            -0               
-   273 clausSat[c271]
-                                   0            -0               
-   274 clausSat[c272]
-                                   0            -0               
-   275 clausSat[c273]
-                                   0            -0               
-   276 clausSat[c274]
-                                   0            -0               
-   277 clausSat[c275]
-                                   0            -0               
-   278 clausSat[c276]
-                                   0            -0               
-   279 clausSat[c277]
-                                   0            -0               
-   280 clausSat[c278]
-                                   0            -0               
-   281 clausSat[c279]
-                                   0            -0               
-   282 clausSat[c280]
-                                   0            -0               
-   283 clausSat[c281]
-                                   0            -0               
-   284 clausSat[c282]
-                                   0             1               
-   285 clausSat[c283]
-                                   0             1               
-   286 clausSat[c284]
-                                   0            -0               
-   287 clausSat[c285]
-                                   0            -0               
-   288 clausSat[c286]
-                                   0            -0               
-   289 clausSat[c287]
-                                   0            -0               
-   290 clausSat[c288]
-                                   0            -0               
-   291 clausSat[c289]
-                                   0            -0               
-   292 clausSat[c290]
-                                   0            -0               
-   293 clausSat[c291]
-                                   0            -0               
-   294 clausSat[c292]
-                                   0            -0               
-   295 clausSat[c293]
-                                   0            -0               
-   296 clausSat[c294]
-                                   0            -0               
-   297 clausSat[c295]
-                                   0            -0               
-   298 clausSat[c296]
-                                   0            -0               
-   299 clausSat[c297]
-                                   0            -0               
-   300 clausSat[c298]
-                                   0             1               
-   301 clausSat[c299]
-                                   0             1               
-   302 clausSat[c300]
-                                   0            -0               
-   303 clausSat[c301]
-                                   0            -0               
-   304 clausSat[c302]
-                                   0            -0               
-   305 clausSat[c303]
-                                   0            -0               
-   306 clausSat[c304]
-                                   0            -0               
-   307 clausSat[c305]
-                                   0            -0               
-   308 clausSat[c306]
-                                   0            -0               
-   309 clausSat[c307]
-                                   0            -0               
-   310 clausSat[c308]
-                                   0            -0               
-   311 clausSat[c309]
-                                   0            -0               
-   312 clausSat[c310]
-                                   0            -0               
-   313 clausSat[c311]
-                                   0            -0               
-   314 clausSat[c312]
-                                   0            -0               
-   315 clausSat[c313]
-                                   0            -0               
-   316 clausSat[c314]
-                                   0            -0               
-   317 clausSat[c315]
-                                   0            -0               
-   318 clausSat[c316]
-                                   0            -0               
-   319 clausSat[c317]
-                                   0            -0               
-   320 clausSat[c318]
-                                   0            -0               
-   321 clausSat[c319]
-                                   0            -0               
-   322 clausSat[c320]
-                                   0            -0               
-   323 clausSat[c321]
-                                   0            -0               
-   324 clausSat[c322]
-                                   0            -0               
-   325 clausSat[c323]
-                                   0            -0               
-   326 clausSat[c324]
-                                   0            -0               
-   327 clausSat[c325]
-                                   0            -0               
-   328 clausSat[c326]
-                                   0            -0               
-   329 clausSat[c327]
-                                   0            -0               
-   330 clausSat[c328]
-                                   0             1               
-   331 clausSat[c329]
-                                   0             1               
-   332 clausSat[c330]
-                                   0            -0               
-   333 clausSat[c331]
-                                   0            -0               
-   334 clausSat[c332]
-                                   0            -0               
-   335 clausSat[c333]
-                                   0            -0               
-   336 clausSat[c334]
-                                   0            -0               
-   337 clausSat[c335]
-                                   0            -0               
-   338 clausSat[c336]
-                                   0             1               
-   339 clausSat[c337]
-                                   0             1               
-   340 clausSat[c338]
-                                   0            -0               
-   341 clausSat[c339]
-                                   0            -0               
-   342 clausSat[c340]
-                                   0            -0               
-   343 clausSat[c341]
-                                   0            -0               
-   344 clausSat[c342]
-                                   0            -0               
-   345 clausSat[c343]
-                                   0            -0               
-   346 clausSat[c344]
-                                   0            -0               
-   347 clausSat[c345]
-                                   0            -0               
-   348 clausSat[c346]
-                                   0             1               
-   349 clausSat[c347]
-                                   0             1               
-   350 clausSat[c348]
-                                   0            -0               
-   351 clausSat[c349]
-                                   0            -0               
-   352 clausSat[c350]
-                                   0            -0               
-   353 clausSat[c351]
-                                   0            -0               
-   354 clausSat[c352]
-                                   0            -0               
-   355 clausSat[c353]
-                                   0            -0               
-   356 clausSat[c354]
-                                   0            -0               
-   357 clausSat[c355]
-                                   0            -0               
-   358 clausSat[c356]
-                                   0             1               
-   359 clausSat[c357]
-                                   0             1               
-   360 clausSat[c358]
-                                   0            -0               
-   361 clausSat[c359]
-                                   0            -0               
-   362 clausSat[c360]
-                                   0            -0               
-   363 clausSat[c361]
-                                   0            -0               
-   364 clausSat[c362]
-                                   0            -0               
-   365 clausSat[c363]
-                                   0            -0               
-   366 clausSat[c364]
-                                   0            -0               
-   367 clausSat[c365]
-                                   0            -0               
-   368 clausSat[c366]
-                                   0            -0               
-   369 clausSat[c367]
-                                   0            -0               
-   370 clausSat[c368]
-                                   0            -0               
-   371 clausSat[c369]
-                                   0            -0               
-   372 clausSat[c370]
-                                   0            -0               
-   373 clausSat[c371]
-                                   0            -0               
-   374 clausSat[c372]
-                                   0            -0               
-   375 clausSat[c373]
-                                   0            -0               
-   376 clausSat[c374]
-                                   0            -0               
-   377 clausSat[c375]
-                                   0            -0               
-   378 clausSat[c376]
-                                   0            -0               
-   379 clausSat[c377]
-                                   0            -0               
-   380 clausSat[c378]
-                                   0             1               
-   381 clausSat[c379]
-                                   0             1               
-   382 clausSat[c380]
-                                   0            -0               
-   383 clausSat[c381]
-                                   0            -0               
-   384 clausSat[c382]
-                                   0            -0               
-   385 clausSat[c383]
-                                   0            -0               
-   386 clausSat[c384]
-                                   0            -0               
-   387 clausSat[c385]
-                                   0            -0               
-   388 clausSat[c386]
-                                   0            -0               
-   389 clausSat[c387]
-                                   0            -0               
-   390 clausSat[c388]
-                                   0            -0               
-   391 clausSat[c389]
-                                   0            -0               
-   392 clausSat[c390]
-                                   0            -0               
-   393 clausSat[c391]
-                                   0            -0               
-   394 clausSat[c392]
-                                   0            -0               
-   395 clausSat[c393]
-                                   0            -0               
-   396 clausSat[c394]
-                                   0             1               
-   397 clausSat[c395]
-                                   0             1               
-   398 clausSat[c396]
-                                   0            -0               
-   399 clausSat[c397]
-                                   0            -0               
-   400 clausSat[c398]
-                                   0            -0               
-   401 clausSat[c399]
-                                   0            -0               
-   402 clausSat[c400]
-                                   0             1               
-   403 clausSat[c401]
-                                   0             1               
-   404 clausSat[c402]
-                                   0            -0               
-   405 clausSat[c403]
-                                   0            -0               
-   406 clausSat[c404]
-                                   0             1               
-   407 clausSat[c405]
-                                   0             1               
-   408 clausSat[c406]
-                                   0             1               
-   409 clausSat[c407]
-                                   0             1               
-   410 clausSat[c408]
-                                   0            -0               
-   411 clausSat[c409]
-                                   0            -0               
-   412 clausSat[c410]
-                                   0            -0               
-   413 clausSat[c411]
-                                   0            -0               
-   414 clausSat[c412]
-                                   0            -0               
-   415 clausSat[c413]
-                                   0            -0               
-   416 clausSat[c414]
-                                   0            -0               
-   417 clausSat[c415]
-                                   0            -0               
-   418 clausSat[c416]
-                                   0            -0               
-   419 clausSat[c417]
-                                   0            -0               
-   420 clausSat[c418]
-                                   0            -0               
-   421 clausSat[c419]
-                                   0            -0               
-   422 clausSat[c420]
-                                   0            -0               
-   423 clausSat[c421]
-                                   0            -0               
-   424 clausSat[c422]
-                                   0            -0               
-   425 clausSat[c423]
-                                   0            -0               
-   426 clausSat[c424]
-                                   0            -0               
-   427 clausSat[c425]
-                                   0            -0               
-   428 clausSat[c426]
-                                   0            -0               
-   429 clausSat[c427]
-                                   0            -0               
-   430 clausSat[c428]
-                                   0            -0               
-   431 clausSat[c429]
-                                   0            -0               
-   432 clausSat[c430]
-                                   0            -0               
-   433 clausSat[c431]
-                                   0            -0               
-   434 clausSat[c432]
-                                   0            -0               
-   435 clausSat[c433]
-                                   0            -0               
-   436 clausSat[c434]
-                                   0            -0               
-   437 clausSat[c435]
-                                   0            -0               
-   438 clausSat[c436]
-                                   0            -0               
-   439 clausSat[c437]
-                                   0            -0               
-   440 clausSat[c438]
-                                   0            -0               
-   441 clausSat[c439]
-                                   0            -0               
-   442 clausSat[c440]
-                                   0            -0               
-   443 clausSat[c441]
-                                   0            -0               
-   444 clausSat[c442]
-                                   0            -0               
-   445 clausSat[c443]
-                                   0            -0               
-   446 clausSat[c444]
-                                   0            -0               
-   447 clausSat[c445]
-                                   0            -0               
-   448 clausSat[c446]
-                                   0             1               
-   449 clausSat[c447]
-                                   0             1               
-   450 clausSat[c448]
-                                   0            -0               
-   451 clausSat[c449]
-                                   0            -0               
-   452 clausSat[c450]
-                                   0            -0               
-   453 clausSat[c451]
-                                   0            -0               
-   454 clausSat[c452]
-                                   0            -0               
-   455 clausSat[c453]
-                                   0            -0               
-   456 clausSat[c454]
-                                   0            -0               
-   457 clausSat[c455]
-                                   0            -0               
-   458 clausSat[c456]
-                                   0            -0               
-   459 clausSat[c457]
-                                   0            -0               
-   460 clausSat[c458]
-                                   0            -0               
-   461 clausSat[c459]
-                                   0            -0               
-   462 clausSat[c460]
-                                   0             1               
-   463 clausSat[c461]
-                                   0             1               
-   464 clausSat[c462]
-                                   0            -0               
-   465 clausSat[c463]
-                                   0            -0               
-   466 clausSat[c464]
-                                   0            -0               
-   467 clausSat[c465]
-                                   0            -0               
-   468 clausSat[c466]
-                                   0            -0               
-   469 clausSat[c467]
-                                   0            -0               
-   470 clausSat[c468]
-                                   0            -0               
-   471 clausSat[c469]
-                                   0            -0               
-   472 clausSat[c470]
-                                   0            -0               
-   473 clausSat[c471]
-                                   0            -0               
-   474 clausSat[c472]
-                                   0            -0               
-   475 clausSat[c473]
-                                   0            -0               
-   476 clausSat[c474]
-                                   0            -0               
-   477 clausSat[c475]
-                                   0            -0               
-   478 clausSat[c476]
-                                   0            -0               
-   479 clausSat[c477]
-                                   0            -0               
-   480 clausSat[c478]
-                                   0            -0               
-   481 clausSat[c479]
-                                   0            -0               
-   482 clausSat[c480]
-                                   0            -0               
-   483 clausSat[c481]
-                                   0            -0               
-   484 clausSat[c482]
-                                   0            -0               
-   485 clausSat[c483]
-                                   0            -0               
-   486 clausSat[c484]
-                                   0            -0               
-   487 clausSat[c485]
-                                   0            -0               
-   488 clausSat[c486]
-                                   0            -0               
-   489 clausSat[c487]
-                                   0            -0               
-   490 clausSat[c488]
-                                   0            -0               
-   491 clausSat[c489]
-                                   0            -0               
-   492 clausSat[c490]
-                                   0            -0               
-   493 clausSat[c491]
-                                   0            -0               
-   494 clausSat[c492]
-                                   0            -0               
-   495 clausSat[c493]
-                                   0            -0               
-   496 clausSat[c494]
-                                   0            -0               
-   497 clausSat[c495]
-                                   0            -0               
-   498 clausSat[c496]
-                                   0            -0               
-   499 clausSat[c497]
-                                   0            -0               
-   500 clausSat[c498]
-                                   0            -0               
-   501 clausSat[c499]
-                                   0            -0               
-   502 clausSat[c500]
-                                   0            -0               
-   503 clausSat[c501]
-                                   0            -0               
-   504 clausSat[c502]
-                                   0            -0               
-   505 clausSat[c503]
-                                   0            -0               
-   506 clausSat[c504]
-                                   0            -0               
-   507 clausSat[c505]
-                                   0            -0               
-   508 clausSat[c506]
-                                   0            -0               
-   509 clausSat[c507]
-                                   0            -0               
-   510 clausSat[c508]
-                                   0            -0               
-   511 clausSat[c509]
-                                   0            -0               
-   512 clausSat[c510]
-                                   0            -0               
-   513 clausSat[c511]
-                                   0            -0               
-   514 clausSat[c512]
-                                   0            -0               
-   515 clausSat[c513]
-                                   0            -0               
-   516 clausSat[c514]
-                                   0            -0               
-   517 clausSat[c515]
-                                   0            -0               
-   518 clausSat[c516]
-                                   0            -0               
-   519 clausSat[c517]
-                                   0            -0               
-   520 clausSat[c518]
-                                   0            -0               
-   521 clausSat[c519]
-                                   0            -0               
-   522 clausSat[c520]
-                                   0             1               
-   523 clausSat[c521]
-                                   0             1               
-   524 clausSat[c522]
-                                   0            -0               
-   525 clausSat[c523]
-                                   0            -0               
-   526 clausSat[c524]
-                                   0            -0               
-   527 clausSat[c525]
-                                   0            -0               
-   528 clausSat[c526]
-                                   0            -0               
-   529 clausSat[c527]
-                                   0            -0               
-   530 clausSat[c528]
-                                   0            -0               
-   531 clausSat[c529]
-                                   0            -0               
-   532 clausSat[c530]
-                                   0            -0               
-   533 clausSat[c531]
-                                   0            -0               
-   534 clausSat[c532]
-                                   0            -0               
-   535 clausSat[c533]
-                                   0            -0               
-   536 clausSat[c534]
-                                   0            -0               
-   537 clausSat[c535]
-                                   0            -0               
-   538 clausSat[c536]
-                                   0            -0               
-   539 clausSat[c537]
-                                   0            -0               
-   540 clausSat[c538]
-                                   0            -0               
-   541 clausSat[c539]
-                                   0            -0               
-   542 clausSat[c540]
-                                   0            -0               
-   543 clausSat[c541]
-                                   0            -0               
-   544 clausSat[c542]
-                                   0            -0               
-   545 clausSat[c543]
-                                   0            -0               
-   546 clausSat[c544]
-                                   0            -0               
-   547 clausSat[c545]
-                                   0            -0               
-   548 clausSat[c546]
-                                   0            -0               
-   549 clausSat[c547]
-                                   0            -0               
-   550 clausSat[c548]
-                                   0            -0               
-   551 clausSat[c549]
-                                   0            -0               
-   552 clausSat[c550]
-                                   0            -0               
-   553 clausSat[c551]
-                                   0            -0               
-   554 clausSat[c552]
-                                   0            -0               
-   555 clausSat[c553]
-                                   0            -0               
-   556 clausSat[c554]
-                                   0            -0               
-   557 clausSat[c555]
-                                   0            -0               
-   558 clausSat[c556]
-                                   0            -0               
-   559 clausSat[c557]
-                                   0            -0               
-   560 clausSat[c558]
-                                   0            -0               
-   561 clausSat[c559]
-                                   0            -0               
-   562 clausSat[c560]
-                                   0             1               
-   563 clausSat[c561]
-                                   0             1               
-   564 clausSat[c562]
-                                   0            -0               
-   565 clausSat[c563]
-                                   0            -0               
-   566 clausSat[c564]
-                                   0            -0               
-   567 clausSat[c565]
-                                   0            -0               
-   568 clausSat[c566]
-                                   0            -0               
-   569 clausSat[c567]
-                                   0            -0               
-   570 clausSat[c568]
-                                   0            -0               
-   571 clausSat[c569]
-                                   0            -0               
-   572 clausSat[c570]
-                                   0            -0               
-   573 clausSat[c571]
-                                   0            -0               
-   574 clausSat[c572]
-                                   0             1               
-   575 clausSat[c573]
-                                   0             1               
-   576 clausSat[c574]
-                                   0             1               
-   577 clausSat[c575]
-                                   0             1               
-   578 clausSat[c576]
-                                   0            -0               
-   579 clausSat[c577]
-                                   0            -0               
-   580 clausSat[c578]
-                                   0            -0               
-   581 clausSat[c579]
-                                   0            -0               
-   582 clausSat[c580]
-                                   0            -0               
-   583 clausSat[c581]
-                                   0            -0               
-   584 clausSat[c582]
-                                   0            -0               
-   585 clausSat[c583]
-                                   0            -0               
-   586 clausSat[c584]
-                                   0            -0               
-   587 clausSat[c585]
-                                   0            -0               
-   588 clausSat[c586]
-                                   0            -0               
-   589 clausSat[c587]
-                                   0            -0               
-   590 clausSat[c588]
-                                   0             1               
-   591 clausSat[c589]
-                                   0             1               
-   592 clausSat[c590]
-                                   0             1               
-   593 clausSat[c591]
-                                   0             1               
-   594 clausSat[c592]
-                                   0            -0               
-   595 clausSat[c593]
-                                   0            -0               
-   596 clausSat[c594]
-                                   0            -0               
-   597 clausSat[c595]
-                                   0            -0               
-   598 clausSat[c596]
-                                   0            -0               
-   599 clausSat[c597]
-                                   0            -0               
-   600 clausSat[c598]
-                                   0            -0               
-   601 clausSat[c599]
-                                   0            -0               
-   602 clausSat[c600]
-                                   0            -0               
-   603 clausSat[c601]
-                                   0            -0               
-   604 clausSat[c602]
-                                   0             1               
-   605 clausSat[c603]
-                                   0             1               
-   606 clausSat[c604]
-                                   0             1               
-   607 clausSat[c605]
-                                   0             1               
-   608 clausSat[c606]
-                                   0            -0               
-   609 clausSat[c607]
-                                   0            -0               
-   610 clausSat[c608]
-                                   0            -0               
-   611 clausSat[c609]
-                                   0            -0               
-   612 clausSat[c610]
-                                   0            -0               
-   613 clausSat[c611]
-                                   0            -0               
-   614 clausSat[c612]
-                                   0            -0               
-   615 clausSat[c613]
-                                   0            -0               
-   616 clausSat[c614]
-                                   0            -0               
-   617 clausSat[c615]
-                                   0            -0               
-   618 clausSat[c616]
-                                   0            -0               
-   619 clausSat[c617]
-                                   0            -0               
-   620 clausSat[c618]
-                                   0            -0               
-   621 clausSat[c619]
-                                   0            -0               
-   622 clausSat[c620]
-                                   0            -0               
-   623 clausSat[c621]
-                                   0            -0               
-   624 clausSat[c622]
-                                   0            -0               
-   625 clausSat[c623]
-                                   0            -0               
-   626 clausSat[c624]
-                                   0            -0               
-   627 clausSat[c625]
-                                   0            -0               
-   628 clausSat[c626]
-                                   0            -0               
-   629 clausSat[c627]
-                                   0            -0               
-   630 clausSat[c628]
-                                   0            -0               
-   631 clausSat[c629]
-                                   0            -0               
-   632 clausSat[c630]
-                                   0            -0               
-   633 clausSat[c631]
-                                   0            -0               
-   634 clausSat[c632]
-                                   0            -0               
-   635 clausSat[c633]
-                                   0            -0               
-   636 clausSat[c634]
-                                   0            -0               
-   637 clausSat[c635]
-                                   0            -0               
-   638 clausSat[c636]
-                                   0            -0               
-   639 clausSat[c637]
-                                   0            -0               
-   640 clausSat[c638]
-                                   0            -0               
-   641 clausSat[c639]
-                                   0            -0               
-   642 clausSat[c640]
-                                   0            -0               
-   643 clausSat[c641]
-                                   0            -0               
-   644 clausSat[c642]
-                                   0            -0               
-   645 clausSat[c643]
-                                   0            -0               
-   646 clausSat[c644]
-                                   0            -0               
-   647 clausSat[c645]
-                                   0            -0               
-   648 clausSat[c646]
-                                   0            -0               
-   649 clausSat[c647]
-                                   0            -0               
-   650 clausSat[c648]
-                                   0            -0               
-   651 clausSat[c649]
-                                   0            -0               
-   652 clausSat[c650]
-                                   0            -0               
-   653 clausSat[c651]
-                                   0            -0               
-   654 clausSat[c652]
-                                   0            -0               
-   655 clausSat[c653]
-                                   0            -0               
-   656 clausSat[c654]
-                                   0            -0               
-   657 clausSat[c655]
-                                   0            -0               
-   658 clausSat[c656]
-                                   0            -0               
-   659 clausSat[c657]
-                                   0            -0               
-   660 clausSat[c658]
-                                   0             1               
-   661 clausSat[c659]
-                                   0             1               
-   662 clausSat[c660]
-                                   0             1               
-   663 clausSat[c661]
-                                   0             1               
-   664 clausSat[c662]
-                                   0            -0               
-   665 clausSat[c663]
-                                   0            -0               
-   666 clausSat[c664]
-                                   0            -0               
-   667 clausSat[c665]
-                                   0            -0               
-   668 clausSat[c666]
-                                   0            -0               
-   669 clausSat[c667]
-                                   0            -0               
-   670 clausSat[c668]
-                                   0            -0               
-   671 clausSat[c669]
-                                   0            -0               
-   672 clausSat[c670]
-                                   0            -0               
-   673 clausSat[c671]
-                                   0            -0               
-   674 clausSat[c672]
-                                   0            -0               
-   675 clausSat[c673]
-                                   0            -0               
-   676 clausSat[c674]
-                                   0            -0               
-   677 clausSat[c675]
-                                   0            -0               
-   678 clausSat[c676]
-                                   0            -0               
-   679 clausSat[c677]
-                                   0            -0               
-   680 clausSat[c678]
-                                   0            -0               
-   681 clausSat[c679]
-                                   0            -0               
-   682 clausSat[c680]
-                                   0            -0               
-   683 clausSat[c681]
-                                   0            -0               
-   684 clausSat[c682]
-                                   0            -0               
-   685 clausSat[c683]
-                                   0            -0               
-   686 clausSat[c684]
-                                   0            -0               
-   687 clausSat[c685]
-                                   0            -0               
-   688 clausSat[c686]
-                                   0            -0               
-   689 clausSat[c687]
-                                   0            -0               
-   690 clausSat[c688]
-                                   0            -0               
-   691 clausSat[c689]
-                                   0            -0               
-   692 clausSat[c690]
-                                   0            -0               
-   693 clausSat[c691]
-                                   0            -0               
-   694 clausSat[c692]
-                                   0            -0               
-   695 clausSat[c693]
-                                   0            -0               
-   696 clausSat[c694]
-                                   0            -0               
-   697 clausSat[c695]
-                                   0            -0               
-   698 clausSat[c696]
-                                   0            -0               
-   699 clausSat[c697]
-                                   0            -0               
-   700 clausSat[c698]
-                                   0             1               
-   701 clausSat[c699]
-                                   0             1               
-   702 clausSat[c700]
-                                   0            -0               
-   703 clausSat[c701]
-                                   0            -0               
-   704 clausSat[c702]
-                                   0            -0               
-   705 clausSat[c703]
-                                   0            -0               
-   706 clausSat[c704]
-                                   0            -0               
-   707 clausSat[c705]
-                                   0            -0               
-   708 clausSat[c706]
-                                   0            -0               
-   709 clausSat[c707]
-                                   0            -0               
-   710 clausSat[c708]
-                                   0            -0               
-   711 clausSat[c709]
-                                   0            -0               
-   712 clausSat[c710]
-                                   0            -0               
-   713 clausSat[c711]
-                                   0            -0               
-   714 clausSat[c712]
-                                   0            -0               
-   715 clausSat[c713]
-                                   0            -0               
-   716 clausSat[c714]
-                                   0            -0               
-   717 clausSat[c715]
-                                   0            -0               
-   718 clausSat[c716]
-                                   0            -0               
-   719 clausSat[c717]
-                                   0            -0               
-   720 clausSat[c718]
-                                   0            -0               
-   721 clausSat[c719]
-                                   0            -0               
-   722 clausSat[c720]
-                                   0            -0               
-   723 clausSat[c721]
-                                   0            -0               
-   724 clausSat[c722]
-                                   0            -0               
-   725 clausSat[c723]
-                                   0            -0               
-   726 clausSat[c724]
-                                   0            -0               
-   727 clausSat[c725]
-                                   0            -0               
-   728 clausSat[c726]
-                                   0            -0               
-   729 clausSat[c727]
-                                   0            -0               
-   730 clausSat[c728]
-                                   0            -0               
-   731 clausSat[c729]
-                                   0            -0               
-   732 clausSat[c730]
-                                   0            -0               
-   733 clausSat[c731]
-                                   0            -0               
-   734 clausSat[c732]
-                                   0            -0               
-   735 clausSat[c733]
-                                   0            -0               
-   736 clausSat[c734]
-                                   0            -0               
-   737 clausSat[c735]
-                                   0            -0               
-   738 clausSat[c736]
-                                   0             1               
-   739 clausSat[c737]
-                                   0             1               
-   740 clausSat[c738]
-                                   0            -0               
-   741 clausSat[c739]
-                                   0            -0               
-   742 clausSat[c740]
-                                   0            -0               
-   743 clausSat[c741]
-                                   0            -0               
-   744 clausSat[c742]
-                                   0            -0               
-   745 clausSat[c743]
-                                   0            -0               
-   746 clausSat[c744]
-                                   0            -0               
-   747 clausSat[c745]
-                                   0            -0               
-   748 clausSat[c746]
-                                   0            -0               
-   749 clausSat[c747]
-                                   0            -0               
-   750 clausSat[c748]
-                                   0            -0               
-   751 clausSat[c749]
-                                   0            -0               
-   752 clausSat[c750]
-                                   0            -0               
-   753 clausSat[c751]
-                                   0            -0               
-   754 clausSat[c752]
-                                   0            -0               
-   755 clausSat[c753]
-                                   0            -0               
-   756 clausSat[c754]
-                                   0            -0               
-   757 clausSat[c755]
-                                   0            -0               
-   758 clausSat[c756]
-                                   0            -0               
-   759 clausSat[c757]
-                                   0            -0               
-   760 clausSat[c758]
-                                   0            -0               
-   761 clausSat[c759]
-                                   0            -0               
-   762 clausSat[c760]
-                                   0            -0               
-   763 clausSat[c761]
-                                   0            -0               
-   764 clausSat[c762]
-                                   0            -0               
-   765 clausSat[c763]
-                                   0            -0               
-   766 clausSat[c764]
-                                   0             1               
-   767 clausSat[c765]
-                                   0             1               
-   768 clausSat[c766]
-                                   0            -0               
-   769 clausSat[c767]
-                                   0            -0               
-   770 clausSat[c768]
-                                   0            -0               
-   771 clausSat[c769]
-                                   0            -0               
-   772 clausSat[c770]
-                                   0            -0               
-   773 clausSat[c771]
-                                   0            -0               
-   774 clausSat[c772]
-                                   0            -0               
-   775 clausSat[c773]
-                                   0            -0               
-   776 clausSat[c774]
-                                   0            -0               
-   777 clausSat[c775]
-                                   0            -0               
-   778 clausSat[c776]
-                                   0            -0               
-   779 clausSat[c777]
-                                   0            -0               
-   780 clausSat[c778]
-                                   0            -0               
-   781 clausSat[c779]
-                                   0            -0               
-   782 clausSat[c780]
-                                   0            -0               
-   783 clausSat[c781]
-                                   0            -0               
-   784 clausSat[c782]
-                                   0            -0               
-   785 clausSat[c783]
-                                   0            -0               
-   786 clausSat[c784]
-                                   0            -0               
-   787 clausSat[c785]
-                                   0            -0               
-   788 clausSat[c786]
-                                   0            -0               
-   789 clausSat[c787]
-                                   0            -0               
-   790 clausSat[c788]
-                                   0            -0               
-   791 clausSat[c789]
-                                   0            -0               
-   792 clausSat[c790]
-                                   0            -0               
-   793 clausSat[c791]
-                                   0            -0               
-   794 clausSat[c792]
-                                   0            -0               
-   795 clausSat[c793]
-                                   0            -0               
-   796 clausSat[c794]
-                                   0            -0               
-   797 clausSat[c795]
-                                   0            -0               
-   798 clausSat[c796]
-                                   0            -0               
-   799 clausSat[c797]
-                                   0            -0               
-   800 clausSat[c798]
-                                   0            -0               
-   801 clausSat[c799]
-                                   0            -0               
-   802 clausSat[c800]
-                                   0            -0               
-   803 clausSat[c801]
-                                   0            -0               
-   804 clausSat[c802]
-                                   0            -0               
-   805 clausSat[c803]
-                                   0            -0               
-   806 clausSat[c804]
-                                   0            -0               
-   807 clausSat[c805]
-                                   0            -0               
-   808 clausSat[c806]
-                                   0            -0               
-   809 clausSat[c807]
-                                   0            -0               
-   810 clausSat[c808]
-                                   0            -0               
-   811 clausSat[c809]
-                                   0            -0               
-   812 clausSat[c810]
-                                   0            -0               
-   813 clausSat[c811]
-                                   0            -0               
-   814 clausSat[c812]
-                                   0            -0               
-   815 clausSat[c813]
-                                   0            -0               
-   816 clausSat[c814]
-                                   0            -0               
-   817 clausSat[c815]
-                                   0            -0               
-   818 clausSat[c816]
-                                   0            -0               
-   819 clausSat[c817]
-                                   0            -0               
-   820 clausSat[c818]
-                                   0            -0               
-   821 clausSat[c819]
-                                   0            -0               
-   822 clausSat[c820]
-                                   0            -0               
-   823 clausSat[c821]
-                                   0            -0               
-   824 clausSat[c822]
-                                   0            -0               
-   825 clausSat[c823]
-                                   0            -0               
-   826 clausSat[c824]
-                                   0            -0               
-   827 clausSat[c825]
-                                   0            -0               
-   828 clausSat[c826]
-                                   0            -0               
-   829 clausSat[c827]
-                                   0            -0               
-   830 clausSat[c828]
-                                   0            -0               
-   831 clausSat[c829]
-                                   0            -0               
-   832 clausSat[c830]
-                                   0            -0               
-   833 clausSat[c831]
-                                   0            -0               
-   834 clausSat[c832]
-                                   0            -0               
-   835 clausSat[c833]
-                                   0            -0               
-   836 clausSat[c834]
-                                   0            -0               
-   837 clausSat[c835]
-                                   0            -0               
-   838 clausSat[c836]
-                                   0             1               
-   839 clausSat[c837]
-                                   0             1               
-   840 clausSat[c838]
-                                   0            -0               
-   841 clausSat[c839]
-                                   0            -0               
-   842 clausSat[c840]
-                                   0            -0               
-   843 clausSat[c841]
-                                   0            -0               
-   844 clausSat[c842]
-                                   0            -0               
-   845 clausSat[c843]
-                                   0            -0               
-   846 clausSat[c844]
-                                   0            -0               
-   847 clausSat[c845]
-                                   0            -0               
-   848 clausSat[c846]
-                                   0            -0               
-   849 clausSat[c847]
-                                   0            -0               
-   850 clausSat[c848]
-                                   0            -0               
-   851 clausSat[c849]
-                                   0            -0               
-   852 clausSat[c850]
-                                   0            -0               
-   853 clausSat[c851]
-                                   0            -0               
-   854 clausSat[c852]
-                                   0            -0               
-   855 clausSat[c853]
-                                   0            -0               
-   856 clausSat[c854]
-                                   0            -0               
-   857 clausSat[c855]
-                                   0            -0               
-   858 clausSat[c856]
-                                   0            -0               
-   859 clausSat[c857]
-                                   0            -0               
-   860 clausSat[c858]
-                                   0            -0               
-   861 clausSat[c859]
-                                   0            -0               
-   862 clausSat[c860]
-                                   0            -0               
-   863 clausSat[c861]
-                                   0            -0               
-   864 clausSat[c862]
-                                   0            -0               
-   865 clausSat[c863]
-                                   0            -0               
-   866 clausSat[c864]
-                                   0            -0               
-   867 clausSat[c865]
-                                   0            -0               
-   868 clausSat[c866]
-                                   0            -0               
-   869 clausSat[c867]
-                                   0            -0               
-   870 clausSat[c868]
-                                   0            -0               
-   871 clausSat[c869]
-                                   0            -0               
-   872 clausSat[c870]
-                                   0            -0               
-   873 clausSat[c871]
-                                   0            -0               
-   874 clausSat[c872]
-                                   0            -0               
-   875 clausSat[c873]
-                                   0            -0               
-   876 clausSat[c874]
-                                   0            -0               
-   877 clausSat[c875]
-                                   0            -0               
-   878 clausSat[c876]
-                                   0            -0               
-   879 clausSat[c877]
-                                   0            -0               
-   880 clausSat[c878]
-                                   0            -0               
-   881 clausSat[c879]
-                                   0            -0               
-   882 clausSat[c880]
-                                   0            -0               
-   883 clausSat[c881]
-                                   0            -0               
-   884 clausSat[c882]
-                                   0            -0               
-   885 clausSat[c883]
-                                   0            -0               
-   886 clausSat[c884]
-                                   0            -0               
-   887 clausSat[c885]
-                                   0            -0               
-   888 clausSat[c886]
-                                   0            -0               
-   889 clausSat[c887]
-                                   0            -0               
-   890 clausSat[c888]
-                                   0            -0               
-   891 clausSat[c889]
-                                   0            -0               
-   892 clausSat[c890]
-                                   0            -0               
-   893 clausSat[c891]
-                                   0            -0               
-   894 clausSat[c892]
-                                   0            -0               
-   895 clausSat[c893]
-                                   0            -0               
-   896 clausSat[c894]
-                                   0            -0               
-   897 clausSat[c895]
-                                   0            -0               
-   898 clausSat[c896]
-                                   0            -0               
-   899 clausSat[c897]
-                                   0            -0               
-   900 clausSat[c898]
-                                   0            -0               
-   901 clausSat[c899]
-                                   0            -0               
-   902 clausSat[c900]
-                                   0            -0               
-   903 clausSat[c901]
-                                   0            -0               
-   904 clausSat[c902]
-                                   0            -0               
-   905 clausSat[c903]
-                                   0            -0               
-   906 clausSat[c904]
-                                   0            -0               
-   907 clausSat[c905]
-                                   0            -0               
-   908 clausSat[c906]
-                                   0            -0               
-   909 clausSat[c907]
-                                   0            -0               
-   910 clausSat[c908]
-                                   0            -0               
-   911 clausSat[c909]
-                                   0            -0               
-   912 clausSat[c910]
-                                   0            -0               
-   913 clausSat[c911]
-                                   0            -0               
-   914 clausSat[c912]
-                                   0            -0               
-   915 clausSat[c913]
-                                   0            -0               
-   916 clausSat[c914]
-                                   0            -0               
-   917 clausSat[c915]
-                                   0            -0               
-   918 clausSat[c916]
-                                   0            -0               
-   919 clausSat[c917]
-                                   0            -0               
-   920 clausSat[c918]
-                                   0             1               
-   921 clausSat[c919]
-                                   0             1               
-   922 clausSat[c920]
-                                   0            -0               
-   923 clausSat[c921]
-                                   0            -0               
-   924 clausSat[c922]
-                                   0            -0               
-   925 clausSat[c923]
-                                   0            -0               
-   926 clausSat[c924]
-                                   0            -0               
-   927 clausSat[c925]
-                                   0            -0               
-   928 clausSat[c926]
-                                   0            -0               
-   929 clausSat[c927]
-                                   0            -0               
-   930 clausSat[c928]
-                                   0            -0               
-   931 clausSat[c929]
-                                   0            -0               
-   932 clausSat[c930]
-                                   0            -0               
-   933 clausSat[c931]
-                                   0            -0               
-   934 clausSat[c932]
-                                   0            -0               
-   935 clausSat[c933]
-                                   0            -0               
-   936 clausSat[c934]
-                                   0            -0               
-   937 clausSat[c935]
-                                   0            -0               
-   938 clausSat[c936]
-                                   0            -0               
-   939 clausSat[c937]
-                                   0            -0               
-   940 clausSat[c938]
-                                   0            -0               
-   941 clausSat[c939]
-                                   0            -0               
-   942 clausSat[c940]
-                                   0            -0               
-   943 clausSat[c941]
-                                   0            -0               
-   944 clausSat[c942]
-                                   0            -0               
-   945 clausSat[c943]
-                                   0            -0               
-   946 clausSat[c944]
-                                   0            -0               
-   947 clausSat[c945]
-                                   0            -0               
-   948 clausSat[c946]
-                                   0            -0               
-   949 clausSat[c947]
-                                   0            -0               
-   950 clausSat[c948]
-                                   0            -0               
-   951 clausSat[c949]
-                                   0            -0               
-   952 clausSat[c950]
-                                   0            -0               
-   953 clausSat[c951]
-                                   0            -0               
-   954 clausSat[c952]
-                                   0            -0               
-   955 clausSat[c953]
-                                   0            -0               
-   956 clausSat[c954]
-                                   0            -0               
-   957 clausSat[c955]
-                                   0            -0               
-   958 clausSat[c956]
-                                   0            -0               
-   959 clausSat[c957]
-                                   0            -0               
-   960 clausSat[c958]
-                                   0            -0               
-   961 clausSat[c959]
-                                   0            -0               
-   962 clausSat[c960]
-                                   0            -0               
-   963 clausSat[c961]
-                                   0            -0               
-   964 clausSat[c962]
-                                   0            -0               
-   965 clausSat[c963]
-                                   0            -0               
-   966 clausSat[c964]
-                                   0            -0               
-   967 clausSat[c965]
-                                   0            -0               
-   968 clausSat[c966]
-                                   0            -0               
-   969 clausSat[c967]
-                                   0            -0               
-   970 clausSat[c968]
-                                   0            -0               
-   971 clausSat[c969]
-                                   0            -0               
-   972 clausSat[c970]
-                                   0            -0               
-   973 clausSat[c971]
-                                   0            -0               
-   974 clausSat[c972]
-                                   0            -0               
-   975 clausSat[c973]
-                                   0            -0               
-   976 clausSat[c974]
-                                   0            -0               
-   977 clausSat[c975]
-                                   0            -0               
-   978 clausSat[c976]
-                                   0            -0               
-   979 clausSat[c977]
-                                   0            -0               
-   980 clausSat[c978]
-                                   0            -0               
-   981 clausSat[c979]
-                                   0            -0               
-   982 clausSat[c980]
-                                   0            -0               
-   983 clausSat[c981]
-                                   0            -0               
-   984 clausSat[c982]
-                                   0            -0               
-   985 clausSat[c983]
-                                   0            -0               
-   986 clausSat[c984]
-                                   0            -0               
-   987 clausSat[c985]
-                                   0            -0               
-   988 clausSat[c986]
-                                   0            -0               
-   989 clausSat[c987]
-                                   0            -0               
-   990 clausSat[c988]
-                                   0            -0               
-   991 clausSat[c989]
-                                   0            -0               
-   992 clausSat[c990]
-                                   0            -0               
-   993 clausSat[c991]
-                                   0            -0               
-   994 clausSat[c992]
-                                   0            -0               
-   995 clausSat[c993]
-                                   0            -0               
-   996 clausSat[c994]
-                                   0            -0               
-   997 clausSat[c995]
-                                   0            -0               
-   998 clausSat[c996]
-                                   0            -0               
-   999 clausSat[c997]
-                                   0            -0               
-  1000 clausSat[c998]
-                                   0            -0               
-  1001 clausSat[c999]
-                                   0            -0               
-  1002 clausSat[c1000]
-                                   0            -0               
-  1003 clausSat[c1001]
-                                   0            -0               
-  1004 clausSat[c1002]
-                                   0            -0               
-  1005 clausSat[c1003]
-                                   0            -0               
-  1006 clausSat[c1004]
-                                   0             1               
-  1007 clausSat[c1005]
-                                   0             1               
-  1008 clausSat[c1006]
-                                   0            -0               
-  1009 clausSat[c1007]
-                                   0            -0               
-  1010 clausSat[c1008]
-                                   0            -0               
-  1011 clausSat[c1009]
-                                   0            -0               
-  1012 clausSat[c1010]
-                                   0            -0               
-  1013 clausSat[c1011]
-                                   0            -0               
-  1014 clausSat[c1012]
-                                   0            -0               
-  1015 clausSat[c1013]
-                                   0            -0               
-  1016 clausSat[c1014]
-                                   0            -0               
-  1017 clausSat[c1015]
-                                   0            -0               
-  1018 clausSat[c1016]
-                                   0            -0               
-  1019 clausSat[c1017]
-                                   0            -0               
-  1020 clausSat[c1018]
-                                   0             1               
-  1021 clausSat[c1019]
-                                   0             1               
-  1022 clausSat[c1020]
-                                   0            -0               
-  1023 clausSat[c1021]
-                                   0            -0               
-  1024 clausSat[c1022]
-                                   0             1               
-  1025 clausSat[c1023]
-                                   0             1               
-  1026 clausSat[c1024]
-                                   0            -0               
-  1027 clausSat[c1025]
-                                   0            -0               
-  1028 clausSat[c1026]
-                                   0             1               
-  1029 clausSat[c1027]
-                                   0             1               
-  1030 clausSat[c1028]
-                                   0            -0               
-  1031 clausSat[c1029]
-                                   0            -0               
-  1032 clausSat[c1030]
-                                   0            -0               
-  1033 clausSat[c1031]
-                                   0            -0               
-  1034 clausSat[c1032]
-                                   0             1               
-  1035 clausSat[c1033]
-                                   0             1               
-  1036 clausSat[c1034]
-                                   0            -0               
-  1037 clausSat[c1035]
-                                   0            -0               
-  1038 clausSat[c1036]
-                                   0            -0               
-  1039 clausSat[c1037]
-                                   0            -0               
-  1040 clausSat[c1038]
-                                   0            -0               
-  1041 clausSat[c1039]
-                                   0            -0               
-  1042 clausSat[c1040]
-                                   0            -0               
-  1043 clausSat[c1041]
-                                   0            -0               
-  1044 clausSat[c1042]
-                                   0             1               
-  1045 clausSat[c1043]
-                                   0             1               
-  1046 clausSat[c1044]
-                                   0             1               
-  1047 clausSat[c1045]
-                                   0             1               
-  1048 clausSat[c1046]
-                                   0            -0               
-  1049 clausSat[c1047]
-                                   0            -0               
-  1050 clausSat[c1048]
-                                   0            -0               
-  1051 clausSat[c1049]
-                                   0            -0               
-  1052 clausSat[c1050]
-                                   0            -0               
-  1053 clausSat[c1051]
-                                   0            -0               
-  1054 clausSat[c1052]
-                                   0            -0               
-  1055 clausSat[c1053]
-                                   0            -0               
-  1056 clausSat[c1054]
-                                   0            -0               
-  1057 clausSat[c1055]
-                                   0            -0               
-  1058 clausSat[c1056]
-                                   0            -0               
-  1059 clausSat[c1057]
-                                   0            -0               
-  1060 clausSat[c1058]
-                                   0            -0               
-  1061 clausSat[c1059]
-                                   0            -0               
-  1062 clausSat[c1060]
-                                   0            -0               
-  1063 clausSat[c1061]
-                                   0            -0               
-  1064 clausSat[c1062]
-                                   0            -0               
-  1065 clausSat[c1063]
-                                   0            -0               
-  1066 clausSat[c1064]
-                                   0            -0               
-  1067 clausSat[c1065]
-                                   0            -0               
-  1068 clausSat[c1066]
-                                   0            -0               
-  1069 clausSat[c1067]
-                                   0            -0               
-  1070 clausSat[c1068]
-                                   0            -0               
-  1071 clausSat[c1069]
-                                   0            -0               
-  1072 clausSat[c1070]
-                                   0            -0               
-  1073 clausSat[c1071]
-                                   0            -0               
-  1074 clausSat[c1072]
-                                   0            -0               
-  1075 clausSat[c1073]
-                                   0            -0               
-  1076 clausSat[c1074]
-                                   0            -0               
-  1077 clausSat[c1075]
-                                   0            -0               
-  1078 clausSat[c1076]
-                                   0            -0               
-  1079 clausSat[c1077]
-                                   0            -0               
-  1080 clausSat[c1078]
-                                   0            -0               
-  1081 clausSat[c1079]
-                                   0            -0               
-  1082 clausSat[c1080]
-                                   0            -0               
-  1083 clausSat[c1081]
-                                   0            -0               
-  1084 clausSat[c1082]
-                                   0            -0               
-  1085 clausSat[c1083]
-                                   0            -0               
-  1086 clausSat[c1084]
-                                   0            -0               
-  1087 clausSat[c1085]
-                                   0            -0               
-  1088 clausSat[c1086]
-                                   0            -0               
-  1089 clausSat[c1087]
-                                   0            -0               
-  1090 clausSat[c1088]
-                                   0            -0               
-  1091 clausSat[c1089]
-                                   0            -0               
-  1092 clausSat[c1090]
-                                   0            -0               
-  1093 clausSat[c1091]
-                                   0            -0               
-  1094 clausSat[c1092]
-                                   0            -0               
-  1095 clausSat[c1093]
-                                   0            -0               
-  1096 clausSat[c1094]
-                                   0            -0               
-  1097 clausSat[c1095]
-                                   0            -0               
-  1098 clausSat[c1096]
-                                   0            -0               
-  1099 clausSat[c1097]
-                                   0            -0               
-  1100 clausSat[c1098]
-                                   0            -0               
-  1101 clausSat[c1099]
-                                   0            -0               
-  1102 clausSat[c1100]
-                                   0            -0               
-  1103 clausSat[c1101]
-                                   0            -0               
-  1104 clausSat[c1102]
-                                   0            -0               
-  1105 clausSat[c1103]
-                                   0            -0               
-  1106 clausSat[c1104]
-                                   0            -0               
-  1107 clausSat[c1105]
-                                   0            -0               
-  1108 clausSat[c1106]
-                                   0            -0               
-  1109 clausSat[c1107]
-                                   0            -0               
-  1110 clausSat[c1108]
-                                   0            -0               
-  1111 clausSat[c1109]
-                                   0            -0               
-  1112 clausSat[c1110]
-                                   0            -0               
-  1113 clausSat[c1111]
-                                   0            -0               
-  1114 clausSat[c1112]
-                                   0            -0               
-  1115 clausSat[c1113]
-                                   0            -0               
-  1116 clausSat[c1114]
-                                   0            -0               
-  1117 clausSat[c1115]
-                                   0            -0               
-  1118 clausSat[c1116]
-                                   0            -0               
-  1119 clausSat[c1117]
-                                   0            -0               
-  1120 clausSat[c1118]
-                                   0            -0               
-  1121 clausSat[c1119]
-                                   0            -0               
-  1122 clausSat[c1120]
-                                   0            -0               
-  1123 clausSat[c1121]
-                                   0            -0               
-  1124 clausSat[c1122]
-                                   0            -0               
-  1125 clausSat[c1123]
-                                   0            -0               
-  1126 clausSat[c1124]
-                                   0            -0               
-  1127 clausSat[c1125]
-                                   0            -0               
-  1128 clausSat[c1126]
-                                   0            -0               
-  1129 clausSat[c1127]
-                                   0            -0               
-  1130 clausSat[c1128]
-                                   0            -0               
-  1131 clausSat[c1129]
-                                   0            -0               
-  1132 clausSat[c1130]
-                                   0            -0               
-  1133 clausSat[c1131]
-                                   0            -0               
-  1134 clausSat[c1132]
-                                   0            -0               
-  1135 clausSat[c1133]
-                                   0            -0               
-  1136 clausSat[c1134]
-                                   0            -0               
-  1137 clausSat[c1135]
-                                   0            -0               
-  1138 clausSat[c1136]
-                                   0            -0               
-  1139 clausSat[c1137]
-                                   0            -0               
-  1140 clausSat[c1138]
-                                   0             1               
-  1141 clausSat[c1139]
-                                   0             1               
-  1142 clausBin[c0]                0                          -0 
-  1143 clausBin[c1]                0                          -0 
-  1144 clausBin[c2]                0                          -0 
-  1145 clausBin[c3]                0                          -0 
-  1146 clausBin[c4]                0                          -0 
-  1147 clausBin[c5]                0                          -0 
-  1148 clausBin[c6]                0                          -0 
-  1149 clausBin[c7]                0                          -0 
-  1150 clausBin[c8]                0                          -0 
-  1151 clausBin[c9]                0                          -0 
-  1152 clausBin[c10]
-                                   0                          -0 
-  1153 clausBin[c11]
-                                   0                          -0 
-  1154 clausBin[c12]
-                                   0                          -0 
-  1155 clausBin[c13]
-                                   0                          -0 
-  1156 clausBin[c14]
-                                   0                          -0 
-  1157 clausBin[c15]
-                                   0                          -0 
-  1158 clausBin[c16]
-                                   0                          -0 
-  1159 clausBin[c17]
-                                   0                          -0 
-  1160 clausBin[c18]
-                                   0                          -0 
-  1161 clausBin[c19]
-                                   0                          -0 
-  1162 clausBin[c20]
-                                   0                          -0 
-  1163 clausBin[c21]
-                                   0                          -0 
-  1164 clausBin[c22]
-                                   0                          -0 
-  1165 clausBin[c23]
-                                   0                          -0 
-  1166 clausBin[c24]
-                                   0                          -0 
-  1167 clausBin[c25]
-                                   0                          -0 
-  1168 clausBin[c26]
-                                   0                          -0 
-  1169 clausBin[c27]
-                                   0                          -0 
-  1170 clausBin[c28]
-                                   0                          -0 
-  1171 clausBin[c29]
-                                   0                          -0 
-  1172 clausBin[c30]
-                                   0                          -0 
-  1173 clausBin[c31]
-                                   0                          -0 
-  1174 clausBin[c32]
-                                   0                          -0 
-  1175 clausBin[c33]
-                                   0                          -0 
-  1176 clausBin[c34]
-                                   0                          -0 
-  1177 clausBin[c35]
-                                   0                          -0 
-  1178 clausBin[c36]
-                                   0                          -0 
-  1179 clausBin[c37]
-                                   0                          -0 
-  1180 clausBin[c38]
-                                   0                          -0 
-  1181 clausBin[c39]
-                                   0                          -0 
-  1182 clausBin[c40]
-                                   0                          -0 
-  1183 clausBin[c41]
-                                   0                          -0 
-  1184 clausBin[c42]
-                                   0                          -0 
-  1185 clausBin[c43]
-                                   0                          -0 
-  1186 clausBin[c44]
-                                   0                          -0 
-  1187 clausBin[c45]
-                                   0                          -0 
-  1188 clausBin[c46]
-                                   0                          -0 
-  1189 clausBin[c47]
-                                   0                          -0 
-  1190 clausBin[c48]
-                                   0                          -0 
-  1191 clausBin[c49]
-                                   0                          -0 
-  1192 clausBin[c50]
-                                   0                          -0 
-  1193 clausBin[c51]
-                                   0                          -0 
-  1194 clausBin[c52]
-                                   0                          -0 
-  1195 clausBin[c53]
-                                   0                          -0 
-  1196 clausBin[c54]
-                                   0                          -0 
-  1197 clausBin[c55]
-                                   0                          -0 
-  1198 clausBin[c56]
-                                   0                          -0 
-  1199 clausBin[c57]
-                                   0                          -0 
-  1200 clausBin[c58]
-                                   0                          -0 
-  1201 clausBin[c59]
-                                   0                          -0 
-  1202 clausBin[c60]
-                                   0                          -0 
-  1203 clausBin[c61]
-                                   0                          -0 
-  1204 clausBin[c62]
-                                   0                          -0 
-  1205 clausBin[c63]
-                                   0                          -0 
-  1206 clausBin[c64]
-                                   0                          -0 
-  1207 clausBin[c65]
-                                   0                          -0 
-  1208 clausBin[c66]
-                                   0                          -0 
-  1209 clausBin[c67]
-                                   0                          -0 
-  1210 clausBin[c68]
-                                   0                          -0 
-  1211 clausBin[c69]
-                                   0                          -0 
-  1212 clausBin[c70]
-                                   0                          -0 
-  1213 clausBin[c71]
-                                   0                          -0 
-  1214 clausBin[c72]
-                                   0                          -0 
-  1215 clausBin[c73]
-                                   0                          -0 
-  1216 clausBin[c74]
-                                   0                          -0 
-  1217 clausBin[c75]
-                                   0                          -0 
-  1218 clausBin[c76]
-                                   0                          -0 
-  1219 clausBin[c77]
-                                   0                          -0 
-  1220 clausBin[c78]
-                                   0                          -0 
-  1221 clausBin[c79]
-                                   0                          -0 
-  1222 clausBin[c80]
-                                   0                          -0 
-  1223 clausBin[c81]
-                                   0                          -0 
-  1224 clausBin[c82]
-                                   0                          -0 
-  1225 clausBin[c83]
-                                   0                          -0 
-  1226 clausBin[c84]
-                                   0                          -0 
-  1227 clausBin[c85]
-                                   0                          -0 
-  1228 clausBin[c86]
-                                   0                          -0 
-  1229 clausBin[c87]
-                                   0                          -0 
-  1230 clausBin[c88]
-                                   0                          -0 
-  1231 clausBin[c89]
-                                   0                          -0 
-  1232 clausBin[c90]
-                                   0                          -0 
-  1233 clausBin[c91]
-                                   0                          -0 
-  1234 clausBin[c92]
-                                   0                          -0 
-  1235 clausBin[c93]
-                                   0                          -0 
-  1236 clausBin[c94]
-                                   0                          -0 
-  1237 clausBin[c95]
-                                   0                          -0 
-  1238 clausBin[c96]
-                                   0                          -0 
-  1239 clausBin[c97]
-                                   0                          -0 
-  1240 clausBin[c98]
-                                   0                          -0 
-  1241 clausBin[c99]
-                                   0                          -0 
-  1242 clausBin[c100]
-                                   0                          -0 
-  1243 clausBin[c101]
-                                   0                          -0 
-  1244 clausBin[c102]
-                                   0                          -0 
-  1245 clausBin[c103]
-                                   0                          -0 
-  1246 clausBin[c104]
-                                   0                          -0 
-  1247 clausBin[c105]
-                                   0                          -0 
-  1248 clausBin[c106]
-                                   0                          -0 
-  1249 clausBin[c107]
-                                   0                          -0 
-  1250 clausBin[c108]
-                                   0                          -0 
-  1251 clausBin[c109]
-                                   0                          -0 
-  1252 clausBin[c110]
-                                   0                          -0 
-  1253 clausBin[c111]
-                                   0                          -0 
-  1254 clausBin[c112]
-                                   0                          -0 
-  1255 clausBin[c113]
-                                   0                          -0 
-  1256 clausBin[c114]
-                                   0                          -0 
-  1257 clausBin[c115]
-                                   0                          -0 
-  1258 clausBin[c116]
-                                   0                          -0 
-  1259 clausBin[c117]
-                                   0                          -0 
-  1260 clausBin[c118]
-                                   0                          -0 
-  1261 clausBin[c119]
-                                   0                          -0 
-  1262 clausBin[c120]
-                                   0                          -0 
-  1263 clausBin[c121]
-                                   0                          -0 
-  1264 clausBin[c122]
-                                   0                          -0 
-  1265 clausBin[c123]
-                                   0                          -0 
-  1266 clausBin[c124]
-                                   0                          -0 
-  1267 clausBin[c125]
-                                   0                          -0 
-  1268 clausBin[c126]
-                                   0                          -0 
-  1269 clausBin[c127]
-                                   0                          -0 
-  1270 clausBin[c128]
-                                   0                          -0 
-  1271 clausBin[c129]
-                                   0                          -0 
-  1272 clausBin[c130]
-                                   0                          -0 
-  1273 clausBin[c131]
-                                   0                          -0 
-  1274 clausBin[c132]
-                                   0                          -0 
-  1275 clausBin[c133]
-                                   0                          -0 
-  1276 clausBin[c134]
-                                   0                          -0 
-  1277 clausBin[c135]
-                                   0                          -0 
-  1278 clausBin[c136]
-                                   0                          -0 
-  1279 clausBin[c137]
-                                   0                          -0 
-  1280 clausBin[c138]
-                                   0                          -0 
-  1281 clausBin[c139]
-                                   0                          -0 
-  1282 clausBin[c140]
-                                   0                          -0 
-  1283 clausBin[c141]
-                                   0                          -0 
-  1284 clausBin[c142]
-                                   0                          -0 
-  1285 clausBin[c143]
-                                   0                          -0 
-  1286 clausBin[c144]
-                                   0                          -0 
-  1287 clausBin[c145]
-                                   0                          -0 
-  1288 clausBin[c146]
-                                   0                          -0 
-  1289 clausBin[c147]
-                                   0                          -0 
-  1290 clausBin[c148]
-                                   0                          -0 
-  1291 clausBin[c149]
-                                   0                          -0 
-  1292 clausBin[c150]
-                                   0                          -0 
-  1293 clausBin[c151]
-                                   0                          -0 
-  1294 clausBin[c152]
-                                   0                          -0 
-  1295 clausBin[c153]
-                                   0                          -0 
-  1296 clausBin[c154]
-                                   0                          -0 
-  1297 clausBin[c155]
-                                   0                          -0 
-  1298 clausBin[c156]
-                                   0                          -0 
-  1299 clausBin[c157]
-                                   0                          -0 
-  1300 clausBin[c158]
-                                   0                          -0 
-  1301 clausBin[c159]
-                                   0                          -0 
-  1302 clausBin[c160]
-                                   0                          -0 
-  1303 clausBin[c161]
-                                   0                          -0 
-  1304 clausBin[c162]
-                                   0                          -0 
-  1305 clausBin[c163]
-                                   0                          -0 
-  1306 clausBin[c164]
-                                   0                          -0 
-  1307 clausBin[c165]
-                                   0                          -0 
-  1308 clausBin[c166]
-                                   0                          -0 
-  1309 clausBin[c167]
-                                   0                          -0 
-  1310 clausBin[c168]
-                                   0                          -0 
-  1311 clausBin[c169]
-                                   0                          -0 
-  1312 clausBin[c170]
-                                   0                          -0 
-  1313 clausBin[c171]
-                                   0                          -0 
-  1314 clausBin[c172]
-                                   0                          -0 
-  1315 clausBin[c173]
-                                   0                          -0 
-  1316 clausBin[c174]
-                                   0                          -0 
-  1317 clausBin[c175]
-                                   0                          -0 
-  1318 clausBin[c176]
-                                   0                          -0 
-  1319 clausBin[c177]
-                                   0                          -0 
-  1320 clausBin[c178]
-                                   0                          -0 
-  1321 clausBin[c179]
-                                   0                          -0 
-  1322 clausBin[c180]
-                                   0                          -0 
-  1323 clausBin[c181]
-                                   0                          -0 
-  1324 clausBin[c182]
-                                   0                          -0 
-  1325 clausBin[c183]
-                                   0                          -0 
-  1326 clausBin[c184]
-                                   0                          -0 
-  1327 clausBin[c185]
-                                   0                          -0 
-  1328 clausBin[c186]
-                                   0                          -0 
-  1329 clausBin[c187]
-                                   0                          -0 
-  1330 clausBin[c188]
-                                   0                          -0 
-  1331 clausBin[c189]
-                                   0                          -0 
-  1332 clausBin[c190]
-                                   0                          -0 
-  1333 clausBin[c191]
-                                   0                          -0 
-  1334 clausBin[c192]
-                                   0                          -0 
-  1335 clausBin[c193]
-                                   0                          -0 
-  1336 clausBin[c194]
-                                   0                          -0 
-  1337 clausBin[c195]
-                                   0                          -0 
-  1338 clausBin[c196]
-                                   0                          -0 
-  1339 clausBin[c197]
-                                   0                          -0 
-  1340 clausBin[c198]
-                                   0                          -0 
-  1341 clausBin[c199]
-                                   0                          -0 
-  1342 clausBin[c200]
-                                   0                          -0 
-  1343 clausBin[c201]
-                                   0                          -0 
-  1344 clausBin[c202]
-                                   0                          -0 
-  1345 clausBin[c203]
-                                   0                          -0 
-  1346 clausBin[c204]
-                                   0                          -0 
-  1347 clausBin[c205]
-                                   0                          -0 
-  1348 clausBin[c206]
-                                   0                          -0 
-  1349 clausBin[c207]
-                                   0                          -0 
-  1350 clausBin[c208]
-                                   0                          -0 
-  1351 clausBin[c209]
-                                   0                          -0 
-  1352 clausBin[c210]
-                                   0                          -0 
-  1353 clausBin[c211]
-                                   0                          -0 
-  1354 clausBin[c212]
-                                   0                          -0 
-  1355 clausBin[c213]
-                                   0                          -0 
-  1356 clausBin[c214]
-                                   0                          -0 
-  1357 clausBin[c215]
-                                   0                          -0 
-  1358 clausBin[c216]
-                                   0                          -0 
-  1359 clausBin[c217]
-                                   0                          -0 
-  1360 clausBin[c218]
-                                   0                          -0 
-  1361 clausBin[c219]
-                                   0                          -0 
-  1362 clausBin[c220]
-                                   0                          -0 
-  1363 clausBin[c221]
-                                   0                          -0 
-  1364 clausBin[c222]
-                                   0                          -0 
-  1365 clausBin[c223]
-                                   0                          -0 
-  1366 clausBin[c224]
-                                   0                          -0 
-  1367 clausBin[c225]
-                                   0                          -0 
-  1368 clausBin[c226]
-                                   0                          -0 
-  1369 clausBin[c227]
-                                   0                          -0 
-  1370 clausBin[c228]
-                                   0                          -0 
-  1371 clausBin[c229]
-                                   0                          -0 
-  1372 clausBin[c230]
-                                   0                          -0 
-  1373 clausBin[c231]
-                                   0                          -0 
-  1374 clausBin[c232]
-                                   0                          -0 
-  1375 clausBin[c233]
-                                   0                          -0 
-  1376 clausBin[c234]
-                                   0                          -0 
-  1377 clausBin[c235]
-                                   0                          -0 
-  1378 clausBin[c236]
-                                   0                          -0 
-  1379 clausBin[c237]
-                                   0                          -0 
-  1380 clausBin[c238]
-                                   0                          -0 
-  1381 clausBin[c239]
-                                   0                          -0 
-  1382 clausBin[c240]
-                                   0                          -0 
-  1383 clausBin[c241]
-                                   0                          -0 
-  1384 clausBin[c242]
-                                   0                          -0 
-  1385 clausBin[c243]
-                                   0                          -0 
-  1386 clausBin[c244]
-                                   0                          -0 
-  1387 clausBin[c245]
-                                   0                          -0 
-  1388 clausBin[c246]
-                                   0                          -0 
-  1389 clausBin[c247]
-                                   0                          -0 
-  1390 clausBin[c248]
-                                   0                          -0 
-  1391 clausBin[c249]
-                                   0                          -0 
-  1392 clausBin[c250]
-                                   0                          -0 
-  1393 clausBin[c251]
-                                   0                          -0 
-  1394 clausBin[c252]
-                                   0                          -0 
-  1395 clausBin[c253]
-                                   0                          -0 
-  1396 clausBin[c254]
-                                   0                          -0 
-  1397 clausBin[c255]
-                                   0                          -0 
-  1398 clausBin[c256]
-                                   0                          -0 
-  1399 clausBin[c257]
-                                   0                          -0 
-  1400 clausBin[c258]
-                                   0                          -0 
-  1401 clausBin[c259]
-                                   0                          -0 
-  1402 clausBin[c260]
-                                   0                          -0 
-  1403 clausBin[c261]
-                                   0                          -0 
-  1404 clausBin[c262]
-                                   0                          -0 
-  1405 clausBin[c263]
-                                   0                          -0 
-  1406 clausBin[c264]
-                                   0                          -0 
-  1407 clausBin[c265]
-                                   0                          -0 
-  1408 clausBin[c266]
-                                   0                          -0 
-  1409 clausBin[c267]
-                                   0                          -0 
-  1410 clausBin[c268]
-                                   0                          -0 
-  1411 clausBin[c269]
-                                   0                          -0 
-  1412 clausBin[c270]
-                                   0                          -0 
-  1413 clausBin[c271]
-                                   0                          -0 
-  1414 clausBin[c272]
-                                   0                          -0 
-  1415 clausBin[c273]
-                                   0                          -0 
-  1416 clausBin[c274]
-                                   0                          -0 
-  1417 clausBin[c275]
-                                   0                          -0 
-  1418 clausBin[c276]
-                                   0                          -0 
-  1419 clausBin[c277]
-                                   0                          -0 
-  1420 clausBin[c278]
-                                   0                          -0 
-  1421 clausBin[c279]
-                                   0                          -0 
-  1422 clausBin[c280]
-                                   0                          -0 
-  1423 clausBin[c281]
-                                   0                          -0 
-  1424 clausBin[c282]
-                                   0                          -0 
-  1425 clausBin[c283]
-                                   0                          -0 
-  1426 clausBin[c284]
-                                   0                          -0 
-  1427 clausBin[c285]
-                                   0                          -0 
-  1428 clausBin[c286]
-                                   0                          -0 
-  1429 clausBin[c287]
-                                   0                          -0 
-  1430 clausBin[c288]
-                                   0                          -0 
-  1431 clausBin[c289]
-                                   0                          -0 
-  1432 clausBin[c290]
-                                   0                          -0 
-  1433 clausBin[c291]
-                                   0                          -0 
-  1434 clausBin[c292]
-                                   0                          -0 
-  1435 clausBin[c293]
-                                   0                          -0 
-  1436 clausBin[c294]
-                                   0                          -0 
-  1437 clausBin[c295]
-                                   0                          -0 
-  1438 clausBin[c296]
-                                   0                          -0 
-  1439 clausBin[c297]
-                                   0                          -0 
-  1440 clausBin[c298]
-                                   0                          -0 
-  1441 clausBin[c299]
-                                   0                          -0 
-  1442 clausBin[c300]
-                                   0                          -0 
-  1443 clausBin[c301]
-                                   0                          -0 
-  1444 clausBin[c302]
-                                   0                          -0 
-  1445 clausBin[c303]
-                                   0                          -0 
-  1446 clausBin[c304]
-                                   0                          -0 
-  1447 clausBin[c305]
-                                   0                          -0 
-  1448 clausBin[c306]
-                                   0                          -0 
-  1449 clausBin[c307]
-                                   0                          -0 
-  1450 clausBin[c308]
-                                   0                          -0 
-  1451 clausBin[c309]
-                                   0                          -0 
-  1452 clausBin[c310]
-                                   0                          -0 
-  1453 clausBin[c311]
-                                   0                          -0 
-  1454 clausBin[c312]
-                                   0                          -0 
-  1455 clausBin[c313]
-                                   0                          -0 
-  1456 clausBin[c314]
-                                   0                          -0 
-  1457 clausBin[c315]
-                                   0                          -0 
-  1458 clausBin[c316]
-                                   0                          -0 
-  1459 clausBin[c317]
-                                   0                          -0 
-  1460 clausBin[c318]
-                                   0                          -0 
-  1461 clausBin[c319]
-                                   0                          -0 
-  1462 clausBin[c320]
-                                   0                          -0 
-  1463 clausBin[c321]
-                                   0                          -0 
-  1464 clausBin[c322]
-                                   0                          -0 
-  1465 clausBin[c323]
-                                   0                          -0 
-  1466 clausBin[c324]
-                                   0                          -0 
-  1467 clausBin[c325]
-                                   0                          -0 
-  1468 clausBin[c326]
-                                   0                          -0 
-  1469 clausBin[c327]
-                                   0                          -0 
-  1470 clausBin[c328]
-                                   0                          -0 
-  1471 clausBin[c329]
-                                   0                          -0 
-  1472 clausBin[c330]
-                                   0                          -0 
-  1473 clausBin[c331]
-                                   0                          -0 
-  1474 clausBin[c332]
-                                   0                          -0 
-  1475 clausBin[c333]
-                                   0                          -0 
-  1476 clausBin[c334]
-                                   0                          -0 
-  1477 clausBin[c335]
-                                   0                          -0 
-  1478 clausBin[c336]
-                                   0                          -0 
-  1479 clausBin[c337]
-                                   0                          -0 
-  1480 clausBin[c338]
-                                   0                          -0 
-  1481 clausBin[c339]
-                                   0                          -0 
-  1482 clausBin[c340]
-                                   0                          -0 
-  1483 clausBin[c341]
-                                   0                          -0 
-  1484 clausBin[c342]
-                                   0                          -0 
-  1485 clausBin[c343]
-                                   0                          -0 
-  1486 clausBin[c344]
-                                   0                          -0 
-  1487 clausBin[c345]
-                                   0                          -0 
-  1488 clausBin[c346]
-                                   0                          -0 
-  1489 clausBin[c347]
-                                   0                          -0 
-  1490 clausBin[c348]
-                                   0                          -0 
-  1491 clausBin[c349]
-                                   0                          -0 
-  1492 clausBin[c350]
-                                   0                          -0 
-  1493 clausBin[c351]
-                                   0                          -0 
-  1494 clausBin[c352]
-                                   0                          -0 
-  1495 clausBin[c353]
-                                   0                          -0 
-  1496 clausBin[c354]
-                                   0                          -0 
-  1497 clausBin[c355]
-                                   0                          -0 
-  1498 clausBin[c356]
-                                   0                          -0 
-  1499 clausBin[c357]
-                                   0                          -0 
-  1500 clausBin[c358]
-                                   0                          -0 
-  1501 clausBin[c359]
-                                   0                          -0 
-  1502 clausBin[c360]
-                                   0                          -0 
-  1503 clausBin[c361]
-                                   0                          -0 
-  1504 clausBin[c362]
-                                   0                          -0 
-  1505 clausBin[c363]
-                                   0                          -0 
-  1506 clausBin[c364]
-                                   0                          -0 
-  1507 clausBin[c365]
-                                   0                          -0 
-  1508 clausBin[c366]
-                                   0                          -0 
-  1509 clausBin[c367]
-                                   0                          -0 
-  1510 clausBin[c368]
-                                   0                          -0 
-  1511 clausBin[c369]
-                                   0                          -0 
-  1512 clausBin[c370]
-                                   0                          -0 
-  1513 clausBin[c371]
-                                   0                          -0 
-  1514 clausBin[c372]
-                                   0                          -0 
-  1515 clausBin[c373]
-                                   0                          -0 
-  1516 clausBin[c374]
-                                   0                          -0 
-  1517 clausBin[c375]
-                                   0                          -0 
-  1518 clausBin[c376]
-                                   0                          -0 
-  1519 clausBin[c377]
-                                   0                          -0 
-  1520 clausBin[c378]
-                                   0                          -0 
-  1521 clausBin[c379]
-                                   0                          -0 
-  1522 clausBin[c380]
-                                   0                          -0 
-  1523 clausBin[c381]
-                                   0                          -0 
-  1524 clausBin[c382]
-                                   0                          -0 
-  1525 clausBin[c383]
-                                   0                          -0 
-  1526 clausBin[c384]
-                                   0                          -0 
-  1527 clausBin[c385]
-                                   0                          -0 
-  1528 clausBin[c386]
-                                   0                          -0 
-  1529 clausBin[c387]
-                                   0                          -0 
-  1530 clausBin[c388]
-                                   0                          -0 
-  1531 clausBin[c389]
-                                   0                          -0 
-  1532 clausBin[c390]
-                                   0                          -0 
-  1533 clausBin[c391]
-                                   0                          -0 
-  1534 clausBin[c392]
-                                   0                          -0 
-  1535 clausBin[c393]
-                                   0                          -0 
-  1536 clausBin[c394]
-                                   0                          -0 
-  1537 clausBin[c395]
-                                   0                          -0 
-  1538 clausBin[c396]
-                                   0                          -0 
-  1539 clausBin[c397]
-                                   0                          -0 
-  1540 clausBin[c398]
-                                   0                          -0 
-  1541 clausBin[c399]
-                                   0                          -0 
-  1542 clausBin[c400]
-                                   0                          -0 
-  1543 clausBin[c401]
-                                   0                          -0 
-  1544 clausBin[c402]
-                                   0                          -0 
-  1545 clausBin[c403]
-                                   0                          -0 
-  1546 clausBin[c404]
-                                   0                          -0 
-  1547 clausBin[c405]
-                                   0                          -0 
-  1548 clausBin[c406]
-                                   0                          -0 
-  1549 clausBin[c407]
-                                   0                          -0 
-  1550 clausBin[c408]
-                                   0                          -0 
-  1551 clausBin[c409]
-                                   0                          -0 
-  1552 clausBin[c410]
-                                   0                          -0 
-  1553 clausBin[c411]
-                                   0                          -0 
-  1554 clausBin[c412]
-                                   0                          -0 
-  1555 clausBin[c413]
-                                   0                          -0 
-  1556 clausBin[c414]
-                                   0                          -0 
-  1557 clausBin[c415]
-                                   0                          -0 
-  1558 clausBin[c416]
-                                   0                          -0 
-  1559 clausBin[c417]
-                                   0                          -0 
-  1560 clausBin[c418]
-                                   0                          -0 
-  1561 clausBin[c419]
-                                   0                          -0 
-  1562 clausBin[c420]
-                                   0                          -0 
-  1563 clausBin[c421]
-                                   0                          -0 
-  1564 clausBin[c422]
-                                   0                          -0 
-  1565 clausBin[c423]
-                                   0                          -0 
-  1566 clausBin[c424]
-                                   0                          -0 
-  1567 clausBin[c425]
-                                   0                          -0 
-  1568 clausBin[c426]
-                                   0                          -0 
-  1569 clausBin[c427]
-                                   0                          -0 
-  1570 clausBin[c428]
-                                   0                          -0 
-  1571 clausBin[c429]
-                                   0                          -0 
-  1572 clausBin[c430]
-                                   0                          -0 
-  1573 clausBin[c431]
-                                   0                          -0 
-  1574 clausBin[c432]
-                                   0                          -0 
-  1575 clausBin[c433]
-                                   0                          -0 
-  1576 clausBin[c434]
-                                   0                          -0 
-  1577 clausBin[c435]
-                                   0                          -0 
-  1578 clausBin[c436]
-                                   0                          -0 
-  1579 clausBin[c437]
-                                   0                          -0 
-  1580 clausBin[c438]
-                                   0                          -0 
-  1581 clausBin[c439]
-                                   0                          -0 
-  1582 clausBin[c440]
-                                   0                          -0 
-  1583 clausBin[c441]
-                                   0                          -0 
-  1584 clausBin[c442]
-                                   0                          -0 
-  1585 clausBin[c443]
-                                   0                          -0 
-  1586 clausBin[c444]
-                                   0                          -0 
-  1587 clausBin[c445]
-                                   0                          -0 
-  1588 clausBin[c446]
-                                   0                          -0 
-  1589 clausBin[c447]
-                                   0                          -0 
-  1590 clausBin[c448]
-                                   0                          -0 
-  1591 clausBin[c449]
-                                   0                          -0 
-  1592 clausBin[c450]
-                                   0                          -0 
-  1593 clausBin[c451]
-                                   0                          -0 
-  1594 clausBin[c452]
-                                   0                          -0 
-  1595 clausBin[c453]
-                                   0                          -0 
-  1596 clausBin[c454]
-                                   0                          -0 
-  1597 clausBin[c455]
-                                   0                          -0 
-  1598 clausBin[c456]
-                                   0                          -0 
-  1599 clausBin[c457]
-                                   0                          -0 
-  1600 clausBin[c458]
-                                   0                          -0 
-  1601 clausBin[c459]
-                                   0                          -0 
-  1602 clausBin[c460]
-                                   0                          -0 
-  1603 clausBin[c461]
-                                   0                          -0 
-  1604 clausBin[c462]
-                                   0                          -0 
-  1605 clausBin[c463]
-                                   0                          -0 
-  1606 clausBin[c464]
-                                   0                          -0 
-  1607 clausBin[c465]
-                                   0                          -0 
-  1608 clausBin[c466]
-                                   0                          -0 
-  1609 clausBin[c467]
-                                   0                          -0 
-  1610 clausBin[c468]
-                                   0                          -0 
-  1611 clausBin[c469]
-                                   0                          -0 
-  1612 clausBin[c470]
-                                   0                          -0 
-  1613 clausBin[c471]
-                                   0                          -0 
-  1614 clausBin[c472]
-                                   0                          -0 
-  1615 clausBin[c473]
-                                   0                          -0 
-  1616 clausBin[c474]
-                                   0                          -0 
-  1617 clausBin[c475]
-                                   0                          -0 
-  1618 clausBin[c476]
-                                   0                          -0 
-  1619 clausBin[c477]
-                                   0                          -0 
-  1620 clausBin[c478]
-                                   0                          -0 
-  1621 clausBin[c479]
-                                   0                          -0 
-  1622 clausBin[c480]
-                                   0                          -0 
-  1623 clausBin[c481]
-                                   0                          -0 
-  1624 clausBin[c482]
-                                   0                          -0 
-  1625 clausBin[c483]
-                                   0                          -0 
-  1626 clausBin[c484]
-                                   0                          -0 
-  1627 clausBin[c485]
-                                   0                          -0 
-  1628 clausBin[c486]
-                                   0                          -0 
-  1629 clausBin[c487]
-                                   0                          -0 
-  1630 clausBin[c488]
-                                   0                          -0 
-  1631 clausBin[c489]
-                                   0                          -0 
-  1632 clausBin[c490]
-                                   0                          -0 
-  1633 clausBin[c491]
-                                   0                          -0 
-  1634 clausBin[c492]
-                                   0                          -0 
-  1635 clausBin[c493]
-                                   0                          -0 
-  1636 clausBin[c494]
-                                   0                          -0 
-  1637 clausBin[c495]
-                                   0                          -0 
-  1638 clausBin[c496]
-                                   0                          -0 
-  1639 clausBin[c497]
-                                   0                          -0 
-  1640 clausBin[c498]
-                                   0                          -0 
-  1641 clausBin[c499]
-                                   0                          -0 
-  1642 clausBin[c500]
-                                   0                          -0 
-  1643 clausBin[c501]
-                                   0                          -0 
-  1644 clausBin[c502]
-                                   0                          -0 
-  1645 clausBin[c503]
-                                   0                          -0 
-  1646 clausBin[c504]
-                                   0                          -0 
-  1647 clausBin[c505]
-                                   0                          -0 
-  1648 clausBin[c506]
-                                   0                          -0 
-  1649 clausBin[c507]
-                                   0                          -0 
-  1650 clausBin[c508]
-                                   0                          -0 
-  1651 clausBin[c509]
-                                   0                          -0 
-  1652 clausBin[c510]
-                                   0                          -0 
-  1653 clausBin[c511]
-                                   0                          -0 
-  1654 clausBin[c512]
-                                   0                          -0 
-  1655 clausBin[c513]
-                                   0                          -0 
-  1656 clausBin[c514]
-                                   0                          -0 
-  1657 clausBin[c515]
-                                   0                          -0 
-  1658 clausBin[c516]
-                                   0                          -0 
-  1659 clausBin[c517]
-                                   0                          -0 
-  1660 clausBin[c518]
-                                   0                          -0 
-  1661 clausBin[c519]
-                                   0                          -0 
-  1662 clausBin[c520]
-                                   0                          -0 
-  1663 clausBin[c521]
-                                   0                          -0 
-  1664 clausBin[c522]
-                                   0                          -0 
-  1665 clausBin[c523]
-                                   0                          -0 
-  1666 clausBin[c524]
-                                   0                          -0 
-  1667 clausBin[c525]
-                                   0                          -0 
-  1668 clausBin[c526]
-                                   0                          -0 
-  1669 clausBin[c527]
-                                   0                          -0 
-  1670 clausBin[c528]
-                                   0                          -0 
-  1671 clausBin[c529]
-                                   0                          -0 
-  1672 clausBin[c530]
-                                   0                          -0 
-  1673 clausBin[c531]
-                                   0                          -0 
-  1674 clausBin[c532]
-                                   0                          -0 
-  1675 clausBin[c533]
-                                   0                          -0 
-  1676 clausBin[c534]
-                                   0                          -0 
-  1677 clausBin[c535]
-                                   0                          -0 
-  1678 clausBin[c536]
-                                   0                          -0 
-  1679 clausBin[c537]
-                                   0                          -0 
-  1680 clausBin[c538]
-                                   0                          -0 
-  1681 clausBin[c539]
-                                   0                          -0 
-  1682 clausBin[c540]
-                                   0                          -0 
-  1683 clausBin[c541]
-                                   0                          -0 
-  1684 clausBin[c542]
-                                   0                          -0 
-  1685 clausBin[c543]
-                                   0                          -0 
-  1686 clausBin[c544]
-                                   0                          -0 
-  1687 clausBin[c545]
-                                   0                          -0 
-  1688 clausBin[c546]
-                                   0                          -0 
-  1689 clausBin[c547]
-                                   0                          -0 
-  1690 clausBin[c548]
-                                   0                          -0 
-  1691 clausBin[c549]
-                                   0                          -0 
-  1692 clausBin[c550]
-                                   0                          -0 
-  1693 clausBin[c551]
-                                   0                          -0 
-  1694 clausBin[c552]
-                                   0                          -0 
-  1695 clausBin[c553]
-                                   0                          -0 
-  1696 clausBin[c554]
-                                   0                          -0 
-  1697 clausBin[c555]
-                                   0                          -0 
-  1698 clausBin[c556]
-                                   0                          -0 
-  1699 clausBin[c557]
-                                   0                          -0 
-  1700 clausBin[c558]
-                                   0                          -0 
-  1701 clausBin[c559]
-                                   0                          -0 
-  1702 clausBin[c560]
-                                   0                          -0 
-  1703 clausBin[c561]
-                                   0                          -0 
-  1704 clausBin[c562]
-                                   0                          -0 
-  1705 clausBin[c563]
-                                   0                          -0 
-  1706 clausBin[c564]
-                                   0                          -0 
-  1707 clausBin[c565]
-                                   0                          -0 
-  1708 clausBin[c566]
-                                   0                          -0 
-  1709 clausBin[c567]
-                                   0                          -0 
-  1710 clausBin[c568]
-                                   0                          -0 
-  1711 clausBin[c569]
-                                   0                          -0 
-  1712 clausBin[c570]
-                                   0                          -0 
-  1713 clausBin[c571]
-                                   0                          -0 
-  1714 clausBin[c572]
-                                   0                          -0 
-  1715 clausBin[c573]
-                                   0                          -0 
-  1716 clausBin[c574]
-                                   0                          -0 
-  1717 clausBin[c575]
-                                   0                          -0 
-  1718 clausBin[c576]
-                                   0                          -0 
-  1719 clausBin[c577]
-                                   0                          -0 
-  1720 clausBin[c578]
-                                   0                          -0 
-  1721 clausBin[c579]
-                                   0                          -0 
-  1722 clausBin[c580]
-                                   0                          -0 
-  1723 clausBin[c581]
-                                   0                          -0 
-  1724 clausBin[c582]
-                                   0                          -0 
-  1725 clausBin[c583]
-                                   0                          -0 
-  1726 clausBin[c584]
-                                   0                          -0 
-  1727 clausBin[c585]
-                                   0                          -0 
-  1728 clausBin[c586]
-                                   0                          -0 
-  1729 clausBin[c587]
-                                   0                          -0 
-  1730 clausBin[c588]
-                                   0                          -0 
-  1731 clausBin[c589]
-                                   0                          -0 
-  1732 clausBin[c590]
-                                   0                          -0 
-  1733 clausBin[c591]
-                                   0                          -0 
-  1734 clausBin[c592]
-                                   0                          -0 
-  1735 clausBin[c593]
-                                   0                          -0 
-  1736 clausBin[c594]
-                                   0                          -0 
-  1737 clausBin[c595]
-                                   0                          -0 
-  1738 clausBin[c596]
-                                   0                          -0 
-  1739 clausBin[c597]
-                                   0                          -0 
-  1740 clausBin[c598]
-                                   0                          -0 
-  1741 clausBin[c599]
-                                   0                          -0 
-  1742 clausBin[c600]
-                                   0                          -0 
-  1743 clausBin[c601]
-                                   0                          -0 
-  1744 clausBin[c602]
-                                   0                          -0 
-  1745 clausBin[c603]
-                                   0                          -0 
-  1746 clausBin[c604]
-                                   0                          -0 
-  1747 clausBin[c605]
-                                   0                          -0 
-  1748 clausBin[c606]
-                                   0                          -0 
-  1749 clausBin[c607]
-                                   0                          -0 
-  1750 clausBin[c608]
-                                   0                          -0 
-  1751 clausBin[c609]
-                                   0                          -0 
-  1752 clausBin[c610]
-                                   0                          -0 
-  1753 clausBin[c611]
-                                   0                          -0 
-  1754 clausBin[c612]
-                                   0                          -0 
-  1755 clausBin[c613]
-                                   0                          -0 
-  1756 clausBin[c614]
-                                   0                          -0 
-  1757 clausBin[c615]
-                                   0                          -0 
-  1758 clausBin[c616]
-                                   0                          -0 
-  1759 clausBin[c617]
-                                   0                          -0 
-  1760 clausBin[c618]
-                                   0                          -0 
-  1761 clausBin[c619]
-                                   0                          -0 
-  1762 clausBin[c620]
-                                   0                          -0 
-  1763 clausBin[c621]
-                                   0                          -0 
-  1764 clausBin[c622]
-                                   0                          -0 
-  1765 clausBin[c623]
-                                   0                          -0 
-  1766 clausBin[c624]
-                                   0                          -0 
-  1767 clausBin[c625]
-                                   0                          -0 
-  1768 clausBin[c626]
-                                   0                          -0 
-  1769 clausBin[c627]
-                                   0                          -0 
-  1770 clausBin[c628]
-                                   0                          -0 
-  1771 clausBin[c629]
-                                   0                          -0 
-  1772 clausBin[c630]
-                                   0                          -0 
-  1773 clausBin[c631]
-                                   0                          -0 
-  1774 clausBin[c632]
-                                   0                          -0 
-  1775 clausBin[c633]
-                                   0                          -0 
-  1776 clausBin[c634]
-                                   0                          -0 
-  1777 clausBin[c635]
-                                   0                          -0 
-  1778 clausBin[c636]
-                                   0                          -0 
-  1779 clausBin[c637]
-                                   0                          -0 
-  1780 clausBin[c638]
-                                   0                          -0 
-  1781 clausBin[c639]
-                                   0                          -0 
-  1782 clausBin[c640]
-                                   0                          -0 
-  1783 clausBin[c641]
-                                   0                          -0 
-  1784 clausBin[c642]
-                                   0                          -0 
-  1785 clausBin[c643]
-                                   0                          -0 
-  1786 clausBin[c644]
-                                   0                          -0 
-  1787 clausBin[c645]
-                                   0                          -0 
-  1788 clausBin[c646]
-                                   0                          -0 
-  1789 clausBin[c647]
-                                   0                          -0 
-  1790 clausBin[c648]
-                                   0                          -0 
-  1791 clausBin[c649]
-                                   0                          -0 
-  1792 clausBin[c650]
-                                   0                          -0 
-  1793 clausBin[c651]
-                                   0                          -0 
-  1794 clausBin[c652]
-                                   0                          -0 
-  1795 clausBin[c653]
-                                   0                          -0 
-  1796 clausBin[c654]
-                                   0                          -0 
-  1797 clausBin[c655]
-                                   0                          -0 
-  1798 clausBin[c656]
-                                   0                          -0 
-  1799 clausBin[c657]
-                                   0                          -0 
-  1800 clausBin[c658]
-                                   0                          -0 
-  1801 clausBin[c659]
-                                   0                          -0 
-  1802 clausBin[c660]
-                                   0                          -0 
-  1803 clausBin[c661]
-                                   0                          -0 
-  1804 clausBin[c662]
-                                   0                          -0 
-  1805 clausBin[c663]
-                                   0                          -0 
-  1806 clausBin[c664]
-                                   0                          -0 
-  1807 clausBin[c665]
-                                   0                          -0 
-  1808 clausBin[c666]
-                                   0                          -0 
-  1809 clausBin[c667]
-                                   0                          -0 
-  1810 clausBin[c668]
-                                   0                          -0 
-  1811 clausBin[c669]
-                                   0                          -0 
-  1812 clausBin[c670]
-                                   0                          -0 
-  1813 clausBin[c671]
-                                   0                          -0 
-  1814 clausBin[c672]
-                                   0                          -0 
-  1815 clausBin[c673]
-                                   0                          -0 
-  1816 clausBin[c674]
-                                   0                          -0 
-  1817 clausBin[c675]
-                                   0                          -0 
-  1818 clausBin[c676]
-                                   0                          -0 
-  1819 clausBin[c677]
-                                   0                          -0 
-  1820 clausBin[c678]
-                                   0                          -0 
-  1821 clausBin[c679]
-                                   0                          -0 
-  1822 clausBin[c680]
-                                   0                          -0 
-  1823 clausBin[c681]
-                                   0                          -0 
-  1824 clausBin[c682]
-                                   0                          -0 
-  1825 clausBin[c683]
-                                   0                          -0 
-  1826 clausBin[c684]
-                                   0                          -0 
-  1827 clausBin[c685]
-                                   0                          -0 
-  1828 clausBin[c686]
-                                   0                          -0 
-  1829 clausBin[c687]
-                                   0                          -0 
-  1830 clausBin[c688]
-                                   0                          -0 
-  1831 clausBin[c689]
-                                   0                          -0 
-  1832 clausBin[c690]
-                                   0                          -0 
-  1833 clausBin[c691]
-                                   0                          -0 
-  1834 clausBin[c692]
-                                   0                          -0 
-  1835 clausBin[c693]
-                                   0                          -0 
-  1836 clausBin[c694]
-                                   0                          -0 
-  1837 clausBin[c695]
-                                   0                          -0 
-  1838 clausBin[c696]
-                                   0                          -0 
-  1839 clausBin[c697]
-                                   0                          -0 
-  1840 clausBin[c698]
-                                   0                          -0 
-  1841 clausBin[c699]
-                                   0                          -0 
-  1842 clausBin[c700]
-                                   0                          -0 
-  1843 clausBin[c701]
-                                   0                          -0 
-  1844 clausBin[c702]
-                                   0                          -0 
-  1845 clausBin[c703]
-                                   0                          -0 
-  1846 clausBin[c704]
-                                   0                          -0 
-  1847 clausBin[c705]
-                                   0                          -0 
-  1848 clausBin[c706]
-                                   0                          -0 
-  1849 clausBin[c707]
-                                   0                          -0 
-  1850 clausBin[c708]
-                                   0                          -0 
-  1851 clausBin[c709]
-                                   0                          -0 
-  1852 clausBin[c710]
-                                   0                          -0 
-  1853 clausBin[c711]
-                                   0                          -0 
-  1854 clausBin[c712]
-                                   0                          -0 
-  1855 clausBin[c713]
-                                   0                          -0 
-  1856 clausBin[c714]
-                                   0                          -0 
-  1857 clausBin[c715]
-                                   0                          -0 
-  1858 clausBin[c716]
-                                   0                          -0 
-  1859 clausBin[c717]
-                                   0                          -0 
-  1860 clausBin[c718]
-                                   0                          -0 
-  1861 clausBin[c719]
-                                   0                          -0 
-  1862 clausBin[c720]
-                                   0                          -0 
-  1863 clausBin[c721]
-                                   0                          -0 
-  1864 clausBin[c722]
-                                   0                          -0 
-  1865 clausBin[c723]
-                                   0                          -0 
-  1866 clausBin[c724]
-                                   0                          -0 
-  1867 clausBin[c725]
-                                   0                          -0 
-  1868 clausBin[c726]
-                                   0                          -0 
-  1869 clausBin[c727]
-                                   0                          -0 
-  1870 clausBin[c728]
-                                   0                          -0 
-  1871 clausBin[c729]
-                                   0                          -0 
-  1872 clausBin[c730]
-                                   0                          -0 
-  1873 clausBin[c731]
-                                   0                          -0 
-  1874 clausBin[c732]
-                                   0                          -0 
-  1875 clausBin[c733]
-                                   0                          -0 
-  1876 clausBin[c734]
-                                   0                          -0 
-  1877 clausBin[c735]
-                                   0                          -0 
-  1878 clausBin[c736]
-                                   0                          -0 
-  1879 clausBin[c737]
-                                   0                          -0 
-  1880 clausBin[c738]
-                                   0                          -0 
-  1881 clausBin[c739]
-                                   0                          -0 
-  1882 clausBin[c740]
-                                   0                          -0 
-  1883 clausBin[c741]
-                                   0                          -0 
-  1884 clausBin[c742]
-                                   0                          -0 
-  1885 clausBin[c743]
-                                   0                          -0 
-  1886 clausBin[c744]
-                                   0                          -0 
-  1887 clausBin[c745]
-                                   0                          -0 
-  1888 clausBin[c746]
-                                   0                          -0 
-  1889 clausBin[c747]
-                                   0                          -0 
-  1890 clausBin[c748]
-                                   0                          -0 
-  1891 clausBin[c749]
-                                   0                          -0 
-  1892 clausBin[c750]
-                                   0                          -0 
-  1893 clausBin[c751]
-                                   0                          -0 
-  1894 clausBin[c752]
-                                   0                          -0 
-  1895 clausBin[c753]
-                                   0                          -0 
-  1896 clausBin[c754]
-                                   0                          -0 
-  1897 clausBin[c755]
-                                   0                          -0 
-  1898 clausBin[c756]
-                                   0                          -0 
-  1899 clausBin[c757]
-                                   0                          -0 
-  1900 clausBin[c758]
-                                   0                          -0 
-  1901 clausBin[c759]
-                                   0                          -0 
-  1902 clausBin[c760]
-                                   0                          -0 
-  1903 clausBin[c761]
-                                   0                          -0 
-  1904 clausBin[c762]
-                                   0                          -0 
-  1905 clausBin[c763]
-                                   0                          -0 
-  1906 clausBin[c764]
-                                   0                          -0 
-  1907 clausBin[c765]
-                                   0                          -0 
-  1908 clausBin[c766]
-                                   0                          -0 
-  1909 clausBin[c767]
-                                   0                          -0 
-  1910 clausBin[c768]
-                                   0                          -0 
-  1911 clausBin[c769]
-                                   0                          -0 
-  1912 clausBin[c770]
-                                   0                          -0 
-  1913 clausBin[c771]
-                                   0                          -0 
-  1914 clausBin[c772]
-                                   0                          -0 
-  1915 clausBin[c773]
-                                   0                          -0 
-  1916 clausBin[c774]
-                                   0                          -0 
-  1917 clausBin[c775]
-                                   0                          -0 
-  1918 clausBin[c776]
-                                   0                          -0 
-  1919 clausBin[c777]
-                                   0                          -0 
-  1920 clausBin[c778]
-                                   0                          -0 
-  1921 clausBin[c779]
-                                   0                          -0 
-  1922 clausBin[c780]
-                                   0                          -0 
-  1923 clausBin[c781]
-                                   0                          -0 
-  1924 clausBin[c782]
-                                   0                          -0 
-  1925 clausBin[c783]
-                                   0                          -0 
-  1926 clausBin[c784]
-                                   0                          -0 
-  1927 clausBin[c785]
-                                   0                          -0 
-  1928 clausBin[c786]
-                                   0                          -0 
-  1929 clausBin[c787]
-                                   0                          -0 
-  1930 clausBin[c788]
-                                   0                          -0 
-  1931 clausBin[c789]
-                                   0                          -0 
-  1932 clausBin[c790]
-                                   0                          -0 
-  1933 clausBin[c791]
-                                   0                          -0 
-  1934 clausBin[c792]
-                                   0                          -0 
-  1935 clausBin[c793]
-                                   0                          -0 
-  1936 clausBin[c794]
-                                   0                          -0 
-  1937 clausBin[c795]
-                                   0                          -0 
-  1938 clausBin[c796]
-                                   0                          -0 
-  1939 clausBin[c797]
-                                   0                          -0 
-  1940 clausBin[c798]
-                                   0                          -0 
-  1941 clausBin[c799]
-                                   0                          -0 
-  1942 clausBin[c800]
-                                   0                          -0 
-  1943 clausBin[c801]
-                                   0                          -0 
-  1944 clausBin[c802]
-                                   0                          -0 
-  1945 clausBin[c803]
-                                   0                          -0 
-  1946 clausBin[c804]
-                                   0                          -0 
-  1947 clausBin[c805]
-                                   0                          -0 
-  1948 clausBin[c806]
-                                   0                          -0 
-  1949 clausBin[c807]
-                                   0                          -0 
-  1950 clausBin[c808]
-                                   0                          -0 
-  1951 clausBin[c809]
-                                   0                          -0 
-  1952 clausBin[c810]
-                                   0                          -0 
-  1953 clausBin[c811]
-                                   0                          -0 
-  1954 clausBin[c812]
-                                   0                          -0 
-  1955 clausBin[c813]
-                                   0                          -0 
-  1956 clausBin[c814]
-                                   0                          -0 
-  1957 clausBin[c815]
-                                   0                          -0 
-  1958 clausBin[c816]
-                                   0                          -0 
-  1959 clausBin[c817]
-                                   0                          -0 
-  1960 clausBin[c818]
-                                   0                          -0 
-  1961 clausBin[c819]
-                                   0                          -0 
-  1962 clausBin[c820]
-                                   0                          -0 
-  1963 clausBin[c821]
-                                   0                          -0 
-  1964 clausBin[c822]
-                                   0                          -0 
-  1965 clausBin[c823]
-                                   0                          -0 
-  1966 clausBin[c824]
-                                   0                          -0 
-  1967 clausBin[c825]
-                                   0                          -0 
-  1968 clausBin[c826]
-                                   0                          -0 
-  1969 clausBin[c827]
-                                   0                          -0 
-  1970 clausBin[c828]
-                                   0                          -0 
-  1971 clausBin[c829]
-                                   0                          -0 
-  1972 clausBin[c830]
-                                   0                          -0 
-  1973 clausBin[c831]
-                                   0                          -0 
-  1974 clausBin[c832]
-                                   0                          -0 
-  1975 clausBin[c833]
-                                   0                          -0 
-  1976 clausBin[c834]
-                                   0                          -0 
-  1977 clausBin[c835]
-                                   0                          -0 
-  1978 clausBin[c836]
-                                   0                          -0 
-  1979 clausBin[c837]
-                                   0                          -0 
-  1980 clausBin[c838]
-                                   0                          -0 
-  1981 clausBin[c839]
-                                   0                          -0 
-  1982 clausBin[c840]
-                                   0                          -0 
-  1983 clausBin[c841]
-                                   0                          -0 
-  1984 clausBin[c842]
-                                   0                          -0 
-  1985 clausBin[c843]
-                                   0                          -0 
-  1986 clausBin[c844]
-                                   0                          -0 
-  1987 clausBin[c845]
-                                   0                          -0 
-  1988 clausBin[c846]
-                                   0                          -0 
-  1989 clausBin[c847]
-                                   0                          -0 
-  1990 clausBin[c848]
-                                   0                          -0 
-  1991 clausBin[c849]
-                                   0                          -0 
-  1992 clausBin[c850]
-                                   0                          -0 
-  1993 clausBin[c851]
-                                   0                          -0 
-  1994 clausBin[c852]
-                                   0                          -0 
-  1995 clausBin[c853]
-                                   0                          -0 
-  1996 clausBin[c854]
-                                   0                          -0 
-  1997 clausBin[c855]
-                                   0                          -0 
-  1998 clausBin[c856]
-                                   0                          -0 
-  1999 clausBin[c857]
-                                   0                          -0 
-  2000 clausBin[c858]
-                                   0                          -0 
-  2001 clausBin[c859]
-                                   0                          -0 
-  2002 clausBin[c860]
-                                   0                          -0 
-  2003 clausBin[c861]
-                                   0                          -0 
-  2004 clausBin[c862]
-                                   0                          -0 
-  2005 clausBin[c863]
-                                   0                          -0 
-  2006 clausBin[c864]
-                                   0                          -0 
-  2007 clausBin[c865]
-                                   0                          -0 
-  2008 clausBin[c866]
-                                   0                          -0 
-  2009 clausBin[c867]
-                                   0                          -0 
-  2010 clausBin[c868]
-                                   0                          -0 
-  2011 clausBin[c869]
-                                   0                          -0 
-  2012 clausBin[c870]
-                                   0                          -0 
-  2013 clausBin[c871]
-                                   0                          -0 
-  2014 clausBin[c872]
-                                   0                          -0 
-  2015 clausBin[c873]
-                                   0                          -0 
-  2016 clausBin[c874]
-                                   0                          -0 
-  2017 clausBin[c875]
-                                   0                          -0 
-  2018 clausBin[c876]
-                                   0                          -0 
-  2019 clausBin[c877]
-                                   0                          -0 
-  2020 clausBin[c878]
-                                   0                          -0 
-  2021 clausBin[c879]
-                                   0                          -0 
-  2022 clausBin[c880]
-                                   0                          -0 
-  2023 clausBin[c881]
-                                   0                          -0 
-  2024 clausBin[c882]
-                                   0                          -0 
-  2025 clausBin[c883]
-                                   0                          -0 
-  2026 clausBin[c884]
-                                   0                          -0 
-  2027 clausBin[c885]
-                                   0                          -0 
-  2028 clausBin[c886]
-                                   0                          -0 
-  2029 clausBin[c887]
-                                   0                          -0 
-  2030 clausBin[c888]
-                                   0                          -0 
-  2031 clausBin[c889]
-                                   0                          -0 
-  2032 clausBin[c890]
-                                   0                          -0 
-  2033 clausBin[c891]
-                                   0                          -0 
-  2034 clausBin[c892]
-                                   0                          -0 
-  2035 clausBin[c893]
-                                   0                          -0 
-  2036 clausBin[c894]
-                                   0                          -0 
-  2037 clausBin[c895]
-                                   0                          -0 
-  2038 clausBin[c896]
-                                   0                          -0 
-  2039 clausBin[c897]
-                                   0                          -0 
-  2040 clausBin[c898]
-                                   0                          -0 
-  2041 clausBin[c899]
-                                   0                          -0 
-  2042 clausBin[c900]
-                                   0                          -0 
-  2043 clausBin[c901]
-                                   0                          -0 
-  2044 clausBin[c902]
-                                   0                          -0 
-  2045 clausBin[c903]
-                                   0                          -0 
-  2046 clausBin[c904]
-                                   0                          -0 
-  2047 clausBin[c905]
-                                   0                          -0 
-  2048 clausBin[c906]
-                                   0                          -0 
-  2049 clausBin[c907]
-                                   0                          -0 
-  2050 clausBin[c908]
-                                   0                          -0 
-  2051 clausBin[c909]
-                                   0                          -0 
-  2052 clausBin[c910]
-                                   0                          -0 
-  2053 clausBin[c911]
-                                   0                          -0 
-  2054 clausBin[c912]
-                                   0                          -0 
-  2055 clausBin[c913]
-                                   0                          -0 
-  2056 clausBin[c914]
-                                   0                          -0 
-  2057 clausBin[c915]
-                                   0                          -0 
-  2058 clausBin[c916]
-                                   0                          -0 
-  2059 clausBin[c917]
-                                   0                          -0 
-  2060 clausBin[c918]
-                                   0                          -0 
-  2061 clausBin[c919]
-                                   0                          -0 
-  2062 clausBin[c920]
-                                   0                          -0 
-  2063 clausBin[c921]
-                                   0                          -0 
-  2064 clausBin[c922]
-                                   0                          -0 
-  2065 clausBin[c923]
-                                   0                          -0 
-  2066 clausBin[c924]
-                                   0                          -0 
-  2067 clausBin[c925]
-                                   0                          -0 
-  2068 clausBin[c926]
-                                   0                          -0 
-  2069 clausBin[c927]
-                                   0                          -0 
-  2070 clausBin[c928]
-                                   0                          -0 
-  2071 clausBin[c929]
-                                   0                          -0 
-  2072 clausBin[c930]
-                                   0                          -0 
-  2073 clausBin[c931]
-                                   0                          -0 
-  2074 clausBin[c932]
-                                   0                          -0 
-  2075 clausBin[c933]
-                                   0                          -0 
-  2076 clausBin[c934]
-                                   0                          -0 
-  2077 clausBin[c935]
-                                   0                          -0 
-  2078 clausBin[c936]
-                                   0                          -0 
-  2079 clausBin[c937]
-                                   0                          -0 
-  2080 clausBin[c938]
-                                   0                          -0 
-  2081 clausBin[c939]
-                                   0                          -0 
-  2082 clausBin[c940]
-                                   0                          -0 
-  2083 clausBin[c941]
-                                   0                          -0 
-  2084 clausBin[c942]
-                                   0                          -0 
-  2085 clausBin[c943]
-                                   0                          -0 
-  2086 clausBin[c944]
-                                   0                          -0 
-  2087 clausBin[c945]
-                                   0                          -0 
-  2088 clausBin[c946]
-                                   0                          -0 
-  2089 clausBin[c947]
-                                   0                          -0 
-  2090 clausBin[c948]
-                                   0                          -0 
-  2091 clausBin[c949]
-                                   0                          -0 
-  2092 clausBin[c950]
-                                   0                          -0 
-  2093 clausBin[c951]
-                                   0                          -0 
-  2094 clausBin[c952]
-                                   0                          -0 
-  2095 clausBin[c953]
-                                   0                          -0 
-  2096 clausBin[c954]
-                                   0                          -0 
-  2097 clausBin[c955]
-                                   0                          -0 
-  2098 clausBin[c956]
-                                   0                          -0 
-  2099 clausBin[c957]
-                                   0                          -0 
-  2100 clausBin[c958]
-                                   0                          -0 
-  2101 clausBin[c959]
-                                   0                          -0 
-  2102 clausBin[c960]
-                                   0                          -0 
-  2103 clausBin[c961]
-                                   0                          -0 
-  2104 clausBin[c962]
-                                   0                          -0 
-  2105 clausBin[c963]
-                                   0                          -0 
-  2106 clausBin[c964]
-                                   0                          -0 
-  2107 clausBin[c965]
-                                   0                          -0 
-  2108 clausBin[c966]
-                                   0                          -0 
-  2109 clausBin[c967]
-                                   0                          -0 
-  2110 clausBin[c968]
-                                   0                          -0 
-  2111 clausBin[c969]
-                                   0                          -0 
-  2112 clausBin[c970]
-                                   0                          -0 
-  2113 clausBin[c971]
-                                   0                          -0 
-  2114 clausBin[c972]
-                                   0                          -0 
-  2115 clausBin[c973]
-                                   0                          -0 
-  2116 clausBin[c974]
-                                   0                          -0 
-  2117 clausBin[c975]
-                                   0                          -0 
-  2118 clausBin[c976]
-                                   0                          -0 
-  2119 clausBin[c977]
-                                   0                          -0 
-  2120 clausBin[c978]
-                                   0                          -0 
-  2121 clausBin[c979]
-                                   0                          -0 
-  2122 clausBin[c980]
-                                   0                          -0 
-  2123 clausBin[c981]
-                                   0                          -0 
-  2124 clausBin[c982]
-                                   0                          -0 
-  2125 clausBin[c983]
-                                   0                          -0 
-  2126 clausBin[c984]
-                                   0                          -0 
-  2127 clausBin[c985]
-                                   0                          -0 
-  2128 clausBin[c986]
-                                   0                          -0 
-  2129 clausBin[c987]
-                                   0                          -0 
-  2130 clausBin[c988]
-                                   0                          -0 
-  2131 clausBin[c989]
-                                   0                          -0 
-  2132 clausBin[c990]
-                                   0                          -0 
-  2133 clausBin[c991]
-                                   0                          -0 
-  2134 clausBin[c992]
-                                   0                          -0 
-  2135 clausBin[c993]
-                                   0                          -0 
-  2136 clausBin[c994]
-                                   0                          -0 
-  2137 clausBin[c995]
-                                   0                          -0 
-  2138 clausBin[c996]
-                                   0                          -0 
-  2139 clausBin[c997]
-                                   0                          -0 
-  2140 clausBin[c998]
-                                   0                          -0 
-  2141 clausBin[c999]
-                                   0                          -0 
-  2142 clausBin[c1000]
-                                   0                          -0 
-  2143 clausBin[c1001]
-                                   0                          -0 
-  2144 clausBin[c1002]
-                                   0                          -0 
-  2145 clausBin[c1003]
-                                   0                          -0 
-  2146 clausBin[c1004]
-                                   0                          -0 
-  2147 clausBin[c1005]
-                                   0                          -0 
-  2148 clausBin[c1006]
-                                   0                          -0 
-  2149 clausBin[c1007]
-                                   0                          -0 
-  2150 clausBin[c1008]
-                                   0                          -0 
-  2151 clausBin[c1009]
-                                   0                          -0 
-  2152 clausBin[c1010]
-                                   0                          -0 
-  2153 clausBin[c1011]
-                                   0                          -0 
-  2154 clausBin[c1012]
-                                   0                          -0 
-  2155 clausBin[c1013]
-                                   0                          -0 
-  2156 clausBin[c1014]
-                                   0                          -0 
-  2157 clausBin[c1015]
-                                   0                          -0 
-  2158 clausBin[c1016]
-                                   0                          -0 
-  2159 clausBin[c1017]
-                                   0                          -0 
-  2160 clausBin[c1018]
-                                   0                          -0 
-  2161 clausBin[c1019]
-                                   0                          -0 
-  2162 clausBin[c1020]
-                                   0                          -0 
-  2163 clausBin[c1021]
-                                   0                          -0 
-  2164 clausBin[c1022]
-                                   0                          -0 
-  2165 clausBin[c1023]
-                                   0                          -0 
-  2166 clausBin[c1024]
-                                   0                          -0 
-  2167 clausBin[c1025]
-                                   0                          -0 
-  2168 clausBin[c1026]
-                                   0                          -0 
-  2169 clausBin[c1027]
-                                   0                          -0 
-  2170 clausBin[c1028]
-                                   0                          -0 
-  2171 clausBin[c1029]
-                                   0                          -0 
-  2172 clausBin[c1030]
-                                   0                          -0 
-  2173 clausBin[c1031]
-                                   0                          -0 
-  2174 clausBin[c1032]
-                                   0                          -0 
-  2175 clausBin[c1033]
-                                   0                          -0 
-  2176 clausBin[c1034]
-                                   0                          -0 
-  2177 clausBin[c1035]
-                                   0                          -0 
-  2178 clausBin[c1036]
-                                   0                          -0 
-  2179 clausBin[c1037]
-                                   0                          -0 
-  2180 clausBin[c1038]
-                                   0                          -0 
-  2181 clausBin[c1039]
-                                   0                          -0 
-  2182 clausBin[c1040]
-                                   0                          -0 
-  2183 clausBin[c1041]
-                                   0                          -0 
-  2184 clausBin[c1042]
-                                   0                          -0 
-  2185 clausBin[c1043]
-                                   0                          -0 
-  2186 clausBin[c1044]
-                                   0                          -0 
-  2187 clausBin[c1045]
-                                   0                          -0 
-  2188 clausBin[c1046]
-                                   0                          -0 
-  2189 clausBin[c1047]
-                                   0                          -0 
-  2190 clausBin[c1048]
-                                   0                          -0 
-  2191 clausBin[c1049]
-                                   0                          -0 
-  2192 clausBin[c1050]
-                                   0                          -0 
-  2193 clausBin[c1051]
-                                   0                          -0 
-  2194 clausBin[c1052]
-                                   0                          -0 
-  2195 clausBin[c1053]
-                                   0                          -0 
-  2196 clausBin[c1054]
-                                   0                          -0 
-  2197 clausBin[c1055]
-                                   0                          -0 
-  2198 clausBin[c1056]
-                                   0                          -0 
-  2199 clausBin[c1057]
-                                   0                          -0 
-  2200 clausBin[c1058]
-                                   0                          -0 
-  2201 clausBin[c1059]
-                                   0                          -0 
-  2202 clausBin[c1060]
-                                   0                          -0 
-  2203 clausBin[c1061]
-                                   0                          -0 
-  2204 clausBin[c1062]
-                                   0                          -0 
-  2205 clausBin[c1063]
-                                   0                          -0 
-  2206 clausBin[c1064]
-                                   0                          -0 
-  2207 clausBin[c1065]
-                                   0                          -0 
-  2208 clausBin[c1066]
-                                   0                          -0 
-  2209 clausBin[c1067]
-                                   0                          -0 
-  2210 clausBin[c1068]
-                                   0                          -0 
-  2211 clausBin[c1069]
-                                   0                          -0 
-  2212 clausBin[c1070]
-                                   0                          -0 
-  2213 clausBin[c1071]
-                                   0                          -0 
-  2214 clausBin[c1072]
-                                   0                          -0 
-  2215 clausBin[c1073]
-                                   0                          -0 
-  2216 clausBin[c1074]
-                                   0                          -0 
-  2217 clausBin[c1075]
-                                   0                          -0 
-  2218 clausBin[c1076]
-                                   0                          -0 
-  2219 clausBin[c1077]
-                                   0                          -0 
-  2220 clausBin[c1078]
-                                   0                          -0 
-  2221 clausBin[c1079]
-                                   0                          -0 
-  2222 clausBin[c1080]
-                                   0                          -0 
-  2223 clausBin[c1081]
-                                   0                          -0 
-  2224 clausBin[c1082]
-                                   0                          -0 
-  2225 clausBin[c1083]
-                                   0                          -0 
-  2226 clausBin[c1084]
-                                   0                          -0 
-  2227 clausBin[c1085]
-                                   0                          -0 
-  2228 clausBin[c1086]
-                                   0                          -0 
-  2229 clausBin[c1087]
-                                   0                          -0 
-  2230 clausBin[c1088]
-                                   0                          -0 
-  2231 clausBin[c1089]
-                                   0                          -0 
-  2232 clausBin[c1090]
-                                   0                          -0 
-  2233 clausBin[c1091]
-                                   0                          -0 
-  2234 clausBin[c1092]
-                                   0                          -0 
-  2235 clausBin[c1093]
-                                   0                          -0 
-  2236 clausBin[c1094]
-                                   0                          -0 
-  2237 clausBin[c1095]
-                                   0                          -0 
-  2238 clausBin[c1096]
-                                   0                          -0 
-  2239 clausBin[c1097]
-                                   0                          -0 
-  2240 clausBin[c1098]
-                                   0                          -0 
-  2241 clausBin[c1099]
-                                   0                          -0 
-  2242 clausBin[c1100]
-                                   0                          -0 
-  2243 clausBin[c1101]
-                                   0                          -0 
-  2244 clausBin[c1102]
-                                   0                          -0 
-  2245 clausBin[c1103]
-                                   0                          -0 
-  2246 clausBin[c1104]
-                                   0                          -0 
-  2247 clausBin[c1105]
-                                   0                          -0 
-  2248 clausBin[c1106]
-                                   0                          -0 
-  2249 clausBin[c1107]
-                                   0                          -0 
-  2250 clausBin[c1108]
-                                   0                          -0 
-  2251 clausBin[c1109]
-                                   0                          -0 
-  2252 clausBin[c1110]
-                                   0                          -0 
-  2253 clausBin[c1111]
-                                   0                          -0 
-  2254 clausBin[c1112]
-                                   0                          -0 
-  2255 clausBin[c1113]
-                                   0                          -0 
-  2256 clausBin[c1114]
-                                   0                          -0 
-  2257 clausBin[c1115]
-                                   0                          -0 
-  2258 clausBin[c1116]
-                                   0                          -0 
-  2259 clausBin[c1117]
-                                   0                          -0 
-  2260 clausBin[c1118]
-                                   0                          -0 
-  2261 clausBin[c1119]
-                                   0                          -0 
-  2262 clausBin[c1120]
-                                   0                          -0 
-  2263 clausBin[c1121]
-                                   0                          -0 
-  2264 clausBin[c1122]
-                                   0                          -0 
-  2265 clausBin[c1123]
-                                   0                          -0 
-  2266 clausBin[c1124]
-                                   0                          -0 
-  2267 clausBin[c1125]
-                                   0                          -0 
-  2268 clausBin[c1126]
-                                   0                          -0 
-  2269 clausBin[c1127]
-                                   0                          -0 
-  2270 clausBin[c1128]
-                                   0                          -0 
-  2271 clausBin[c1129]
-                                   0                          -0 
-  2272 clausBin[c1130]
-                                   0                          -0 
-  2273 clausBin[c1131]
-                                   0                          -0 
-  2274 clausBin[c1132]
-                                   0                          -0 
-  2275 clausBin[c1133]
-                                   0                          -0 
-  2276 clausBin[c1134]
-                                   0                          -0 
-  2277 clausBin[c1135]
-                                   0                          -0 
-  2278 clausBin[c1136]
-                                   0                          -0 
-  2279 clausBin[c1137]
-                                   0                          -0 
-  2280 clausBin[c1138]
-                                   0                          -0 
-  2281 clausBin[c1139]
-                                   0                          -0 
-  2282 negVar[1]                   0             1             = 
-  2283 negVar[2]                   0             1             = 
-  2284 negVar[3]                   0             1             = 
-  2285 negVar[4]                   0             1             = 
-  2286 negVar[5]                   0             1             = 
-  2287 negVar[6]                   0             1             = 
-  2288 negVar[7]                   0             1             = 
-  2289 negVar[8]                   0             1             = 
-  2290 negVar[9]                   0             1             = 
-  2291 negVar[10]                  0             1             = 
-  2292 negVar[11]                  0             1             = 
-  2293 negVar[12]                  0             1             = 
-  2294 negVar[13]                  0             1             = 
-  2295 negVar[14]                  0             1             = 
-  2296 negVar[15]                  0             1             = 
-  2297 negVar[16]                  0             1             = 
-  2298 negVar[17]                  0             1             = 
-  2299 negVar[18]                  0             1             = 
-  2300 negVar[19]                  0             1             = 
-  2301 negVar[20]                  0             1             = 
-  2302 negVar[21]                  0             1             = 
-  2303 negVar[22]                  0             1             = 
-  2304 negVar[23]                  0             1             = 
-  2305 negVar[24]                  0             1             = 
-  2306 negVar[25]                  0             1             = 
-  2307 negVar[26]                  0             1             = 
-  2308 negVar[27]                  0             1             = 
-  2309 negVar[28]                  0             1             = 
-  2310 negVar[29]                  0             1             = 
-  2311 negVar[30]                  0             1             = 
-  2312 negVar[31]                  0             1             = 
-  2313 negVar[32]                  0             1             = 
-  2314 negVar[33]                  0             1             = 
-  2315 negVar[34]                  0             1             = 
-  2316 negVar[35]                  0             1             = 
-  2317 negVar[36]                  0             1             = 
-  2318 negVar[37]                  0             1             = 
-  2319 negVar[38]                  0             1             = 
-  2320 negVar[39]                  0             1             = 
-  2321 negVar[40]                  0             1             = 
+     1 weightSum                   0                             
+     2 softR[0]                    0                          -0 
+     3 softR[1]                    0                           2 
+     4 softR[2]                    0                          -0 
+     5 softR[3]                    0                           2 
+     6 softR[4]                    0                          -0 
+     7 softR[5]                    0                           2 
+     8 softR[6]                    0                          -0 
+     9 softR[7]                    0                           2 
+    10 softR[10]                   0                          -0 
+    11 softR[11]                   0                           2 
+    12 softR[12]                   0                          -0 
+    13 softR[13]                   0                           2 
+    14 softR[14]                   0                          -0 
+    15 softR[15]                   0                           2 
+    16 softR[16]                   0                          -0 
+    17 softR[17]                   0                           2 
+    18 softR[18]                   0                          -0 
+    19 softR[19]                   0                           2 
+    20 softR[20]                   0                          -0 
+    21 softR[21]                   0                           2 
+    22 softR[22]                   0                          -0 
+    23 softR[23]                   0                           2 
+    24 softR[24]                   0                          -0 
+    25 softR[25]                   0                           2 
+    26 softR[26]                   0                          -0 
+    27 softR[27]                   0                           2 
+    28 softR[32]                   0                          -0 
+    29 softR[33]                   0                           2 
+    30 softR[34]                   0                          -0 
+    31 softR[35]                   0                           2 
+    32 softR[36]                   0                          -0 
+    33 softR[37]                   0                           2 
+    34 softR[38]                   0                          -0 
+    35 softR[39]                   0                           2 
+    36 softR[40]                   0                          -0 
+    37 softR[41]                   0                           2 
+    38 softR[42]                   0                          -0 
+    39 softR[43]                   0                           2 
+    40 softR[44]                   0                          -0 
+    41 softR[45]                   0                           2 
+    42 softR[46]                   0                          -0 
+    43 softR[47]                   0                           2 
+    44 softR[48]                   0                          -0 
+    45 softR[49]                   0                           2 
+    46 softR[50]                   0                          -0 
+    47 softR[51]                   0                           2 
+    48 softR[52]                   0                          -0 
+    49 softR[53]                   0                           2 
+    50 softR[54]                   0                          -0 
+    51 softR[55]                   0                           2 
+    52 softR[58]                   0                          -0 
+    53 softR[59]                   0                           2 
+    54 softR[60]                   0                          -0 
+    55 softR[61]                   0                           2 
+    56 softR[62]                   0                          -0 
+    57 softR[63]                   0                           2 
+    58 softR[64]                   0                          -0 
+    59 softR[65]                   0                           2 
+    60 softR[66]                   0                          -0 
+    61 softR[67]                   0                           2 
+    62 softR[68]                   0                          -0 
+    63 softR[69]                   0                           2 
+    64 softR[70]                   0                          -0 
+    65 softR[71]                   0                           2 
+    66 softR[72]                   0                          -0 
+    67 softR[73]                   0                           2 
+    68 softR[76]                   0                          -0 
+    69 softR[77]                   0                           2 
+    70 softR[78]                   0                          -0 
+    71 softR[79]                   0                           2 
+    72 softR[80]                   0                          -0 
+    73 softR[81]                   0                           2 
+    74 softR[82]                   0                          -0 
+    75 softR[83]                   0                           2 
+    76 softR[84]                   0                          -0 
+    77 softR[85]                   0                           2 
+    78 softR[86]                   0                          -0 
+    79 softR[87]                   0                           2 
+    80 softR[88]                   0                          -0 
+    81 softR[89]                   0                           2 
+    82 softR[90]                   0                          -0 
+    83 softR[91]                   0                           2 
+    84 softR[92]                   0                          -0 
+    85 softR[93]                   0                           2 
+    86 softR[96]                   0                          -0 
+    87 softR[97]                   0                           2 
+    88 softR[100]                  0                          -0 
+    89 softR[101]                  0                           2 
+    90 softR[102]                  0                          -0 
+    91 softR[103]                  0                           2 
+    92 softR[104]                  0                          -0 
+    93 softR[105]                  0                           2 
+    94 softR[106]                  0                          -0 
+    95 softR[107]                  0                           2 
+    96 softR[108]                  0                          -0 
+    97 softR[109]                  0                           2 
+    98 softR[110]                  0                          -0 
+    99 softR[111]                  0                           2 
+   100 softR[112]                  0                          -0 
+   101 softR[113]                  0                           2 
+   102 softR[114]                  0                          -0 
+   103 softR[115]                  0                           2 
+   104 softR[116]                  0                          -0 
+   105 softR[117]                  0                           2 
+   106 softR[118]                  0                          -0 
+   107 softR[119]                  0                           2 
+   108 softR[120]                  0                          -0 
+   109 softR[121]                  0                           2 
+   110 softR[126]                  0                          -0 
+   111 softR[127]                  0                           2 
+   112 softR[128]                  0                          -0 
+   113 softR[129]                  0                           2 
+   114 softR[130]                  0                          -0 
+   115 softR[131]                  0                           2 
+   116 softR[132]                  0                          -0 
+   117 softR[133]                  0                           2 
+   118 softR[134]                  0                          -0 
+   119 softR[135]                  0                           2 
+   120 softR[136]                  0                          -0 
+   121 softR[137]                  0                           2 
+   122 softR[138]                  0                          -0 
+   123 softR[139]                  0                           2 
+   124 softR[140]                  0                          -0 
+   125 softR[141]                  0                           2 
+   126 softR[142]                  0                          -0 
+   127 softR[143]                  0                           2 
+   128 softR[144]                  0                          -0 
+   129 softR[145]                  0                           2 
+   130 softR[150]                  0                          -0 
+   131 softR[151]                  0                           2 
+   132 softR[152]                  0                          -0 
+   133 softR[153]                  0                           2 
+   134 softR[154]                  0                          -0 
+   135 softR[155]                  0                           2 
+   136 softR[156]                  0                          -0 
+   137 softR[157]                  0                           2 
+   138 softR[158]                  0                          -0 
+   139 softR[159]                  0                           2 
+   140 softR[160]                  0                          -0 
+   141 softR[161]                  0                           2 
+   142 softR[162]                  0                          -0 
+   143 softR[163]                  0                           2 
+   144 softR[164]                  0                          -0 
+   145 softR[165]                  0                           2 
+   146 softR[166]                  0                          -0 
+   147 softR[167]                  0                           2 
+   148 softR[168]                  0                          -0 
+   149 softR[169]                  0                           2 
+   150 softR[170]                  0                          -0 
+   151 softR[171]                  0                           2 
+   152 softR[172]                  0                          -0 
+   153 softR[173]                  0                           2 
+   154 softR[174]                  0                          -0 
+   155 softR[175]                  0                           2 
+   156 softR[176]                  0                          -0 
+   157 softR[177]                  0                           2 
+   158 softR[178]                  0                          -0 
+   159 softR[179]                  0                           2 
+   160 softR[182]                  0                          -0 
+   161 softR[183]                  0                           2 
+   162 softR[184]                  0                          -0 
+   163 softR[185]                  0                           2 
+   164 softR[186]                  0                          -0 
+   165 softR[187]                  0                           2 
+   166 softR[188]                  0                          -0 
+   167 softR[189]                  0                           2 
+   168 softR[192]                  0                          -0 
+   169 softR[193]                  0                           2 
+   170 softR[194]                  0                          -0 
+   171 softR[195]                  0                           2 
+   172 softR[196]                  0                          -0 
+   173 softR[197]                  0                           2 
+   174 softR[200]                  0                          -0 
+   175 softR[201]                  0                           2 
+   176 softR[202]                  0                          -0 
+   177 softR[203]                  0                           2 
+   178 softR[208]                  0                          -0 
+   179 softR[209]                  0                           2 
+   180 softR[210]                  0                          -0 
+   181 softR[211]                  0                           2 
+   182 softR[212]                  0                          -0 
+   183 softR[213]                  0                           2 
+   184 softR[214]                  0                          -0 
+   185 softR[215]                  0                           2 
+   186 softR[216]                  0                          -0 
+   187 softR[217]                  0                           2 
+   188 softR[218]                  0                          -0 
+   189 softR[219]                  0                           2 
+   190 softR[220]                  0                          -0 
+   191 softR[221]                  0                           2 
+   192 softR[222]                  0                          -0 
+   193 softR[223]                  0                           2 
+   194 softR[224]                  0                          -0 
+   195 softR[225]                  0                           2 
+   196 softR[226]                  0                          -0 
+   197 softR[227]                  0                           2 
+   198 softR[228]                  0                          -0 
+   199 softR[229]                  0                           2 
+   200 softR[230]                  0                          -0 
+   201 softR[231]                  0                           2 
+   202 softR[232]                  0                          -0 
+   203 softR[233]                  0                           2 
+   204 softR[234]                  0                          -0 
+   205 softR[235]                  0                           2 
+   206 softR[236]                  0                          -0 
+   207 softR[237]                  0                           2 
+   208 softR[240]                  0                          -0 
+   209 softR[241]                  0                           2 
+   210 softR[242]                  0                          -0 
+   211 softR[243]                  0                           2 
+   212 softR[244]                  0                          -0 
+   213 softR[245]                  0                           2 
+   214 softR[246]                  0                          -0 
+   215 softR[247]                  0                           2 
+   216 softR[252]                  0                          -0 
+   217 softR[253]                  0                           2 
+   218 softR[254]                  0                          -0 
+   219 softR[255]                  0                           2 
+   220 softR[256]                  0                          -0 
+   221 softR[257]                  0                           2 
+   222 softR[258]                  0                          -0 
+   223 softR[259]                  0                           2 
+   224 softR[260]                  0                          -0 
+   225 softR[261]                  0                           2 
+   226 softR[262]                  0                          -0 
+   227 softR[263]                  0                           2 
+   228 softR[264]                  0                          -0 
+   229 softR[265]                  0                           2 
+   230 softR[266]                  0                          -0 
+   231 softR[267]                  0                           2 
+   232 softR[268]                  0                          -0 
+   233 softR[269]                  0                           2 
+   234 softR[270]                  0                          -0 
+   235 softR[271]                  0                           2 
+   236 softR[272]                  0                          -0 
+   237 softR[273]                  0                           2 
+   238 softR[274]                  0                          -0 
+   239 softR[275]                  0                           2 
+   240 softR[276]                  0                          -0 
+   241 softR[277]                  0                           2 
+   242 softR[278]                  0                          -0 
+   243 softR[279]                  0                           2 
+   244 softR[280]                  0                          -0 
+   245 softR[281]                  0                           2 
+   246 softR[284]                  0                          -0 
+   247 softR[285]                  0                           2 
+   248 softR[286]                  0                          -0 
+   249 softR[287]                  0                           2 
+   250 softR[288]                  0                          -0 
+   251 softR[289]                  0                           2 
+   252 softR[290]                  0                          -0 
+   253 softR[291]                  0                           2 
+   254 softR[292]                  0                          -0 
+   255 softR[293]                  0                           2 
+   256 softR[294]                  0                          -0 
+   257 softR[295]                  0                           2 
+   258 softR[296]                  0                          -0 
+   259 softR[297]                  0                           2 
+   260 softR[300]                  0                          -0 
+   261 softR[301]                  0                           2 
+   262 softR[302]                  0                          -0 
+   263 softR[303]                  0                           2 
+   264 softR[304]                  0                          -0 
+   265 softR[305]                  0                           2 
+   266 softR[306]                  0                          -0 
+   267 softR[307]                  0                           2 
+   268 softR[308]                  0                          -0 
+   269 softR[309]                  0                           2 
+   270 softR[310]                  0                          -0 
+   271 softR[311]                  0                           2 
+   272 softR[312]                  0                          -0 
+   273 softR[313]                  0                           2 
+   274 softR[314]                  0                          -0 
+   275 softR[315]                  0                           2 
+   276 softR[316]                  0                          -0 
+   277 softR[317]                  0                           2 
+   278 softR[318]                  0                          -0 
+   279 softR[319]                  0                           2 
+   280 softR[320]                  0                          -0 
+   281 softR[321]                  0                           2 
+   282 softR[322]                  0                          -0 
+   283 softR[323]                  0                           2 
+   284 softR[324]                  0                          -0 
+   285 softR[325]                  0                           2 
+   286 softR[326]                  0                          -0 
+   287 softR[327]                  0                           2 
+   288 softR[330]                  0                          -0 
+   289 softR[331]                  0                           2 
+   290 softR[332]                  0                          -0 
+   291 softR[333]                  0                           2 
+   292 softR[334]                  0                          -0 
+   293 softR[335]                  0                           2 
+   294 softR[338]                  0                          -0 
+   295 softR[339]                  0                           2 
+   296 softR[340]                  0                          -0 
+   297 softR[341]                  0                           2 
+   298 softR[342]                  0                          -0 
+   299 softR[343]                  0                           2 
+   300 softR[344]                  0                          -0 
+   301 softR[345]                  0                           2 
+   302 softR[348]                  0                          -0 
+   303 softR[349]                  0                           2 
+   304 softR[350]                  0                          -0 
+   305 softR[351]                  0                           2 
+   306 softR[352]                  0                          -0 
+   307 softR[353]                  0                           2 
+   308 softR[354]                  0                          -0 
+   309 softR[355]                  0                           2 
+   310 softR[358]                  0                          -0 
+   311 softR[359]                  0                           2 
+   312 softR[360]                  0                          -0 
+   313 softR[361]                  0                           2 
+   314 softR[362]                  0                          -0 
+   315 softR[363]                  0                           2 
+   316 softR[364]                  0                          -0 
+   317 softR[365]                  0                           2 
+   318 softR[366]                  0                          -0 
+   319 softR[367]                  0                           2 
+   320 softR[368]                  0                          -0 
+   321 softR[369]                  0                           2 
+   322 softR[370]                  0                          -0 
+   323 softR[371]                  0                           2 
+   324 softR[372]                  0                          -0 
+   325 softR[373]                  0                           2 
+   326 softR[374]                  0                          -0 
+   327 softR[375]                  0                           2 
+   328 softR[376]                  0                          -0 
+   329 softR[377]                  0                           2 
+   330 softR[380]                  0                          -0 
+   331 softR[381]                  0                           2 
+   332 softR[382]                  0                          -0 
+   333 softR[383]                  0                           2 
+   334 softR[384]                  0                          -0 
+   335 softR[385]                  0                           2 
+   336 softR[386]                  0                          -0 
+   337 softR[387]                  0                           2 
+   338 softR[388]                  0                          -0 
+   339 softR[389]                  0                           2 
+   340 softR[390]                  0                          -0 
+   341 softR[391]                  0                           2 
+   342 softR[392]                  0                          -0 
+   343 softR[393]                  0                           2 
+   344 softR[396]                  0                          -0 
+   345 softR[397]                  0                           2 
+   346 softR[398]                  0                          -0 
+   347 softR[399]                  0                           2 
+   348 softR[402]                  0                          -0 
+   349 softR[403]                  0                           2 
+   350 softR[408]                  0                          -0 
+   351 softR[409]                  0                           2 
+   352 softR[410]                  0                          -0 
+   353 softR[411]                  0                           2 
+   354 softR[412]                  0                          -0 
+   355 softR[413]                  0                           2 
+   356 softR[414]                  0                          -0 
+   357 softR[415]                  0                           2 
+   358 softR[416]                  0                          -0 
+   359 softR[417]                  0                           2 
+   360 softR[418]                  0                          -0 
+   361 softR[419]                  0                           2 
+   362 softR[420]                  0                          -0 
+   363 softR[421]                  0                           2 
+   364 softR[422]                  0                          -0 
+   365 softR[423]                  0                           2 
+   366 softR[424]                  0                          -0 
+   367 softR[425]                  0                           2 
+   368 softR[426]                  0                          -0 
+   369 softR[427]                  0                           2 
+   370 softR[428]                  0                          -0 
+   371 softR[429]                  0                           2 
+   372 softR[430]                  0                          -0 
+   373 softR[431]                  0                           2 
+   374 softR[432]                  0                          -0 
+   375 softR[433]                  0                           2 
+   376 softR[434]                  0                          -0 
+   377 softR[435]                  0                           2 
+   378 softR[436]                  0                          -0 
+   379 softR[437]                  0                           2 
+   380 softR[438]                  0                          -0 
+   381 softR[439]                  0                           2 
+   382 softR[440]                  0                          -0 
+   383 softR[441]                  0                           2 
+   384 softR[442]                  0                          -0 
+   385 softR[443]                  0                           2 
+   386 softR[444]                  0                          -0 
+   387 softR[445]                  0                           2 
+   388 softR[448]                  0                          -0 
+   389 softR[449]                  0                           2 
+   390 softR[450]                  0                          -0 
+   391 softR[451]                  0                           2 
+   392 softR[452]                  0                          -0 
+   393 softR[453]                  0                           2 
+   394 softR[454]                  0                          -0 
+   395 softR[455]                  0                           2 
+   396 softR[456]                  0                          -0 
+   397 softR[457]                  0                           2 
+   398 softR[458]                  0                          -0 
+   399 softR[459]                  0                           2 
+   400 softR[462]                  0                          -0 
+   401 softR[463]                  0                           2 
+   402 softR[464]                  0                          -0 
+   403 softR[465]                  0                           2 
+   404 softR[466]                  0                          -0 
+   405 softR[467]                  0                           2 
+   406 softR[468]                  0                          -0 
+   407 softR[469]                  0                           2 
+   408 softR[470]                  0                          -0 
+   409 softR[471]                  0                           2 
+   410 softR[472]                  0                          -0 
+   411 softR[473]                  0                           2 
+   412 softR[474]                  0                          -0 
+   413 softR[475]                  0                           2 
+   414 softR[476]                  0                          -0 
+   415 softR[477]                  0                           2 
+   416 softR[478]                  0                          -0 
+   417 softR[479]                  0                           2 
+   418 softR[480]                  0                          -0 
+   419 softR[481]                  0                           2 
+   420 softR[482]                  0                          -0 
+   421 softR[483]                  0                           2 
+   422 softR[484]                  0                          -0 
+   423 softR[485]                  0                           2 
+   424 softR[486]                  0                          -0 
+   425 softR[487]                  0                           2 
+   426 softR[488]                  0                          -0 
+   427 softR[489]                  0                           2 
+   428 softR[490]                  0                          -0 
+   429 softR[491]                  0                           2 
+   430 softR[492]                  0                          -0 
+   431 softR[493]                  0                           2 
+   432 softR[494]                  0                          -0 
+   433 softR[495]                  0                           2 
+   434 softR[496]                  0                          -0 
+   435 softR[497]                  0                           2 
+   436 softR[498]                  0                          -0 
+   437 softR[499]                  0                           2 
+   438 softR[500]                  0                          -0 
+   439 softR[501]                  0                           2 
+   440 softR[502]                  0                          -0 
+   441 softR[503]                  0                           2 
+   442 softR[504]                  0                          -0 
+   443 softR[505]                  0                           2 
+   444 softR[506]                  0                          -0 
+   445 softR[507]                  0                           2 
+   446 softR[508]                  0                          -0 
+   447 softR[509]                  0                           2 
+   448 softR[510]                  0                          -0 
+   449 softR[511]                  0                           2 
+   450 softR[512]                  0                          -0 
+   451 softR[513]                  0                           2 
+   452 softR[514]                  0                          -0 
+   453 softR[515]                  0                           2 
+   454 softR[516]                  0                          -0 
+   455 softR[517]                  0                           2 
+   456 softR[518]                  0                          -0 
+   457 softR[519]                  0                           2 
+   458 softR[522]                  0                          -0 
+   459 softR[523]                  0                           2 
+   460 softR[524]                  0                          -0 
+   461 softR[525]                  0                           2 
+   462 softR[526]                  0                          -0 
+   463 softR[527]                  0                           2 
+   464 softR[528]                  0                          -0 
+   465 softR[529]                  0                           2 
+   466 softR[530]                  0                          -0 
+   467 softR[531]                  0                           2 
+   468 softR[532]                  0                          -0 
+   469 softR[533]                  0                           2 
+   470 softR[534]                  0                          -0 
+   471 softR[535]                  0                           2 
+   472 softR[536]                  0                          -0 
+   473 softR[537]                  0                           2 
+   474 softR[538]                  0                          -0 
+   475 softR[539]                  0                           2 
+   476 softR[540]                  0                          -0 
+   477 softR[541]                  0                           2 
+   478 softR[542]                  0                          -0 
+   479 softR[543]                  0                           2 
+   480 softR[544]                  0                          -0 
+   481 softR[545]                  0                           2 
+   482 softR[546]                  0                          -0 
+   483 softR[547]                  0                           2 
+   484 softR[548]                  0                          -0 
+   485 softR[549]                  0                           2 
+   486 softR[550]                  0                          -0 
+   487 softR[551]                  0                           2 
+   488 softR[552]                  0                          -0 
+   489 softR[553]                  0                           2 
+   490 softR[554]                  0                          -0 
+   491 softR[555]                  0                           2 
+   492 softR[556]                  0                          -0 
+   493 softR[557]                  0                           2 
+   494 softR[558]                  0                          -0 
+   495 softR[559]                  0                           2 
+   496 softR[562]                  0                          -0 
+   497 softR[563]                  0                           2 
+   498 softR[564]                  0                          -0 
+   499 softR[565]                  0                           2 
+   500 softR[566]                  0                          -0 
+   501 softR[567]                  0                           2 
+   502 softR[568]                  0                          -0 
+   503 softR[569]                  0                           2 
+   504 softR[570]                  0                          -0 
+   505 softR[571]                  0                           2 
+   506 softR[576]                  0                          -0 
+   507 softR[577]                  0                           2 
+   508 softR[578]                  0                          -0 
+   509 softR[579]                  0                           2 
+   510 softR[580]                  0                          -0 
+   511 softR[581]                  0                           2 
+   512 softR[582]                  0                          -0 
+   513 softR[583]                  0                           2 
+   514 softR[584]                  0                          -0 
+   515 softR[585]                  0                           2 
+   516 softR[586]                  0                          -0 
+   517 softR[587]                  0                           2 
+   518 softR[592]                  0                          -0 
+   519 softR[593]                  0                           2 
+   520 softR[594]                  0                          -0 
+   521 softR[595]                  0                           2 
+   522 softR[596]                  0                          -0 
+   523 softR[597]                  0                           2 
+   524 softR[598]                  0                          -0 
+   525 softR[599]                  0                           2 
+   526 softR[600]                  0                          -0 
+   527 softR[601]                  0                           2 
+   528 softR[606]                  0                          -0 
+   529 softR[607]                  0                           2 
+   530 softR[608]                  0                          -0 
+   531 softR[609]                  0                           2 
+   532 softR[610]                  0                          -0 
+   533 softR[611]                  0                           2 
+   534 softR[612]                  0                          -0 
+   535 softR[613]                  0                           2 
+   536 softR[614]                  0                          -0 
+   537 softR[615]                  0                           2 
+   538 softR[616]                  0                          -0 
+   539 softR[617]                  0                           2 
+   540 softR[618]                  0                          -0 
+   541 softR[619]                  0                           2 
+   542 softR[620]                  0                          -0 
+   543 softR[621]                  0                           2 
+   544 softR[622]                  0                          -0 
+   545 softR[623]                  0                           2 
+   546 softR[624]                  0                          -0 
+   547 softR[625]                  0                           2 
+   548 softR[626]                  0                          -0 
+   549 softR[627]                  0                           2 
+   550 softR[628]                  0                          -0 
+   551 softR[629]                  0                           2 
+   552 softR[630]                  0                          -0 
+   553 softR[631]                  0                           2 
+   554 softR[632]                  0                          -0 
+   555 softR[633]                  0                           2 
+   556 softR[634]                  0                          -0 
+   557 softR[635]                  0                           2 
+   558 softR[636]                  0                          -0 
+   559 softR[637]                  0                           2 
+   560 softR[638]                  0                          -0 
+   561 softR[639]                  0                           2 
+   562 softR[640]                  0                          -0 
+   563 softR[641]                  0                           2 
+   564 softR[642]                  0                          -0 
+   565 softR[643]                  0                           2 
+   566 softR[644]                  0                          -0 
+   567 softR[645]                  0                           2 
+   568 softR[646]                  0                          -0 
+   569 softR[647]                  0                           2 
+   570 softR[648]                  0                          -0 
+   571 softR[649]                  0                           2 
+   572 softR[650]                  0                          -0 
+   573 softR[651]                  0                           2 
+   574 softR[652]                  0                          -0 
+   575 softR[653]                  0                           2 
+   576 softR[654]                  0                          -0 
+   577 softR[655]                  0                           2 
+   578 softR[656]                  0                          -0 
+   579 softR[657]                  0                           2 
+   580 softR[662]                  0                          -0 
+   581 softR[663]                  0                           2 
+   582 softR[664]                  0                          -0 
+   583 softR[665]                  0                           2 
+   584 softR[666]                  0                          -0 
+   585 softR[667]                  0                           2 
+   586 softR[668]                  0                          -0 
+   587 softR[669]                  0                           2 
+   588 softR[670]                  0                          -0 
+   589 softR[671]                  0                           2 
+   590 softR[672]                  0                          -0 
+   591 softR[673]                  0                           2 
+   592 softR[674]                  0                          -0 
+   593 softR[675]                  0                           2 
+   594 softR[676]                  0                          -0 
+   595 softR[677]                  0                           2 
+   596 softR[678]                  0                          -0 
+   597 softR[679]                  0                           2 
+   598 softR[680]                  0                          -0 
+   599 softR[681]                  0                           2 
+   600 softR[682]                  0                          -0 
+   601 softR[683]                  0                           2 
+   602 softR[684]                  0                          -0 
+   603 softR[685]                  0                           2 
+   604 softR[686]                  0                          -0 
+   605 softR[687]                  0                           2 
+   606 softR[688]                  0                          -0 
+   607 softR[689]                  0                           2 
+   608 softR[690]                  0                          -0 
+   609 softR[691]                  0                           2 
+   610 softR[692]                  0                          -0 
+   611 softR[693]                  0                           2 
+   612 softR[694]                  0                          -0 
+   613 softR[695]                  0                           2 
+   614 softR[696]                  0                          -0 
+   615 softR[697]                  0                           2 
+   616 softR[700]                  0                          -0 
+   617 softR[701]                  0                           2 
+   618 softR[702]                  0                          -0 
+   619 softR[703]                  0                           2 
+   620 softR[704]                  0                          -0 
+   621 softR[705]                  0                           2 
+   622 softR[706]                  0                          -0 
+   623 softR[707]                  0                           2 
+   624 softR[708]                  0                          -0 
+   625 softR[709]                  0                           2 
+   626 softR[710]                  0                          -0 
+   627 softR[711]                  0                           2 
+   628 softR[712]                  0                          -0 
+   629 softR[713]                  0                           2 
+   630 softR[714]                  0                          -0 
+   631 softR[715]                  0                           2 
+   632 softR[716]                  0                          -0 
+   633 softR[717]                  0                           2 
+   634 softR[718]                  0                          -0 
+   635 softR[719]                  0                           2 
+   636 softR[720]                  0                          -0 
+   637 softR[721]                  0                           2 
+   638 softR[722]                  0                          -0 
+   639 softR[723]                  0                           2 
+   640 softR[724]                  0                          -0 
+   641 softR[725]                  0                           2 
+   642 softR[726]                  0                          -0 
+   643 softR[727]                  0                           2 
+   644 softR[728]                  0                          -0 
+   645 softR[729]                  0                           2 
+   646 softR[730]                  0                          -0 
+   647 softR[731]                  0                           2 
+   648 softR[732]                  0                          -0 
+   649 softR[733]                  0                           2 
+   650 softR[734]                  0                          -0 
+   651 softR[735]                  0                           2 
+   652 softR[738]                  0                          -0 
+   653 softR[739]                  0                           2 
+   654 softR[740]                  0                          -0 
+   655 softR[741]                  0                           2 
+   656 softR[742]                  0                          -0 
+   657 softR[743]                  0                           2 
+   658 softR[744]                  0                          -0 
+   659 softR[745]                  0                           2 
+   660 softR[746]                  0                          -0 
+   661 softR[747]                  0                           2 
+   662 softR[748]                  0                          -0 
+   663 softR[749]                  0                           2 
+   664 softR[750]                  0                          -0 
+   665 softR[751]                  0                           2 
+   666 softR[752]                  0                          -0 
+   667 softR[753]                  0                           2 
+   668 softR[754]                  0                          -0 
+   669 softR[755]                  0                           2 
+   670 softR[756]                  0                          -0 
+   671 softR[757]                  0                           2 
+   672 softR[758]                  0                          -0 
+   673 softR[759]                  0                           2 
+   674 softR[760]                  0                          -0 
+   675 softR[761]                  0                           2 
+   676 softR[762]                  0                          -0 
+   677 softR[763]                  0                           2 
+   678 softR[766]                  0                          -0 
+   679 softR[767]                  0                           2 
+   680 softR[768]                  0                          -0 
+   681 softR[769]                  0                           2 
+   682 softR[770]                  0                          -0 
+   683 softR[771]                  0                           2 
+   684 softR[772]                  0                          -0 
+   685 softR[773]                  0                           2 
+   686 softR[774]                  0                          -0 
+   687 softR[775]                  0                           2 
+   688 softR[776]                  0                          -0 
+   689 softR[777]                  0                           2 
+   690 softR[778]                  0                          -0 
+   691 softR[779]                  0                           2 
+   692 softR[780]                  0                          -0 
+   693 softR[781]                  0                           2 
+   694 softR[782]                  0                          -0 
+   695 softR[783]                  0                           2 
+   696 softR[784]                  0                          -0 
+   697 softR[785]                  0                           2 
+   698 softR[786]                  0                          -0 
+   699 softR[787]                  0                           2 
+   700 softR[788]                  0                          -0 
+   701 softR[789]                  0                           2 
+   702 softR[790]                  0                          -0 
+   703 softR[791]                  0                           2 
+   704 softR[792]                  0                          -0 
+   705 softR[793]                  0                           2 
+   706 softR[794]                  0                          -0 
+   707 softR[795]                  0                           2 
+   708 softR[796]                  0                          -0 
+   709 softR[797]                  0                           2 
+   710 softR[798]                  0                          -0 
+   711 softR[799]                  0                           2 
+   712 softR[800]                  0                          -0 
+   713 softR[801]                  0                           2 
+   714 softR[802]                  0                          -0 
+   715 softR[803]                  0                           2 
+   716 softR[804]                  0                          -0 
+   717 softR[805]                  0                           2 
+   718 softR[806]                  0                          -0 
+   719 softR[807]                  0                           2 
+   720 softR[808]                  0                          -0 
+   721 softR[809]                  0                           2 
+   722 softR[810]                  0                          -0 
+   723 softR[811]                  0                           2 
+   724 softR[812]                  0                          -0 
+   725 softR[813]                  0                           2 
+   726 softR[814]                  0                          -0 
+   727 softR[815]                  0                           2 
+   728 softR[816]                  0                          -0 
+   729 softR[817]                  0                           2 
+   730 softR[818]                  0                          -0 
+   731 softR[819]                  0                           2 
+   732 softR[820]                  0                          -0 
+   733 softR[821]                  0                           2 
+   734 softR[822]                  0                          -0 
+   735 softR[823]                  0                           2 
+   736 softR[824]                  0                          -0 
+   737 softR[825]                  0                           2 
+   738 softR[826]                  0                          -0 
+   739 softR[827]                  0                           2 
+   740 softR[828]                  0                          -0 
+   741 softR[829]                  0                           2 
+   742 softR[830]                  0                          -0 
+   743 softR[831]                  0                           2 
+   744 softR[832]                  0                          -0 
+   745 softR[833]                  0                           2 
+   746 softR[834]                  0                          -0 
+   747 softR[835]                  0                           2 
+   748 softR[838]                  0                          -0 
+   749 softR[839]                  0                           2 
+   750 softR[840]                  0                          -0 
+   751 softR[841]                  0                           2 
+   752 softR[842]                  0                          -0 
+   753 softR[843]                  0                           2 
+   754 softR[844]                  0                          -0 
+   755 softR[845]                  0                           2 
+   756 softR[846]                  0                          -0 
+   757 softR[847]                  0                           2 
+   758 softR[848]                  0                          -0 
+   759 softR[849]                  0                           2 
+   760 softR[850]                  0                          -0 
+   761 softR[851]                  0                           2 
+   762 softR[852]                  0                          -0 
+   763 softR[853]                  0                           2 
+   764 softR[854]                  0                          -0 
+   765 softR[855]                  0                           2 
+   766 softR[856]                  0                          -0 
+   767 softR[857]                  0                           2 
+   768 softR[858]                  0                          -0 
+   769 softR[859]                  0                           2 
+   770 softR[860]                  0                          -0 
+   771 softR[861]                  0                           2 
+   772 softR[862]                  0                          -0 
+   773 softR[863]                  0                           2 
+   774 softR[864]                  0                          -0 
+   775 softR[865]                  0                           2 
+   776 softR[866]                  0                          -0 
+   777 softR[867]                  0                           2 
+   778 softR[868]                  0                          -0 
+   779 softR[869]                  0                           2 
+   780 softR[870]                  0                          -0 
+   781 softR[871]                  0                           2 
+   782 softR[872]                  0                          -0 
+   783 softR[873]                  0                           2 
+   784 softR[874]                  0                          -0 
+   785 softR[875]                  0                           2 
+   786 softR[876]                  0                          -0 
+   787 softR[877]                  0                           2 
+   788 softR[878]                  0                          -0 
+   789 softR[879]                  0                           2 
+   790 softR[880]                  0                          -0 
+   791 softR[881]                  0                           2 
+   792 softR[882]                  0                          -0 
+   793 softR[883]                  0                           2 
+   794 softR[884]                  0                          -0 
+   795 softR[885]                  0                           2 
+   796 softR[886]                  0                          -0 
+   797 softR[887]                  0                           2 
+   798 softR[888]                  0                          -0 
+   799 softR[889]                  0                           2 
+   800 softR[890]                  0                          -0 
+   801 softR[891]                  0                           2 
+   802 softR[892]                  0                          -0 
+   803 softR[893]                  0                           2 
+   804 softR[894]                  0                          -0 
+   805 softR[895]                  0                           2 
+   806 softR[896]                  0                          -0 
+   807 softR[897]                  0                           2 
+   808 softR[898]                  0                          -0 
+   809 softR[899]                  0                           2 
+   810 softR[900]                  0                          -0 
+   811 softR[901]                  0                           2 
+   812 softR[902]                  0                          -0 
+   813 softR[903]                  0                           2 
+   814 softR[904]                  0                          -0 
+   815 softR[905]                  0                           2 
+   816 softR[906]                  0                          -0 
+   817 softR[907]                  0                           2 
+   818 softR[908]                  0                          -0 
+   819 softR[909]                  0                           2 
+   820 softR[910]                  0                          -0 
+   821 softR[911]                  0                           2 
+   822 softR[912]                  0                          -0 
+   823 softR[913]                  0                           2 
+   824 softR[914]                  0                          -0 
+   825 softR[915]                  0                           2 
+   826 softR[916]                  0                          -0 
+   827 softR[917]                  0                           2 
+   828 softR[920]                  0                          -0 
+   829 softR[921]                  0                           2 
+   830 softR[922]                  0                          -0 
+   831 softR[923]                  0                           2 
+   832 softR[924]                  0                          -0 
+   833 softR[925]                  0                           2 
+   834 softR[926]                  0                          -0 
+   835 softR[927]                  0                           2 
+   836 softR[928]                  0                          -0 
+   837 softR[929]                  0                           2 
+   838 softR[930]                  0                          -0 
+   839 softR[931]                  0                           2 
+   840 softR[932]                  0                          -0 
+   841 softR[933]                  0                           2 
+   842 softR[934]                  0                          -0 
+   843 softR[935]                  0                           2 
+   844 softR[936]                  0                          -0 
+   845 softR[937]                  0                           2 
+   846 softR[938]                  0                          -0 
+   847 softR[939]                  0                           2 
+   848 softR[940]                  0                          -0 
+   849 softR[941]                  0                           2 
+   850 softR[942]                  0                          -0 
+   851 softR[943]                  0                           2 
+   852 softR[944]                  0                          -0 
+   853 softR[945]                  0                           2 
+   854 softR[946]                  0                          -0 
+   855 softR[947]                  0                           2 
+   856 softR[948]                  0                          -0 
+   857 softR[949]                  0                           2 
+   858 softR[950]                  0                          -0 
+   859 softR[951]                  0                           2 
+   860 softR[952]                  0                          -0 
+   861 softR[953]                  0                           2 
+   862 softR[954]                  0                          -0 
+   863 softR[955]                  0                           2 
+   864 softR[956]                  0                          -0 
+   865 softR[957]                  0                           2 
+   866 softR[958]                  0                          -0 
+   867 softR[959]                  0                           2 
+   868 softR[960]                  0                          -0 
+   869 softR[961]                  0                           2 
+   870 softR[962]                  0                          -0 
+   871 softR[963]                  0                           2 
+   872 softR[964]                  0                          -0 
+   873 softR[965]                  0                           2 
+   874 softR[966]                  0                          -0 
+   875 softR[967]                  0                           2 
+   876 softR[968]                  0                          -0 
+   877 softR[969]                  0                           2 
+   878 softR[970]                  0                          -0 
+   879 softR[971]                  0                           2 
+   880 softR[972]                  0                          -0 
+   881 softR[973]                  0                           2 
+   882 softR[974]                  0                          -0 
+   883 softR[975]                  0                           2 
+   884 softR[976]                  0                          -0 
+   885 softR[977]                  0                           2 
+   886 softR[978]                  0                          -0 
+   887 softR[979]                  0                           2 
+   888 softR[980]                  0                          -0 
+   889 softR[981]                  0                           2 
+   890 softR[982]                  0                          -0 
+   891 softR[983]                  0                           2 
+   892 softR[984]                  0                          -0 
+   893 softR[985]                  0                           2 
+   894 softR[986]                  0                          -0 
+   895 softR[987]                  0                           2 
+   896 softR[988]                  0                          -0 
+   897 softR[989]                  0                           2 
+   898 softR[990]                  0                          -0 
+   899 softR[991]                  0                           2 
+   900 softR[992]                  0                          -0 
+   901 softR[993]                  0                           2 
+   902 softR[994]                  0                          -0 
+   903 softR[995]                  0                           2 
+   904 softR[996]                  0                          -0 
+   905 softR[997]                  0                           2 
+   906 softR[998]                  0                          -0 
+   907 softR[999]                  0                           2 
+   908 softR[1000]                 0                          -0 
+   909 softR[1001]                 0                           2 
+   910 softR[1002]                 0                          -0 
+   911 softR[1003]                 0                           2 
+   912 softR[1006]                 0                          -0 
+   913 softR[1007]                 0                           2 
+   914 softR[1008]                 0                          -0 
+   915 softR[1009]                 0                           2 
+   916 softR[1010]                 0                          -0 
+   917 softR[1011]                 0                           2 
+   918 softR[1012]                 0                          -0 
+   919 softR[1013]                 0                           2 
+   920 softR[1014]                 0                          -0 
+   921 softR[1015]                 0                           2 
+   922 softR[1016]                 0                          -0 
+   923 softR[1017]                 0                           2 
+   924 softR[1020]                 0                          -0 
+   925 softR[1021]                 0                           2 
+   926 softR[1024]                 0                          -0 
+   927 softR[1025]                 0                           2 
+   928 softR[1028]                 0                          -0 
+   929 softR[1029]                 0                           2 
+   930 softR[1030]                 0                          -0 
+   931 softR[1031]                 0                           2 
+   932 softR[1034]                 0                          -0 
+   933 softR[1035]                 0                           2 
+   934 softR[1036]                 0                          -0 
+   935 softR[1037]                 0                           2 
+   936 softR[1038]                 0                          -0 
+   937 softR[1039]                 0                           2 
+   938 softR[1040]                 0                          -0 
+   939 softR[1041]                 0                           2 
+   940 softR[1046]                 0                          -0 
+   941 softR[1047]                 0                           2 
+   942 softR[1048]                 0                          -0 
+   943 softR[1049]                 0                           2 
+   944 softR[1050]                 0                          -0 
+   945 softR[1051]                 0                           2 
+   946 softR[1052]                 0                          -0 
+   947 softR[1053]                 0                           2 
+   948 softR[1054]                 0                          -0 
+   949 softR[1055]                 0                           2 
+   950 softR[1056]                 0                          -0 
+   951 softR[1057]                 0                           2 
+   952 softR[1058]                 0                          -0 
+   953 softR[1059]                 0                           2 
+   954 softR[1060]                 0                          -0 
+   955 softR[1061]                 0                           2 
+   956 softR[1062]                 0                          -0 
+   957 softR[1063]                 0                           2 
+   958 softR[1064]                 0                          -0 
+   959 softR[1065]                 0                           2 
+   960 softR[1066]                 0                          -0 
+   961 softR[1067]                 0                           2 
+   962 softR[1068]                 0                          -0 
+   963 softR[1069]                 0                           2 
+   964 softR[1070]                 0                          -0 
+   965 softR[1071]                 0                           2 
+   966 softR[1072]                 0                          -0 
+   967 softR[1073]                 0                           2 
+   968 softR[1074]                 0                          -0 
+   969 softR[1075]                 0                           2 
+   970 softR[1076]                 0                          -0 
+   971 softR[1077]                 0                           2 
+   972 softR[1078]                 0                          -0 
+   973 softR[1079]                 0                           2 
+   974 softR[1080]                 0                          -0 
+   975 softR[1081]                 0                           2 
+   976 softR[1082]                 0                          -0 
+   977 softR[1083]                 0                           2 
+   978 softR[1084]                 0                          -0 
+   979 softR[1085]                 0                           2 
+   980 softR[1086]                 0                          -0 
+   981 softR[1087]                 0                           2 
+   982 softR[1088]                 0                          -0 
+   983 softR[1089]                 0                           2 
+   984 softR[1090]                 0                          -0 
+   985 softR[1091]                 0                           2 
+   986 softR[1092]                 0                          -0 
+   987 softR[1093]                 0                           2 
+   988 softR[1094]                 0                          -0 
+   989 softR[1095]                 0                           2 
+   990 softR[1096]                 0                          -0 
+   991 softR[1097]                 0                           2 
+   992 softR[1098]                 0                          -0 
+   993 softR[1099]                 0                           2 
+   994 softR[1100]                 0                          -0 
+   995 softR[1101]                 0                           2 
+   996 softR[1102]                 0                          -0 
+   997 softR[1103]                 0                           2 
+   998 softR[1104]                 0                          -0 
+   999 softR[1105]                 0                           2 
+  1000 softR[1106]                 0                          -0 
+  1001 softR[1107]                 0                           2 
+  1002 softR[1108]                 0                          -0 
+  1003 softR[1109]                 0                           2 
+  1004 softR[1110]                 0                          -0 
+  1005 softR[1111]                 0                           2 
+  1006 softR[1112]                 0                          -0 
+  1007 softR[1113]                 0                           2 
+  1008 softR[1114]                 0                          -0 
+  1009 softR[1115]                 0                           2 
+  1010 softR[1116]                 0                          -0 
+  1011 softR[1117]                 0                           2 
+  1012 softR[1118]                 0                          -0 
+  1013 softR[1119]                 0                           2 
+  1014 softR[1120]                 0                          -0 
+  1015 softR[1121]                 0                           2 
+  1016 softR[1122]                 0                          -0 
+  1017 softR[1123]                 0                           2 
+  1018 softR[1124]                 0                          -0 
+  1019 softR[1125]                 0                           2 
+  1020 softR[1126]                 0                          -0 
+  1021 softR[1127]                 0                           2 
+  1022 softR[1128]                 0                          -0 
+  1023 softR[1129]                 0                           2 
+  1024 softR[1130]                 0                          -0 
+  1025 softR[1131]                 0                           2 
+  1026 softR[1132]                 0                          -0 
+  1027 softR[1133]                 0                           2 
+  1028 softR[1134]                 0                          -0 
+  1029 softR[1135]                 0                           2 
+  1030 softR[1136]                 0                          -0 
+  1031 softR[1137]                 0                           2 
+  1032 hardR[8]                    0                          -1 
+  1033 hardR[9]                    0                           1 
+  1034 hardR[28]                   0                          -1 
+  1035 hardR[29]                   0                           1 
+  1036 hardR[30]                   0                          -1 
+  1037 hardR[31]                   0                           1 
+  1038 hardR[56]                   0                          -1 
+  1039 hardR[57]                   0                           1 
+  1040 hardR[74]                   0                          -1 
+  1041 hardR[75]                   0                           1 
+  1042 hardR[94]                   0                          -1 
+  1043 hardR[95]                   0                           1 
+  1044 hardR[98]                   0                          -1 
+  1045 hardR[99]                   0                           1 
+  1046 hardR[122]                  0                          -1 
+  1047 hardR[123]                  0                           1 
+  1048 hardR[124]                  0                          -1 
+  1049 hardR[125]                  0                           1 
+  1050 hardR[146]                  0                          -1 
+  1051 hardR[147]                  0                           1 
+  1052 hardR[148]                  0                          -1 
+  1053 hardR[149]                  0                           1 
+  1054 hardR[180]                  0                          -1 
+  1055 hardR[181]                  0                           1 
+  1056 hardR[190]                  0                          -1 
+  1057 hardR[191]                  0                           1 
+  1058 hardR[198]                  0                          -1 
+  1059 hardR[199]                  0                           1 
+  1060 hardR[204]                  0                          -1 
+  1061 hardR[205]                  0                           1 
+  1062 hardR[206]                  0                          -1 
+  1063 hardR[207]                  0                           1 
+  1064 hardR[238]                  0                          -1 
+  1065 hardR[239]                  0                           1 
+  1066 hardR[248]                  0                          -1 
+  1067 hardR[249]                  0                           1 
+  1068 hardR[250]                  0                          -1 
+  1069 hardR[251]                  0                           1 
+  1070 hardR[282]                  0                          -1 
+  1071 hardR[283]                  0                           1 
+  1072 hardR[298]                  0                          -1 
+  1073 hardR[299]                  0                           1 
+  1074 hardR[328]                  0                          -1 
+  1075 hardR[329]                  0                           1 
+  1076 hardR[336]                  0                          -1 
+  1077 hardR[337]                  0                           1 
+  1078 hardR[346]                  0                          -1 
+  1079 hardR[347]                  0                           1 
+  1080 hardR[356]                  0                          -1 
+  1081 hardR[357]                  0                           1 
+  1082 hardR[378]                  0                          -1 
+  1083 hardR[379]                  0                           1 
+  1084 hardR[394]                  0                          -1 
+  1085 hardR[395]                  0                           1 
+  1086 hardR[400]                  0                          -1 
+  1087 hardR[401]                  0                           1 
+  1088 hardR[404]                  0                          -1 
+  1089 hardR[405]                  0                           1 
+  1090 hardR[406]                  0                          -1 
+  1091 hardR[407]                  0                           1 
+  1092 hardR[446]                  0                          -1 
+  1093 hardR[447]                  0                           1 
+  1094 hardR[460]                  0                          -1 
+  1095 hardR[461]                  0                           1 
+  1096 hardR[520]                  0                          -1 
+  1097 hardR[521]                  0                           1 
+  1098 hardR[560]                  0                          -1 
+  1099 hardR[561]                  0                           1 
+  1100 hardR[572]                  0                          -1 
+  1101 hardR[573]                  0                           1 
+  1102 hardR[574]                  0                          -1 
+  1103 hardR[575]                  0                           1 
+  1104 hardR[588]                  0                          -1 
+  1105 hardR[589]                  0                           1 
+  1106 hardR[590]                  0                          -1 
+  1107 hardR[591]                  0                           1 
+  1108 hardR[602]                  0                          -1 
+  1109 hardR[603]                  0                           1 
+  1110 hardR[604]                  0                          -1 
+  1111 hardR[605]                  0                           1 
+  1112 hardR[658]                  0                          -1 
+  1113 hardR[659]                  0                           1 
+  1114 hardR[660]                  0                          -1 
+  1115 hardR[661]                  0                           1 
+  1116 hardR[698]                  0                          -1 
+  1117 hardR[699]                  0                           1 
+  1118 hardR[736]                  0                          -1 
+  1119 hardR[737]                  0                           1 
+  1120 hardR[764]                  0                          -1 
+  1121 hardR[765]                  0                           1 
+  1122 hardR[836]                  0                          -1 
+  1123 hardR[837]                  0                           1 
+  1124 hardR[918]                  0                          -1 
+  1125 hardR[919]                  0                           1 
+  1126 hardR[1004]                 0                          -1 
+  1127 hardR[1005]                 0                           1 
+  1128 hardR[1018]                 0                          -1 
+  1129 hardR[1019]                 0                           1 
+  1130 hardR[1022]                 0                          -1 
+  1131 hardR[1023]                 0                           1 
+  1132 hardR[1026]                 0                          -1 
+  1133 hardR[1027]                 0                           1 
+  1134 hardR[1032]                 0                          -1 
+  1135 hardR[1033]                 0                           1 
+  1136 hardR[1042]                 0                          -1 
+  1137 hardR[1043]                 0                           1 
+  1138 hardR[1044]                 0                          -1 
+  1139 hardR[1045]                 0                           1 
+  1140 hardR[1138]                 0                          -1 
+  1141 hardR[1139]                 0                           1 
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
@@ -4631,1186 +1191,1036 @@ Objective:  pesoSoft = 0 (MAXimum)
     38 x[38]        *              0             0             1 
     39 x[39]        *              0             0             1 
     40 x[40]        *              0             0             1 
-    41 xN[1]        *              0             0             1 
-    42 xN[2]        *              0             0             1 
-    43 xN[3]        *              0             0             1 
-    44 xN[4]        *              0             0             1 
-    45 xN[5]        *              0             0             1 
-    46 xN[6]        *              0             0             1 
-    47 xN[7]        *              0             0             1 
-    48 xN[8]        *              0             0             1 
-    49 xN[9]        *              0             0             1 
-    50 xN[10]       *              0             0             1 
-    51 xN[11]       *              0             0             1 
-    52 xN[12]       *              0             0             1 
-    53 xN[13]       *              0             0             1 
-    54 xN[14]       *              0             0             1 
-    55 xN[15]       *              0             0             1 
-    56 xN[16]       *              0             0             1 
-    57 xN[17]       *              0             0             1 
-    58 xN[18]       *              0             0             1 
-    59 xN[19]       *              0             0             1 
-    60 xN[20]       *              0             0             1 
-    61 xN[21]       *              0             0             1 
-    62 xN[22]       *              0             0             1 
-    63 xN[23]       *              0             0             1 
-    64 xN[24]       *              0             0             1 
-    65 xN[25]       *              0             0             1 
-    66 xN[26]       *              0             0             1 
-    67 xN[27]       *              0             0             1 
-    68 xN[28]       *              0             0             1 
-    69 xN[29]       *              0             0             1 
-    70 xN[30]       *              0             0             1 
-    71 xN[31]       *              0             0             1 
-    72 xN[32]       *              0             0             1 
-    73 xN[33]       *              0             0             1 
-    74 xN[34]       *              0             0             1 
-    75 xN[35]       *              0             0             1 
-    76 xN[36]       *              0             0             1 
-    77 xN[37]       *              0             0             1 
-    78 xN[38]       *              0             0             1 
-    79 xN[39]       *              0             0             1 
-    80 xN[40]       *              0             0             1 
-    81 c[c0]        *              0             0             1 
-    82 c[c1]        *              0             0             1 
-    83 c[c2]        *              0             0             1 
-    84 c[c3]        *              0             0             1 
-    85 c[c4]        *              0             0             1 
-    86 c[c5]        *              0             0             1 
-    87 c[c6]        *              0             0             1 
-    88 c[c7]        *              0             0             1 
-    89 c[c8]        *              0             0             1 
-    90 c[c9]        *              0             0             1 
-    91 c[c10]       *              0             0             1 
-    92 c[c11]       *              0             0             1 
-    93 c[c12]       *              0             0             1 
-    94 c[c13]       *              0             0             1 
-    95 c[c14]       *              0             0             1 
-    96 c[c15]       *              0             0             1 
-    97 c[c16]       *              0             0             1 
-    98 c[c17]       *              0             0             1 
-    99 c[c18]       *              0             0             1 
-   100 c[c19]       *              0             0             1 
-   101 c[c20]       *              0             0             1 
-   102 c[c21]       *              0             0             1 
-   103 c[c22]       *              0             0             1 
-   104 c[c23]       *              0             0             1 
-   105 c[c24]       *              0             0             1 
-   106 c[c25]       *              0             0             1 
-   107 c[c26]       *              0             0             1 
-   108 c[c27]       *              0             0             1 
-   109 c[c28]       *              0             0             1 
-   110 c[c29]       *              0             0             1 
-   111 c[c30]       *              0             0             1 
-   112 c[c31]       *              0             0             1 
-   113 c[c32]       *              0             0             1 
-   114 c[c33]       *              0             0             1 
-   115 c[c34]       *              0             0             1 
-   116 c[c35]       *              0             0             1 
-   117 c[c36]       *              0             0             1 
-   118 c[c37]       *              0             0             1 
-   119 c[c38]       *              0             0             1 
-   120 c[c39]       *              0             0             1 
-   121 c[c40]       *              0             0             1 
-   122 c[c41]       *              0             0             1 
-   123 c[c42]       *              0             0             1 
-   124 c[c43]       *              0             0             1 
-   125 c[c44]       *              0             0             1 
-   126 c[c45]       *              0             0             1 
-   127 c[c46]       *              0             0             1 
-   128 c[c47]       *              0             0             1 
-   129 c[c48]       *              0             0             1 
-   130 c[c49]       *              0             0             1 
-   131 c[c50]       *              0             0             1 
-   132 c[c51]       *              0             0             1 
-   133 c[c52]       *              0             0             1 
-   134 c[c53]       *              0             0             1 
-   135 c[c54]       *              0             0             1 
-   136 c[c55]       *              0             0             1 
-   137 c[c56]       *              0             0             1 
-   138 c[c57]       *              0             0             1 
-   139 c[c58]       *              0             0             1 
-   140 c[c59]       *              0             0             1 
-   141 c[c60]       *              0             0             1 
-   142 c[c61]       *              0             0             1 
-   143 c[c62]       *              0             0             1 
-   144 c[c63]       *              0             0             1 
-   145 c[c64]       *              0             0             1 
-   146 c[c65]       *              0             0             1 
-   147 c[c66]       *              0             0             1 
-   148 c[c67]       *              0             0             1 
-   149 c[c68]       *              0             0             1 
-   150 c[c69]       *              0             0             1 
-   151 c[c70]       *              0             0             1 
-   152 c[c71]       *              0             0             1 
-   153 c[c72]       *              0             0             1 
-   154 c[c73]       *              0             0             1 
-   155 c[c74]       *              0             0             1 
-   156 c[c75]       *              0             0             1 
-   157 c[c76]       *              0             0             1 
-   158 c[c77]       *              0             0             1 
-   159 c[c78]       *              0             0             1 
-   160 c[c79]       *              0             0             1 
-   161 c[c80]       *              0             0             1 
-   162 c[c81]       *              0             0             1 
-   163 c[c82]       *              0             0             1 
-   164 c[c83]       *              0             0             1 
-   165 c[c84]       *              0             0             1 
-   166 c[c85]       *              0             0             1 
-   167 c[c86]       *              0             0             1 
-   168 c[c87]       *              0             0             1 
-   169 c[c88]       *              0             0             1 
-   170 c[c89]       *              0             0             1 
-   171 c[c90]       *              0             0             1 
-   172 c[c91]       *              0             0             1 
-   173 c[c92]       *              0             0             1 
-   174 c[c93]       *              0             0             1 
-   175 c[c94]       *              0             0             1 
-   176 c[c95]       *              0             0             1 
-   177 c[c96]       *              0             0             1 
-   178 c[c97]       *              0             0             1 
-   179 c[c98]       *              0             0             1 
-   180 c[c99]       *              0             0             1 
-   181 c[c100]      *              0             0             1 
-   182 c[c101]      *              0             0             1 
-   183 c[c102]      *              0             0             1 
-   184 c[c103]      *              0             0             1 
-   185 c[c104]      *              0             0             1 
-   186 c[c105]      *              0             0             1 
-   187 c[c106]      *              0             0             1 
-   188 c[c107]      *              0             0             1 
-   189 c[c108]      *              0             0             1 
-   190 c[c109]      *              0             0             1 
-   191 c[c110]      *              0             0             1 
-   192 c[c111]      *              0             0             1 
-   193 c[c112]      *              0             0             1 
-   194 c[c113]      *              0             0             1 
-   195 c[c114]      *              0             0             1 
-   196 c[c115]      *              0             0             1 
-   197 c[c116]      *              0             0             1 
-   198 c[c117]      *              0             0             1 
-   199 c[c118]      *              0             0             1 
-   200 c[c119]      *              0             0             1 
-   201 c[c120]      *              0             0             1 
-   202 c[c121]      *              0             0             1 
-   203 c[c122]      *              0             0             1 
-   204 c[c123]      *              0             0             1 
-   205 c[c124]      *              0             0             1 
-   206 c[c125]      *              0             0             1 
-   207 c[c126]      *              0             0             1 
-   208 c[c127]      *              0             0             1 
-   209 c[c128]      *              0             0             1 
-   210 c[c129]      *              0             0             1 
-   211 c[c130]      *              0             0             1 
-   212 c[c131]      *              0             0             1 
-   213 c[c132]      *              0             0             1 
-   214 c[c133]      *              0             0             1 
-   215 c[c134]      *              0             0             1 
-   216 c[c135]      *              0             0             1 
-   217 c[c136]      *              0             0             1 
-   218 c[c137]      *              0             0             1 
-   219 c[c138]      *              0             0             1 
-   220 c[c139]      *              0             0             1 
-   221 c[c140]      *              0             0             1 
-   222 c[c141]      *              0             0             1 
-   223 c[c142]      *              0             0             1 
-   224 c[c143]      *              0             0             1 
-   225 c[c144]      *              0             0             1 
-   226 c[c145]      *              0             0             1 
-   227 c[c146]      *              0             0             1 
-   228 c[c147]      *              0             0             1 
-   229 c[c148]      *              0             0             1 
-   230 c[c149]      *              0             0             1 
-   231 c[c150]      *              0             0             1 
-   232 c[c151]      *              0             0             1 
-   233 c[c152]      *              0             0             1 
-   234 c[c153]      *              0             0             1 
-   235 c[c154]      *              0             0             1 
-   236 c[c155]      *              0             0             1 
-   237 c[c156]      *              0             0             1 
-   238 c[c157]      *              0             0             1 
-   239 c[c158]      *              0             0             1 
-   240 c[c159]      *              0             0             1 
-   241 c[c160]      *              0             0             1 
-   242 c[c161]      *              0             0             1 
-   243 c[c162]      *              0             0             1 
-   244 c[c163]      *              0             0             1 
-   245 c[c164]      *              0             0             1 
-   246 c[c165]      *              0             0             1 
-   247 c[c166]      *              0             0             1 
-   248 c[c167]      *              0             0             1 
-   249 c[c168]      *              0             0             1 
-   250 c[c169]      *              0             0             1 
-   251 c[c170]      *              0             0             1 
-   252 c[c171]      *              0             0             1 
-   253 c[c172]      *              0             0             1 
-   254 c[c173]      *              0             0             1 
-   255 c[c174]      *              0             0             1 
-   256 c[c175]      *              0             0             1 
-   257 c[c176]      *              0             0             1 
-   258 c[c177]      *              0             0             1 
-   259 c[c178]      *              0             0             1 
-   260 c[c179]      *              0             0             1 
-   261 c[c180]      *              0             0             1 
-   262 c[c181]      *              0             0             1 
-   263 c[c182]      *              0             0             1 
-   264 c[c183]      *              0             0             1 
-   265 c[c184]      *              0             0             1 
-   266 c[c185]      *              0             0             1 
-   267 c[c186]      *              0             0             1 
-   268 c[c187]      *              0             0             1 
-   269 c[c188]      *              0             0             1 
-   270 c[c189]      *              0             0             1 
-   271 c[c190]      *              0             0             1 
-   272 c[c191]      *              0             0             1 
-   273 c[c192]      *              0             0             1 
-   274 c[c193]      *              0             0             1 
-   275 c[c194]      *              0             0             1 
-   276 c[c195]      *              0             0             1 
-   277 c[c196]      *              0             0             1 
-   278 c[c197]      *              0             0             1 
-   279 c[c198]      *              0             0             1 
-   280 c[c199]      *              0             0             1 
-   281 c[c200]      *              0             0             1 
-   282 c[c201]      *              0             0             1 
-   283 c[c202]      *              0             0             1 
-   284 c[c203]      *              0             0             1 
-   285 c[c204]      *              0             0             1 
-   286 c[c205]      *              0             0             1 
-   287 c[c206]      *              0             0             1 
-   288 c[c207]      *              0             0             1 
-   289 c[c208]      *              0             0             1 
-   290 c[c209]      *              0             0             1 
-   291 c[c210]      *              0             0             1 
-   292 c[c211]      *              0             0             1 
-   293 c[c212]      *              0             0             1 
-   294 c[c213]      *              0             0             1 
-   295 c[c214]      *              0             0             1 
-   296 c[c215]      *              0             0             1 
-   297 c[c216]      *              0             0             1 
-   298 c[c217]      *              0             0             1 
-   299 c[c218]      *              0             0             1 
-   300 c[c219]      *              0             0             1 
-   301 c[c220]      *              0             0             1 
-   302 c[c221]      *              0             0             1 
-   303 c[c222]      *              0             0             1 
-   304 c[c223]      *              0             0             1 
-   305 c[c224]      *              0             0             1 
-   306 c[c225]      *              0             0             1 
-   307 c[c226]      *              0             0             1 
-   308 c[c227]      *              0             0             1 
-   309 c[c228]      *              0             0             1 
-   310 c[c229]      *              0             0             1 
-   311 c[c230]      *              0             0             1 
-   312 c[c231]      *              0             0             1 
-   313 c[c232]      *              0             0             1 
-   314 c[c233]      *              0             0             1 
-   315 c[c234]      *              0             0             1 
-   316 c[c235]      *              0             0             1 
-   317 c[c236]      *              0             0             1 
-   318 c[c237]      *              0             0             1 
-   319 c[c238]      *              0             0             1 
-   320 c[c239]      *              0             0             1 
-   321 c[c240]      *              0             0             1 
-   322 c[c241]      *              0             0             1 
-   323 c[c242]      *              0             0             1 
-   324 c[c243]      *              0             0             1 
-   325 c[c244]      *              0             0             1 
-   326 c[c245]      *              0             0             1 
-   327 c[c246]      *              0             0             1 
-   328 c[c247]      *              0             0             1 
-   329 c[c248]      *              0             0             1 
-   330 c[c249]      *              0             0             1 
-   331 c[c250]      *              0             0             1 
-   332 c[c251]      *              0             0             1 
-   333 c[c252]      *              0             0             1 
-   334 c[c253]      *              0             0             1 
-   335 c[c254]      *              0             0             1 
-   336 c[c255]      *              0             0             1 
-   337 c[c256]      *              0             0             1 
-   338 c[c257]      *              0             0             1 
-   339 c[c258]      *              0             0             1 
-   340 c[c259]      *              0             0             1 
-   341 c[c260]      *              0             0             1 
-   342 c[c261]      *              0             0             1 
-   343 c[c262]      *              0             0             1 
-   344 c[c263]      *              0             0             1 
-   345 c[c264]      *              0             0             1 
-   346 c[c265]      *              0             0             1 
-   347 c[c266]      *              0             0             1 
-   348 c[c267]      *              0             0             1 
-   349 c[c268]      *              0             0             1 
-   350 c[c269]      *              0             0             1 
-   351 c[c270]      *              0             0             1 
-   352 c[c271]      *              0             0             1 
-   353 c[c272]      *              0             0             1 
-   354 c[c273]      *              0             0             1 
-   355 c[c274]      *              0             0             1 
-   356 c[c275]      *              0             0             1 
-   357 c[c276]      *              0             0             1 
-   358 c[c277]      *              0             0             1 
-   359 c[c278]      *              0             0             1 
-   360 c[c279]      *              0             0             1 
-   361 c[c280]      *              0             0             1 
-   362 c[c281]      *              0             0             1 
-   363 c[c282]      *              0             0             1 
-   364 c[c283]      *              0             0             1 
-   365 c[c284]      *              0             0             1 
-   366 c[c285]      *              0             0             1 
-   367 c[c286]      *              0             0             1 
-   368 c[c287]      *              0             0             1 
-   369 c[c288]      *              0             0             1 
-   370 c[c289]      *              0             0             1 
-   371 c[c290]      *              0             0             1 
-   372 c[c291]      *              0             0             1 
-   373 c[c292]      *              0             0             1 
-   374 c[c293]      *              0             0             1 
-   375 c[c294]      *              0             0             1 
-   376 c[c295]      *              0             0             1 
-   377 c[c296]      *              0             0             1 
-   378 c[c297]      *              0             0             1 
-   379 c[c298]      *              0             0             1 
-   380 c[c299]      *              0             0             1 
-   381 c[c300]      *              0             0             1 
-   382 c[c301]      *              0             0             1 
-   383 c[c302]      *              0             0             1 
-   384 c[c303]      *              0             0             1 
-   385 c[c304]      *              0             0             1 
-   386 c[c305]      *              0             0             1 
-   387 c[c306]      *              0             0             1 
-   388 c[c307]      *              0             0             1 
-   389 c[c308]      *              0             0             1 
-   390 c[c309]      *              0             0             1 
-   391 c[c310]      *              0             0             1 
-   392 c[c311]      *              0             0             1 
-   393 c[c312]      *              0             0             1 
-   394 c[c313]      *              0             0             1 
-   395 c[c314]      *              0             0             1 
-   396 c[c315]      *              0             0             1 
-   397 c[c316]      *              0             0             1 
-   398 c[c317]      *              0             0             1 
-   399 c[c318]      *              0             0             1 
-   400 c[c319]      *              0             0             1 
-   401 c[c320]      *              0             0             1 
-   402 c[c321]      *              0             0             1 
-   403 c[c322]      *              0             0             1 
-   404 c[c323]      *              0             0             1 
-   405 c[c324]      *              0             0             1 
-   406 c[c325]      *              0             0             1 
-   407 c[c326]      *              0             0             1 
-   408 c[c327]      *              0             0             1 
-   409 c[c328]      *              0             0             1 
-   410 c[c329]      *              0             0             1 
-   411 c[c330]      *              0             0             1 
-   412 c[c331]      *              0             0             1 
-   413 c[c332]      *              0             0             1 
-   414 c[c333]      *              0             0             1 
-   415 c[c334]      *              0             0             1 
-   416 c[c335]      *              0             0             1 
-   417 c[c336]      *              0             0             1 
-   418 c[c337]      *              0             0             1 
-   419 c[c338]      *              0             0             1 
-   420 c[c339]      *              0             0             1 
-   421 c[c340]      *              0             0             1 
-   422 c[c341]      *              0             0             1 
-   423 c[c342]      *              0             0             1 
-   424 c[c343]      *              0             0             1 
-   425 c[c344]      *              0             0             1 
-   426 c[c345]      *              0             0             1 
-   427 c[c346]      *              0             0             1 
-   428 c[c347]      *              0             0             1 
-   429 c[c348]      *              0             0             1 
-   430 c[c349]      *              0             0             1 
-   431 c[c350]      *              0             0             1 
-   432 c[c351]      *              0             0             1 
-   433 c[c352]      *              0             0             1 
-   434 c[c353]      *              0             0             1 
-   435 c[c354]      *              0             0             1 
-   436 c[c355]      *              0             0             1 
-   437 c[c356]      *              0             0             1 
-   438 c[c357]      *              0             0             1 
-   439 c[c358]      *              0             0             1 
-   440 c[c359]      *              0             0             1 
-   441 c[c360]      *              0             0             1 
-   442 c[c361]      *              0             0             1 
-   443 c[c362]      *              0             0             1 
-   444 c[c363]      *              0             0             1 
-   445 c[c364]      *              0             0             1 
-   446 c[c365]      *              0             0             1 
-   447 c[c366]      *              0             0             1 
-   448 c[c367]      *              0             0             1 
-   449 c[c368]      *              0             0             1 
-   450 c[c369]      *              0             0             1 
-   451 c[c370]      *              0             0             1 
-   452 c[c371]      *              0             0             1 
-   453 c[c372]      *              0             0             1 
-   454 c[c373]      *              0             0             1 
-   455 c[c374]      *              0             0             1 
-   456 c[c375]      *              0             0             1 
-   457 c[c376]      *              0             0             1 
-   458 c[c377]      *              0             0             1 
-   459 c[c378]      *              0             0             1 
-   460 c[c379]      *              0             0             1 
-   461 c[c380]      *              0             0             1 
-   462 c[c381]      *              0             0             1 
-   463 c[c382]      *              0             0             1 
-   464 c[c383]      *              0             0             1 
-   465 c[c384]      *              0             0             1 
-   466 c[c385]      *              0             0             1 
-   467 c[c386]      *              0             0             1 
-   468 c[c387]      *              0             0             1 
-   469 c[c388]      *              0             0             1 
-   470 c[c389]      *              0             0             1 
-   471 c[c390]      *              0             0             1 
-   472 c[c391]      *              0             0             1 
-   473 c[c392]      *              0             0             1 
-   474 c[c393]      *              0             0             1 
-   475 c[c394]      *              0             0             1 
-   476 c[c395]      *              0             0             1 
-   477 c[c396]      *              0             0             1 
-   478 c[c397]      *              0             0             1 
-   479 c[c398]      *              0             0             1 
-   480 c[c399]      *              0             0             1 
-   481 c[c400]      *              0             0             1 
-   482 c[c401]      *              0             0             1 
-   483 c[c402]      *              0             0             1 
-   484 c[c403]      *              0             0             1 
-   485 c[c404]      *              0             0             1 
-   486 c[c405]      *              0             0             1 
-   487 c[c406]      *              0             0             1 
-   488 c[c407]      *              0             0             1 
-   489 c[c408]      *              0             0             1 
-   490 c[c409]      *              0             0             1 
-   491 c[c410]      *              0             0             1 
-   492 c[c411]      *              0             0             1 
-   493 c[c412]      *              0             0             1 
-   494 c[c413]      *              0             0             1 
-   495 c[c414]      *              0             0             1 
-   496 c[c415]      *              0             0             1 
-   497 c[c416]      *              0             0             1 
-   498 c[c417]      *              0             0             1 
-   499 c[c418]      *              0             0             1 
-   500 c[c419]      *              0             0             1 
-   501 c[c420]      *              0             0             1 
-   502 c[c421]      *              0             0             1 
-   503 c[c422]      *              0             0             1 
-   504 c[c423]      *              0             0             1 
-   505 c[c424]      *              0             0             1 
-   506 c[c425]      *              0             0             1 
-   507 c[c426]      *              0             0             1 
-   508 c[c427]      *              0             0             1 
-   509 c[c428]      *              0             0             1 
-   510 c[c429]      *              0             0             1 
-   511 c[c430]      *              0             0             1 
-   512 c[c431]      *              0             0             1 
-   513 c[c432]      *              0             0             1 
-   514 c[c433]      *              0             0             1 
-   515 c[c434]      *              0             0             1 
-   516 c[c435]      *              0             0             1 
-   517 c[c436]      *              0             0             1 
-   518 c[c437]      *              0             0             1 
-   519 c[c438]      *              0             0             1 
-   520 c[c439]      *              0             0             1 
-   521 c[c440]      *              0             0             1 
-   522 c[c441]      *              0             0             1 
-   523 c[c442]      *              0             0             1 
-   524 c[c443]      *              0             0             1 
-   525 c[c444]      *              0             0             1 
-   526 c[c445]      *              0             0             1 
-   527 c[c446]      *              0             0             1 
-   528 c[c447]      *              0             0             1 
-   529 c[c448]      *              0             0             1 
-   530 c[c449]      *              0             0             1 
-   531 c[c450]      *              0             0             1 
-   532 c[c451]      *              0             0             1 
-   533 c[c452]      *              0             0             1 
-   534 c[c453]      *              0             0             1 
-   535 c[c454]      *              0             0             1 
-   536 c[c455]      *              0             0             1 
-   537 c[c456]      *              0             0             1 
-   538 c[c457]      *              0             0             1 
-   539 c[c458]      *              0             0             1 
-   540 c[c459]      *              0             0             1 
-   541 c[c460]      *              0             0             1 
-   542 c[c461]      *              0             0             1 
-   543 c[c462]      *              0             0             1 
-   544 c[c463]      *              0             0             1 
-   545 c[c464]      *              0             0             1 
-   546 c[c465]      *              0             0             1 
-   547 c[c466]      *              0             0             1 
-   548 c[c467]      *              0             0             1 
-   549 c[c468]      *              0             0             1 
-   550 c[c469]      *              0             0             1 
-   551 c[c470]      *              0             0             1 
-   552 c[c471]      *              0             0             1 
-   553 c[c472]      *              0             0             1 
-   554 c[c473]      *              0             0             1 
-   555 c[c474]      *              0             0             1 
-   556 c[c475]      *              0             0             1 
-   557 c[c476]      *              0             0             1 
-   558 c[c477]      *              0             0             1 
-   559 c[c478]      *              0             0             1 
-   560 c[c479]      *              0             0             1 
-   561 c[c480]      *              0             0             1 
-   562 c[c481]      *              0             0             1 
-   563 c[c482]      *              0             0             1 
-   564 c[c483]      *              0             0             1 
-   565 c[c484]      *              0             0             1 
-   566 c[c485]      *              0             0             1 
-   567 c[c486]      *              0             0             1 
-   568 c[c487]      *              0             0             1 
-   569 c[c488]      *              0             0             1 
-   570 c[c489]      *              0             0             1 
-   571 c[c490]      *              0             0             1 
-   572 c[c491]      *              0             0             1 
-   573 c[c492]      *              0             0             1 
-   574 c[c493]      *              0             0             1 
-   575 c[c494]      *              0             0             1 
-   576 c[c495]      *              0             0             1 
-   577 c[c496]      *              0             0             1 
-   578 c[c497]      *              0             0             1 
-   579 c[c498]      *              0             0             1 
-   580 c[c499]      *              0             0             1 
-   581 c[c500]      *              0             0             1 
-   582 c[c501]      *              0             0             1 
-   583 c[c502]      *              0             0             1 
-   584 c[c503]      *              0             0             1 
-   585 c[c504]      *              0             0             1 
-   586 c[c505]      *              0             0             1 
-   587 c[c506]      *              0             0             1 
-   588 c[c507]      *              0             0             1 
-   589 c[c508]      *              0             0             1 
-   590 c[c509]      *              0             0             1 
-   591 c[c510]      *              0             0             1 
-   592 c[c511]      *              0             0             1 
-   593 c[c512]      *              0             0             1 
-   594 c[c513]      *              0             0             1 
-   595 c[c514]      *              0             0             1 
-   596 c[c515]      *              0             0             1 
-   597 c[c516]      *              0             0             1 
-   598 c[c517]      *              0             0             1 
-   599 c[c518]      *              0             0             1 
-   600 c[c519]      *              0             0             1 
-   601 c[c520]      *              0             0             1 
-   602 c[c521]      *              0             0             1 
-   603 c[c522]      *              0             0             1 
-   604 c[c523]      *              0             0             1 
-   605 c[c524]      *              0             0             1 
-   606 c[c525]      *              0             0             1 
-   607 c[c526]      *              0             0             1 
-   608 c[c527]      *              0             0             1 
-   609 c[c528]      *              0             0             1 
-   610 c[c529]      *              0             0             1 
-   611 c[c530]      *              0             0             1 
-   612 c[c531]      *              0             0             1 
-   613 c[c532]      *              0             0             1 
-   614 c[c533]      *              0             0             1 
-   615 c[c534]      *              0             0             1 
-   616 c[c535]      *              0             0             1 
-   617 c[c536]      *              0             0             1 
-   618 c[c537]      *              0             0             1 
-   619 c[c538]      *              0             0             1 
-   620 c[c539]      *              0             0             1 
-   621 c[c540]      *              0             0             1 
-   622 c[c541]      *              0             0             1 
-   623 c[c542]      *              0             0             1 
-   624 c[c543]      *              0             0             1 
-   625 c[c544]      *              0             0             1 
-   626 c[c545]      *              0             0             1 
-   627 c[c546]      *              0             0             1 
-   628 c[c547]      *              0             0             1 
-   629 c[c548]      *              0             0             1 
-   630 c[c549]      *              0             0             1 
-   631 c[c550]      *              0             0             1 
-   632 c[c551]      *              0             0             1 
-   633 c[c552]      *              0             0             1 
-   634 c[c553]      *              0             0             1 
-   635 c[c554]      *              0             0             1 
-   636 c[c555]      *              0             0             1 
-   637 c[c556]      *              0             0             1 
-   638 c[c557]      *              0             0             1 
-   639 c[c558]      *              0             0             1 
-   640 c[c559]      *              0             0             1 
-   641 c[c560]      *              0             0             1 
-   642 c[c561]      *              0             0             1 
-   643 c[c562]      *              0             0             1 
-   644 c[c563]      *              0             0             1 
-   645 c[c564]      *              0             0             1 
-   646 c[c565]      *              0             0             1 
-   647 c[c566]      *              0             0             1 
-   648 c[c567]      *              0             0             1 
-   649 c[c568]      *              0             0             1 
-   650 c[c569]      *              0             0             1 
-   651 c[c570]      *              0             0             1 
-   652 c[c571]      *              0             0             1 
-   653 c[c572]      *              0             0             1 
-   654 c[c573]      *              0             0             1 
-   655 c[c574]      *              0             0             1 
-   656 c[c575]      *              0             0             1 
-   657 c[c576]      *              0             0             1 
-   658 c[c577]      *              0             0             1 
-   659 c[c578]      *              0             0             1 
-   660 c[c579]      *              0             0             1 
-   661 c[c580]      *              0             0             1 
-   662 c[c581]      *              0             0             1 
-   663 c[c582]      *              0             0             1 
-   664 c[c583]      *              0             0             1 
-   665 c[c584]      *              0             0             1 
-   666 c[c585]      *              0             0             1 
-   667 c[c586]      *              0             0             1 
-   668 c[c587]      *              0             0             1 
-   669 c[c588]      *              0             0             1 
-   670 c[c589]      *              0             0             1 
-   671 c[c590]      *              0             0             1 
-   672 c[c591]      *              0             0             1 
-   673 c[c592]      *              0             0             1 
-   674 c[c593]      *              0             0             1 
-   675 c[c594]      *              0             0             1 
-   676 c[c595]      *              0             0             1 
-   677 c[c596]      *              0             0             1 
-   678 c[c597]      *              0             0             1 
-   679 c[c598]      *              0             0             1 
-   680 c[c599]      *              0             0             1 
-   681 c[c600]      *              0             0             1 
-   682 c[c601]      *              0             0             1 
-   683 c[c602]      *              0             0             1 
-   684 c[c603]      *              0             0             1 
-   685 c[c604]      *              0             0             1 
-   686 c[c605]      *              0             0             1 
-   687 c[c606]      *              0             0             1 
-   688 c[c607]      *              0             0             1 
-   689 c[c608]      *              0             0             1 
-   690 c[c609]      *              0             0             1 
-   691 c[c610]      *              0             0             1 
-   692 c[c611]      *              0             0             1 
-   693 c[c612]      *              0             0             1 
-   694 c[c613]      *              0             0             1 
-   695 c[c614]      *              0             0             1 
-   696 c[c615]      *              0             0             1 
-   697 c[c616]      *              0             0             1 
-   698 c[c617]      *              0             0             1 
-   699 c[c618]      *              0             0             1 
-   700 c[c619]      *              0             0             1 
-   701 c[c620]      *              0             0             1 
-   702 c[c621]      *              0             0             1 
-   703 c[c622]      *              0             0             1 
-   704 c[c623]      *              0             0             1 
-   705 c[c624]      *              0             0             1 
-   706 c[c625]      *              0             0             1 
-   707 c[c626]      *              0             0             1 
-   708 c[c627]      *              0             0             1 
-   709 c[c628]      *              0             0             1 
-   710 c[c629]      *              0             0             1 
-   711 c[c630]      *              0             0             1 
-   712 c[c631]      *              0             0             1 
-   713 c[c632]      *              0             0             1 
-   714 c[c633]      *              0             0             1 
-   715 c[c634]      *              0             0             1 
-   716 c[c635]      *              0             0             1 
-   717 c[c636]      *              0             0             1 
-   718 c[c637]      *              0             0             1 
-   719 c[c638]      *              0             0             1 
-   720 c[c639]      *              0             0             1 
-   721 c[c640]      *              0             0             1 
-   722 c[c641]      *              0             0             1 
-   723 c[c642]      *              0             0             1 
-   724 c[c643]      *              0             0             1 
-   725 c[c644]      *              0             0             1 
-   726 c[c645]      *              0             0             1 
-   727 c[c646]      *              0             0             1 
-   728 c[c647]      *              0             0             1 
-   729 c[c648]      *              0             0             1 
-   730 c[c649]      *              0             0             1 
-   731 c[c650]      *              0             0             1 
-   732 c[c651]      *              0             0             1 
-   733 c[c652]      *              0             0             1 
-   734 c[c653]      *              0             0             1 
-   735 c[c654]      *              0             0             1 
-   736 c[c655]      *              0             0             1 
-   737 c[c656]      *              0             0             1 
-   738 c[c657]      *              0             0             1 
-   739 c[c658]      *              0             0             1 
-   740 c[c659]      *              0             0             1 
-   741 c[c660]      *              0             0             1 
-   742 c[c661]      *              0             0             1 
-   743 c[c662]      *              0             0             1 
-   744 c[c663]      *              0             0             1 
-   745 c[c664]      *              0             0             1 
-   746 c[c665]      *              0             0             1 
-   747 c[c666]      *              0             0             1 
-   748 c[c667]      *              0             0             1 
-   749 c[c668]      *              0             0             1 
-   750 c[c669]      *              0             0             1 
-   751 c[c670]      *              0             0             1 
-   752 c[c671]      *              0             0             1 
-   753 c[c672]      *              0             0             1 
-   754 c[c673]      *              0             0             1 
-   755 c[c674]      *              0             0             1 
-   756 c[c675]      *              0             0             1 
-   757 c[c676]      *              0             0             1 
-   758 c[c677]      *              0             0             1 
-   759 c[c678]      *              0             0             1 
-   760 c[c679]      *              0             0             1 
-   761 c[c680]      *              0             0             1 
-   762 c[c681]      *              0             0             1 
-   763 c[c682]      *              0             0             1 
-   764 c[c683]      *              0             0             1 
-   765 c[c684]      *              0             0             1 
-   766 c[c685]      *              0             0             1 
-   767 c[c686]      *              0             0             1 
-   768 c[c687]      *              0             0             1 
-   769 c[c688]      *              0             0             1 
-   770 c[c689]      *              0             0             1 
-   771 c[c690]      *              0             0             1 
-   772 c[c691]      *              0             0             1 
-   773 c[c692]      *              0             0             1 
-   774 c[c693]      *              0             0             1 
-   775 c[c694]      *              0             0             1 
-   776 c[c695]      *              0             0             1 
-   777 c[c696]      *              0             0             1 
-   778 c[c697]      *              0             0             1 
-   779 c[c698]      *              0             0             1 
-   780 c[c699]      *              0             0             1 
-   781 c[c700]      *              0             0             1 
-   782 c[c701]      *              0             0             1 
-   783 c[c702]      *              0             0             1 
-   784 c[c703]      *              0             0             1 
-   785 c[c704]      *              0             0             1 
-   786 c[c705]      *              0             0             1 
-   787 c[c706]      *              0             0             1 
-   788 c[c707]      *              0             0             1 
-   789 c[c708]      *              0             0             1 
-   790 c[c709]      *              0             0             1 
-   791 c[c710]      *              0             0             1 
-   792 c[c711]      *              0             0             1 
-   793 c[c712]      *              0             0             1 
-   794 c[c713]      *              0             0             1 
-   795 c[c714]      *              0             0             1 
-   796 c[c715]      *              0             0             1 
-   797 c[c716]      *              0             0             1 
-   798 c[c717]      *              0             0             1 
-   799 c[c718]      *              0             0             1 
-   800 c[c719]      *              0             0             1 
-   801 c[c720]      *              0             0             1 
-   802 c[c721]      *              0             0             1 
-   803 c[c722]      *              0             0             1 
-   804 c[c723]      *              0             0             1 
-   805 c[c724]      *              0             0             1 
-   806 c[c725]      *              0             0             1 
-   807 c[c726]      *              0             0             1 
-   808 c[c727]      *              0             0             1 
-   809 c[c728]      *              0             0             1 
-   810 c[c729]      *              0             0             1 
-   811 c[c730]      *              0             0             1 
-   812 c[c731]      *              0             0             1 
-   813 c[c732]      *              0             0             1 
-   814 c[c733]      *              0             0             1 
-   815 c[c734]      *              0             0             1 
-   816 c[c735]      *              0             0             1 
-   817 c[c736]      *              0             0             1 
-   818 c[c737]      *              0             0             1 
-   819 c[c738]      *              0             0             1 
-   820 c[c739]      *              0             0             1 
-   821 c[c740]      *              0             0             1 
-   822 c[c741]      *              0             0             1 
-   823 c[c742]      *              0             0             1 
-   824 c[c743]      *              0             0             1 
-   825 c[c744]      *              0             0             1 
-   826 c[c745]      *              0             0             1 
-   827 c[c746]      *              0             0             1 
-   828 c[c747]      *              0             0             1 
-   829 c[c748]      *              0             0             1 
-   830 c[c749]      *              0             0             1 
-   831 c[c750]      *              0             0             1 
-   832 c[c751]      *              0             0             1 
-   833 c[c752]      *              0             0             1 
-   834 c[c753]      *              0             0             1 
-   835 c[c754]      *              0             0             1 
-   836 c[c755]      *              0             0             1 
-   837 c[c756]      *              0             0             1 
-   838 c[c757]      *              0             0             1 
-   839 c[c758]      *              0             0             1 
-   840 c[c759]      *              0             0             1 
-   841 c[c760]      *              0             0             1 
-   842 c[c761]      *              0             0             1 
-   843 c[c762]      *              0             0             1 
-   844 c[c763]      *              0             0             1 
-   845 c[c764]      *              0             0             1 
-   846 c[c765]      *              0             0             1 
-   847 c[c766]      *              0             0             1 
-   848 c[c767]      *              0             0             1 
-   849 c[c768]      *              0             0             1 
-   850 c[c769]      *              0             0             1 
-   851 c[c770]      *              0             0             1 
-   852 c[c771]      *              0             0             1 
-   853 c[c772]      *              0             0             1 
-   854 c[c773]      *              0             0             1 
-   855 c[c774]      *              0             0             1 
-   856 c[c775]      *              0             0             1 
-   857 c[c776]      *              0             0             1 
-   858 c[c777]      *              0             0             1 
-   859 c[c778]      *              0             0             1 
-   860 c[c779]      *              0             0             1 
-   861 c[c780]      *              0             0             1 
-   862 c[c781]      *              0             0             1 
-   863 c[c782]      *              0             0             1 
-   864 c[c783]      *              0             0             1 
-   865 c[c784]      *              0             0             1 
-   866 c[c785]      *              0             0             1 
-   867 c[c786]      *              0             0             1 
-   868 c[c787]      *              0             0             1 
-   869 c[c788]      *              0             0             1 
-   870 c[c789]      *              0             0             1 
-   871 c[c790]      *              0             0             1 
-   872 c[c791]      *              0             0             1 
-   873 c[c792]      *              0             0             1 
-   874 c[c793]      *              0             0             1 
-   875 c[c794]      *              0             0             1 
-   876 c[c795]      *              0             0             1 
-   877 c[c796]      *              0             0             1 
-   878 c[c797]      *              0             0             1 
-   879 c[c798]      *              0             0             1 
-   880 c[c799]      *              0             0             1 
-   881 c[c800]      *              0             0             1 
-   882 c[c801]      *              0             0             1 
-   883 c[c802]      *              0             0             1 
-   884 c[c803]      *              0             0             1 
-   885 c[c804]      *              0             0             1 
-   886 c[c805]      *              0             0             1 
-   887 c[c806]      *              0             0             1 
-   888 c[c807]      *              0             0             1 
-   889 c[c808]      *              0             0             1 
-   890 c[c809]      *              0             0             1 
-   891 c[c810]      *              0             0             1 
-   892 c[c811]      *              0             0             1 
-   893 c[c812]      *              0             0             1 
-   894 c[c813]      *              0             0             1 
-   895 c[c814]      *              0             0             1 
-   896 c[c815]      *              0             0             1 
-   897 c[c816]      *              0             0             1 
-   898 c[c817]      *              0             0             1 
-   899 c[c818]      *              0             0             1 
-   900 c[c819]      *              0             0             1 
-   901 c[c820]      *              0             0             1 
-   902 c[c821]      *              0             0             1 
-   903 c[c822]      *              0             0             1 
-   904 c[c823]      *              0             0             1 
-   905 c[c824]      *              0             0             1 
-   906 c[c825]      *              0             0             1 
-   907 c[c826]      *              0             0             1 
-   908 c[c827]      *              0             0             1 
-   909 c[c828]      *              0             0             1 
-   910 c[c829]      *              0             0             1 
-   911 c[c830]      *              0             0             1 
-   912 c[c831]      *              0             0             1 
-   913 c[c832]      *              0             0             1 
-   914 c[c833]      *              0             0             1 
-   915 c[c834]      *              0             0             1 
-   916 c[c835]      *              0             0             1 
-   917 c[c836]      *              0             0             1 
-   918 c[c837]      *              0             0             1 
-   919 c[c838]      *              0             0             1 
-   920 c[c839]      *              0             0             1 
-   921 c[c840]      *              0             0             1 
-   922 c[c841]      *              0             0             1 
-   923 c[c842]      *              0             0             1 
-   924 c[c843]      *              0             0             1 
-   925 c[c844]      *              0             0             1 
-   926 c[c845]      *              0             0             1 
-   927 c[c846]      *              0             0             1 
-   928 c[c847]      *              0             0             1 
-   929 c[c848]      *              0             0             1 
-   930 c[c849]      *              0             0             1 
-   931 c[c850]      *              0             0             1 
-   932 c[c851]      *              0             0             1 
-   933 c[c852]      *              0             0             1 
-   934 c[c853]      *              0             0             1 
-   935 c[c854]      *              0             0             1 
-   936 c[c855]      *              0             0             1 
-   937 c[c856]      *              0             0             1 
-   938 c[c857]      *              0             0             1 
-   939 c[c858]      *              0             0             1 
-   940 c[c859]      *              0             0             1 
-   941 c[c860]      *              0             0             1 
-   942 c[c861]      *              0             0             1 
-   943 c[c862]      *              0             0             1 
-   944 c[c863]      *              0             0             1 
-   945 c[c864]      *              0             0             1 
-   946 c[c865]      *              0             0             1 
-   947 c[c866]      *              0             0             1 
-   948 c[c867]      *              0             0             1 
-   949 c[c868]      *              0             0             1 
-   950 c[c869]      *              0             0             1 
-   951 c[c870]      *              0             0             1 
-   952 c[c871]      *              0             0             1 
-   953 c[c872]      *              0             0             1 
-   954 c[c873]      *              0             0             1 
-   955 c[c874]      *              0             0             1 
-   956 c[c875]      *              0             0             1 
-   957 c[c876]      *              0             0             1 
-   958 c[c877]      *              0             0             1 
-   959 c[c878]      *              0             0             1 
-   960 c[c879]      *              0             0             1 
-   961 c[c880]      *              0             0             1 
-   962 c[c881]      *              0             0             1 
-   963 c[c882]      *              0             0             1 
-   964 c[c883]      *              0             0             1 
-   965 c[c884]      *              0             0             1 
-   966 c[c885]      *              0             0             1 
-   967 c[c886]      *              0             0             1 
-   968 c[c887]      *              0             0             1 
-   969 c[c888]      *              0             0             1 
-   970 c[c889]      *              0             0             1 
-   971 c[c890]      *              0             0             1 
-   972 c[c891]      *              0             0             1 
-   973 c[c892]      *              0             0             1 
-   974 c[c893]      *              0             0             1 
-   975 c[c894]      *              0             0             1 
-   976 c[c895]      *              0             0             1 
-   977 c[c896]      *              0             0             1 
-   978 c[c897]      *              0             0             1 
-   979 c[c898]      *              0             0             1 
-   980 c[c899]      *              0             0             1 
-   981 c[c900]      *              0             0             1 
-   982 c[c901]      *              0             0             1 
-   983 c[c902]      *              0             0             1 
-   984 c[c903]      *              0             0             1 
-   985 c[c904]      *              0             0             1 
-   986 c[c905]      *              0             0             1 
-   987 c[c906]      *              0             0             1 
-   988 c[c907]      *              0             0             1 
-   989 c[c908]      *              0             0             1 
-   990 c[c909]      *              0             0             1 
-   991 c[c910]      *              0             0             1 
-   992 c[c911]      *              0             0             1 
-   993 c[c912]      *              0             0             1 
-   994 c[c913]      *              0             0             1 
-   995 c[c914]      *              0             0             1 
-   996 c[c915]      *              0             0             1 
-   997 c[c916]      *              0             0             1 
-   998 c[c917]      *              0             0             1 
-   999 c[c918]      *              0             0             1 
-  1000 c[c919]      *              0             0             1 
-  1001 c[c920]      *              0             0             1 
-  1002 c[c921]      *              0             0             1 
-  1003 c[c922]      *              0             0             1 
-  1004 c[c923]      *              0             0             1 
-  1005 c[c924]      *              0             0             1 
-  1006 c[c925]      *              0             0             1 
-  1007 c[c926]      *              0             0             1 
-  1008 c[c927]      *              0             0             1 
-  1009 c[c928]      *              0             0             1 
-  1010 c[c929]      *              0             0             1 
-  1011 c[c930]      *              0             0             1 
-  1012 c[c931]      *              0             0             1 
-  1013 c[c932]      *              0             0             1 
-  1014 c[c933]      *              0             0             1 
-  1015 c[c934]      *              0             0             1 
-  1016 c[c935]      *              0             0             1 
-  1017 c[c936]      *              0             0             1 
-  1018 c[c937]      *              0             0             1 
-  1019 c[c938]      *              0             0             1 
-  1020 c[c939]      *              0             0             1 
-  1021 c[c940]      *              0             0             1 
-  1022 c[c941]      *              0             0             1 
-  1023 c[c942]      *              0             0             1 
-  1024 c[c943]      *              0             0             1 
-  1025 c[c944]      *              0             0             1 
-  1026 c[c945]      *              0             0             1 
-  1027 c[c946]      *              0             0             1 
-  1028 c[c947]      *              0             0             1 
-  1029 c[c948]      *              0             0             1 
-  1030 c[c949]      *              0             0             1 
-  1031 c[c950]      *              0             0             1 
-  1032 c[c951]      *              0             0             1 
-  1033 c[c952]      *              0             0             1 
-  1034 c[c953]      *              0             0             1 
-  1035 c[c954]      *              0             0             1 
-  1036 c[c955]      *              0             0             1 
-  1037 c[c956]      *              0             0             1 
-  1038 c[c957]      *              0             0             1 
-  1039 c[c958]      *              0             0             1 
-  1040 c[c959]      *              0             0             1 
-  1041 c[c960]      *              0             0             1 
-  1042 c[c961]      *              0             0             1 
-  1043 c[c962]      *              0             0             1 
-  1044 c[c963]      *              0             0             1 
-  1045 c[c964]      *              0             0             1 
-  1046 c[c965]      *              0             0             1 
-  1047 c[c966]      *              0             0             1 
-  1048 c[c967]      *              0             0             1 
-  1049 c[c968]      *              0             0             1 
-  1050 c[c969]      *              0             0             1 
-  1051 c[c970]      *              0             0             1 
-  1052 c[c971]      *              0             0             1 
-  1053 c[c972]      *              0             0             1 
-  1054 c[c973]      *              0             0             1 
-  1055 c[c974]      *              0             0             1 
-  1056 c[c975]      *              0             0             1 
-  1057 c[c976]      *              0             0             1 
-  1058 c[c977]      *              0             0             1 
-  1059 c[c978]      *              0             0             1 
-  1060 c[c979]      *              0             0             1 
-  1061 c[c980]      *              0             0             1 
-  1062 c[c981]      *              0             0             1 
-  1063 c[c982]      *              0             0             1 
-  1064 c[c983]      *              0             0             1 
-  1065 c[c984]      *              0             0             1 
-  1066 c[c985]      *              0             0             1 
-  1067 c[c986]      *              0             0             1 
-  1068 c[c987]      *              0             0             1 
-  1069 c[c988]      *              0             0             1 
-  1070 c[c989]      *              0             0             1 
-  1071 c[c990]      *              0             0             1 
-  1072 c[c991]      *              0             0             1 
-  1073 c[c992]      *              0             0             1 
-  1074 c[c993]      *              0             0             1 
-  1075 c[c994]      *              0             0             1 
-  1076 c[c995]      *              0             0             1 
-  1077 c[c996]      *              0             0             1 
-  1078 c[c997]      *              0             0             1 
-  1079 c[c998]      *              0             0             1 
-  1080 c[c999]      *              0             0             1 
-  1081 c[c1000]     *              0             0             1 
-  1082 c[c1001]     *              0             0             1 
-  1083 c[c1002]     *              0             0             1 
-  1084 c[c1003]     *              0             0             1 
-  1085 c[c1004]     *              0             0             1 
-  1086 c[c1005]     *              0             0             1 
-  1087 c[c1006]     *              0             0             1 
-  1088 c[c1007]     *              0             0             1 
-  1089 c[c1008]     *              0             0             1 
-  1090 c[c1009]     *              0             0             1 
-  1091 c[c1010]     *              0             0             1 
-  1092 c[c1011]     *              0             0             1 
-  1093 c[c1012]     *              0             0             1 
-  1094 c[c1013]     *              0             0             1 
-  1095 c[c1014]     *              0             0             1 
-  1096 c[c1015]     *              0             0             1 
-  1097 c[c1016]     *              0             0             1 
-  1098 c[c1017]     *              0             0             1 
-  1099 c[c1018]     *              0             0             1 
-  1100 c[c1019]     *              0             0             1 
-  1101 c[c1020]     *              0             0             1 
-  1102 c[c1021]     *              0             0             1 
-  1103 c[c1022]     *              0             0             1 
-  1104 c[c1023]     *              0             0             1 
-  1105 c[c1024]     *              0             0             1 
-  1106 c[c1025]     *              0             0             1 
-  1107 c[c1026]     *              0             0             1 
-  1108 c[c1027]     *              0             0             1 
-  1109 c[c1028]     *              0             0             1 
-  1110 c[c1029]     *              0             0             1 
-  1111 c[c1030]     *              0             0             1 
-  1112 c[c1031]     *              0             0             1 
-  1113 c[c1032]     *              0             0             1 
-  1114 c[c1033]     *              0             0             1 
-  1115 c[c1034]     *              0             0             1 
-  1116 c[c1035]     *              0             0             1 
-  1117 c[c1036]     *              0             0             1 
-  1118 c[c1037]     *              0             0             1 
-  1119 c[c1038]     *              0             0             1 
-  1120 c[c1039]     *              0             0             1 
-  1121 c[c1040]     *              0             0             1 
-  1122 c[c1041]     *              0             0             1 
-  1123 c[c1042]     *              0             0             1 
-  1124 c[c1043]     *              0             0             1 
-  1125 c[c1044]     *              0             0             1 
-  1126 c[c1045]     *              0             0             1 
-  1127 c[c1046]     *              0             0             1 
-  1128 c[c1047]     *              0             0             1 
-  1129 c[c1048]     *              0             0             1 
-  1130 c[c1049]     *              0             0             1 
-  1131 c[c1050]     *              0             0             1 
-  1132 c[c1051]     *              0             0             1 
-  1133 c[c1052]     *              0             0             1 
-  1134 c[c1053]     *              0             0             1 
-  1135 c[c1054]     *              0             0             1 
-  1136 c[c1055]     *              0             0             1 
-  1137 c[c1056]     *              0             0             1 
-  1138 c[c1057]     *              0             0             1 
-  1139 c[c1058]     *              0             0             1 
-  1140 c[c1059]     *              0             0             1 
-  1141 c[c1060]     *              0             0             1 
-  1142 c[c1061]     *              0             0             1 
-  1143 c[c1062]     *              0             0             1 
-  1144 c[c1063]     *              0             0             1 
-  1145 c[c1064]     *              0             0             1 
-  1146 c[c1065]     *              0             0             1 
-  1147 c[c1066]     *              0             0             1 
-  1148 c[c1067]     *              0             0             1 
-  1149 c[c1068]     *              0             0             1 
-  1150 c[c1069]     *              0             0             1 
-  1151 c[c1070]     *              0             0             1 
-  1152 c[c1071]     *              0             0             1 
-  1153 c[c1072]     *              0             0             1 
-  1154 c[c1073]     *              0             0             1 
-  1155 c[c1074]     *              0             0             1 
-  1156 c[c1075]     *              0             0             1 
-  1157 c[c1076]     *              0             0             1 
-  1158 c[c1077]     *              0             0             1 
-  1159 c[c1078]     *              0             0             1 
-  1160 c[c1079]     *              0             0             1 
-  1161 c[c1080]     *              0             0             1 
-  1162 c[c1081]     *              0             0             1 
-  1163 c[c1082]     *              0             0             1 
-  1164 c[c1083]     *              0             0             1 
-  1165 c[c1084]     *              0             0             1 
-  1166 c[c1085]     *              0             0             1 
-  1167 c[c1086]     *              0             0             1 
-  1168 c[c1087]     *              0             0             1 
-  1169 c[c1088]     *              0             0             1 
-  1170 c[c1089]     *              0             0             1 
-  1171 c[c1090]     *              0             0             1 
-  1172 c[c1091]     *              0             0             1 
-  1173 c[c1092]     *              0             0             1 
-  1174 c[c1093]     *              0             0             1 
-  1175 c[c1094]     *              0             0             1 
-  1176 c[c1095]     *              0             0             1 
-  1177 c[c1096]     *              0             0             1 
-  1178 c[c1097]     *              0             0             1 
-  1179 c[c1098]     *              0             0             1 
-  1180 c[c1099]     *              0             0             1 
-  1181 c[c1100]     *              0             0             1 
-  1182 c[c1101]     *              0             0             1 
-  1183 c[c1102]     *              0             0             1 
-  1184 c[c1103]     *              0             0             1 
-  1185 c[c1104]     *              0             0             1 
-  1186 c[c1105]     *              0             0             1 
-  1187 c[c1106]     *              0             0             1 
-  1188 c[c1107]     *              0             0             1 
-  1189 c[c1108]     *              0             0             1 
-  1190 c[c1109]     *              0             0             1 
-  1191 c[c1110]     *              0             0             1 
-  1192 c[c1111]     *              0             0             1 
-  1193 c[c1112]     *              0             0             1 
-  1194 c[c1113]     *              0             0             1 
-  1195 c[c1114]     *              0             0             1 
-  1196 c[c1115]     *              0             0             1 
-  1197 c[c1116]     *              0             0             1 
-  1198 c[c1117]     *              0             0             1 
-  1199 c[c1118]     *              0             0             1 
-  1200 c[c1119]     *              0             0             1 
-  1201 c[c1120]     *              0             0             1 
-  1202 c[c1121]     *              0             0             1 
-  1203 c[c1122]     *              0             0             1 
-  1204 c[c1123]     *              0             0             1 
-  1205 c[c1124]     *              0             0             1 
-  1206 c[c1125]     *              0             0             1 
-  1207 c[c1126]     *              0             0             1 
-  1208 c[c1127]     *              0             0             1 
-  1209 c[c1128]     *              0             0             1 
-  1210 c[c1129]     *              0             0             1 
-  1211 c[c1130]     *              0             0             1 
-  1212 c[c1131]     *              0             0             1 
-  1213 c[c1132]     *              0             0             1 
-  1214 c[c1133]     *              0             0             1 
-  1215 c[c1134]     *              0             0             1 
-  1216 c[c1135]     *              0             0             1 
-  1217 c[c1136]     *              0             0             1 
-  1218 c[c1137]     *              0             0             1 
-  1219 c[c1138]     *              0             0             1 
-  1220 c[c1139]     *              0             0             1 
+    41 b[0]         *              0             0             1 
+    42 b[1]         *              0             0             1 
+    43 b[2]         *              0             0             1 
+    44 b[3]         *              0             0             1 
+    45 b[4]         *              0             0             1 
+    46 b[5]         *              0             0             1 
+    47 b[6]         *              0             0             1 
+    48 b[7]         *              0             0             1 
+    49 b[10]        *              0             0             1 
+    50 b[11]        *              0             0             1 
+    51 b[12]        *              0             0             1 
+    52 b[13]        *              0             0             1 
+    53 b[14]        *              0             0             1 
+    54 b[15]        *              0             0             1 
+    55 b[16]        *              0             0             1 
+    56 b[17]        *              0             0             1 
+    57 b[18]        *              0             0             1 
+    58 b[19]        *              0             0             1 
+    59 b[20]        *              0             0             1 
+    60 b[21]        *              0             0             1 
+    61 b[22]        *              0             0             1 
+    62 b[23]        *              0             0             1 
+    63 b[24]        *              0             0             1 
+    64 b[25]        *              0             0             1 
+    65 b[26]        *              0             0             1 
+    66 b[27]        *              0             0             1 
+    67 b[32]        *              0             0             1 
+    68 b[33]        *              0             0             1 
+    69 b[34]        *              0             0             1 
+    70 b[35]        *              0             0             1 
+    71 b[36]        *              0             0             1 
+    72 b[37]        *              0             0             1 
+    73 b[38]        *              0             0             1 
+    74 b[39]        *              0             0             1 
+    75 b[40]        *              0             0             1 
+    76 b[41]        *              0             0             1 
+    77 b[42]        *              0             0             1 
+    78 b[43]        *              0             0             1 
+    79 b[44]        *              0             0             1 
+    80 b[45]        *              0             0             1 
+    81 b[46]        *              0             0             1 
+    82 b[47]        *              0             0             1 
+    83 b[48]        *              0             0             1 
+    84 b[49]        *              0             0             1 
+    85 b[50]        *              0             0             1 
+    86 b[51]        *              0             0             1 
+    87 b[52]        *              0             0             1 
+    88 b[53]        *              0             0             1 
+    89 b[54]        *              0             0             1 
+    90 b[55]        *              0             0             1 
+    91 b[58]        *              0             0             1 
+    92 b[59]        *              0             0             1 
+    93 b[60]        *              0             0             1 
+    94 b[61]        *              0             0             1 
+    95 b[62]        *              0             0             1 
+    96 b[63]        *              0             0             1 
+    97 b[64]        *              0             0             1 
+    98 b[65]        *              0             0             1 
+    99 b[66]        *              0             0             1 
+   100 b[67]        *              0             0             1 
+   101 b[68]        *              0             0             1 
+   102 b[69]        *              0             0             1 
+   103 b[70]        *              0             0             1 
+   104 b[71]        *              0             0             1 
+   105 b[72]        *              0             0             1 
+   106 b[73]        *              0             0             1 
+   107 b[76]        *              0             0             1 
+   108 b[77]        *              0             0             1 
+   109 b[78]        *              0             0             1 
+   110 b[79]        *              0             0             1 
+   111 b[80]        *              0             0             1 
+   112 b[81]        *              0             0             1 
+   113 b[82]        *              0             0             1 
+   114 b[83]        *              0             0             1 
+   115 b[84]        *              0             0             1 
+   116 b[85]        *              0             0             1 
+   117 b[86]        *              0             0             1 
+   118 b[87]        *              0             0             1 
+   119 b[88]        *              0             0             1 
+   120 b[89]        *              0             0             1 
+   121 b[90]        *              0             0             1 
+   122 b[91]        *              0             0             1 
+   123 b[92]        *              0             0             1 
+   124 b[93]        *              0             0             1 
+   125 b[96]        *              0             0             1 
+   126 b[97]        *              0             0             1 
+   127 b[100]       *              0             0             1 
+   128 b[101]       *              0             0             1 
+   129 b[102]       *              0             0             1 
+   130 b[103]       *              0             0             1 
+   131 b[104]       *              0             0             1 
+   132 b[105]       *              0             0             1 
+   133 b[106]       *              0             0             1 
+   134 b[107]       *              0             0             1 
+   135 b[108]       *              0             0             1 
+   136 b[109]       *              0             0             1 
+   137 b[110]       *              0             0             1 
+   138 b[111]       *              0             0             1 
+   139 b[112]       *              0             0             1 
+   140 b[113]       *              0             0             1 
+   141 b[114]       *              0             0             1 
+   142 b[115]       *              0             0             1 
+   143 b[116]       *              0             0             1 
+   144 b[117]       *              0             0             1 
+   145 b[118]       *              0             0             1 
+   146 b[119]       *              0             0             1 
+   147 b[120]       *              0             0             1 
+   148 b[121]       *              0             0             1 
+   149 b[126]       *              0             0             1 
+   150 b[127]       *              0             0             1 
+   151 b[128]       *              0             0             1 
+   152 b[129]       *              0             0             1 
+   153 b[130]       *              0             0             1 
+   154 b[131]       *              0             0             1 
+   155 b[132]       *              0             0             1 
+   156 b[133]       *              0             0             1 
+   157 b[134]       *              0             0             1 
+   158 b[135]       *              0             0             1 
+   159 b[136]       *              0             0             1 
+   160 b[137]       *              0             0             1 
+   161 b[138]       *              0             0             1 
+   162 b[139]       *              0             0             1 
+   163 b[140]       *              0             0             1 
+   164 b[141]       *              0             0             1 
+   165 b[142]       *              0             0             1 
+   166 b[143]       *              0             0             1 
+   167 b[144]       *              0             0             1 
+   168 b[145]       *              0             0             1 
+   169 b[150]       *              0             0             1 
+   170 b[151]       *              0             0             1 
+   171 b[152]       *              0             0             1 
+   172 b[153]       *              0             0             1 
+   173 b[154]       *              0             0             1 
+   174 b[155]       *              0             0             1 
+   175 b[156]       *              0             0             1 
+   176 b[157]       *              0             0             1 
+   177 b[158]       *              0             0             1 
+   178 b[159]       *              0             0             1 
+   179 b[160]       *              0             0             1 
+   180 b[161]       *              0             0             1 
+   181 b[162]       *              0             0             1 
+   182 b[163]       *              0             0             1 
+   183 b[164]       *              0             0             1 
+   184 b[165]       *              0             0             1 
+   185 b[166]       *              0             0             1 
+   186 b[167]       *              0             0             1 
+   187 b[168]       *              0             0             1 
+   188 b[169]       *              0             0             1 
+   189 b[170]       *              0             0             1 
+   190 b[171]       *              0             0             1 
+   191 b[172]       *              0             0             1 
+   192 b[173]       *              0             0             1 
+   193 b[174]       *              0             0             1 
+   194 b[175]       *              0             0             1 
+   195 b[176]       *              0             0             1 
+   196 b[177]       *              0             0             1 
+   197 b[178]       *              0             0             1 
+   198 b[179]       *              0             0             1 
+   199 b[182]       *              0             0             1 
+   200 b[183]       *              0             0             1 
+   201 b[184]       *              0             0             1 
+   202 b[185]       *              0             0             1 
+   203 b[186]       *              0             0             1 
+   204 b[187]       *              0             0             1 
+   205 b[188]       *              0             0             1 
+   206 b[189]       *              0             0             1 
+   207 b[192]       *              0             0             1 
+   208 b[193]       *              0             0             1 
+   209 b[194]       *              0             0             1 
+   210 b[195]       *              0             0             1 
+   211 b[196]       *              0             0             1 
+   212 b[197]       *              0             0             1 
+   213 b[200]       *              0             0             1 
+   214 b[201]       *              0             0             1 
+   215 b[202]       *              0             0             1 
+   216 b[203]       *              0             0             1 
+   217 b[208]       *              0             0             1 
+   218 b[209]       *              0             0             1 
+   219 b[210]       *              0             0             1 
+   220 b[211]       *              0             0             1 
+   221 b[212]       *              0             0             1 
+   222 b[213]       *              0             0             1 
+   223 b[214]       *              0             0             1 
+   224 b[215]       *              0             0             1 
+   225 b[216]       *              0             0             1 
+   226 b[217]       *              0             0             1 
+   227 b[218]       *              0             0             1 
+   228 b[219]       *              0             0             1 
+   229 b[220]       *              0             0             1 
+   230 b[221]       *              0             0             1 
+   231 b[222]       *              0             0             1 
+   232 b[223]       *              0             0             1 
+   233 b[224]       *              0             0             1 
+   234 b[225]       *              0             0             1 
+   235 b[226]       *              0             0             1 
+   236 b[227]       *              0             0             1 
+   237 b[228]       *              0             0             1 
+   238 b[229]       *              0             0             1 
+   239 b[230]       *              0             0             1 
+   240 b[231]       *              0             0             1 
+   241 b[232]       *              0             0             1 
+   242 b[233]       *              0             0             1 
+   243 b[234]       *              0             0             1 
+   244 b[235]       *              0             0             1 
+   245 b[236]       *              0             0             1 
+   246 b[237]       *              0             0             1 
+   247 b[240]       *              0             0             1 
+   248 b[241]       *              0             0             1 
+   249 b[242]       *              0             0             1 
+   250 b[243]       *              0             0             1 
+   251 b[244]       *              0             0             1 
+   252 b[245]       *              0             0             1 
+   253 b[246]       *              0             0             1 
+   254 b[247]       *              0             0             1 
+   255 b[252]       *              0             0             1 
+   256 b[253]       *              0             0             1 
+   257 b[254]       *              0             0             1 
+   258 b[255]       *              0             0             1 
+   259 b[256]       *              0             0             1 
+   260 b[257]       *              0             0             1 
+   261 b[258]       *              0             0             1 
+   262 b[259]       *              0             0             1 
+   263 b[260]       *              0             0             1 
+   264 b[261]       *              0             0             1 
+   265 b[262]       *              0             0             1 
+   266 b[263]       *              0             0             1 
+   267 b[264]       *              0             0             1 
+   268 b[265]       *              0             0             1 
+   269 b[266]       *              0             0             1 
+   270 b[267]       *              0             0             1 
+   271 b[268]       *              0             0             1 
+   272 b[269]       *              0             0             1 
+   273 b[270]       *              0             0             1 
+   274 b[271]       *              0             0             1 
+   275 b[272]       *              0             0             1 
+   276 b[273]       *              0             0             1 
+   277 b[274]       *              0             0             1 
+   278 b[275]       *              0             0             1 
+   279 b[276]       *              0             0             1 
+   280 b[277]       *              0             0             1 
+   281 b[278]       *              0             0             1 
+   282 b[279]       *              0             0             1 
+   283 b[280]       *              0             0             1 
+   284 b[281]       *              0             0             1 
+   285 b[284]       *              0             0             1 
+   286 b[285]       *              0             0             1 
+   287 b[286]       *              0             0             1 
+   288 b[287]       *              0             0             1 
+   289 b[288]       *              0             0             1 
+   290 b[289]       *              0             0             1 
+   291 b[290]       *              0             0             1 
+   292 b[291]       *              0             0             1 
+   293 b[292]       *              0             0             1 
+   294 b[293]       *              0             0             1 
+   295 b[294]       *              0             0             1 
+   296 b[295]       *              0             0             1 
+   297 b[296]       *              0             0             1 
+   298 b[297]       *              0             0             1 
+   299 b[300]       *              0             0             1 
+   300 b[301]       *              0             0             1 
+   301 b[302]       *              0             0             1 
+   302 b[303]       *              0             0             1 
+   303 b[304]       *              0             0             1 
+   304 b[305]       *              0             0             1 
+   305 b[306]       *              0             0             1 
+   306 b[307]       *              0             0             1 
+   307 b[308]       *              0             0             1 
+   308 b[309]       *              0             0             1 
+   309 b[310]       *              0             0             1 
+   310 b[311]       *              0             0             1 
+   311 b[312]       *              0             0             1 
+   312 b[313]       *              0             0             1 
+   313 b[314]       *              0             0             1 
+   314 b[315]       *              0             0             1 
+   315 b[316]       *              0             0             1 
+   316 b[317]       *              0             0             1 
+   317 b[318]       *              0             0             1 
+   318 b[319]       *              0             0             1 
+   319 b[320]       *              0             0             1 
+   320 b[321]       *              0             0             1 
+   321 b[322]       *              0             0             1 
+   322 b[323]       *              0             0             1 
+   323 b[324]       *              0             0             1 
+   324 b[325]       *              0             0             1 
+   325 b[326]       *              0             0             1 
+   326 b[327]       *              0             0             1 
+   327 b[330]       *              0             0             1 
+   328 b[331]       *              0             0             1 
+   329 b[332]       *              0             0             1 
+   330 b[333]       *              0             0             1 
+   331 b[334]       *              0             0             1 
+   332 b[335]       *              0             0             1 
+   333 b[338]       *              0             0             1 
+   334 b[339]       *              0             0             1 
+   335 b[340]       *              0             0             1 
+   336 b[341]       *              0             0             1 
+   337 b[342]       *              0             0             1 
+   338 b[343]       *              0             0             1 
+   339 b[344]       *              0             0             1 
+   340 b[345]       *              0             0             1 
+   341 b[348]       *              0             0             1 
+   342 b[349]       *              0             0             1 
+   343 b[350]       *              0             0             1 
+   344 b[351]       *              0             0             1 
+   345 b[352]       *              0             0             1 
+   346 b[353]       *              0             0             1 
+   347 b[354]       *              0             0             1 
+   348 b[355]       *              0             0             1 
+   349 b[358]       *              0             0             1 
+   350 b[359]       *              0             0             1 
+   351 b[360]       *              0             0             1 
+   352 b[361]       *              0             0             1 
+   353 b[362]       *              0             0             1 
+   354 b[363]       *              0             0             1 
+   355 b[364]       *              0             0             1 
+   356 b[365]       *              0             0             1 
+   357 b[366]       *              0             0             1 
+   358 b[367]       *              0             0             1 
+   359 b[368]       *              0             0             1 
+   360 b[369]       *              0             0             1 
+   361 b[370]       *              0             0             1 
+   362 b[371]       *              0             0             1 
+   363 b[372]       *              0             0             1 
+   364 b[373]       *              0             0             1 
+   365 b[374]       *              0             0             1 
+   366 b[375]       *              0             0             1 
+   367 b[376]       *              0             0             1 
+   368 b[377]       *              0             0             1 
+   369 b[380]       *              0             0             1 
+   370 b[381]       *              0             0             1 
+   371 b[382]       *              0             0             1 
+   372 b[383]       *              0             0             1 
+   373 b[384]       *              0             0             1 
+   374 b[385]       *              0             0             1 
+   375 b[386]       *              0             0             1 
+   376 b[387]       *              0             0             1 
+   377 b[388]       *              0             0             1 
+   378 b[389]       *              0             0             1 
+   379 b[390]       *              0             0             1 
+   380 b[391]       *              0             0             1 
+   381 b[392]       *              0             0             1 
+   382 b[393]       *              0             0             1 
+   383 b[396]       *              0             0             1 
+   384 b[397]       *              0             0             1 
+   385 b[398]       *              0             0             1 
+   386 b[399]       *              0             0             1 
+   387 b[402]       *              0             0             1 
+   388 b[403]       *              0             0             1 
+   389 b[408]       *              0             0             1 
+   390 b[409]       *              0             0             1 
+   391 b[410]       *              0             0             1 
+   392 b[411]       *              0             0             1 
+   393 b[412]       *              0             0             1 
+   394 b[413]       *              0             0             1 
+   395 b[414]       *              0             0             1 
+   396 b[415]       *              0             0             1 
+   397 b[416]       *              0             0             1 
+   398 b[417]       *              0             0             1 
+   399 b[418]       *              0             0             1 
+   400 b[419]       *              0             0             1 
+   401 b[420]       *              0             0             1 
+   402 b[421]       *              0             0             1 
+   403 b[422]       *              0             0             1 
+   404 b[423]       *              0             0             1 
+   405 b[424]       *              0             0             1 
+   406 b[425]       *              0             0             1 
+   407 b[426]       *              0             0             1 
+   408 b[427]       *              0             0             1 
+   409 b[428]       *              0             0             1 
+   410 b[429]       *              0             0             1 
+   411 b[430]       *              0             0             1 
+   412 b[431]       *              0             0             1 
+   413 b[432]       *              0             0             1 
+   414 b[433]       *              0             0             1 
+   415 b[434]       *              0             0             1 
+   416 b[435]       *              0             0             1 
+   417 b[436]       *              0             0             1 
+   418 b[437]       *              0             0             1 
+   419 b[438]       *              0             0             1 
+   420 b[439]       *              0             0             1 
+   421 b[440]       *              0             0             1 
+   422 b[441]       *              0             0             1 
+   423 b[442]       *              0             0             1 
+   424 b[443]       *              0             0             1 
+   425 b[444]       *              0             0             1 
+   426 b[445]       *              0             0             1 
+   427 b[448]       *              0             0             1 
+   428 b[449]       *              0             0             1 
+   429 b[450]       *              0             0             1 
+   430 b[451]       *              0             0             1 
+   431 b[452]       *              0             0             1 
+   432 b[453]       *              0             0             1 
+   433 b[454]       *              0             0             1 
+   434 b[455]       *              0             0             1 
+   435 b[456]       *              0             0             1 
+   436 b[457]       *              0             0             1 
+   437 b[458]       *              0             0             1 
+   438 b[459]       *              0             0             1 
+   439 b[462]       *              0             0             1 
+   440 b[463]       *              0             0             1 
+   441 b[464]       *              0             0             1 
+   442 b[465]       *              0             0             1 
+   443 b[466]       *              0             0             1 
+   444 b[467]       *              0             0             1 
+   445 b[468]       *              0             0             1 
+   446 b[469]       *              0             0             1 
+   447 b[470]       *              0             0             1 
+   448 b[471]       *              0             0             1 
+   449 b[472]       *              0             0             1 
+   450 b[473]       *              0             0             1 
+   451 b[474]       *              0             0             1 
+   452 b[475]       *              0             0             1 
+   453 b[476]       *              0             0             1 
+   454 b[477]       *              0             0             1 
+   455 b[478]       *              0             0             1 
+   456 b[479]       *              0             0             1 
+   457 b[480]       *              0             0             1 
+   458 b[481]       *              0             0             1 
+   459 b[482]       *              0             0             1 
+   460 b[483]       *              0             0             1 
+   461 b[484]       *              0             0             1 
+   462 b[485]       *              0             0             1 
+   463 b[486]       *              0             0             1 
+   464 b[487]       *              0             0             1 
+   465 b[488]       *              0             0             1 
+   466 b[489]       *              0             0             1 
+   467 b[490]       *              0             0             1 
+   468 b[491]       *              0             0             1 
+   469 b[492]       *              0             0             1 
+   470 b[493]       *              0             0             1 
+   471 b[494]       *              0             0             1 
+   472 b[495]       *              0             0             1 
+   473 b[496]       *              0             0             1 
+   474 b[497]       *              0             0             1 
+   475 b[498]       *              0             0             1 
+   476 b[499]       *              0             0             1 
+   477 b[500]       *              0             0             1 
+   478 b[501]       *              0             0             1 
+   479 b[502]       *              0             0             1 
+   480 b[503]       *              0             0             1 
+   481 b[504]       *              0             0             1 
+   482 b[505]       *              0             0             1 
+   483 b[506]       *              0             0             1 
+   484 b[507]       *              0             0             1 
+   485 b[508]       *              0             0             1 
+   486 b[509]       *              0             0             1 
+   487 b[510]       *              0             0             1 
+   488 b[511]       *              0             0             1 
+   489 b[512]       *              0             0             1 
+   490 b[513]       *              0             0             1 
+   491 b[514]       *              0             0             1 
+   492 b[515]       *              0             0             1 
+   493 b[516]       *              0             0             1 
+   494 b[517]       *              0             0             1 
+   495 b[518]       *              0             0             1 
+   496 b[519]       *              0             0             1 
+   497 b[522]       *              0             0             1 
+   498 b[523]       *              0             0             1 
+   499 b[524]       *              0             0             1 
+   500 b[525]       *              0             0             1 
+   501 b[526]       *              0             0             1 
+   502 b[527]       *              0             0             1 
+   503 b[528]       *              0             0             1 
+   504 b[529]       *              0             0             1 
+   505 b[530]       *              0             0             1 
+   506 b[531]       *              0             0             1 
+   507 b[532]       *              0             0             1 
+   508 b[533]       *              0             0             1 
+   509 b[534]       *              0             0             1 
+   510 b[535]       *              0             0             1 
+   511 b[536]       *              0             0             1 
+   512 b[537]       *              0             0             1 
+   513 b[538]       *              0             0             1 
+   514 b[539]       *              0             0             1 
+   515 b[540]       *              0             0             1 
+   516 b[541]       *              0             0             1 
+   517 b[542]       *              0             0             1 
+   518 b[543]       *              0             0             1 
+   519 b[544]       *              0             0             1 
+   520 b[545]       *              0             0             1 
+   521 b[546]       *              0             0             1 
+   522 b[547]       *              0             0             1 
+   523 b[548]       *              0             0             1 
+   524 b[549]       *              0             0             1 
+   525 b[550]       *              0             0             1 
+   526 b[551]       *              0             0             1 
+   527 b[552]       *              0             0             1 
+   528 b[553]       *              0             0             1 
+   529 b[554]       *              0             0             1 
+   530 b[555]       *              0             0             1 
+   531 b[556]       *              0             0             1 
+   532 b[557]       *              0             0             1 
+   533 b[558]       *              0             0             1 
+   534 b[559]       *              0             0             1 
+   535 b[562]       *              0             0             1 
+   536 b[563]       *              0             0             1 
+   537 b[564]       *              0             0             1 
+   538 b[565]       *              0             0             1 
+   539 b[566]       *              0             0             1 
+   540 b[567]       *              0             0             1 
+   541 b[568]       *              0             0             1 
+   542 b[569]       *              0             0             1 
+   543 b[570]       *              0             0             1 
+   544 b[571]       *              0             0             1 
+   545 b[576]       *              0             0             1 
+   546 b[577]       *              0             0             1 
+   547 b[578]       *              0             0             1 
+   548 b[579]       *              0             0             1 
+   549 b[580]       *              0             0             1 
+   550 b[581]       *              0             0             1 
+   551 b[582]       *              0             0             1 
+   552 b[583]       *              0             0             1 
+   553 b[584]       *              0             0             1 
+   554 b[585]       *              0             0             1 
+   555 b[586]       *              0             0             1 
+   556 b[587]       *              0             0             1 
+   557 b[592]       *              0             0             1 
+   558 b[593]       *              0             0             1 
+   559 b[594]       *              0             0             1 
+   560 b[595]       *              0             0             1 
+   561 b[596]       *              0             0             1 
+   562 b[597]       *              0             0             1 
+   563 b[598]       *              0             0             1 
+   564 b[599]       *              0             0             1 
+   565 b[600]       *              0             0             1 
+   566 b[601]       *              0             0             1 
+   567 b[606]       *              0             0             1 
+   568 b[607]       *              0             0             1 
+   569 b[608]       *              0             0             1 
+   570 b[609]       *              0             0             1 
+   571 b[610]       *              0             0             1 
+   572 b[611]       *              0             0             1 
+   573 b[612]       *              0             0             1 
+   574 b[613]       *              0             0             1 
+   575 b[614]       *              0             0             1 
+   576 b[615]       *              0             0             1 
+   577 b[616]       *              0             0             1 
+   578 b[617]       *              0             0             1 
+   579 b[618]       *              0             0             1 
+   580 b[619]       *              0             0             1 
+   581 b[620]       *              0             0             1 
+   582 b[621]       *              0             0             1 
+   583 b[622]       *              0             0             1 
+   584 b[623]       *              0             0             1 
+   585 b[624]       *              0             0             1 
+   586 b[625]       *              0             0             1 
+   587 b[626]       *              0             0             1 
+   588 b[627]       *              0             0             1 
+   589 b[628]       *              0             0             1 
+   590 b[629]       *              0             0             1 
+   591 b[630]       *              0             0             1 
+   592 b[631]       *              0             0             1 
+   593 b[632]       *              0             0             1 
+   594 b[633]       *              0             0             1 
+   595 b[634]       *              0             0             1 
+   596 b[635]       *              0             0             1 
+   597 b[636]       *              0             0             1 
+   598 b[637]       *              0             0             1 
+   599 b[638]       *              0             0             1 
+   600 b[639]       *              0             0             1 
+   601 b[640]       *              0             0             1 
+   602 b[641]       *              0             0             1 
+   603 b[642]       *              0             0             1 
+   604 b[643]       *              0             0             1 
+   605 b[644]       *              0             0             1 
+   606 b[645]       *              0             0             1 
+   607 b[646]       *              0             0             1 
+   608 b[647]       *              0             0             1 
+   609 b[648]       *              0             0             1 
+   610 b[649]       *              0             0             1 
+   611 b[650]       *              0             0             1 
+   612 b[651]       *              0             0             1 
+   613 b[652]       *              0             0             1 
+   614 b[653]       *              0             0             1 
+   615 b[654]       *              0             0             1 
+   616 b[655]       *              0             0             1 
+   617 b[656]       *              0             0             1 
+   618 b[657]       *              0             0             1 
+   619 b[662]       *              0             0             1 
+   620 b[663]       *              0             0             1 
+   621 b[664]       *              0             0             1 
+   622 b[665]       *              0             0             1 
+   623 b[666]       *              0             0             1 
+   624 b[667]       *              0             0             1 
+   625 b[668]       *              0             0             1 
+   626 b[669]       *              0             0             1 
+   627 b[670]       *              0             0             1 
+   628 b[671]       *              0             0             1 
+   629 b[672]       *              0             0             1 
+   630 b[673]       *              0             0             1 
+   631 b[674]       *              0             0             1 
+   632 b[675]       *              0             0             1 
+   633 b[676]       *              0             0             1 
+   634 b[677]       *              0             0             1 
+   635 b[678]       *              0             0             1 
+   636 b[679]       *              0             0             1 
+   637 b[680]       *              0             0             1 
+   638 b[681]       *              0             0             1 
+   639 b[682]       *              0             0             1 
+   640 b[683]       *              0             0             1 
+   641 b[684]       *              0             0             1 
+   642 b[685]       *              0             0             1 
+   643 b[686]       *              0             0             1 
+   644 b[687]       *              0             0             1 
+   645 b[688]       *              0             0             1 
+   646 b[689]       *              0             0             1 
+   647 b[690]       *              0             0             1 
+   648 b[691]       *              0             0             1 
+   649 b[692]       *              0             0             1 
+   650 b[693]       *              0             0             1 
+   651 b[694]       *              0             0             1 
+   652 b[695]       *              0             0             1 
+   653 b[696]       *              0             0             1 
+   654 b[697]       *              0             0             1 
+   655 b[700]       *              0             0             1 
+   656 b[701]       *              0             0             1 
+   657 b[702]       *              0             0             1 
+   658 b[703]       *              0             0             1 
+   659 b[704]       *              0             0             1 
+   660 b[705]       *              0             0             1 
+   661 b[706]       *              0             0             1 
+   662 b[707]       *              0             0             1 
+   663 b[708]       *              0             0             1 
+   664 b[709]       *              0             0             1 
+   665 b[710]       *              0             0             1 
+   666 b[711]       *              0             0             1 
+   667 b[712]       *              0             0             1 
+   668 b[713]       *              0             0             1 
+   669 b[714]       *              0             0             1 
+   670 b[715]       *              0             0             1 
+   671 b[716]       *              0             0             1 
+   672 b[717]       *              0             0             1 
+   673 b[718]       *              0             0             1 
+   674 b[719]       *              0             0             1 
+   675 b[720]       *              0             0             1 
+   676 b[721]       *              0             0             1 
+   677 b[722]       *              0             0             1 
+   678 b[723]       *              0             0             1 
+   679 b[724]       *              0             0             1 
+   680 b[725]       *              0             0             1 
+   681 b[726]       *              0             0             1 
+   682 b[727]       *              0             0             1 
+   683 b[728]       *              0             0             1 
+   684 b[729]       *              0             0             1 
+   685 b[730]       *              0             0             1 
+   686 b[731]       *              0             0             1 
+   687 b[732]       *              0             0             1 
+   688 b[733]       *              0             0             1 
+   689 b[734]       *              0             0             1 
+   690 b[735]       *              0             0             1 
+   691 b[738]       *              0             0             1 
+   692 b[739]       *              0             0             1 
+   693 b[740]       *              0             0             1 
+   694 b[741]       *              0             0             1 
+   695 b[742]       *              0             0             1 
+   696 b[743]       *              0             0             1 
+   697 b[744]       *              0             0             1 
+   698 b[745]       *              0             0             1 
+   699 b[746]       *              0             0             1 
+   700 b[747]       *              0             0             1 
+   701 b[748]       *              0             0             1 
+   702 b[749]       *              0             0             1 
+   703 b[750]       *              0             0             1 
+   704 b[751]       *              0             0             1 
+   705 b[752]       *              0             0             1 
+   706 b[753]       *              0             0             1 
+   707 b[754]       *              0             0             1 
+   708 b[755]       *              0             0             1 
+   709 b[756]       *              0             0             1 
+   710 b[757]       *              0             0             1 
+   711 b[758]       *              0             0             1 
+   712 b[759]       *              0             0             1 
+   713 b[760]       *              0             0             1 
+   714 b[761]       *              0             0             1 
+   715 b[762]       *              0             0             1 
+   716 b[763]       *              0             0             1 
+   717 b[766]       *              0             0             1 
+   718 b[767]       *              0             0             1 
+   719 b[768]       *              0             0             1 
+   720 b[769]       *              0             0             1 
+   721 b[770]       *              0             0             1 
+   722 b[771]       *              0             0             1 
+   723 b[772]       *              0             0             1 
+   724 b[773]       *              0             0             1 
+   725 b[774]       *              0             0             1 
+   726 b[775]       *              0             0             1 
+   727 b[776]       *              0             0             1 
+   728 b[777]       *              0             0             1 
+   729 b[778]       *              0             0             1 
+   730 b[779]       *              0             0             1 
+   731 b[780]       *              0             0             1 
+   732 b[781]       *              0             0             1 
+   733 b[782]       *              0             0             1 
+   734 b[783]       *              0             0             1 
+   735 b[784]       *              0             0             1 
+   736 b[785]       *              0             0             1 
+   737 b[786]       *              0             0             1 
+   738 b[787]       *              0             0             1 
+   739 b[788]       *              0             0             1 
+   740 b[789]       *              0             0             1 
+   741 b[790]       *              0             0             1 
+   742 b[791]       *              0             0             1 
+   743 b[792]       *              0             0             1 
+   744 b[793]       *              0             0             1 
+   745 b[794]       *              0             0             1 
+   746 b[795]       *              0             0             1 
+   747 b[796]       *              0             0             1 
+   748 b[797]       *              0             0             1 
+   749 b[798]       *              0             0             1 
+   750 b[799]       *              0             0             1 
+   751 b[800]       *              0             0             1 
+   752 b[801]       *              0             0             1 
+   753 b[802]       *              0             0             1 
+   754 b[803]       *              0             0             1 
+   755 b[804]       *              0             0             1 
+   756 b[805]       *              0             0             1 
+   757 b[806]       *              0             0             1 
+   758 b[807]       *              0             0             1 
+   759 b[808]       *              0             0             1 
+   760 b[809]       *              0             0             1 
+   761 b[810]       *              0             0             1 
+   762 b[811]       *              0             0             1 
+   763 b[812]       *              0             0             1 
+   764 b[813]       *              0             0             1 
+   765 b[814]       *              0             0             1 
+   766 b[815]       *              0             0             1 
+   767 b[816]       *              0             0             1 
+   768 b[817]       *              0             0             1 
+   769 b[818]       *              0             0             1 
+   770 b[819]       *              0             0             1 
+   771 b[820]       *              0             0             1 
+   772 b[821]       *              0             0             1 
+   773 b[822]       *              0             0             1 
+   774 b[823]       *              0             0             1 
+   775 b[824]       *              0             0             1 
+   776 b[825]       *              0             0             1 
+   777 b[826]       *              0             0             1 
+   778 b[827]       *              0             0             1 
+   779 b[828]       *              0             0             1 
+   780 b[829]       *              0             0             1 
+   781 b[830]       *              0             0             1 
+   782 b[831]       *              0             0             1 
+   783 b[832]       *              0             0             1 
+   784 b[833]       *              0             0             1 
+   785 b[834]       *              0             0             1 
+   786 b[835]       *              0             0             1 
+   787 b[838]       *              0             0             1 
+   788 b[839]       *              0             0             1 
+   789 b[840]       *              0             0             1 
+   790 b[841]       *              0             0             1 
+   791 b[842]       *              0             0             1 
+   792 b[843]       *              0             0             1 
+   793 b[844]       *              0             0             1 
+   794 b[845]       *              0             0             1 
+   795 b[846]       *              0             0             1 
+   796 b[847]       *              0             0             1 
+   797 b[848]       *              0             0             1 
+   798 b[849]       *              0             0             1 
+   799 b[850]       *              0             0             1 
+   800 b[851]       *              0             0             1 
+   801 b[852]       *              0             0             1 
+   802 b[853]       *              0             0             1 
+   803 b[854]       *              0             0             1 
+   804 b[855]       *              0             0             1 
+   805 b[856]       *              0             0             1 
+   806 b[857]       *              0             0             1 
+   807 b[858]       *              0             0             1 
+   808 b[859]       *              0             0             1 
+   809 b[860]       *              0             0             1 
+   810 b[861]       *              0             0             1 
+   811 b[862]       *              0             0             1 
+   812 b[863]       *              0             0             1 
+   813 b[864]       *              0             0             1 
+   814 b[865]       *              0             0             1 
+   815 b[866]       *              0             0             1 
+   816 b[867]       *              0             0             1 
+   817 b[868]       *              0             0             1 
+   818 b[869]       *              0             0             1 
+   819 b[870]       *              0             0             1 
+   820 b[871]       *              0             0             1 
+   821 b[872]       *              0             0             1 
+   822 b[873]       *              0             0             1 
+   823 b[874]       *              0             0             1 
+   824 b[875]       *              0             0             1 
+   825 b[876]       *              0             0             1 
+   826 b[877]       *              0             0             1 
+   827 b[878]       *              0             0             1 
+   828 b[879]       *              0             0             1 
+   829 b[880]       *              0             0             1 
+   830 b[881]       *              0             0             1 
+   831 b[882]       *              0             0             1 
+   832 b[883]       *              0             0             1 
+   833 b[884]       *              0             0             1 
+   834 b[885]       *              0             0             1 
+   835 b[886]       *              0             0             1 
+   836 b[887]       *              0             0             1 
+   837 b[888]       *              0             0             1 
+   838 b[889]       *              0             0             1 
+   839 b[890]       *              0             0             1 
+   840 b[891]       *              0             0             1 
+   841 b[892]       *              0             0             1 
+   842 b[893]       *              0             0             1 
+   843 b[894]       *              0             0             1 
+   844 b[895]       *              0             0             1 
+   845 b[896]       *              0             0             1 
+   846 b[897]       *              0             0             1 
+   847 b[898]       *              0             0             1 
+   848 b[899]       *              0             0             1 
+   849 b[900]       *              0             0             1 
+   850 b[901]       *              0             0             1 
+   851 b[902]       *              0             0             1 
+   852 b[903]       *              0             0             1 
+   853 b[904]       *              0             0             1 
+   854 b[905]       *              0             0             1 
+   855 b[906]       *              0             0             1 
+   856 b[907]       *              0             0             1 
+   857 b[908]       *              0             0             1 
+   858 b[909]       *              0             0             1 
+   859 b[910]       *              0             0             1 
+   860 b[911]       *              0             0             1 
+   861 b[912]       *              0             0             1 
+   862 b[913]       *              0             0             1 
+   863 b[914]       *              0             0             1 
+   864 b[915]       *              0             0             1 
+   865 b[916]       *              0             0             1 
+   866 b[917]       *              0             0             1 
+   867 b[920]       *              0             0             1 
+   868 b[921]       *              0             0             1 
+   869 b[922]       *              0             0             1 
+   870 b[923]       *              0             0             1 
+   871 b[924]       *              0             0             1 
+   872 b[925]       *              0             0             1 
+   873 b[926]       *              0             0             1 
+   874 b[927]       *              0             0             1 
+   875 b[928]       *              0             0             1 
+   876 b[929]       *              0             0             1 
+   877 b[930]       *              0             0             1 
+   878 b[931]       *              0             0             1 
+   879 b[932]       *              0             0             1 
+   880 b[933]       *              0             0             1 
+   881 b[934]       *              0             0             1 
+   882 b[935]       *              0             0             1 
+   883 b[936]       *              0             0             1 
+   884 b[937]       *              0             0             1 
+   885 b[938]       *              0             0             1 
+   886 b[939]       *              0             0             1 
+   887 b[940]       *              0             0             1 
+   888 b[941]       *              0             0             1 
+   889 b[942]       *              0             0             1 
+   890 b[943]       *              0             0             1 
+   891 b[944]       *              0             0             1 
+   892 b[945]       *              0             0             1 
+   893 b[946]       *              0             0             1 
+   894 b[947]       *              0             0             1 
+   895 b[948]       *              0             0             1 
+   896 b[949]       *              0             0             1 
+   897 b[950]       *              0             0             1 
+   898 b[951]       *              0             0             1 
+   899 b[952]       *              0             0             1 
+   900 b[953]       *              0             0             1 
+   901 b[954]       *              0             0             1 
+   902 b[955]       *              0             0             1 
+   903 b[956]       *              0             0             1 
+   904 b[957]       *              0             0             1 
+   905 b[958]       *              0             0             1 
+   906 b[959]       *              0             0             1 
+   907 b[960]       *              0             0             1 
+   908 b[961]       *              0             0             1 
+   909 b[962]       *              0             0             1 
+   910 b[963]       *              0             0             1 
+   911 b[964]       *              0             0             1 
+   912 b[965]       *              0             0             1 
+   913 b[966]       *              0             0             1 
+   914 b[967]       *              0             0             1 
+   915 b[968]       *              0             0             1 
+   916 b[969]       *              0             0             1 
+   917 b[970]       *              0             0             1 
+   918 b[971]       *              0             0             1 
+   919 b[972]       *              0             0             1 
+   920 b[973]       *              0             0             1 
+   921 b[974]       *              0             0             1 
+   922 b[975]       *              0             0             1 
+   923 b[976]       *              0             0             1 
+   924 b[977]       *              0             0             1 
+   925 b[978]       *              0             0             1 
+   926 b[979]       *              0             0             1 
+   927 b[980]       *              0             0             1 
+   928 b[981]       *              0             0             1 
+   929 b[982]       *              0             0             1 
+   930 b[983]       *              0             0             1 
+   931 b[984]       *              0             0             1 
+   932 b[985]       *              0             0             1 
+   933 b[986]       *              0             0             1 
+   934 b[987]       *              0             0             1 
+   935 b[988]       *              0             0             1 
+   936 b[989]       *              0             0             1 
+   937 b[990]       *              0             0             1 
+   938 b[991]       *              0             0             1 
+   939 b[992]       *              0             0             1 
+   940 b[993]       *              0             0             1 
+   941 b[994]       *              0             0             1 
+   942 b[995]       *              0             0             1 
+   943 b[996]       *              0             0             1 
+   944 b[997]       *              0             0             1 
+   945 b[998]       *              0             0             1 
+   946 b[999]       *              0             0             1 
+   947 b[1000]      *              0             0             1 
+   948 b[1001]      *              0             0             1 
+   949 b[1002]      *              0             0             1 
+   950 b[1003]      *              0             0             1 
+   951 b[1006]      *              0             0             1 
+   952 b[1007]      *              0             0             1 
+   953 b[1008]      *              0             0             1 
+   954 b[1009]      *              0             0             1 
+   955 b[1010]      *              0             0             1 
+   956 b[1011]      *              0             0             1 
+   957 b[1012]      *              0             0             1 
+   958 b[1013]      *              0             0             1 
+   959 b[1014]      *              0             0             1 
+   960 b[1015]      *              0             0             1 
+   961 b[1016]      *              0             0             1 
+   962 b[1017]      *              0             0             1 
+   963 b[1020]      *              0             0             1 
+   964 b[1021]      *              0             0             1 
+   965 b[1024]      *              0             0             1 
+   966 b[1025]      *              0             0             1 
+   967 b[1028]      *              0             0             1 
+   968 b[1029]      *              0             0             1 
+   969 b[1030]      *              0             0             1 
+   970 b[1031]      *              0             0             1 
+   971 b[1034]      *              0             0             1 
+   972 b[1035]      *              0             0             1 
+   973 b[1036]      *              0             0             1 
+   974 b[1037]      *              0             0             1 
+   975 b[1038]      *              0             0             1 
+   976 b[1039]      *              0             0             1 
+   977 b[1040]      *              0             0             1 
+   978 b[1041]      *              0             0             1 
+   979 b[1046]      *              0             0             1 
+   980 b[1047]      *              0             0             1 
+   981 b[1048]      *              0             0             1 
+   982 b[1049]      *              0             0             1 
+   983 b[1050]      *              0             0             1 
+   984 b[1051]      *              0             0             1 
+   985 b[1052]      *              0             0             1 
+   986 b[1053]      *              0             0             1 
+   987 b[1054]      *              0             0             1 
+   988 b[1055]      *              0             0             1 
+   989 b[1056]      *              0             0             1 
+   990 b[1057]      *              0             0             1 
+   991 b[1058]      *              0             0             1 
+   992 b[1059]      *              0             0             1 
+   993 b[1060]      *              0             0             1 
+   994 b[1061]      *              0             0             1 
+   995 b[1062]      *              0             0             1 
+   996 b[1063]      *              0             0             1 
+   997 b[1064]      *              0             0             1 
+   998 b[1065]      *              0             0             1 
+   999 b[1066]      *              0             0             1 
+  1000 b[1067]      *              0             0             1 
+  1001 b[1068]      *              0             0             1 
+  1002 b[1069]      *              0             0             1 
+  1003 b[1070]      *              0             0             1 
+  1004 b[1071]      *              0             0             1 
+  1005 b[1072]      *              0             0             1 
+  1006 b[1073]      *              0             0             1 
+  1007 b[1074]      *              0             0             1 
+  1008 b[1075]      *              0             0             1 
+  1009 b[1076]      *              0             0             1 
+  1010 b[1077]      *              0             0             1 
+  1011 b[1078]      *              0             0             1 
+  1012 b[1079]      *              0             0             1 
+  1013 b[1080]      *              0             0             1 
+  1014 b[1081]      *              0             0             1 
+  1015 b[1082]      *              0             0             1 
+  1016 b[1083]      *              0             0             1 
+  1017 b[1084]      *              0             0             1 
+  1018 b[1085]      *              0             0             1 
+  1019 b[1086]      *              0             0             1 
+  1020 b[1087]      *              0             0             1 
+  1021 b[1088]      *              0             0             1 
+  1022 b[1089]      *              0             0             1 
+  1023 b[1090]      *              0             0             1 
+  1024 b[1091]      *              0             0             1 
+  1025 b[1092]      *              0             0             1 
+  1026 b[1093]      *              0             0             1 
+  1027 b[1094]      *              0             0             1 
+  1028 b[1095]      *              0             0             1 
+  1029 b[1096]      *              0             0             1 
+  1030 b[1097]      *              0             0             1 
+  1031 b[1098]      *              0             0             1 
+  1032 b[1099]      *              0             0             1 
+  1033 b[1100]      *              0             0             1 
+  1034 b[1101]      *              0             0             1 
+  1035 b[1102]      *              0             0             1 
+  1036 b[1103]      *              0             0             1 
+  1037 b[1104]      *              0             0             1 
+  1038 b[1105]      *              0             0             1 
+  1039 b[1106]      *              0             0             1 
+  1040 b[1107]      *              0             0             1 
+  1041 b[1108]      *              0             0             1 
+  1042 b[1109]      *              0             0             1 
+  1043 b[1110]      *              0             0             1 
+  1044 b[1111]      *              0             0             1 
+  1045 b[1112]      *              0             0             1 
+  1046 b[1113]      *              0             0             1 
+  1047 b[1114]      *              0             0             1 
+  1048 b[1115]      *              0             0             1 
+  1049 b[1116]      *              0             0             1 
+  1050 b[1117]      *              0             0             1 
+  1051 b[1118]      *              0             0             1 
+  1052 b[1119]      *              0             0             1 
+  1053 b[1120]      *              0             0             1 
+  1054 b[1121]      *              0             0             1 
+  1055 b[1122]      *              0             0             1 
+  1056 b[1123]      *              0             0             1 
+  1057 b[1124]      *              0             0             1 
+  1058 b[1125]      *              0             0             1 
+  1059 b[1126]      *              0             0             1 
+  1060 b[1127]      *              0             0             1 
+  1061 b[1128]      *              0             0             1 
+  1062 b[1129]      *              0             0             1 
+  1063 b[1130]      *              0             0             1 
+  1064 b[1131]      *              0             0             1 
+  1065 b[1132]      *              0             0             1 
+  1066 b[1133]      *              0             0             1 
+  1067 b[1134]      *              0             0             1 
+  1068 b[1135]      *              0             0             1 
+  1069 b[1136]      *              0             0             1 
+  1070 b[1137]      *              0             0             1 
 
 Integer feasibility conditions:
 
@@ -5818,8 +2228,8 @@ KKT.PE: max.abs.err = 0.00e+00 on row 0
         max.rel.err = 0.00e+00 on row 0
         High quality
 
-KKT.PB: max.abs.err = 1.00e+00 on row 10
-        max.rel.err = 5.00e-01 on row 10
+KKT.PB: max.abs.err = 1.00e+00 on row 1032
+        max.rel.err = 5.00e-01 on row 1032
         SOLUTION IS INFEASIBLE
 
 End of output
