@@ -12,7 +12,7 @@ param w{j in C};
 param soft{j in C} binary;
 
 param cla {j in C, i in V} integer;
-
+param claN {j in C, i in V} integer;
 ##vector containing assigned values for each variable
 var x{i in V} binary;
 

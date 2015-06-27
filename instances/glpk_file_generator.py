@@ -117,7 +117,6 @@ def formatGlpkSet(name,values):
 #files to covert
 onlyfiles = [ f for f in listdir('original') if isfile(join('original',f)) ]
 print onlyfiles
-onlyfiles = ['teste']
 for filename in onlyfiles:
     (variables,top,clauses) = parseFile("original/"+filename)
     genereateGlpkFile(variables,top, clauses,"glpk/"+filename)
