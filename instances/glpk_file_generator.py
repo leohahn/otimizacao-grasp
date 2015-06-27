@@ -38,7 +38,7 @@ def parseFile(filePath):
     print "top is %d" % top    
     return (variables,top,clauses)
 
-def genereateGlpkFile(variables,top, clauses,outputFilename):
+def genereateGlpkFileOLD(variables,top, clauses,outputFilename):
     #indicates the index of each variable on the matrix
     pos = {}
     for inx, var in enumerate(variables):
@@ -90,6 +90,54 @@ def genereateGlpkFile(variables,top, clauses,outputFilename):
     
     outFile = open(outputFilename,"w")
     outFile.write(out_string)
+
+
+def genereateGlpkFile(variables,top, clauses,outputFilename):
+    #indicates the index of each variable on the matrix
+    pos = {}
+    for inx, var in enumerate(variables):
+        pos[var]=inx
+
+    num_var = len(variables)
+
+    weight = []
+    soft = []
+    clauses_names = []
+    matrix_normal = []
+    matrix_negated= []
+    for clauseinx, clause in enumerate(clauses):
+        line_normal = [0]*num_var
+        line_negated = [0]*num_var
+        clauses_names.append("c"+str(clauseinx))        
+        for variable in clause[1:]:
+            if(variable > 0): ##variable normal
+                line_normal[pos[variable]] = 1
+            else: #variable negated
+                line_negated[pos[-variable]] = 1
+                
+        if(clause[0]==top): #hard
+            weight.append(0)
+            soft.append(0)
+        else: #soft
+            weight.append(clause[0])
+            soft.append(1)
+        matrix_negated.append(line_negated)
+        matrix_normal.append(line_normal)
+        
+    out_string = ''
+    out_string += formatGlpkSet('C', clauses_names)
+    
+    out_string += formatGlpkSet('V', listToString(variables))
+    ##info for clauses
+    out_string += formatGlpkMatrix("cla",clauses_names,listToString(variables),matrixToString(matrix_normal))
+    out_string += formatGlpkMatrix("claN",clauses_names,listToString(variables),matrixToString(matrix_negated))
+
+
+    out_string += formatGlpkVector("w",clauses_names, listToString(weight))
+    out_string += formatGlpkVector("soft",clauses_names, listToString(soft))
+    outFile = open(outputFilename,"w")
+    outFile.write(out_string)
+
 
 def listToString(lista):
     return [str(x) for x in lista]
