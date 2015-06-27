@@ -14,9 +14,9 @@ def parseFile(filePath):
     ##reads all lines and removes comments
     lines = [line for line in input_file.readlines() if line[0]!='c' and line[0]!='p']
     ##list of lists containing clauses [weight, var1, var2,....]
-    clauses = []    
-    
-    #maximum weight found    
+    clauses = []
+
+    #maximum weight found
     top = 0
     variables = set()
     ##reads clauses
@@ -26,9 +26,9 @@ def parseFile(filePath):
         #updates top
         if(tokens[0]>=top):
             top = tokens[0]
-            
+
         clause.append(tokens[0]) #weight
-        
+
         #for each variable
         for var in tokens[1:-1]: #excludes first and last
             variables.add(abs(int(var)))
@@ -36,15 +36,15 @@ def parseFile(filePath):
         clauses.append(clause)
     variables = sorted(list(variables))
     return (variables,top,clauses)
-    
+
 def genereateGlpkFile(variables,top, clauses,outputFilename):
     #indicates the index of each variable on the matrix
     pos = {}
     for inx, var in enumerate(variables):
         pos[var]=inx
 
-    num_var = len(variables)    
-    
+    num_var = len(variables)
+
     hard_matrix = [] #list of lists. each sublist has length = to the number of
                      # variables
     weight = []
@@ -67,22 +67,22 @@ def genereateGlpkFile(variables,top, clauses,outputFilename):
             soft_matrix.append(line)
             negation_count_soft.append(negated)
             weight.append(clause[0])
-            
-            
+
+
     out_string = ''
     ##info for hard clauses
     out_string += formatGlpkMatrix("h",listToString(variables),matrixToString(hard_matrix))
     out_string += '\n'
-    #info for soft clause    
+    #info for soft clause
     out_string += formatGlpkMatrix("s",listToString(variables),matrixToString(soft_matrix))
     out_string += formatGlpkVector("nh", listToString(negation_count_hard))
     out_string += formatGlpkVector("ns", listToString(negation_count_soft))
     out_string += formatGlpkVector("w", listToString(weight))
     outFile = open(outputFilename,"w")
     outFile.write(out_string)
-    
+
 def listToString(lista):
-    return [str(x) for x in lista]    
+    return [str(x) for x in lista]
 
 def matrixToString(matrix):
     return [listToString(x) for x in matrix]
@@ -93,7 +93,7 @@ def formatGlpkMatrix(nameVar,colNames, matrix):
         out += "\n" + str(rowinx) + " " +  " ".join(matrix[rowinx])
     out +=';\n'
     return out
-    
+
 def formatGlpkVector(nameVar, vector):
     out = 'param '+nameVar + " := "
     for inx in range(len(vector)):
@@ -107,6 +107,3 @@ print onlyfiles
 for filename in onlyfiles:
     (variables,top,clauses) = parseFile("original/"+filename)
     genereateGlpkFile(variables,top, clauses,"glpk/"+filename)
-
-        
-        
