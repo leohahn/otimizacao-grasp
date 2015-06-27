@@ -25,8 +25,8 @@ Objective:  weightSum = 98 (MAXimum)
     16 softR[16]                   0                          -0 
     17 softR[17]                   2                           2 
     18 softR[18]                   1                           1 
-    19 hardR[8]                   -1                          -1 
-    20 hardR[9]                    1                           1 
+    19 hardR[8]                   -1                           1 
+    20 hardR[9]                    1                           3 
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
