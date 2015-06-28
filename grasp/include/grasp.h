@@ -8,7 +8,7 @@ class GRASP {
 public:
     virtual void run(int max_iterations) = 0;
     virtual std::vector<bool> constructGreedyRandomSolution() = 0;
-    virtual void makeLocalSearch(std::vector<bool> sol) = 0;
+    virtual void makeLocalSearch(std::vector<bool> solution) = 0;
     virtual void updateSolution() = 0;
 
     virtual ~GRASP() {}

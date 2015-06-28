@@ -6,6 +6,9 @@
 #include <string>
 #include <algorithm>
 #include <assert.h>
+#include <limits>
+#include <random>
+#include <iterator>
 
 using std::vector;
 
@@ -47,24 +50,46 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
     }
 }
 
-void WpMaxSAT::makeLocalSearch(vector<bool> sol)
+void WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
-    int max_steps = 200;
+    const int MAX_STEPS = 200;
     vector<bool> hardScores(hardClauses.size(), 1);
-    vector<int> hard_decreasing_vars = createHardDecreasingVariables();
-    vector<int> soft_decreasing_vars = createSoftDecreasingVariables();
+    vector<bool> solSoftClauses = createSoftClausesSolution(solution);
+    vector<bool> solHardClauses = createHardClausesSolution(solution);
+    vector<bool> best_sol = solution;
+    int best_gain = std::numeric_limits<int>::min();
 
-    for (int i=0; i<200; ++i) {
+    vector<bool> current_sol = solution;
+    int current_gain = std::numeric_limits<int>::min();
+    for (int i=0; i<MAX_STEPS; ++i) {
+        vector<int> hard_decreasing_vars = createHardDecreasingVariables(current_sol);
+        vector<int> soft_decreasing_vars = createSoftDecreasingVariables(current_sol);
 
+        if (isFeasible(current_sol) && (getSolutionGain(current_sol) > best_gain)) {
+            best_sol = current_sol;
+            best_gain = current_gain;
+        }
+
+        if (!hard_decreasing_vars.empty()) {
+            std::uniform_int_distribution<> random_int();
+        }
     }
 }
 
-vector<int> WpMaxSAT::createHardDecreasingVariables()
+std::vector<bool> WpMaxSAT::createSoftClausesSolution(std::vector<bool> solution) {}
+std::vector<bool> WpMaxSAT::createHardClausesSolution(std::vector<bool> solution) {}
+
+int WpMaxSAT::getSolutionGain(vector<bool> solution)
 {
 
 }
 
-vector<int> WpMaxSAT::createSoftDecreasingVariables()
+vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
+{
+
+}
+
+vector<int> WpMaxSAT::createSoftDecreasingVariables(vector<bool> solution)
 {
 
 }
@@ -90,7 +115,7 @@ bool WpMaxSAT::satisfiesClause(int var, int value, vector<int> clause)
 int WpMaxSAT::getHardScore(int var, int value, const vector<bool>& clauses_val)
 {
     int hard_score = 0;
-    for (int i=0; i<clauses_val.size(); ++i) {
+    for (unsigned int i=0; i<clauses_val.size(); ++i) {
         if (clauses_val[i] == false) {
             if (satisfiesClause(var, value, hardClauses[i]) == true) {
                 hard_score += hardClauses[i][0];
@@ -103,7 +128,7 @@ int WpMaxSAT::getHardScore(int var, int value, const vector<bool>& clauses_val)
 int WpMaxSAT::getSoftScore(int var, int value, const vector<bool>& clauses_val)
 {
     int soft_score = 0;
-    for (int i=0; i<clauses_val.size(); ++i) {
+    for (unsigned int i=0; i<clauses_val.size(); ++i) {
         if (clauses_val[i] == false) {
             if (satisfiesClause(var, value, softClauses[i]) == true) {
                 soft_score += softClauses[i][0];
@@ -289,4 +314,35 @@ std::vector<int> stringVectorToInt(std::vector<std::string> inpt)
         nums.push_back(num);
     }
     return nums;
+}
+
+bool WpMaxSAT::isFeasible(vector<bool> solution)
+{
+    for (unsigned int i=0; i<hardClauses.size(); ++i) {
+        bool last_clause = false;
+        for (unsigned int j=1; j<solution.size(); ++j) {
+            if (satisfiesClause(j, int(solution[j]), hardClauses[i])) {
+                last_clause = true;
+                j = solution.size(); // breaks out of loop;
+            }
+        }
+        if (last_clause == false) {
+            return false;
+        }
+    }
+    return true;
+}
+
+template<typename Iter, typename RandomGenerator>
+Iter select_randomly(Iter start, Iter end, RandomGenerator& g) {
+    std::uniform_int_distribution<> dis(0, std::distance(start, end) - 1);
+    std::advance(start, dis(g));
+    return start;
+}
+
+template<typename Iter>
+Iter select_randomly(Iter start, Iter end) {
+    static std::random_device rd;
+    static std::mt19937 gen(rd());
+    return select_randomly(start, end, gen);
 }
