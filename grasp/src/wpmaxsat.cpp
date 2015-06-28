@@ -1,62 +1,32 @@
 #include<iostream>
-#include "../include/wpmaxsat.h";
+#include "../include/wpmaxsat.h"
 #include<vector>
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <algorithm>
+#include <assert.h>
 
 using std::vector;
-
-std::vector<std::string> tokenize(std::string line){
-	std::vector<std::string> values;
-	std::string valueTemp="";
- 	//std::cout<< line<<"\n";
-	
-	for(unsigned int j=0;j<line.size();j++) {
-		if(line[j]==' '){
-			if(valueTemp.size()!=0) {
-				values.push_back(valueTemp); 
-			}
-			valueTemp="";
-		} else {
-			valueTemp += line[j];
-		}
-	}
-	if(valueTemp!="")
-		values.push_back(valueTemp);
-	return values;
-}
-
-std::vector<int> stringVectorToInt(std::vector<std::string> inpt)
-{
-	std::vector<int> nums;
-	
-	for(unsigned int i = 0; i<inpt.size();i++) {
-		int num = std::stoi(inpt[i]);
-		nums.push_back(num);
-	}
-	return nums;	
-}
-
-
 
 //////////////////
 /// Prototypes ///
 //////////////////
 bool isSolutionStale();
 bool iterationsLeft(int, int);
+std::vector<std::string> tokenize(std::string line);
+std::vector<int> stringVectorToInt(std::vector<std::string> inpt);
+
 
 WpMaxSAT::WpMaxSAT(std::string inputFile)
 {
-	parseFile(inputFile);
+    parseFile(inputFile);
 }
 
 WpMaxSAT::~WpMaxSAT()
 {
 
 }
-
 
 void WpMaxSAT::run(int max_iterations)
 {
@@ -69,7 +39,7 @@ void WpMaxSAT::run(int max_iterations)
 }
 
 
-void WpMaxSAT::constructGreedyRandomSolution()
+std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 {
 	std::vector<bool> variableValues(numVariables+1);
 	variableValues.push_back(0);  //this position is ignored
@@ -134,25 +104,53 @@ void WpMaxSAT::parseFile(std::string path)
 	numVariables = numVar;
 }
 
-
-
-
 int WpMaxSAT::numOfSatisfiedClauses(int var, int var_value, ClauseType type)
 {
     unsigned n_satisf_clauses = 0;
     switch (type) {
     case SOFT:
         for (unsigned i=0; i<softClauses.size(); ++i) {
-            if (findInClause(i, var, SOFT) != -1) {
-                n_satisf_clauses++;
+            int finded_var = findInClause(i, var, SOFT);
+            switch (var_value) {
+            case 1:
+                if (finded_var == var) { // If variable is not negated
+                    n_satisf_clauses++;
+                }
+                break;
+            case 0:
+                if (finded_var == -var) { // If variable is negated
+                    n_satisf_clauses++;
+                }
+                break;
+            default:
+                assert(false);
+                break;
             }
         }
         break;
     case HARD:
+        for (unsigned i=0; i<hardClauses.size(); ++i) {
+            int finded_var = findInClause(i, var, HARD);
+            switch (var_value) {
+            case 1:
+                if (finded_var == var) { // If variable is not negated
+                    n_satisf_clauses++;
+                }
+                break;
+            case 0:
+                if (finded_var == -var) { // If variable is negated
+                    n_satisf_clauses++;
+                }
+                break;
+            default:
+                assert(false);
+                break;
+            }
+        }
         break;
     }
 
-    return -1;
+    return n_satisf_clauses;
 }
 
 int WpMaxSAT::getNumVariables()
@@ -169,7 +167,7 @@ bool iterationsLeft(int current_iter, int max_iterations)
 bool isSolutionStale()
 {
     // TODO: Implementation
-    return true;
+    return false;
 }
 
 // Function that finds a variable in a clause. Returns the value of the variable.
@@ -205,3 +203,33 @@ int WpMaxSAT::findInClause(int clause, int var, ClauseType type)
     return var_value;
 }
 
+std::vector<std::string> tokenize(std::string line)
+{
+    std::vector<std::string> values;
+    std::string valueTemp="";
+
+    for(unsigned int j=0;j<line.size();j++) {
+        if(line[j]==' '){
+            if(valueTemp.size()!=0) {
+                values.push_back(valueTemp);
+            }
+            valueTemp="";
+        } else {
+            valueTemp += line[j];
+        }
+    }
+    if(valueTemp!="")
+        values.push_back(valueTemp);
+    return values;
+}
+
+std::vector<int> stringVectorToInt(std::vector<std::string> inpt)
+{
+    std::vector<int> nums;
+
+    for(unsigned int i = 0; i<inpt.size();i++) {
+        int num = std::stoi(inpt[i]);
+        nums.push_back(num);
+    }
+    return nums;
+}
