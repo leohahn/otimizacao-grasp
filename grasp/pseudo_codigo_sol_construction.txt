@@ -1,0 +1,21 @@
+initialSolutionConstruction:
+    Sol = empty
+    Var = all variables
+    ClausesHard = all clauses
+    rcl = new empty list;
+    elem = new empty list;
+
+    for (v in Var):
+        if (num_satisf(ClausesHard[v]) > num_satisf(ClausesHard[~v])):
+            elem = v
+        else
+            elem = v
+        rcl = best(elem)
+        s = random(rcl)
+        Sol.add(s)
+        ClausesHard.remove(all satisfied HardClauses)
+
+    if (Sol satisfies all hardClauses)
+        continue localSearch
+    else
+        repeat
