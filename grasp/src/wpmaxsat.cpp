@@ -28,7 +28,6 @@ WpMaxSAT::~WpMaxSAT()
 
 }
 
-
 void WpMaxSAT::run(int max_iterations)
 {
     int current_iter = 1;

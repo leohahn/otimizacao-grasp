@@ -8,7 +8,6 @@
 //! Class that implements the GRASP algorithm with the
 //! Weighted Partial Max SAT problem.
 //!
-
 class WpMaxSAT : public GRASP {
 public:
     WpMaxSAT(std::string);
@@ -18,7 +17,6 @@ public:
     void makeLocalSearch();
     void updateSolution();
 
-    
     enum ClauseType {SOFT, HARD};
 
 private:
