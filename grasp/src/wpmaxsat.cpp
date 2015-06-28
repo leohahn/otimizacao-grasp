@@ -1,5 +1,6 @@
 #include "../include/wpmaxsat.h"
 #include <algorithm>
+#include <assert.h>
 using std::vector;
 
 //////////////////
@@ -43,22 +44,54 @@ void WpMaxSAT::updateSolution()
 
 }
 
+
 int WpMaxSAT::numOfSatisfiedClauses(int var, int var_value, ClauseType type)
 {
     unsigned n_satisf_clauses = 0;
     switch (type) {
     case SOFT:
         for (unsigned i=0; i<softClauses.size(); ++i) {
-            if (findInClause(i, var, SOFT) != -1) {
-                n_satisf_clauses++;
+            int finded_var = findInClause(i, var, SOFT);
+            switch (var_value) {
+            case 1:
+                if (finded_var == var) { // If variable is not negated
+                    n_satisf_clauses++;
+                }
+                break;
+            case 0:
+                if (finded_var == -var) { // If variable is negated
+                    n_satisf_clauses++;
+                }
+                break;
+            default:
+                assert(false);
+                break;
             }
         }
         break;
     case HARD:
+        for (unsigned i=0; i<hardClauses.size(); ++i) {
+            int finded_var = findInClause(i, var, HARD);
+            switch (var_value) {
+            case 1:
+                if (finded_var == var) { // If variable is not negated
+                    n_satisf_clauses++;
+                }
+                break;
+            case 0:
+                if (finded_var == -var) { // If variable is negated
+                    n_satisf_clauses++;
+                }
+                break;
+            default:
+                assert(false);
+                break;
+            }
+        }
         break;
     }
 
-    return -1;
+    return n_satisf_clauses;
 }
 
 int WpMaxSAT::getNumVariables()
@@ -75,7 +108,7 @@ bool iterationsLeft(int current_iter, int max_iterations)
 bool isSolutionStale()
 {
     // TODO: Implementation
-    return true;
+    return false;
 }
 
 // Function that finds a variable in a clause. Returns the value of the variable.

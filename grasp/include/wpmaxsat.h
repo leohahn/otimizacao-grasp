@@ -18,7 +18,10 @@ public:
 
     enum ClauseType {SOFT, HARD};
 private:
-
+    //!
+    //! Returns the number of satisfied clauses given the type (HARD, SOFT)
+    //! the variable and its value (0, 1).
+    //!
     int numOfSatisfiedClauses(int var, int var_value, ClauseType type);
     int getNumVariables();
     int findInClause(int clause, int var, ClauseType type);
