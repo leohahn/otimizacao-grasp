@@ -9,12 +9,33 @@ Build Type=Debug
 CMake Binary=file:///usr/bin/cmake
 Environment Profile=
 Extra Arguments=
-Install Directory=
+Install Directory=file:///usr/local
 
 [Defines And Includes][Compiler]
 Name=GCC
 Path=gcc
 Type=GCC
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=grasp
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\n\x00g\x00r\x00a\x00s\x00p\x00\x00\x00\n\x00g\x00r\x00a\x00s\x00p)
+Dependency Action=Build
+EnvironmentGroup=
+Executable=file:///home/thiago/github%20projects/otimizacao-grasp/grasp/
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=grasp,grasp
+Use External Terminal=false
+Working Directory=
+isExecutable=false
 
 [Project]
 VersionControlSupport=kdevgit

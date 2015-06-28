@@ -2,7 +2,7 @@
 
 #include "grasp.h"
 #include <vector>
-
+#include <string>
 class WpMaxSAT : public GRASP {
 public:
     WpMaxSAT();
@@ -11,6 +11,7 @@ public:
     void constructGreddyRandomSolution();
     void makeLocalSearch();
     void updateSolution();
+    void parseFile(std::string path);
 private:
     std::vector<int> rcl;
     std::vector<int> variables;
