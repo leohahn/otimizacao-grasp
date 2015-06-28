@@ -2,7 +2,7 @@
 
 #include "grasp.h"
 #include <vector>
-
+#include <algorithm>
 //!
 //! Class that implements the GRASP algorithm with the
 //! Weighted Partial Max SAT problem.
@@ -15,15 +15,19 @@ public:
     void constructGreddyRandomSolution();
     void makeLocalSearch();
     void updateSolution();
-private:
-    int numOfSatisfiedClauses(int var) const;
-    int getNumVariables() const;
 
-    std::vector<int> rcl_;
-    std::vector<int> variables_;
-    std::vector<std::vector<int> > hardClauses_;
-    std::vector<std::vector<int> > softClauses_;
-    std::vector<int> solution_;
+    enum ClauseType {SOFT, HARD};
+private:
+
+    int numOfSatisfiedClauses(int var, int var_value, ClauseType type);
+    int getNumVariables();
+    int findInClause(int clause, int var, ClauseType type);
+
+    std::vector<int> rcl;
+    std::vector<int> variables;
+    std::vector<std::vector<int> > hardClauses;
+    std::vector<std::vector<int> > softClauses;
+    std::vector<int> solution;
     int top;
 };
 
