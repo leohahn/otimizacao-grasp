@@ -17,7 +17,6 @@ bool iterationsLeft(int, int);
 std::vector<std::string> tokenize(std::string line);
 std::vector<int> stringVectorToInt(std::vector<std::string> inpt);
 
-
 WpMaxSAT::WpMaxSAT(std::string inputFile)
 {
     parseFile(inputFile);
@@ -32,8 +31,8 @@ void WpMaxSAT::run(int max_iterations)
 {
     int current_iter = 1;
     while (iterationsLeft(current_iter, max_iterations) && !isSolutionStale()) {
-        constructGreddyRandomSolution();
-        makeLocalSearch();
+        vector<bool> sol = constructGreedyRandomSolution();
+        makeLocalSearch(sol);
         updateSolution();
     }
 }
@@ -102,15 +101,77 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 	}
 	std::vector< struct candidate > rcl;
 	int sizercl = 40/100.0 * candidates.size();
-	
+	std::sort(candidates.begin(),candidates.end(), &candidateSorter); //ascending
 	for(unsigned int i=0)
 	
 
 }
 
-void WpMaxSAT::makeLocalSearch()
+void WpMaxSAT::makeLocalSearch(vector<bool> sol)
+{
+    int max_steps = 200;
+    vector<bool> hardScores(hardClauses.size(), 1);
+    vector<int> hard_decreasing_vars = createHardDecreasingVariables();
+    vector<int> soft_decreasing_vars = createSoftDecreasingVariables();
+
+    for (int i=0; i<200; ++i) {
+
+    }
+}
+
+vector<int> WpMaxSAT::createHardDecreasingVariables()
 {
 
+}
+
+vector<int> WpMaxSAT::createSoftDecreasingVariables()
+{
+
+}
+
+bool WpMaxSAT::satisfiesClause(int var, int value, vector<int> clause)
+{
+    vector<int>::iterator it = std::find(clause.begin()+1, clause.end(), var);
+    if (it == clause.end()) {
+        return false;
+    }
+    if (*it < 0 && value == 0) {
+        return true;
+    }
+    if (value == 1) {
+        if (*it > 0) {
+            return true;
+        }
+    }
+>>>>>>> 0dbd63001bee77e809aa5c4ce271052a014d74f0
+
+    return false;
+}
+
+int WpMaxSAT::getHardScore(int var, int value, const vector<bool>& clauses_val)
+{
+    int hard_score = 0;
+    for (int i=0; i<clauses_val.size(); ++i) {
+        if (clauses_val[i] == false) {
+            if (satisfiesClause(var, value, hardClauses[i]) == true) {
+                hard_score += hardClauses[i][0];
+            }
+        }
+    }
+    return hard_score;
+}
+
+int WpMaxSAT::getSoftScore(int var, int value, const vector<bool>& clauses_val)
+{
+    int soft_score = 0;
+    for (int i=0; i<clauses_val.size(); ++i) {
+        if (clauses_val[i] == false) {
+            if (satisfiesClause(var, value, softClauses[i]) == true) {
+                soft_score += softClauses[i][0];
+            }
+        }
+    }
+    return soft_score;
 }
 
 void WpMaxSAT::updateSolution()
@@ -120,47 +181,45 @@ void WpMaxSAT::updateSolution()
 
 void WpMaxSAT::parseFile(std::string path)
 {
-	std::vector<std::string> lines;
-	std::string line;
-	int numVar = 0;
-	std::ifstream myfile (path);
-	//parses file
-	if (myfile.is_open()) {
-		while ( getline(myfile,line) ) {
-			if(line[0]=='p'){ 
-				std::vector<std::string> columns = tokenize(line);
-				numVar = std::stoi(columns[2]);
-			}
-			else if(line[0]!='c') {
-				//removendo caractere de terminação
-				line.erase(line.end()-1);
-				lines.push_back(line);
-			}
-		}
-	  myfile.close();
-	}
-	
-	int top = 0;
-	std::vector< std::vector<int> > allClauses;
-	for(unsigned int i=0;i<lines.size();i++) {
-		  //get values in the line
-		  // first element is weight
-		  //both hard and soft clauses have height
-		  std::vector<int> clause = stringVectorToInt(tokenize(lines[i]));
-		  allClauses.push_back(clause);
-		  if(clause[0]>top)
-		    top = clause[0];
-	}
-	
-	//puts each clause in its respective list
-	for(unsigned int i=0;i<allClauses.size();i++) {
-		if(allClauses[i][0]<top) { //soft
-			softClauses.push_back(allClauses[i]);
-		} else {
-			hardClauses.push_back(allClauses[i]);
-		}
-	}
-	numVariables = numVar;
+    std::vector<std::string> lines;
+    std::string line;
+    int numVar = 0;
+    std::ifstream myfile (path);
+    //parses file
+    if (myfile.is_open()) {
+        while ( getline(myfile,line) ) {
+            if(line[0]=='p'){
+                std::vector<std::string> columns = tokenize(line);
+                numVar = std::stoi(columns[2]);
+            }
+            else if(line[0]!='c') {
+                //removendo caractere de terminação
+                line.erase(line.end()-1);
+                lines.push_back(line);
+            }
+        }
+        myfile.close();
+    }
+    int top = 0;
+    std::vector< std::vector<int> > allClauses;
+    for(unsigned int i=0;i<lines.size();i++) {
+        //get values in the line
+        // first element is weight
+        //both hard and soft clauses have height
+        std::vector<int> clause = stringVectorToInt(tokenize(lines[i]));
+        allClauses.push_back(clause);
+        if(clause[0]>top)
+            top = clause[0];
+    }
+    //puts each clause in its respective list
+    for(unsigned int i=0;i<allClauses.size();i++) {
+        if(allClauses[i][0]<top) { //soft
+            softClauses.push_back(allClauses[i]);
+        } else {
+            hardClauses.push_back(allClauses[i]);
+        }
+    }
+    numVariables = numVar;
 }
 
 int WpMaxSAT::numOfSatisfiedClauses(int var, bool var_value, ClauseType type, std::vector<bool> satisfiedStatus)
