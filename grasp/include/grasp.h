@@ -6,7 +6,7 @@
 //!
 class GRASP {
 public:
-    virtual void run() = 0;
+    virtual void run(int) = 0;
     virtual void constructGreddyRandomSolution() = 0;
     virtual void makeLocalSearch() = 0;
     virtual void updateSolution() = 0;
