@@ -6,7 +6,7 @@
 #include <string>
 
 
-std::vector<int> tokenizeInts(std::string line){
+std::vector<std::string> tokenize(std::string line){
 	std::vector<std::string> values;
 	std::string valueTemp="";
  	//std::cout<< line<<"\n";
@@ -23,12 +23,16 @@ std::vector<int> tokenizeInts(std::string line){
 	}
 	if(valueTemp!="")
 		values.push_back(valueTemp);
+	return values;
+}
+
+std::vector<int> stringVectorToInt(std::vector<std::string> inpt)
+{
 	std::vector<int> nums;
 	
-	for(unsigned int i = 0; i<values.size();i++) {
-		int num = std::stoi(values[i]);
+	for(unsigned int i = 0; i<inpt.size();i++) {
+		int num = std::stoi(inpt[i]);
 		nums.push_back(num);
-		std::cout << num<<" ";
 	}
 	return nums;	
 }
@@ -68,27 +72,48 @@ void WpMaxSAT::parseFile(std::string path)
 {
 	std::vector<std::string> lines;
 	std::string line;
-	int top = 0;
+	int numVar = 0;
 	std::ifstream myfile (path);
 	//parses file
 	if (myfile.is_open()) {
 		while ( getline(myfile,line) ) {
-			if(line[0]!='c' && line[0]!='p') {
+			if(line[0]=='p'){ 
+				std::vector<std::string> columns = tokenize(line);
+				numVar = std::stoi(columns[2]);
+			}
+			else if(line[0]!='c') {
 				//removendo caractere de terminação
 				line.erase(line.end()-1);
 				lines.push_back(line);
-				if(int(line[0]) > top)
-					top = int(line[0]);
 			}
 		}
 	  myfile.close();
 	}
 	
+	int top = 0;
+	std::vector< std::vector<int> > allClauses;
 	for(unsigned int i=0;i<lines.size();i++) {
-		tokenizeInts(lines[i]);
-
+		  //get values in the line
+		  // first element is weight
+		  //both hard and soft clauses have height
+		  std::vector<int> clause = stringVectorToInt(tokenize(lines[i]));
+		  allClauses.push_back(clause);
+		  if(clause[0]>top)
+		    top = clause[0];
 	}
-
+	
+	//puts each clause in its respective list
+	for(unsigned int i=0;i<allClauses.size();i++) {
+		if(allClauses[i][0]<top) { //soft
+			softClauses.push_back(allClauses[i]);
+		} else {
+			hardClauses.push_back(allClauses[i]);
+		}
+	}
+	for(int i = 0;i<=numVar;i++){
+		variables.push_back(0);
+	}
+	numVariables = numVar;
 }
 
 

@@ -1,1 +1,0 @@
-/home/thiago/github projects/otimizacao-grasp/grasp/build/CMakeFiles/grasp.dir
