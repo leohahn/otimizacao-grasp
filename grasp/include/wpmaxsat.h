@@ -26,6 +26,7 @@ private:
     int getHardScore(int var, int value, const std::vector<bool>& clauses_val);
     int getSoftScore(int var, int value, const std::vector<bool>& clauses_val);
     bool satisfiesClause(int var, int value, std::vector<int> clause);
+	std::vector<bool> updateClausesSatisfiability(int var, bool var_value, ClauseType type, std::vector<bool> currentSatisfiability);
     std::vector<int> createHardDecreasingVariables();
     std::vector<int> createSoftDecreasingVariables();
 
