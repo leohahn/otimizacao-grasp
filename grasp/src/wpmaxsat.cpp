@@ -69,8 +69,13 @@ void WpMaxSAT::run(int max_iterations)
 }
 
 
-void WpMaxSAT::constructGreddyRandomSolution()
+void WpMaxSAT::constructGreedyRandomSolution()
 {
+	std::vector<bool> variableValues(numVariables+1);
+	variableValues.push_back(0);  //this position is ignored
+	for(unsigned int varInx=1;varInx<=numVariables;varInx++) {
+		variableValues.push_back(0);
+	}
 
 }
 
@@ -125,9 +130,6 @@ void WpMaxSAT::parseFile(std::string path)
 		} else {
 			hardClauses.push_back(allClauses[i]);
 		}
-	}
-	for(int i = 0;i<=numVar;i++){
-		variables.push_back(0);
 	}
 	numVariables = numVar;
 }

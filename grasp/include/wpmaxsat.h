@@ -14,7 +14,7 @@ public:
     WpMaxSAT(std::string);
     ~WpMaxSAT();
     void run(int max_iterations);
-    void constructGreddyRandomSolution();
+    void constructGreedyRandomSolution();
     void makeLocalSearch();
     void updateSolution();
 
@@ -26,17 +26,10 @@ private:
     int numOfSatisfiedClauses(int var, int var_value, ClauseType type);
     int getNumVariables();
     int findInClause(int clause, int var, ClauseType type);
-
-    std::vector<int> rcl;
     void parseFile(std::string path);
-    //variable values start from index 1
-    //index 0 is ignored
-    std::vector<int> variables;
     int numVariables;
     std::vector<std::vector<int> > hardClauses;
     std::vector<std::vector<int> > softClauses;
-
-    std::vector<int> solution;
     int top;
 };
 
