@@ -3,17 +3,30 @@
 #include "grasp.h"
 #include <vector>
 #include <string>
+#include <algorithm>
+//!
+//! Class that implements the GRASP algorithm with the
+//! Weighted Partial Max SAT problem.
+//!
+
 class WpMaxSAT : public GRASP {
 public:
     WpMaxSAT();
     ~WpMaxSAT();
-    void run();
+    void run(int max_iterations);
     void constructGreddyRandomSolution();
     void makeLocalSearch();
     void updateSolution();
+
     void parseFile(std::string path);
-   
+    enum ClauseType {SOFT, HARD};
+
 private:
+
+    int numOfSatisfiedClauses(int var, int var_value, ClauseType type);
+    int getNumVariables();
+    int findInClause(int clause, int var, ClauseType type);
+
     std::vector<int> rcl;
     
     //variable values start from index 1
@@ -26,4 +39,5 @@ private:
     std::vector<int> solution;
     int top;
 };
-#endif
+
+#endif // __WPMAXSAT_H__
