@@ -11,6 +11,7 @@ public:
     void constructGreddyRandomSolution();
     void makeLocalSearch();
     void updateSolution();
+    void numOfSatisfiedClauses() const;
 private:
     std::vector<int> rcl;
     std::vector<int> variables;
