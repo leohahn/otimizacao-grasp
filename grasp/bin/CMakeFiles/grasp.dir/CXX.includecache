@@ -7,12 +7,12 @@
 #IncludeRegexTransform: 
 
 /home/lhahn/dev/otimizacao-combinatoria/otimizacao-grasp/grasp/include/grasp.h
+vector
+-
 
 /home/lhahn/dev/otimizacao-combinatoria/otimizacao-grasp/grasp/include/wpmaxsat.h
 grasp.h
 /home/lhahn/dev/otimizacao-combinatoria/otimizacao-grasp/grasp/include/grasp.h
-vector
--
 string
 -
 algorithm

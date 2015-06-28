@@ -6,12 +6,10 @@ void printIntVector(std::vector<int> vec){
 		std::cout<<vec[i]<<" ";
 	}
 	std::cout<<"\n";
-  
 }
 
-
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
       WpMaxSAT wp= WpMaxSAT("../../instances/original/hamming10-2.clq.wcnf");
 
 }
-

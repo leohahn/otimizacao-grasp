@@ -1,7 +1,6 @@
 #ifndef __WPMAXSAT_H__
 
 #include "grasp.h"
-#include <vector>
 #include <string>
 #include <algorithm>
 //!
@@ -13,21 +12,23 @@ public:
     WpMaxSAT(std::string);
     ~WpMaxSAT();
     void run(int max_iterations);
-    void constructGreedyRandomSolution();
-    void makeLocalSearch();
+    std::vector<bool> constructGreedyRandomSolution();
+    void makeLocalSearch(std::vector<bool> sol);
     void updateSolution();
 
     enum ClauseType {SOFT, HARD};
 
 private:
-    //!
-    //! Returns the number of satisfied clauses given the type (HARD, SOFT)
-    //! the variable and its value (0, 1).
-    //!
     int numOfSatisfiedClauses(int var, int var_value, ClauseType type);
     int getNumVariables();
     int findInClause(int clause, int var, ClauseType type);
     void parseFile(std::string path);
+    int getHardScore(int var, int value, const std::vector<bool>& clauses_val);
+    int getSoftScore(int var, int value, const std::vector<bool>& clauses_val);
+    bool satisfiesClause(int var, int value, std::vector<int> clause);
+    std::vector<int> createHardDecreasingVariables();
+    std::vector<int> createSoftDecreasingVariables();
+
     int numVariables;
     std::vector<std::vector<int> > hardClauses;
     std::vector<std::vector<int> > softClauses;
