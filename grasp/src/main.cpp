@@ -11,7 +11,7 @@ void printIntVector(std::vector<int> vec){
 
 
 int main(int argc, char **argv) {
-      WpMaxSAT wp= WpMaxSAT();
-      wp.parseFile("../../instances/original/hamming10-2.clq.wcnf");
+      WpMaxSAT wp= WpMaxSAT("../../instances/original/hamming10-2.clq.wcnf");
+
 }
 

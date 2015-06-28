@@ -41,20 +41,15 @@ std::vector<int> stringVectorToInt(std::vector<std::string> inpt)
 
 
 
-
-
-
-
-
 //////////////////
-/// Prototipes ///
+/// Prototypes ///
 //////////////////
 bool isSolutionStale();
 bool iterationsLeft(int, int);
 
-WpMaxSAT::WpMaxSAT()
+WpMaxSAT::WpMaxSAT(std::string inputFile)
 {
-
+	parseFile(inputFile);
 }
 
 WpMaxSAT::~WpMaxSAT()
@@ -207,4 +202,4 @@ int WpMaxSAT::findInClause(int clause, int var, ClauseType type)
 
     return var_value;
 }
->>>>>>> fccecd545f357d29e704faf7e8763749ab6cb54e
+
