@@ -53,8 +53,11 @@ void WpMaxSAT::run(int max_iterations)
     int current_iter = 1;
     while (iterationsLeft(current_iter, max_iterations) && !isSolutionStale()) {
         vector<bool> sol = constructGreedyRandomSolution();
+		std::cout<<"greedy done\n";;
         makeLocalSearch(sol);
+		std::cout<<"local search done\n";
         updateSolution();
+		std::cout<<"update done\n";
     }
 }
 
@@ -201,10 +204,15 @@ void WpMaxSAT::makeLocalSearch(vector<bool> solution)
     vector<bool> current_sol = solution;
     int current_gain = std::numeric_limits<int>::min();
     for (int i=0; i<MAX_STEPS; ++i) {
+		std::cout<<"local search step:"<<i<<"\n";
+		std::cout<<"begin hard\n";
         vector<int> hard_decreasing_vars = createHardDecreasingVariables(current_sol);
-        vector<int> soft_decreasing_vars = createSoftDecreasingVariables(current_sol);
-        int v;
-
+        std::cout<<"end hard\n";
+		std::cout<<"begin soft\n";
+		vector<int> soft_decreasing_vars = createSoftDecreasingVariables(current_sol);
+        std::cout<<"end soft\n";
+		int v;
+		
         if (isFeasible(current_sol) && (getSolutionGain(current_sol) > best_gain)) {
             best_sol = current_sol;
             best_gain = current_gain;
