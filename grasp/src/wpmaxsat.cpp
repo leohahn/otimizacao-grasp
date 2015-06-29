@@ -24,20 +24,6 @@ std::vector<std::string> tokenize(std::string line);
 std::vector<int> stringVectorToInt(std::vector<std::string> inpt);
 void printSolution(vector<bool> solution);
 
-// template<typename Iter, typename RandomGenerator>
-// Iter select_randomly(Iter start, Iter end, RandomGenerator& g) {
-//     std::uniform_int_distribution<> dis(0, std::distance(start, end) - 1);
-//     std::advance(start, dis(g));
-//     return start;
-// }
-
-// template<typename Iter>
-// Iter select_randomly(Iter start, Iter end) {
-//     static std::random_device rd;
-//     static std::mt19937 gen(rd());
-//     return select_randomly(start, end, gen);
-// }
-
 WpMaxSAT::WpMaxSAT(std::string inputFile)
 {
     parseFile(inputFile);
@@ -75,6 +61,10 @@ void WpMaxSAT::run(int max_iterations)
         //std::cout<<"local search done\n";
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
         std::cout<<"update solution done\n";
+        cout << "BestSol: " << endl;
+        printSolution(best_solution);
+        cout << "ImpSol: " << endl;
+        printSolution(imp_sol);
         best_solution = new_sol;
 
         current_iter++;
@@ -255,7 +245,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 
         bool all_zeros = true;
         for (unsigned int i=1; i<hard_decreasing_vars.size(); ++i) {
-            if (hard_decreasing_vars[i] > 1) {
+            if (hard_decreasing_vars[i] > 0) {
                 all_zeros = false;
             }
         }
@@ -266,12 +256,18 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
             } while (hard_decreasing_vars[val_index] == 0);
             value = hard_decreasing_vars[val_index];
             cout << "INDEX = " << value << endl;
-        }
 
+            if (current_sol[value] == true) {
+                current_sol[value] = false;
+            } else {
+                current_sol[value] = true;
+            }
+            continue;
+        }
         // TODO: Select the best (not random)
         all_zeros = true;
         for (unsigned int i=1; i<soft_decreasing_vars.size(); ++i) {
-            if (hard_decreasing_vars[i] > 1) {
+            if (soft_decreasing_vars[i] > 1) {
                 all_zeros = false;
             }
         }
@@ -280,14 +276,12 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                 val_index = (rand() % (soft_decreasing_vars.size() - 1)) + 1;
             } while (hard_decreasing_vars[val_index] > 0);
             value = soft_decreasing_vars[val_index];
-        } else {
-            continue;
-        }
 
-        if (current_sol[value] == true) {
-            current_sol[value] = false;
-        } else {
-            current_sol[value] = true;
+            if (current_sol[value] == true) {
+                current_sol[value] = false;
+            } else {
+                current_sol[value] = true;
+            }
         }
     }
     return best_sol;
