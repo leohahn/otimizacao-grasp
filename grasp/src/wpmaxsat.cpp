@@ -264,14 +264,13 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                 val_index = (rand() % (hard_decreasing_vars.size() - 1)) + 1;
             } while (hard_decreasing_vars[val_index] == 0);
             value = hard_decreasing_vars[val_index];
-
+            printIntVector(hard_decreasing_vars);
             if (current_sol[val_index] == true) {
                 current_sol[val_index] = false;
             } else {
                 current_sol[val_index] = true;
             }
         } else {
-            // TODO: Select the best (not random)
             all_zeros = true;
             for (unsigned int i=1; i<soft_decreasing_vars.size(); ++i) {
                 if (soft_decreasing_vars[i] > 0) {
@@ -301,6 +300,8 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
             }
         }
     }
+    cout << "BEST SOLUTION SEARCH: " << endl;
+    printSolution(best_sol);
     return best_sol;
 }
 
