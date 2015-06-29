@@ -216,6 +216,8 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 
 vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
+    cout << "Beginning search solution" << endl;
+    printSolution(solution);
     const int MAX_STEPS = 20;
     vector<bool> hardScores(hardClauses.size(), 1);
     vector<bool> best_sol = solution;
