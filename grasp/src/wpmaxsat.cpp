@@ -208,8 +208,8 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
     for (int i=0; i<MAX_STEPS; ++i) {
         vector<int> hard_decreasing_vars = createHardDecreasingVariables(current_sol);
         vector<int> soft_decreasing_vars = createSoftDecreasingVariables(current_sol);
-        int v;
-
+        int val_index;
+        int value;
         if (isFeasible(current_sol) && (getSolutionGain(current_sol) > best_gain)) {
             best_sol = current_sol;
             best_gain = current_gain;
@@ -224,9 +224,9 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
             }
             if (all_zeros == false) {
                 do {
-                    v = *select_randomly(hard_decreasing_vars.begin(),
-                                         hard_decreasing_vars.end());
-                } while (v == 0);
+                    val_index = rand() % hard_decreasing_vars.size();
+                } while (hard_decreasing_vars[val_index] == 0);
+                value = hard_decreasing_vars[val_index];
             }
         } else if (!soft_decreasing_vars.empty()) {
             // TODO: Select the best (not random)
@@ -238,19 +238,19 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
             }
             if (all_zeros == false) {
                 do {
-                    v = *select_randomly(soft_decreasing_vars.begin(),
-                                         soft_decreasing_vars.end());
-                } while (hard_decreasing_vars[v] > 0);
+                    val_index = rand() % soft_decreasing_vars.size();
+                } while (hard_decreasing_vars[val_index] > 0);
+                value = soft_decreasing_vars[val_index];
             } else {
                 continue;
             }
         } else {
             continue;// Nao faz nada
         }
-        if (current_sol[v] == true) {
-            current_sol[v] == false;
+        if (current_sol[value] == true) {
+            current_sol[value] == false;
         } else {
-            current_sol[v] == true;
+            current_sol[value] == true;
         }
     }
     return best_sol;

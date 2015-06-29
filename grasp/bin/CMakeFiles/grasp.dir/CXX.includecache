@@ -18,29 +18,9 @@ string
 algorithm
 -
 
-/home/lhahn/dev/otimizacao-combinatoria/otimizacao-grasp/grasp/src/wpmaxsat.cpp
+/home/lhahn/dev/otimizacao-combinatoria/otimizacao-grasp/grasp/src/main.cpp
 iostream
 -
 ../include/wpmaxsat.h
 /home/lhahn/dev/otimizacao-combinatoria/otimizacao-grasp/grasp/include/wpmaxsat.h
-vector
--
-iostream
--
-fstream
--
-string
--
-math.h
--
-algorithm
--
-assert.h
--
-limits
--
-random
--
-iterator
--
 
