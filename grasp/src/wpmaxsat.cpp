@@ -52,6 +52,7 @@ void WpMaxSAT::run(int max_iterations)
     int current_iter = 1;
     vector<bool> best_solution;
     while (iterationsLeft(current_iter, max_iterations) && !isSolutionStale()) {
+        std::cout << "Current iteration " << current_iter << std::endl;
         vector<bool> sol = constructGreedyRandomSolution();
         vector<bool> imp_sol = makeLocalSearch(sol);
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
@@ -142,7 +143,7 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
     while(num_variables_chosen < numVariables){
         std::vector< struct candidate > candidates;
         candidates.clear();
-        for(unsigned int varInx=1;varInx<=numVariables;varInx++) {
+        for(int varInx=1;varInx<=numVariables;varInx++) {
             if(variablesUsed[varInx]==false) {
                 struct candidate cand;
                 cand.variable_index = varInx;
@@ -297,7 +298,7 @@ vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
 vector<int> WpMaxSAT::createSoftDecreasingVariables(vector<bool> solution)
 {
     vector<int> decreasing_variables;
-
+    int gain_solution = getSolutionGain(solution);
     for (unsigned int i=1; i<solution.size(); ++i) {
         vector<bool> aux_sol = solution;
 
@@ -306,9 +307,11 @@ vector<int> WpMaxSAT::createSoftDecreasingVariables(vector<bool> solution)
         } else {
             aux_sol[i] = true;
         }
-
-        decreasing_variables.push_back(getSolutionGain(solution)
-                                       - getSolutionGain(aux_sol));
+        int result = getSolutionGain(aux_sol) - gain_solution;
+        if (result < 0) {
+            result = 0;
+        }
+        decreasing_variables.push_back(result);
     }
     return decreasing_variables;
 }
@@ -327,10 +330,9 @@ bool WpMaxSAT::satisfiesClause(int var, int value, vector<int> clause)
             return true;
         }
     } else {
-        assert(false);
+        return false;
     }
     assert(false);
-    return false;
 }
 
 int WpMaxSAT::getHardScore(int var, int value, const vector<bool>& clauses_val)

@@ -11,6 +11,6 @@ void printIntVector(std::vector<int> vec){
 int main(int argc, char **argv)
 {
       WpMaxSAT wp= WpMaxSAT("../../instances/original/hamming10-2.clq.wcnf");
-	  wp.run(10);
+      wp.run(10);
 
 }
