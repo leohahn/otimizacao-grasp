@@ -59,8 +59,10 @@ void WpMaxSAT::run(int max_iterations)//, String greedySelect)
         vector<bool> sol;
         while (!isFeasible(sol)) {
             sol = constructGreedyRandomSolution();
-            printSolution(sol);
+//            printSolution(sol);
         }
+        cout << "ACHEI GREEEEEEEDY FEEESABLE" << endl;
+
         cout << "Feasible: " << isFeasible(sol) << endl;
         printSolution(sol);
 		//printBoolVector(sol);
@@ -297,11 +299,14 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         variableValues[chosenVariable] = chosenVariableValue;
 
         num_variables_chosen++;
+
     }
-    cout << "SATISFIED HARD CLAUSES" << endl;
-    printBoolVector(satisfiedClausesHard);
-    cout << "COMECANDO A PRINTAR ISFEASIBLE" << endl;
-    cout << isFeasible(variableValues) << endl;
+
+    //cout << "SATISFIED HARD CLAUSES" << endl;
+    //printBoolVector(satisfiedClausesHard);
+    //cout << "COMECANDO A PRINTAR ISFEASIBLE" << endl;
+    //cout << isFeasible(variableValues) << endl;
+
     return variableValues;
 }
 
@@ -342,6 +347,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
         }
 
         bool less_or_zeros = true;
+
         for (unsigned int i=1; i<hard_decreasing_vars.size(); ++i) {
             if (hard_decreasing_vars[i] > 0) {
                 less_or_zeros = false;
@@ -634,37 +640,26 @@ bool isSolutionStale()
     return false;
 }
 
-// Function that finds a variable in a clause. Returns the value of the variable.
-// If nothing was found, returns -1.
+// Function that finds a variable in a clause. Returns the value of the variable (variable or -variable).
+// If nothing was found, returns 0.
 int WpMaxSAT::findInClause(int clause, int var, ClauseType type)
 {
-    vector<int>::iterator it;
-    int var_value = 0;
-    switch (type) {
-    case SOFT:
-        it = std::find(softClauses.at(clause).begin()+1,
-                       softClauses.at(clause).end(), var);
 
-        if (it == softClauses.at(clause).end()) {
-            return -1; // Not found
-        } else {
-            var_value = *it;
-        }
-        break;
+	std::vector<int> clauseVec;
+	switch(type){
+	  case SOFT:
+		clauseVec = softClauses[clause];
+		break;
+	  case HARD:
+		clauseVec = hardClauses[clause];
+	}
 
-    case HARD:
-        it = std::find(hardClauses.at(clause).begin()+1,
-                       hardClauses.at(clause).end(), var);
-
-        if (it == hardClauses.at(clause).end()) {
-            return -1;
-        } else {
-            var_value = *it;
-        }
-        break;
-    }
-
-    return var_value;
+	for(unsigned int i=1;i<clauseVec.size();i++) {
+		if(clauseVec[i]==var || clauseVec[i]==-var){
+			return clauseVec[i];
+		}
+	}
+	return 0;
 }
 
 std::vector<std::string> tokenize(std::string line)
@@ -711,10 +706,10 @@ bool WpMaxSAT::isFeasible(vector<bool> solution)
             }
         }
         if (last_clause == false) {
-            cout << "isFeasible FALHOU: " << endl;
-            printIntVector(hardClauses[i]);
-            cout << "index: " << aux <<", ";
-            cout << "value: " << solution[aux] << endl;
+            //cout << "isFeasible FALHOU: " << endl;
+            //printIntVector(hardClauses[i]);
+            //cout << "index: " << aux <<", ";
+            //cout << "value: " << solution[aux] << endl;
             return false;
         }
     }

@@ -19,6 +19,7 @@ void run(std::string name){
 
 int main(int argc, char **argv)
 {
+
     run("../../instances/original/hamming10-2.clq.wcnf");
     //run("../../instances/original/MANN_a45.clq.wcnf");
     //run("../../instances/original/p_hat1000-3.clq.wcnf");
@@ -26,4 +27,5 @@ int main(int argc, char **argv)
     //run("../../instances/original/p_hat1000-1.clq.wcnf");
     //run("../../instances/original/johnson8-4-4.clq.wcnf");
     //run("../../instances/original/p_hat1000-2.clq.wcnf");
+    return 0;
 }
