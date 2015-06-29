@@ -20,6 +20,7 @@ public:
     enum ClauseType {SOFT, HARD};
 
 private:
+    void printIntVector(std::vector<int> vec);
     int numOfSatisfiedClauses(int var, bool var_value,
                               ClauseType type, std::vector<bool> satisfiedStatus);
     int getNumVariables();
