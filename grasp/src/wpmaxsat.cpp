@@ -293,7 +293,7 @@ int WpMaxSAT::getSolutionGainHard(vector<bool> solution){
             }
         }
     }
-	return gain;
+    return gain;
 }
 
 vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
@@ -579,7 +579,5 @@ bool WpMaxSAT::isFeasible(vector<bool> solution)
 
 void printSolution(vector<bool> solution)
 {
-    for (int i=0; i<solution.size(); ++i) {
-        cout << get
-    }
+    std::cout << "Solution: " <<  getSolutionGain(solution) << std::endl;
 }
