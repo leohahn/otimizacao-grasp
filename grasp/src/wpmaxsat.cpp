@@ -9,6 +9,7 @@
 #include <assert.h>
 #include <limits>
 #include <random>
+#include <time.h>
 #include <iterator>
 #include <omp.h>
 
@@ -43,28 +44,33 @@ void WpMaxSAT::printClause(vector<int> clause)
 }
 void WpMaxSAT::run(int max_iterations)
 {
-    for (unsigned int i = 0; i<softClauses.size(); ++i) {
-        printClause(softClauses[i]);
-    }
+	srand (time(NULL));
+    //for (unsigned int i = 0; i<softClauses.size(); ++i) {
+    //    printClause(softClauses[i]);
+    //}
     int current_iter = 1;
     vector<bool> best_solution;
     while (iterationsLeft(current_iter, max_iterations)) {
         std::cout << "Current iteration " << current_iter << std::endl;
-        vector<bool> sol;
-        sol = constructGreedyRandomSolution();
-        cout << "Feasible: " << isFeasible(sol) << endl;
+		vector<bool> sol;
+		sol = constructGreedyRandomSolution();
+		cout << "Feasible: " << isFeasible(sol) << endl;
+		printSolution(sol);
+		std::cout<<"greedy done\n";
         std::vector<bool> imp_sol = makeLocalSearch(sol);
-        std::cout<<"greedy done\n";;
-        printSolution(sol);
-        cout << "Feasible: " << isFeasible(sol) << endl;
-
-        //std::cout<<"local search done\n";
+        std::cout<<"local search done\n";
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
         std::cout<<"update solution done\n";
-        cout << "BestSol: " << endl;
-        printSolution(best_solution);
-        cout << "ImpSol: " << endl;
-        printSolution(imp_sol);
+
+//        cout << "BestSol: " << endl;
+//        printSolution(best_solution);
+//        cout << "ImpSol: " << endl;
+//        printSolution(imp_sol);
+
+        std::cout<<"new solution status:\n";
+        cout << "Feasible: " << isFeasible(new_sol) << endl;
+        printSolution(new_sol);
+
         best_solution = new_sol;
 
         current_iter++;
@@ -143,16 +149,15 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
     int num_variables_chosen = 0;
 
     for(unsigned int i = 0;i<hardClauses.size();i++) {
-        satisfiedClausesHard.push_back(false);
+        satisfiedClausesHard[i] = false;
     }
     for(unsigned int i = 0;i<softClauses.size();i++) {
-        satisfiedClausesSoft.push_back(false);
+        satisfiedClausesSoft[i] = false;
     }
     for(int i = 0;i<=numVariables;i++) {
-        variableValues.push_back(false);
-        variablesUsed.push_back(false);
+        variableValues[i]= false;
+        variablesUsed[i]= false;
     }
-
     while(num_variables_chosen < numVariables){
         std::vector< struct candidate > candidates;
         candidates.clear();
@@ -194,6 +199,12 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         for(unsigned int i=candidates.size()-1;i>=candidates.size()-sizercl;i--){
 			rcl.push_back(candidates[i]);
         }
+
+        //std::cout<<"candidates: size:"<<candidates.size()<<"\n";
+		//for(int c = 0; c<candidates.size();c++){
+		//	std::cout<<candidates[c].variable_index<<" - ";
+
+		//}
         int candidateIndex = rand() % candidates.size();
         //candidate choice = *select_randomly(rcl.begin(),rcl.end());//chosen which variable will be selected
         candidate choice = candidates[candidateIndex];
@@ -208,8 +219,9 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
     }
     //for(unsigned int i = 0;i<variableValues.size();i++)
 	//{
-	  //std::cout<<variableValues[i]<<" ";
+	//  std::cout<<variableValues[i]<<" ";
 	//}
+	//std::cout<<"\n";
     return variableValues;
 }
 
@@ -597,5 +609,5 @@ bool WpMaxSAT::isFeasible(vector<bool> solution)
 
 void WpMaxSAT::printSolution(vector<bool> solution)
 {
-    std::cout << "Solution: " <<  getSolutionGain(solution) << std::endl;
+    std::cout << "Solution: soft: " <<  getSolutionGain(solution)<<" hard: "<<getSolutionGainHard(solution) << std::endl;
 }
