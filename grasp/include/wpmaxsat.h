@@ -13,8 +13,9 @@ public:
     ~WpMaxSAT();
     void run(int max_iterations);
     std::vector<bool> constructGreedyRandomSolution();
-    void makeLocalSearch(std::vector<bool> solution);
-    void updateSolution();
+    std::vector<bool> makeLocalSearch(std::vector<bool> solution);
+    std::vector<bool> updateSolution(std::vector<bool> imp_solution,
+                                     std::vector<bool> best_solution);
 
     enum ClauseType {SOFT, HARD};
 
@@ -34,6 +35,7 @@ private:
     std::vector<bool> createHardClausesSolution(std::vector<bool> solution);
     bool isFeasible(std::vector<bool> solution);
     int getSolutionGain(std::vector<bool> solution);
+	int getSolutionGainHard(vector<bool> solution);
     std::vector<bool> updateClausesSatisfiability(int var, bool var_value,
                                                   ClauseType type,
                                                   std::vector<bool> currentSatisfiability);
