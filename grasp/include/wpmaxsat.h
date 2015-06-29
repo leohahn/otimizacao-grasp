@@ -13,6 +13,7 @@ public:
     ~WpMaxSAT();
     void run(int max_iterations);
     std::vector<bool> constructGreedyRandomSolution();
+	std::vector<bool> GSAT();
     std::vector<bool> makeLocalSearch(std::vector<bool> solution);
     std::vector<bool> updateSolution(std::vector<bool> imp_solution,
                                      std::vector<bool> best_solution);

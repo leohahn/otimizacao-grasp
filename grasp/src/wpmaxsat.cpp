@@ -54,7 +54,10 @@ void WpMaxSAT::run(int max_iterations)
     while (iterationsLeft(current_iter, max_iterations)) {
         std::cout << "Current iteration " << current_iter << std::endl;
         vector<bool> sol;
-        sol = constructGreedyRandomSolution();
+        //
+		sol = GSAT();
+		//sol = constructGreedyRandomSolution();
+		
         cout << "Feasible: " << isFeasible(sol) << endl;
         printSolution(sol);
 		//printBoolVector(sol);
@@ -143,7 +146,76 @@ std::vector<bool> WpMaxSAT::updateClausesSatisfiability(int var, bool var_value,
 }
 
 
-///std::vector<bool> WpMaxSAT::
+std::vector<bool> WpMaxSAT::GSAT() 
+{
+	int walkProb = 20;
+	std::vector<bool> solution;
+	int MAX_FLIPS = numVariables;
+	int numHardClauses = hardClauses.size();
+	for(int i=0;i<numVariables+1;i++){
+			int tmp = rand() % 2;
+			if(tmp==0)
+				solution.push_back(false);
+			else
+				solution.push_back(true);
+			
+	}
+	if(isFeasible(solution))
+	{
+	  return solution;
+	}
+	while(MAX_FLIPS>0) {
+		//std::cout<<"entered: flips left"<< MAX_FLIPS<<"\n";
+		//initial random solution
+		
+		if(rand()%100 < walkProb){ //picks a clause at random. picks one of tha variables within the clause at random
+			 int clauseInx = rand() % numHardClauses;
+			 int variable = hardClauses[clauseInx][rand() % (hardClauses[clauseInx].size()-1)+1];
+			 if(variable<0){
+				variable= -variable;
+			  }
+			 if(solution[variable]==true) {
+				solution[variable]=false; 
+			 } else {
+				solution[variable]=true;
+			 }
+			
+		} else {
+			//picks one of the variables with the greatest gain
+		  
+			//for each variable contains the difference in hard clauses
+			//the invertion of its value would cause
+			vector<int> gain = createHardDecreasingVariables(solution);
+			//gets variables that cause maximum increase
+			vector<int> candidates_variables;
+			int max_gain = 0;
+			for(unsigned int g = 1; g<gain.size();g++){
+				if(gain[g] > max_gain){
+					candidates_variables.clear();
+					candidates_variables.push_back(g);
+					max_gain = gain[g];
+				} else if(gain[g]==max_gain){
+					candidates_variables.push_back(g);
+				}
+			}
+			//selects one of the top variables randomly
+			int var_index = candidates_variables[rand() % candidates_variables.size()];
+			if(solution[var_index]==true){
+				solution[var_index]=false;
+			} else {
+				solution[var_index]=true;
+			}
+		cout << "Feasible: " << isFeasible(solution) << endl;
+        printSolution(solution);	
+		}
+		MAX_FLIPS--;	
+		
+		if(isFeasible(solution))
+		{
+			return solution;
+		}
+	}
+}
 
 std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 {
