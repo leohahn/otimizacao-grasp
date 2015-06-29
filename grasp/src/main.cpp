@@ -13,5 +13,5 @@ int main(int argc, char **argv)
 
     WpMaxSAT wp= WpMaxSAT("../../instances/original/p_hat1000-1.clq.wcnf");
 
-    wp.run(10);
+    wp.run(80);
 }

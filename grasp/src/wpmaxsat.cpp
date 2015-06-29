@@ -236,7 +236,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
         vector<int> hard_decreasing_vars = createHardDecreasingVariables(current_sol);
         int val_index;
         int value;
-
+        //printIntVector(hard_decreasing_vars);
         //std::cout<<"end hard\n";
         //std::cout<<"begin soft\n";
         vector<int> soft_decreasing_vars = createSoftDecreasingVariables(current_sol);
@@ -253,53 +253,55 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
             }
         }
 
-        bool all_zeros = true;
+        bool less_or_zeros = true;
         for (unsigned int i=1; i<hard_decreasing_vars.size(); ++i) {
             if (hard_decreasing_vars[i] > 0) {
-                all_zeros = false;
+                less_or_zeros = false;
             }
         }
-
-        if (all_zeros == false) {
+        //printIntVector(hard_decreasing_vars);
+        if (less_or_zeros == false) {
             do {
                 val_index = (rand() % (hard_decreasing_vars.size() - 1)) + 1;
-
-            } while (hard_decreasing_vars[val_index] == 0);
+            } while (hard_decreasing_vars[val_index] <= 0);
             value = hard_decreasing_vars[val_index];
-            //printIntVector(hard_decreasing_vars);
+
             if (current_sol[val_index] == true) {
                 current_sol[val_index] = false;
             } else {
                 current_sol[val_index] = true;
             }
         } else {
-            all_zeros = true;
+            less_or_zeros = true;
             for (unsigned int i=1; i<soft_decreasing_vars.size(); ++i) {
                 if (soft_decreasing_vars[i] > 0) {
-                    all_zeros = false;
+                    less_or_zeros = false;
                 }
             }
 
-
-            if (all_zeros == false) {
+            if (less_or_zeros == false) {
                 do {
                     val_index = (rand() % (soft_decreasing_vars.size() - 1)) + 1;
-
                 } while (hard_decreasing_vars[val_index] > 0);
-
+                //printIntVector(soft_decreasing_vars);
                 int best_index = 1;
                 for (int i=2; i<soft_decreasing_vars.size(); ++i) {
-                    if (soft_decreasing_vars[i] > soft_decreasing_vars[best_index]) {
+                    if (soft_decreasing_vars[i] > soft_decreasing_vars[best_index] && hard_decreasing_vars[i] == 0) {
                         best_index = i;
                     }
                 }
-                //printIntVector(soft_decreasing_vars);
-                value = soft_decreasing_vars[val_index];
 
-                if (current_sol[best_index] == true) {
-                    current_sol[best_index] = false;
+                if (hard_decreasing_vars[best_index] == 0) {
+                    //printIntVector(soft_decreasing_vars);
+                    value = soft_decreasing_vars[val_index];
+                    if (current_sol[best_index] == true) {
+                        current_sol[best_index] = false;
+                    } else {
+                        current_sol[best_index] = true;
+                    }
                 } else {
-                    current_sol[best_index] = true;
+                    cout << "DEU STALL" << endl;
+                    s = MAX_STEPS;
                 }
             } else {
                 //updateWeights();
@@ -350,10 +352,9 @@ vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
         else
             newSol[i]=true;
         temp = getSolutionGainHard(newSol)-baseline;
-        if(temp<0) {
-            temp = 0;
-        }
+
         results[i] = temp;
+
     }
 
     return results;
