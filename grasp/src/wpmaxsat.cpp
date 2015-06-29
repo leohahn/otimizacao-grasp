@@ -61,15 +61,15 @@ void WpMaxSAT::run(int max_iterations)
         std::vector<bool> imp_sol = makeLocalSearch(sol);
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
 
-        std::cout<<"New solution status:\n";
-        cout << "Feasible: " << isFeasible(new_sol) << endl;
-        printSolution(new_sol);
+        //std::cout<<"New solution status:\n";
+        //cout << "Feasible: " << isFeasible(new_sol) << endl;
+        //printSolution(new_sol);
 
         best_solution = new_sol;
 
         current_iter++;
-        cout << "Current Iter Solution" << endl;
-        printSolution(best_solution);
+//        cout << "Current Iter Solution" << endl;
+//        printSolution(best_solution);
     }
     cout << "Best solution: " << endl;
     printSolution(best_solution);
@@ -219,9 +219,7 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 
 vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
-    cout << "Beginning search solution" << endl;
-    printSolution(solution);
-    const int MAX_STEPS = 200;
+    const int MAX_STEPS = 100;
 
     vector<bool> hardScores(hardClauses.size(), 1);
     vector<bool> best_sol = solution;
@@ -300,16 +298,17 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                         current_sol[best_index] = true;
                     }
                 } else {
-                    cout << "DEU STALL" << endl;
                     s = MAX_STEPS;
+                    cout << "DEU STALL" << endl;
                 }
             } else {
                 //updateWeights();
                 s = MAX_STEPS;
+                cout << "DEU STALL" << endl;
             }
         }
     }
-    printSolution(best_sol);
+    //printSolution(best_sol);
     return best_sol;
 }
 
@@ -427,12 +426,13 @@ int WpMaxSAT::getSoftScore(int var, int value, const vector<bool>& clauses_val)
 vector<bool> WpMaxSAT::updateSolution(vector<bool> imp_solution,
                                       vector<bool> best_solution)
 {
-    std::cout << "Updating Solutions" << std::endl;
     bool imp_feasible = isFeasible(imp_solution);
     bool best_feasible = isFeasible(best_solution);
 
     if (imp_feasible == true) {
         if (best_feasible == false) {
+            cout << "Better Solution Found:" << endl;
+            printSolution(imp_solution);
             return imp_solution;
         }
         if (getSolutionGain(imp_solution) > getSolutionGain(best_solution)) {
