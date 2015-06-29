@@ -268,6 +268,7 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         int sizercl = floor(rclpercentage/100.0 * candidates.size());
         std::sort(candidates.begin(),candidates.end(), &candidateSorter); //ascending order
         for(unsigned int i=candidates.size()-1;i>=candidates.size()-sizercl;i--){
+			//std::cout<<"rcl element:"<<candidates[i].satisfiedHard<<"\n";
             rcl.push_back(candidates[i]);
         }
 
