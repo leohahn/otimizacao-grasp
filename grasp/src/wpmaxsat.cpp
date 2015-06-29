@@ -38,6 +38,9 @@ Iter select_randomly(Iter start, Iter end) {
 WpMaxSAT::WpMaxSAT(std::string inputFile)
 {
     parseFile(inputFile);
+	std::cout<<"num clauses"<<hardClauses.size()+softClauses.size()<<"\n";
+	std::cout<<"num variable"<<numVariables<<"\n";
+  
 }
 
 WpMaxSAT::~WpMaxSAT()
@@ -167,16 +170,19 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
                         cand.satisfiedSoft = satSoftFalse;
                     }
                 }
+                candidates.push_back(cand);
             }
         }
         std::vector< struct candidate > rcl;
         int sizercl = floor(rclpercentage/100.0 * candidates.size());
         std::sort(candidates.begin(),candidates.end(), &candidateSorter); //ascending order
-        for(unsigned int i=candidates.size()-1;i>=candidates.size()-sizercl;i++){
-            rcl.push_back(candidates[i]);
+        for(unsigned int i=candidates.size()-1;i>=candidates.size()-sizercl;i--){
+			rcl.push_back(candidates[i]);
         }
+        int candidateIndex = rand() % candidates.size();
+        //candidate choice = *select_randomly(rcl.begin(),rcl.end());//chosen which variable will be selected
+        candidate choice = candidates[candidateIndex];
 
-        candidate choice = *select_randomly(rcl.begin(),rcl.end());//chosen which variable will be selected
         int chosenVariable = choice.variable_index;
         bool chosenVariableValue = choice.value;
         satisfiedClausesHard = updateClausesSatisfiability(chosenVariable,chosenVariableValue,HARD,satisfiedClausesHard);
