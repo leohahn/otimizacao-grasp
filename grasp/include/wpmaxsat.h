@@ -19,7 +19,8 @@ public:
     enum ClauseType {SOFT, HARD};
 
 private:
-    int numOfSatisfiedClauses(int var, bool var_value, ClauseType type, std::vector<bool> satisfiedStatus);
+    int numOfSatisfiedClauses(int var, bool var_value,
+                              ClauseType type, std::vector<bool> satisfiedStatus);
     int getNumVariables();
     int findInClause(int clause, int var, ClauseType type);
     void parseFile(std::string path);
@@ -41,7 +42,7 @@ private:
     std::vector<std::vector<int> > hardClauses;
     std::vector<std::vector<int> > softClauses;
     int top;
-	const int rclpercentage = 40;
+    const int rclpercentage = 40;
 };
 
 #endif // __WPMAXSAT_H__
