@@ -1,0 +1,43 @@
+GLPSOL: GLPK LP/MIP Solver, v4.52
+Parameter(s) specified in the command line:
+ --model final.glpk -d ../instances/glpk_no_top/p_hat1000-1.clq.wcnf --output
+ solutions_no_top/p_hat1000-1.clq.wcnf.sol --tmlim 3600
+Reading model section from final.glpk...
+29 lines were read
+Reading data section from ../instances/glpk_no_top/p_hat1000-1.clq.wcnf...
+1067 lines were read
+Generating weightSum...
+Generating softR...
+Generating hardR...
+Model has been successfully generated
+GLPK Integer Optimizer, v4.52
+353 rows, 392 columns, 1408 non-zeros
+392 integer variables, all of which are binary
+Preprocessing...
+352 hidden covering inequaliti(es) were detected
+352 rows, 392 columns, 1056 non-zeros
+392 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 352
+Solving LP relaxation...
+GLPK Simplex Optimizer, v4.52
+352 rows, 392 columns, 1056 non-zeros
+*     0: obj =   0.000000000e+00  infeas =  0.000e+00 (0)
+*   455: obj =   1.982000000e+03  infeas =  0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
++   455: mip =     not found yet <=              +inf        (1; 0)
++   874: >>>>>   1.660000000e+03 <=   1.977000000e+03  19.1% (20; 0)
++  1182: >>>>>   1.702000000e+03 <=   1.937000000e+03  13.8% (30; 1)
++ 23402: >>>>>   1.708000000e+03 <=   1.805000000e+03   5.7% (803; 145)
++ 23615: >>>>>   1.726000000e+03 <=   1.804000000e+03   4.5% (754; 267)
++ 27994: >>>>>   1.730000000e+03 <=   1.799000000e+03   4.0% (729; 622)
++ 28836: >>>>>   1.734000000e+03 <=   1.796000000e+03   3.6% (707; 726)
++ 82301: mip =   1.734000000e+03 <=     tree is empty   0.0% (0; 5797)
+INTEGER OPTIMAL SOLUTION FOUND
+Time used:   7.7 secs
+Memory used: 7.1 Mb (7417891 bytes)
+Writing MIP solution to `solutions_no_top/p_hat1000-1.clq.wcnf.sol'...
