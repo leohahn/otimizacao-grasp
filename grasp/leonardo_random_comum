@@ -1,0 +1,5525 @@
+START!../../instances/original/hamming10-2.clq.wcnfnum clauses1640
+num variable41
+NUM HARD CLAUSES:168
+Current iteration 1
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 2
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 3
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 4
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 5
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 6
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 7
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 8
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 9
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 10
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 11
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 12
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 13
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 14
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 15
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 16
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 17
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 18
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 19
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 20
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 21
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 22
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 23
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 24
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 25
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 26
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 27
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 28
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 29
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 30
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 31
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 32
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 33
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 34
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 35
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 36
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 37
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 38
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 39
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 40
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 41
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 42
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 43
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 44
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 45
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 46
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 47
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 48
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 49
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 50
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 51
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 52
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 53
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 54
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 55
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 56
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 57
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 58
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 59
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 60
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 61
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 62
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 63
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 64
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 65
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 66
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 67
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 68
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 69
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 70
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 71
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 72
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 73
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 74
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 75
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 76
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 77
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 78
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 79
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 80
+Feasible: 0
+Solution: soft: 3945 hard: 89
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3945 hard: 89
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Best solution: 
+Solution: soft: 0 hard: 0
+Feasible: 0
+START!../../instances/original/MANN_a45.clq.wcnfnum clauses1718
+num variable42
+NUM HARD CLAUSES:172
+Current iteration 1
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 2
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 3
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 4
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 5
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 6
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 7
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 8
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 9
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 10
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 11
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 12
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 13
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 14
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 15
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 16
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 17
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 18
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 19
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 20
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 21
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 22
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 23
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 24
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 25
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 26
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 27
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 28
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 29
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 30
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 31
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 32
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 33
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 34
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 35
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 36
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 37
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 38
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 39
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 40
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 41
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 42
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 43
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 44
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 45
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 46
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 47
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 48
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 49
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 50
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 51
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 52
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 53
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 54
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 55
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 56
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 57
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 58
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 59
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 60
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 61
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 62
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 63
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 64
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 65
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 66
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 67
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 68
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 69
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 70
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 71
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 72
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 73
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 74
+Feasible: 0
+Solution: soft: 4424 hard: 100
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4424 hard: 100
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 75
+Feasible: 0
+Solution: soft: 4286 hard: 96
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4286 hard: 96
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 76
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 77
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 78
+Feasible: 0
+Solution: soft: 4258 hard: 95
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4258 hard: 95
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 79
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 80
+Feasible: 0
+Solution: soft: 4104 hard: 91
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4104 hard: 91
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Best solution: 
+Solution: soft: 0 hard: 0
+Feasible: 0
+START!../../instances/original/p_hat1000-3.clq.wcnfnum clauses1140
+num variable40
+NUM HARD CLAUSES:110
+Current iteration 1
+Feasible: 0
+Solution: soft: 2797 hard: 58
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2797 hard: 58
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 2
+Feasible: 0
+Solution: soft: 3519 hard: 73
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3519 hard: 73
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 3
+Feasible: 0
+Solution: soft: 3825 hard: 78
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3825 hard: 78
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 4
+Feasible: 0
+Solution: soft: 3825 hard: 78
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3825 hard: 78
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 5
+Feasible: 0
+Solution: soft: 3088 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3088 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 6
+Feasible: 0
+Solution: soft: 3424 hard: 68
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3424 hard: 68
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 7
+Feasible: 0
+Solution: soft: 3755 hard: 77
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3755 hard: 77
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 8
+Feasible: 0
+Solution: soft: 2952 hard: 60
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2952 hard: 60
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 9
+Feasible: 0
+Solution: soft: 3540 hard: 71
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3540 hard: 71
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 10
+Feasible: 0
+Solution: soft: 3825 hard: 78
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3825 hard: 78
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 11
+Feasible: 0
+Solution: soft: 3825 hard: 78
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3825 hard: 78
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 12
+Feasible: 0
+Solution: soft: 3633 hard: 76
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3633 hard: 76
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 13
+Feasible: 0
+Solution: soft: 3074 hard: 61
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3074 hard: 61
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 14
+Feasible: 0
+Solution: soft: 3088 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3088 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 15
+Feasible: 0
+Solution: soft: 2797 hard: 58
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2797 hard: 58
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 16
+Feasible: 0
+Solution: soft: 3611 hard: 73
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3611 hard: 73
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 17
+Feasible: 0
+Solution: soft: 3304 hard: 65
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3304 hard: 65
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 18
+Feasible: 0
+Solution: soft: 3440 hard: 69
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3440 hard: 69
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 19
+Feasible: 0
+Solution: soft: 2945 hard: 59
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2945 hard: 59
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 20
+Feasible: 0
+Solution: soft: 2945 hard: 59
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2945 hard: 59
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 21
+Feasible: 0
+Solution: soft: 3562 hard: 68
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3562 hard: 68
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 22
+Feasible: 0
+Solution: soft: 3666 hard: 76
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3666 hard: 76
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 23
+Feasible: 0
+Solution: soft: 3391 hard: 66
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3391 hard: 66
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 24
+Feasible: 0
+Solution: soft: 3586 hard: 74
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3586 hard: 74
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 25
+Feasible: 0
+Solution: soft: 3607 hard: 73
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3607 hard: 73
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 26
+Feasible: 0
+Solution: soft: 2797 hard: 58
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2797 hard: 58
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 27
+Feasible: 0
+Solution: soft: 3767 hard: 74
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3767 hard: 74
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 28
+Feasible: 0
+Solution: soft: 3032 hard: 60
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3032 hard: 60
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 29
+Feasible: 0
+Solution: soft: 2797 hard: 58
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2797 hard: 58
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 30
+Feasible: 0
+Solution: soft: 2913 hard: 61
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2913 hard: 61
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 31
+Feasible: 0
+Solution: soft: 3609 hard: 70
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3609 hard: 70
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 32
+Feasible: 0
+Solution: soft: 3617 hard: 76
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3617 hard: 76
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 33
+Feasible: 0
+Solution: soft: 2918 hard: 59
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2918 hard: 59
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 34
+Feasible: 0
+Solution: soft: 3774 hard: 79
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3774 hard: 79
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 35
+Feasible: 0
+Solution: soft: 3272 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3272 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 36
+Feasible: 0
+Solution: soft: 2797 hard: 58
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2797 hard: 58
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 37
+Feasible: 0
+Solution: soft: 3474 hard: 73
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3474 hard: 73
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 38
+Feasible: 0
+Solution: soft: 2930 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2930 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 39
+Feasible: 0
+Solution: soft: 3522 hard: 71
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3522 hard: 71
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 40
+Feasible: 0
+Solution: soft: 3410 hard: 67
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3410 hard: 67
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 41
+Feasible: 0
+Solution: soft: 3049 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3049 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 42
+Feasible: 0
+Solution: soft: 3053 hard: 59
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3053 hard: 59
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 43
+Feasible: 0
+Solution: soft: 3825 hard: 78
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3825 hard: 78
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 44
+Feasible: 0
+Solution: soft: 3148 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3148 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 45
+Feasible: 0
+Solution: soft: 2939 hard: 59
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2939 hard: 59
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 46
+Feasible: 0
+Solution: soft: 3679 hard: 74
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3679 hard: 74
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 47
+Feasible: 0
+Solution: soft: 3716 hard: 75
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3716 hard: 75
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 48
+Feasible: 0
+Solution: soft: 3774 hard: 79
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3774 hard: 79
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 49
+Feasible: 0
+Solution: soft: 3700 hard: 75
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3700 hard: 75
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 50
+Feasible: 0
+Solution: soft: 3173 hard: 65
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3173 hard: 65
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 51
+Feasible: 0
+Solution: soft: 3321 hard: 67
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3321 hard: 67
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 52
+Feasible: 0
+Solution: soft: 3075 hard: 60
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3075 hard: 60
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 53
+Feasible: 0
+Solution: soft: 3646 hard: 75
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3646 hard: 75
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 54
+Feasible: 0
+Solution: soft: 3825 hard: 78
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3825 hard: 78
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 55
+Feasible: 0
+Solution: soft: 3731 hard: 77
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3731 hard: 77
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 56
+Feasible: 0
+Solution: soft: 2952 hard: 60
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2952 hard: 60
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 57
+Feasible: 0
+Solution: soft: 3296 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3296 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 58
+Feasible: 0
+Solution: soft: 3214 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3214 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 59
+Feasible: 0
+Solution: soft: 3825 hard: 78
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3825 hard: 78
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 60
+Feasible: 0
+Solution: soft: 2797 hard: 58
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2797 hard: 58
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 61
+Feasible: 0
+Solution: soft: 3729 hard: 74
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3729 hard: 74
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 62
+Feasible: 0
+Solution: soft: 3032 hard: 60
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3032 hard: 60
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 63
+Feasible: 0
+Solution: soft: 3075 hard: 60
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3075 hard: 60
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 64
+Feasible: 0
+Solution: soft: 3716 hard: 73
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3716 hard: 73
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 65
+Feasible: 0
+Solution: soft: 3467 hard: 66
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3467 hard: 66
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 66
+Feasible: 0
+Solution: soft: 2939 hard: 59
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2939 hard: 59
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 67
+Feasible: 0
+Solution: soft: 3495 hard: 70
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3495 hard: 70
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 68
+Feasible: 0
+Solution: soft: 3329 hard: 68
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3329 hard: 68
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 69
+Feasible: 0
+Solution: soft: 3400 hard: 68
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3400 hard: 68
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 70
+Feasible: 0
+Solution: soft: 3232 hard: 65
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3232 hard: 65
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 71
+Feasible: 0
+Solution: soft: 3293 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3293 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 72
+Feasible: 0
+Solution: soft: 3643 hard: 74
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3643 hard: 74
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 73
+Feasible: 0
+Solution: soft: 3071 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3071 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 74
+Feasible: 0
+Solution: soft: 3825 hard: 78
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3825 hard: 78
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 75
+Feasible: 0
+Solution: soft: 2919 hard: 61
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2919 hard: 61
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 76
+Feasible: 0
+Solution: soft: 3700 hard: 73
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3700 hard: 73
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 77
+Feasible: 0
+Solution: soft: 3163 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3163 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 78
+Feasible: 0
+Solution: soft: 3064 hard: 61
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3064 hard: 61
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 79
+Feasible: 0
+Solution: soft: 3068 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3068 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 80
+Feasible: 0
+Solution: soft: 3497 hard: 69
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 3497 hard: 69
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Best solution: 
+Solution: soft: 0 hard: 0
+Feasible: 0
+START!../../instances/original/hamming8-2.clq.wcnfnum clauses1806
+num variable43
+NUM HARD CLAUSES:178
+Current iteration 1
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 2
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 3
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 4
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 5
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 6
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 7
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 8
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 9
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 10
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 11
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 12
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 13
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 14
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 15
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 16
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 17
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 18
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 19
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 20
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 21
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 22
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 23
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 24
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 25
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 26
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 27
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 28
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 29
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 30
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 31
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 32
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 33
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 34
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 35
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 36
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 37
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 38
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 39
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 40
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 41
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 42
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 43
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 44
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 45
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 46
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 47
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 48
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 49
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 50
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 51
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 52
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 53
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 54
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 55
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 56
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 57
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 58
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 59
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 60
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 61
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 62
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 63
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 64
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 65
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 66
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 67
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 68
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 69
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 70
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 71
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 72
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 73
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 74
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 75
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 76
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 77
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 78
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 79
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 80
+Feasible: 0
+Solution: soft: 4357 hard: 94
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 4357 hard: 94
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Best solution: 
+Solution: soft: 0 hard: 0
+Feasible: 0
+START!../../instances/original/p_hat1000-1.clq.wcnfnum clauses352
+num variable40
+NUM HARD CLAUSES:48
+Current iteration 1
+Feasible: 0
+Solution: soft: 1163 hard: 41
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1163 hard: 41
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 2
+Feasible: 0
+Solution: soft: 1152 hard: 32
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1152 hard: 32
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 3
+Feasible: 0
+Solution: soft: 1160 hard: 35
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1160 hard: 35
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 4
+Feasible: 0
+Solution: soft: 1173 hard: 36
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1173 hard: 36
+________________________________ACHEI UMA FEASIBLE_________________________________
+________________________________ACHEI UMA FEASIBLE_________________________________
+________________________________ACHEI UMA FEASIBLE_________________________________
+DEU STALL
+Better Solution Found:
+Solution: soft: 1166 hard: 48
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 5
+Feasible: 0
+Solution: soft: 859 hard: 28
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 859 hard: 28
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 6
+Feasible: 0
+Solution: soft: 922 hard: 29
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 922 hard: 29
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 7
+Feasible: 0
+Solution: soft: 1141 hard: 33
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1141 hard: 33
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 8
+Feasible: 0
+Solution: soft: 1156 hard: 32
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1156 hard: 32
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 9
+Feasible: 0
+Solution: soft: 1194 hard: 31
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1194 hard: 31
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 10
+Feasible: 0
+Solution: soft: 1022 hard: 35
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1022 hard: 35
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 11
+Feasible: 0
+Solution: soft: 1147 hard: 36
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1147 hard: 36
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 12
+Feasible: 0
+Solution: soft: 1150 hard: 34
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1150 hard: 34
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 13
+Feasible: 0
+Solution: soft: 1150 hard: 37
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1150 hard: 37
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 14
+Feasible: 0
+Solution: soft: 1129 hard: 42
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1129 hard: 42
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 15
+Feasible: 0
+Solution: soft: 1174 hard: 38
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1174 hard: 38
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 16
+Feasible: 0
+Solution: soft: 1128 hard: 39
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1128 hard: 39
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 17
+Feasible: 0
+Solution: soft: 1137 hard: 32
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1137 hard: 32
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 18
+Feasible: 0
+Solution: soft: 1116 hard: 39
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1116 hard: 39
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 19
+Feasible: 0
+Solution: soft: 902 hard: 29
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 902 hard: 29
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 20
+Feasible: 0
+Solution: soft: 1053 hard: 31
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1053 hard: 31
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 21
+Feasible: 0
+Solution: soft: 1019 hard: 33
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1019 hard: 33
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 22
+Feasible: 0
+Solution: soft: 1170 hard: 37
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1170 hard: 37
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 23
+Feasible: 0
+Solution: soft: 941 hard: 30
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 941 hard: 30
+________________________________ACHEI UMA FEASIBLE_________________________________
+________________________________ACHEI UMA FEASIBLE_________________________________
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 24
+Feasible: 0
+Solution: soft: 988 hard: 34
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 988 hard: 34
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 25
+Feasible: 0
+Solution: soft: 1165 hard: 34
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1165 hard: 34
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 26
+Feasible: 0
+Solution: soft: 1007 hard: 32
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1007 hard: 32
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 27
+Feasible: 0
+Solution: soft: 1200 hard: 35
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1200 hard: 35
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 28
+Feasible: 0
+Solution: soft: 1067 hard: 37
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1067 hard: 37
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 29
+Feasible: 0
+Solution: soft: 831 hard: 27
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 831 hard: 27
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 30
+Feasible: 0
+Solution: soft: 1112 hard: 38
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1112 hard: 38
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 31
+Feasible: 0
+Solution: soft: 1133 hard: 35
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1133 hard: 35
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 32
+Feasible: 0
+Solution: soft: 1144 hard: 28
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1144 hard: 28
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 33
+Feasible: 0
+Solution: soft: 975 hard: 32
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 975 hard: 32
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 34
+Feasible: 0
+Solution: soft: 1142 hard: 35
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1142 hard: 35
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 35
+Feasible: 0
+Solution: soft: 1113 hard: 30
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1113 hard: 30
+________________________________ACHEI UMA FEASIBLE_________________________________
+________________________________ACHEI UMA FEASIBLE_________________________________
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1166 hard: 48
+Current iteration 36
+Feasible: 0
+Solution: soft: 954 hard: 33
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 954 hard: 33
+________________________________ACHEI UMA FEASIBLE_________________________________
+________________________________ACHEI UMA FEASIBLE_________________________________
+________________________________ACHEI UMA FEASIBLE_________________________________
+________________________________ACHEI UMA FEASIBLE_________________________________
+________________________________ACHEI UMA FEASIBLE_________________________________
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 37
+Feasible: 0
+Solution: soft: 1150 hard: 33
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1150 hard: 33
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 38
+Feasible: 0
+Solution: soft: 1047 hard: 33
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1047 hard: 33
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 39
+Feasible: 0
+Solution: soft: 1084 hard: 31
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1084 hard: 31
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 40
+Feasible: 0
+Solution: soft: 1191 hard: 37
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1191 hard: 37
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 41
+Feasible: 0
+Solution: soft: 1149 hard: 30
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1149 hard: 30
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 42
+Feasible: 0
+Solution: soft: 966 hard: 32
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 966 hard: 32
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 43
+Feasible: 0
+Solution: soft: 1164 hard: 35
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1164 hard: 35
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 44
+Feasible: 0
+Solution: soft: 1140 hard: 36
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1140 hard: 36
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 45
+Feasible: 0
+Solution: soft: 1111 hard: 32
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1111 hard: 32
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 46
+Feasible: 0
+Solution: soft: 1009 hard: 33
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1009 hard: 33
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 47
+Feasible: 0
+Solution: soft: 1134 hard: 29
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1134 hard: 29
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 48
+Feasible: 0
+Solution: soft: 1056 hard: 35
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1056 hard: 35
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 49
+Feasible: 0
+Solution: soft: 1133 hard: 36
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1133 hard: 36
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 50
+Feasible: 0
+Solution: soft: 1183 hard: 40
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1183 hard: 40
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 51
+Feasible: 0
+Solution: soft: 1152 hard: 37
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1152 hard: 37
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 52
+Feasible: 0
+Solution: soft: 876 hard: 29
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 876 hard: 29
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 53
+Feasible: 0
+Solution: soft: 1155 hard: 31
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1155 hard: 31
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 54
+Feasible: 0
+Solution: soft: 898 hard: 28
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 898 hard: 28
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 55
+Feasible: 0
+Solution: soft: 1181 hard: 36
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1181 hard: 36
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 56
+Feasible: 0
+Solution: soft: 1141 hard: 33
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1141 hard: 33
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 57
+Feasible: 0
+Solution: soft: 1142 hard: 35
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1142 hard: 35
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 58
+Feasible: 0
+Solution: soft: 950 hard: 32
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 950 hard: 32
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 59
+Feasible: 0
+Solution: soft: 1113 hard: 30
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1113 hard: 30
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 60
+Feasible: 0
+Solution: soft: 1104 hard: 36
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1104 hard: 36
+________________________________ACHEI UMA FEASIBLE_________________________________
+________________________________ACHEI UMA FEASIBLE_________________________________
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 61
+Feasible: 0
+Solution: soft: 1204 hard: 31
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1204 hard: 31
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 62
+Feasible: 0
+Solution: soft: 1149 hard: 37
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1149 hard: 37
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 63
+Feasible: 0
+Solution: soft: 1158 hard: 34
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1158 hard: 34
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 64
+Feasible: 0
+Solution: soft: 1181 hard: 31
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1181 hard: 31
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 65
+Feasible: 0
+Solution: soft: 1153 hard: 34
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1153 hard: 34
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 66
+Feasible: 0
+Solution: soft: 1157 hard: 34
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1157 hard: 34
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 67
+Feasible: 0
+Solution: soft: 1121 hard: 31
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1121 hard: 31
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 68
+Feasible: 0
+Solution: soft: 946 hard: 31
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 946 hard: 31
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 69
+Feasible: 0
+Solution: soft: 1196 hard: 31
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1196 hard: 31
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 70
+Feasible: 0
+Solution: soft: 1111 hard: 32
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1111 hard: 32
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 71
+Feasible: 0
+Solution: soft: 1108 hard: 35
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1108 hard: 35
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 72
+Feasible: 0
+Solution: soft: 1044 hard: 33
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1044 hard: 33
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 73
+Feasible: 0
+Solution: soft: 1053 hard: 34
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1053 hard: 34
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 74
+Feasible: 0
+Solution: soft: 1130 hard: 35
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1130 hard: 35
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 75
+Feasible: 0
+Solution: soft: 1141 hard: 34
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1141 hard: 34
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 76
+Feasible: 0
+Solution: soft: 1143 hard: 38
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1143 hard: 38
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 77
+Feasible: 0
+Solution: soft: 1187 hard: 35
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1187 hard: 35
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 78
+Feasible: 0
+Solution: soft: 1140 hard: 36
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1140 hard: 36
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 79
+Feasible: 0
+Solution: soft: 1166 hard: 36
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1166 hard: 36
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Current iteration 80
+Feasible: 0
+Solution: soft: 1110 hard: 31
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1110 hard: 31
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 1181 hard: 48
+Best solution: 
+Solution: soft: 1181 hard: 48
+Feasible: 1
+START!../../instances/original/johnson8-4-4.clq.wcnfnum clauses3710
+num variable70
+NUM HARD CLAUSES:360
+Current iteration 1
+Feasible: 0
+Solution: soft: 11846 hard: 242
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11846 hard: 242
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 2
+Feasible: 0
+Solution: soft: 8689 hard: 187
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 8689 hard: 187
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 3
+Feasible: 0
+Solution: soft: 11471 hard: 241
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11471 hard: 241
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 4
+Feasible: 0
+Solution: soft: 10944 hard: 229
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10944 hard: 229
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 5
+Feasible: 0
+Solution: soft: 11643 hard: 244
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11643 hard: 244
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 6
+Feasible: 0
+Solution: soft: 11819 hard: 246
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11819 hard: 246
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 7
+Feasible: 0
+Solution: soft: 11375 hard: 230
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11375 hard: 230
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 8
+Feasible: 0
+Solution: soft: 11301 hard: 243
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11301 hard: 243
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 9
+Feasible: 0
+Solution: soft: 11469 hard: 244
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11469 hard: 244
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 10
+Feasible: 0
+Solution: soft: 11977 hard: 251
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11977 hard: 251
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 11
+Feasible: 0
+Solution: soft: 10346 hard: 214
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10346 hard: 214
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 12
+Feasible: 0
+Solution: soft: 10350 hard: 212
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10350 hard: 212
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 13
+Feasible: 0
+Solution: soft: 11802 hard: 249
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11802 hard: 249
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 14
+Feasible: 0
+Solution: soft: 8689 hard: 187
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 8689 hard: 187
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 15
+Feasible: 0
+Solution: soft: 10282 hard: 221
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10282 hard: 221
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 16
+Feasible: 0
+Solution: soft: 9161 hard: 200
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9161 hard: 200
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 17
+Feasible: 0
+Solution: soft: 9192 hard: 194
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9192 hard: 194
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 18
+Feasible: 0
+Solution: soft: 10233 hard: 219
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10233 hard: 219
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 19
+Feasible: 0
+Solution: soft: 9390 hard: 202
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9390 hard: 202
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 20
+Feasible: 0
+Solution: soft: 10448 hard: 227
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10448 hard: 227
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 21
+Feasible: 0
+Solution: soft: 11850 hard: 246
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11850 hard: 246
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 22
+Feasible: 0
+Solution: soft: 10885 hard: 223
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10885 hard: 223
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 23
+Feasible: 0
+Solution: soft: 11242 hard: 233
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11242 hard: 233
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 24
+Feasible: 0
+Solution: soft: 9628 hard: 208
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9628 hard: 208
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 25
+Feasible: 0
+Solution: soft: 11850 hard: 246
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11850 hard: 246
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 26
+Feasible: 0
+Solution: soft: 11977 hard: 251
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11977 hard: 251
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 27
+Feasible: 0
+Solution: soft: 9637 hard: 208
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9637 hard: 208
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 28
+Feasible: 0
+Solution: soft: 9164 hard: 197
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9164 hard: 197
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 29
+Feasible: 0
+Solution: soft: 9808 hard: 216
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9808 hard: 216
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 30
+Feasible: 0
+Solution: soft: 11977 hard: 251
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11977 hard: 251
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 31
+Feasible: 0
+Solution: soft: 8689 hard: 187
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 8689 hard: 187
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 32
+Feasible: 0
+Solution: soft: 11977 hard: 251
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11977 hard: 251
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 33
+Feasible: 0
+Solution: soft: 8954 hard: 189
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 8954 hard: 189
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 34
+Feasible: 0
+Solution: soft: 10631 hard: 231
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10631 hard: 231
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 35
+Feasible: 0
+Solution: soft: 10103 hard: 210
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10103 hard: 210
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 36
+Feasible: 0
+Solution: soft: 11679 hard: 244
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11679 hard: 244
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 37
+Feasible: 0
+Solution: soft: 8940 hard: 191
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 8940 hard: 191
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 38
+Feasible: 0
+Solution: soft: 11826 hard: 248
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11826 hard: 248
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 39
+Feasible: 0
+Solution: soft: 10885 hard: 231
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10885 hard: 231
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 40
+Feasible: 0
+Solution: soft: 9166 hard: 196
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9166 hard: 196
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 41
+Feasible: 0
+Solution: soft: 9202 hard: 198
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9202 hard: 198
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 42
+Feasible: 0
+Solution: soft: 11118 hard: 235
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11118 hard: 235
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 43
+Feasible: 0
+Solution: soft: 10912 hard: 225
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10912 hard: 225
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 44
+Feasible: 0
+Solution: soft: 10735 hard: 222
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10735 hard: 222
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 45
+Feasible: 0
+Solution: soft: 11977 hard: 251
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11977 hard: 251
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 46
+Feasible: 0
+Solution: soft: 11784 hard: 251
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11784 hard: 251
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 47
+Feasible: 0
+Solution: soft: 10508 hard: 219
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10508 hard: 219
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 48
+Feasible: 0
+Solution: soft: 10948 hard: 220
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10948 hard: 220
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 49
+Feasible: 0
+Solution: soft: 10890 hard: 228
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10890 hard: 228
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 50
+Feasible: 0
+Solution: soft: 11233 hard: 243
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11233 hard: 243
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 51
+Feasible: 0
+Solution: soft: 10461 hard: 231
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10461 hard: 231
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 52
+Feasible: 0
+Solution: soft: 11479 hard: 241
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11479 hard: 241
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 53
+Feasible: 0
+Solution: soft: 11253 hard: 241
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11253 hard: 241
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 54
+Feasible: 0
+Solution: soft: 9400 hard: 198
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9400 hard: 198
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 55
+Feasible: 0
+Solution: soft: 9448 hard: 196
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9448 hard: 196
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 56
+Feasible: 0
+Solution: soft: 9850 hard: 213
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9850 hard: 213
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 57
+Feasible: 0
+Solution: soft: 8689 hard: 187
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 8689 hard: 187
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 58
+Feasible: 0
+Solution: soft: 10151 hard: 207
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10151 hard: 207
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 59
+Feasible: 0
+Solution: soft: 11329 hard: 231
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11329 hard: 231
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 60
+Feasible: 0
+Solution: soft: 10747 hard: 230
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10747 hard: 230
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 61
+Feasible: 0
+Solution: soft: 11784 hard: 251
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11784 hard: 251
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 62
+Feasible: 0
+Solution: soft: 10485 hard: 230
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10485 hard: 230
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 63
+Feasible: 0
+Solution: soft: 9177 hard: 198
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9177 hard: 198
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 64
+Feasible: 0
+Solution: soft: 11088 hard: 232
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11088 hard: 232
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 65
+Feasible: 0
+Solution: soft: 10098 hard: 210
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10098 hard: 210
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 66
+Feasible: 0
+Solution: soft: 9149 hard: 202
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9149 hard: 202
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 67
+Feasible: 0
+Solution: soft: 11213 hard: 241
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11213 hard: 241
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 68
+Feasible: 0
+Solution: soft: 11254 hard: 240
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11254 hard: 240
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 69
+Feasible: 0
+Solution: soft: 11434 hard: 246
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11434 hard: 246
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 70
+Feasible: 0
+Solution: soft: 11290 hard: 237
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11290 hard: 237
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 71
+Feasible: 0
+Solution: soft: 9395 hard: 203
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9395 hard: 203
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 72
+Feasible: 0
+Solution: soft: 11977 hard: 251
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11977 hard: 251
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 73
+Feasible: 0
+Solution: soft: 8930 hard: 196
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 8930 hard: 196
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 74
+Feasible: 0
+Solution: soft: 9198 hard: 192
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9198 hard: 192
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 75
+Feasible: 0
+Solution: soft: 9863 hard: 205
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9863 hard: 205
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 76
+Feasible: 0
+Solution: soft: 9175 hard: 195
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9175 hard: 195
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 77
+Feasible: 0
+Solution: soft: 9726 hard: 198
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9726 hard: 198
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 78
+Feasible: 0
+Solution: soft: 9853 hard: 213
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 9853 hard: 213
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 79
+Feasible: 0
+Solution: soft: 11977 hard: 251
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 11977 hard: 251
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 80
+Feasible: 0
+Solution: soft: 10357 hard: 215
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 10357 hard: 215
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Best solution: 
+Solution: soft: 0 hard: 0
+Feasible: 0
+START!../../instances/original/p_hat1000-2.clq.wcnfnum clauses742
+num variable40
+NUM HARD CLAUSES:88
+Current iteration 1
+Feasible: 0
+Solution: soft: 2274 hard: 60
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2274 hard: 60
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 2
+Feasible: 0
+Solution: soft: 2553 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2553 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 3
+Feasible: 0
+Solution: soft: 2237 hard: 54
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2237 hard: 54
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 4
+Feasible: 0
+Solution: soft: 1884 hard: 51
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1884 hard: 51
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 5
+Feasible: 0
+Solution: soft: 2024 hard: 51
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2024 hard: 51
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 6
+Feasible: 0
+Solution: soft: 2424 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2424 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 7
+Feasible: 0
+Solution: soft: 2024 hard: 50
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2024 hard: 50
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 8
+Feasible: 0
+Solution: soft: 2524 hard: 67
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2524 hard: 67
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 9
+Feasible: 0
+Solution: soft: 2558 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2558 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 10
+Feasible: 0
+Solution: soft: 2519 hard: 66
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2519 hard: 66
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 11
+Feasible: 0
+Solution: soft: 2544 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2544 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 12
+Feasible: 0
+Solution: soft: 2331 hard: 59
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2331 hard: 59
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 13
+Feasible: 0
+Solution: soft: 1810 hard: 47
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1810 hard: 47
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 14
+Feasible: 0
+Solution: soft: 1988 hard: 54
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1988 hard: 54
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 15
+Feasible: 0
+Solution: soft: 1825 hard: 47
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1825 hard: 47
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 16
+Feasible: 0
+Solution: soft: 2494 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2494 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 17
+Feasible: 0
+Solution: soft: 2567 hard: 65
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2567 hard: 65
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 18
+Feasible: 0
+Solution: soft: 2270 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2270 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 19
+Feasible: 0
+Solution: soft: 1895 hard: 53
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1895 hard: 53
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 20
+Feasible: 0
+Solution: soft: 1855 hard: 50
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1855 hard: 50
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 21
+Feasible: 0
+Solution: soft: 2344 hard: 61
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2344 hard: 61
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 22
+Feasible: 0
+Solution: soft: 2436 hard: 57
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2436 hard: 57
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 23
+Feasible: 0
+Solution: soft: 2158 hard: 58
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2158 hard: 58
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 24
+Feasible: 0
+Solution: soft: 2222 hard: 61
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2222 hard: 61
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 25
+Feasible: 0
+Solution: soft: 2400 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2400 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 26
+Feasible: 0
+Solution: soft: 2220 hard: 61
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2220 hard: 61
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 27
+Feasible: 0
+Solution: soft: 2466 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2466 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 28
+Feasible: 0
+Solution: soft: 2541 hard: 67
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2541 hard: 67
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 29
+Feasible: 0
+Solution: soft: 2045 hard: 55
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2045 hard: 55
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 30
+Feasible: 0
+Solution: soft: 2346 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2346 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 31
+Feasible: 0
+Solution: soft: 2223 hard: 60
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2223 hard: 60
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 32
+Feasible: 0
+Solution: soft: 2269 hard: 60
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2269 hard: 60
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 33
+Feasible: 0
+Solution: soft: 2541 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2541 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 34
+Feasible: 0
+Solution: soft: 2065 hard: 54
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2065 hard: 54
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 35
+Feasible: 0
+Solution: soft: 2540 hard: 65
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2540 hard: 65
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 36
+Feasible: 0
+Solution: soft: 2570 hard: 66
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2570 hard: 66
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 37
+Feasible: 0
+Solution: soft: 2413 hard: 61
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2413 hard: 61
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 38
+Feasible: 0
+Solution: soft: 2525 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2525 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 39
+Feasible: 0
+Solution: soft: 1992 hard: 52
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1992 hard: 52
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 40
+Feasible: 0
+Solution: soft: 2421 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2421 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 41
+Feasible: 0
+Solution: soft: 2423 hard: 65
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2423 hard: 65
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 42
+Feasible: 0
+Solution: soft: 2383 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2383 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 43
+Feasible: 0
+Solution: soft: 2219 hard: 58
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2219 hard: 58
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 44
+Feasible: 0
+Solution: soft: 2360 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2360 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 45
+Feasible: 0
+Solution: soft: 2533 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2533 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 46
+Feasible: 0
+Solution: soft: 2503 hard: 66
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2503 hard: 66
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 47
+Feasible: 0
+Solution: soft: 2226 hard: 55
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2226 hard: 55
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 48
+Feasible: 0
+Solution: soft: 2124 hard: 59
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2124 hard: 59
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 49
+Feasible: 0
+Solution: soft: 2145 hard: 56
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2145 hard: 56
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 50
+Feasible: 0
+Solution: soft: 2304 hard: 58
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2304 hard: 58
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 51
+Feasible: 0
+Solution: soft: 2558 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2558 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 52
+Feasible: 0
+Solution: soft: 2545 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2545 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 53
+Feasible: 0
+Solution: soft: 2067 hard: 53
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2067 hard: 53
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 54
+Feasible: 0
+Solution: soft: 1886 hard: 48
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1886 hard: 48
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 55
+Feasible: 0
+Solution: soft: 2542 hard: 67
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2542 hard: 67
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 56
+Feasible: 0
+Solution: soft: 2500 hard: 65
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2500 hard: 65
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 57
+Feasible: 0
+Solution: soft: 2360 hard: 60
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2360 hard: 60
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 58
+Feasible: 0
+Solution: soft: 2527 hard: 61
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2527 hard: 61
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 59
+Feasible: 0
+Solution: soft: 2473 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2473 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 60
+Feasible: 0
+Solution: soft: 2436 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2436 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 61
+Feasible: 0
+Solution: soft: 2499 hard: 68
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2499 hard: 68
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 62
+Feasible: 0
+Solution: soft: 1938 hard: 49
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1938 hard: 49
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 63
+Feasible: 0
+Solution: soft: 2410 hard: 65
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2410 hard: 65
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 64
+Feasible: 0
+Solution: soft: 2558 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2558 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 65
+Feasible: 0
+Solution: soft: 1926 hard: 49
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1926 hard: 49
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 66
+Feasible: 0
+Solution: soft: 2098 hard: 59
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2098 hard: 59
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 67
+Feasible: 0
+Solution: soft: 2557 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2557 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 68
+Feasible: 0
+Solution: soft: 2275 hard: 55
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2275 hard: 55
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 69
+Feasible: 0
+Solution: soft: 2557 hard: 65
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2557 hard: 65
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 70
+Feasible: 0
+Solution: soft: 2259 hard: 66
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2259 hard: 66
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 71
+Feasible: 0
+Solution: soft: 2572 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2572 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 72
+Feasible: 0
+Solution: soft: 1871 hard: 50
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1871 hard: 50
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 73
+Feasible: 0
+Solution: soft: 2520 hard: 64
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2520 hard: 64
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 74
+Feasible: 0
+Solution: soft: 2558 hard: 63
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2558 hard: 63
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 75
+Feasible: 0
+Solution: soft: 2505 hard: 61
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2505 hard: 61
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 76
+Feasible: 0
+Solution: soft: 2264 hard: 67
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2264 hard: 67
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 77
+Feasible: 0
+Solution: soft: 2548 hard: 62
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2548 hard: 62
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 78
+Feasible: 0
+Solution: soft: 1859 hard: 48
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 1859 hard: 48
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 79
+Feasible: 0
+Solution: soft: 2458 hard: 65
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2458 hard: 65
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Current iteration 80
+Feasible: 0
+Solution: soft: 2568 hard: 67
+greedy done
+---------------------------
+Beginning search solution
+Solution: soft: 2568 hard: 67
+DEU STALL
+ITER = Current Iter Solution
+Solution: soft: 0 hard: 0
+Best solution: 
+Solution: soft: 0 hard: 0
+Feasible: 0
