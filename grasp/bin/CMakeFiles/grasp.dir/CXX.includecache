@@ -18,12 +18,6 @@ string
 algorithm
 -
 
-/home/lhahn/dev/otimizacao-combinatoria/otimizacao-grasp/grasp/src/main.cpp
-iostream
--
-../include/wpmaxsat.h
-/home/lhahn/dev/otimizacao-combinatoria/otimizacao-grasp/grasp/include/wpmaxsat.h
-
 /home/lhahn/dev/otimizacao-combinatoria/otimizacao-grasp/grasp/src/wpmaxsat.cpp
 iostream
 -

@@ -13,7 +13,8 @@
 #include <omp.h>
 
 using std::vector;
-
+using std::cout;
+using std::endl;
 //////////////////
 /// Prototypes ///
 //////////////////
@@ -53,7 +54,7 @@ void WpMaxSAT::run(int max_iterations)
 {
     int current_iter = 1;
     vector<bool> best_solution;
-    while (iterationsLeft(current_iter, max_iterations) && !isSolutionStale()) {
+    while (iterationsLeft(current_iter, max_iterations)) {
         std::cout << "Current iteration " << current_iter << std::endl;
         vector<bool> sol = constructGreedyRandomSolution();
         std::cout<<"greedy done\n";;
@@ -65,6 +66,9 @@ void WpMaxSAT::run(int max_iterations)
 
         current_iter++;
     }
+    cout << "Best solution: " << endl;
+    printSolution(best_solution);
+    cout << "Feasible: " << isFeasible(best_solution) << endl;
 }
 
 struct candidate{
