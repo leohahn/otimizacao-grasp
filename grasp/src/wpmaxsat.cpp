@@ -38,9 +38,8 @@ Iter select_randomly(Iter start, Iter end) {
 WpMaxSAT::WpMaxSAT(std::string inputFile)
 {
     parseFile(inputFile);
-	std::cout<<"num clauses"<<hardClauses.size()+softClauses.size()<<"\n";
-	std::cout<<"num variable"<<numVariables<<"\n";
-  
+    std::cout<<"num clauses"<<hardClauses.size()+softClauses.size()<<"\n";
+    std::cout<<"num variable"<<numVariables<<"\n";
 }
 
 WpMaxSAT::~WpMaxSAT()
@@ -55,7 +54,9 @@ void WpMaxSAT::run(int max_iterations)
     while (iterationsLeft(current_iter, max_iterations) && !isSolutionStale()) {
         vector<bool> sol = constructGreedyRandomSolution();
         vector<bool> imp_sol = makeLocalSearch(sol);
-        updateSolution();
+        vector<bool> new_sol = updateSolution(imp_sol, best_solution);
+        best_solution = new_sol;
+        current_iter++;
     }
 }
 
@@ -325,7 +326,11 @@ bool WpMaxSAT::satisfiesClause(int var, int value, vector<int> clause)
         if (*it > 0) {
             return true;
         }
+    } else {
+        assert(false);
     }
+    assert(false);
+    return false;
 }
 
 int WpMaxSAT::getHardScore(int var, int value, const vector<bool>& clauses_val)
@@ -354,9 +359,15 @@ int WpMaxSAT::getSoftScore(int var, int value, const vector<bool>& clauses_val)
     return soft_score;
 }
 
-void WpMaxSAT::updateSolution()
+vector<bool> WpMaxSAT::updateSolution(vector<bool> imp_solution,
+                                      vector<bool> best_solution)
 {
-
+    std::cout << "Updating Solutions" << std::endl;
+    if (getSolutionGain(best_solution) < (getSolutionGain(imp_solution))) {
+        return imp_solution;
+    } else {
+        return best_solution;
+    }
 }
 
 void WpMaxSAT::parseFile(std::string path)
