@@ -46,9 +46,9 @@ void WpMaxSAT::printClause(vector<int> clause)
 void printBoolVector(std::vector<bool>);
 void WpMaxSAT::run(int max_iterations)
 {
-    for (unsigned int i = 0; i<hardClauses.size(); ++i) {
-        printClause(hardClauses[i]);
-    }
+    //for (unsigned int i = 0; i<hardClauses.size(); ++i) {
+    //    printClause(hardClauses[i]);
+    //}
     int current_iter = 1;
     vector<bool> best_solution;
     while (iterationsLeft(current_iter, max_iterations)) {
@@ -57,11 +57,9 @@ void WpMaxSAT::run(int max_iterations)
         sol = constructGreedyRandomSolution();
         cout << "Feasible: " << isFeasible(sol) << endl;
         printSolution(sol);
-		printBoolVector(sol);
+		//printBoolVector(sol);
 		
-		
-		exit(1);
-        std::cout<<"greedy done\n";
+        std::cout<<"greedy done\n---------------------------\n";
         std::vector<bool> imp_sol = makeLocalSearch(sol);
         std::cout<<"local search done\n";
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
@@ -144,6 +142,9 @@ std::vector<bool> WpMaxSAT::updateClausesSatisfiability(int var, bool var_value,
     return currentSatisfiability;
 }
 
+
+///std::vector<bool> WpMaxSAT::
+
 std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 {
     std::vector<bool> variableValues(numVariables+1);
@@ -218,14 +219,14 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         satisfiedClausesHard = updateClausesSatisfiability(chosenVariable,chosenVariableValue,HARD,satisfiedClausesHard);
         satisfiedClausesSoft = updateClausesSatisfiability(chosenVariable,chosenVariableValue,SOFT,satisfiedClausesSoft);
 		int count=0;
-		for(int cl=0;cl<satisfiedClausesHard.size();cl++){
-			if(satisfiedClausesHard[cl]==true)
-				count++;
-		}
-		std::cout<<count<<" clauses of "<<satisfiedClausesHard.size()<<" are satisfied\n";
+		//for(int cl=0;cl<satisfiedClausesHard.size();cl++){
+		//	if(satisfiedClausesHard[cl]==true)
+		//		count++;
+		//}
+		//std::cout<<count<<" clauses of "<<satisfiedClausesHard.size()<<" are satisfied\n";
         variablesUsed[chosenVariable] = true;
         variableValues[chosenVariable] = chosenVariableValue;
-		std::cout<<"variable inx:"<<chosenVariable<<" with value: "<<chosenVariableValue<<"\n";
+		//std::cout<<"variable inx:"<<chosenVariable<<" with value: "<<chosenVariableValue<<"\n";
         num_variables_chosen++;
     }
     //for(unsigned int i = 0;i<variableValues.size();i++)
@@ -233,7 +234,6 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 	//  std::cout<<variableValues[i]<<" ";
 	//}
 	//std::cout<<"\n";
-	std::cout<<"valor 1:"<<variableValues[1]<<" valor 21:"<<variableValues[21]<<"\n";
     return variableValues;
 }
 
@@ -284,7 +284,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 
             } while (hard_decreasing_vars[val_index] == 0);
             value = hard_decreasing_vars[val_index];
-            printIntVector(hard_decreasing_vars);
+            //printIntVector(hard_decreasing_vars);
             if (current_sol[val_index] == true) {
                 current_sol[val_index] = false;
             } else {
@@ -311,7 +311,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                         best_index = i;
                     }
                 }
-                printIntVector(soft_decreasing_vars);
+                //printIntVector(soft_decreasing_vars);
                 value = soft_decreasing_vars[val_index];
 
                 if (current_sol[best_index] == true) {
