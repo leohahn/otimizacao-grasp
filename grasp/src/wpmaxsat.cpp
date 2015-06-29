@@ -259,11 +259,11 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                 all_zeros = false;
             }
         }
-        cout << "ALLZEROS: " << all_zeros << endl;
+        //cout << "ALLZEROS: " << all_zeros << endl;
         if (all_zeros == false) {
             do {
                 val_index = (rand() % (hard_decreasing_vars.size() - 1)) + 1;
-                cout << "index: " << val_index <<endl;
+                //cout << "index: " << val_index <<endl;
             } while (hard_decreasing_vars[val_index] == 0);
             value = hard_decreasing_vars[val_index];
 
@@ -287,6 +287,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 
                     cout << hard_decreasing_vars[val_index] << endl;
                 } while (hard_decreasing_vars[val_index] > 0);
+				std::cout<"sai\n";
                 value = soft_decreasing_vars[val_index];
 
                 if (current_sol[val_index] == true) {
