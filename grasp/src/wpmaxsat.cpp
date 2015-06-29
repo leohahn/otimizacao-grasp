@@ -179,6 +179,7 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         int candidateIndex = rand() % candidates.size();
         //candidate choice = *select_randomly(rcl.begin(),rcl.end());//chosen which variable will be selected
         candidate choice = candidates[candidateIndex];
+
         int chosenVariable = choice.variable_index;
         bool chosenVariableValue = choice.value;
         satisfiedClausesHard = updateClausesSatisfiability(chosenVariable,chosenVariableValue,HARD,satisfiedClausesHard);
@@ -265,30 +266,28 @@ int WpMaxSAT::getSolutionGain(vector<bool> solution)
 
 vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
 {
-	std::vector<int> results;
-	for (unsigned i=1; i<solution.size(); ++i) {    
-		//for each variable
-		int numSatisfied=0;
-		for(unsigned int clauseInx=0;clauseInx<hardClauses.size();clauseInx++) {
-			if(satisfiesClause(i,solution[i],hardClauses[clauseInx])==false){
-				//clause is not currently satisfied
-				bool opposite;
-				if(solution[i])
-				  opposite = false;
-				else
-				  opposite = true;
-				
-				if(satisfiesClause(i,opposite,hardClauses[clauseInx])){
-					numSatisfied++;
-				}
-			}
-		}
-		results.push_back(numSatisfied);
-   }
+    std::vector<int> results;
+    for (unsigned i=1; i<solution.size(); ++i) {
+        //for each variable
+        int numSatisfied=0;
+        for(unsigned int clauseInx=0;clauseInx<hardClauses.size();clauseInx++) {
+            if(satisfiesClause(i,solution[i],hardClauses[clauseInx])==false){
+                //clause is not currently satisfied
+                bool opposite;
+                if(solution[i])
+                    opposite = false;
+                else
+                    opposite = true;
+
+                if(satisfiesClause(i,opposite,hardClauses[clauseInx])){
+                    numSatisfied++;
+                }
+            }
+        }
+        results.push_back(numSatisfied);
+    }
+    return results;
 }
-
-
-
 
 vector<int> WpMaxSAT::createSoftDecreasingVariables(vector<bool> solution)
 {
@@ -303,7 +302,8 @@ vector<int> WpMaxSAT::createSoftDecreasingVariables(vector<bool> solution)
             aux_sol[i] = true;
         }
 
-        decreasing_variables.push_back(getSolutionGain(aux_sol));
+        decreasing_variables.push_back(getSolutionGain(solution)
+                                       - getSolutionGain(aux_sol));
     }
     return decreasing_variables;
 }
