@@ -41,7 +41,7 @@ private:
     std::vector<std::vector<int> > hardClauses;
     std::vector<std::vector<int> > softClauses;
     int top;
-	const int rclpercentage = 40;
+    const int rclpercentage = 40;
 };
 
 #endif // __WPMAXSAT_H__

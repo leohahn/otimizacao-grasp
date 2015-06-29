@@ -186,9 +186,6 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
     return variableValues;
 }
 
-
-
-
 void WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
     const int MAX_STEPS = 200;
