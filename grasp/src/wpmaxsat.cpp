@@ -219,7 +219,7 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 
 vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
-    const int MAX_STEPS = 100;
+    const int MAX_STEPS = 10;
 
     vector<bool> hardScores(hardClauses.size(), 1);
     vector<bool> best_sol = solution;
@@ -302,7 +302,6 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                     cout << "DEU STALL" << endl;
                 }
             } else {
-                //updateWeights();
                 s = MAX_STEPS;
                 cout << "DEU STALL" << endl;
             }
