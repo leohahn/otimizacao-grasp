@@ -6,7 +6,6 @@
 #include <string>
 #include <math.h>
 #include <algorithm>
-#include <time.h>
 #include <assert.h>
 #include <limits>
 #include <random>
@@ -186,9 +185,6 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
     return variableValues;
 }
 
-
-
-
 void WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
     const int MAX_STEPS = 200;
@@ -230,10 +226,35 @@ int WpMaxSAT::getSolutionGain(vector<bool> solution)
 
 }
 
-vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
-{
 
+
+
+vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution, int var, int var_value)
+{
+	std::vector<int> results;
+	for (unsigned i=1; i<solution.size(); ++i) {    
+		//for each variable
+		int numSatisfied=0;
+		for(unsigned int clauseInx=0;clauseInx<hardClauses.size();clauseInx++) {
+			if(satisfiesClause(i,solution[i],hardClauses[clauseInx])==false){
+				//clause is not currently satisfied
+				bool opposite;
+				if(solution[i])
+				  opposite = false;
+				else
+				  opposite = true;
+				
+				if(satisfiesClause(i,opposite,hardClauses[clauseInx])){
+					numSatisfied++;
+				}
+			}
+		}
+		results.push_back(numSatisfied);
+   }
 }
+
+
+
 
 vector<int> WpMaxSAT::createSoftDecreasingVariables(vector<bool> solution)
 {
