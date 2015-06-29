@@ -47,23 +47,21 @@ void printBoolVector(std::vector<bool>);
 
 void WpMaxSAT::run(int max_iterations)
 {
-    for (unsigned int i = 0; i<hardClauses.size(); ++i) {
-        printClause(hardClauses[i]);
-    }
+    cout << "NUM HARD CLAUSES:" << hardClauses.size() << endl;
     int current_iter = 1;
+
     vector<bool> best_solution;
     while (iterationsLeft(current_iter, max_iterations)) {
         std::cout << "Current iteration " << current_iter << std::endl;
-        vector<bool> sol;
-        sol = constructGreedyRandomSolution();
-        cout << "Feasible: " << isFeasible(sol) << endl;
-        printSolution(sol);
-        printBoolVector(sol);
+        vector<bool> sol = constructGreedyRandomSolution();
+
+        //cout << "Greedy Sol Feasible: " << isFeasible(sol) << endl;
+        //printSolution(sol);
 
         std::vector<bool> imp_sol = makeLocalSearch(sol);
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
 
-        std::cout<<"new solution status:\n";
+        std::cout<<"New solution status:\n";
         cout << "Feasible: " << isFeasible(new_sol) << endl;
         printSolution(new_sol);
 
@@ -137,6 +135,9 @@ std::vector<bool> WpMaxSAT::updateClausesSatisfiability(int var, bool var_value,
     return currentSatisfiability;
 }
 
+
+///std::vector<bool> WpMaxSAT::
+
 std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 {
     std::vector<bool> variableValues(numVariables+1);
@@ -206,17 +207,13 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         satisfiedClausesHard = updateClausesSatisfiability(chosenVariable,chosenVariableValue,HARD,satisfiedClausesHard);
         satisfiedClausesSoft = updateClausesSatisfiability(chosenVariable,chosenVariableValue,SOFT,satisfiedClausesSoft);
         int count=0;
-        for(int cl=0;cl<satisfiedClausesHard.size();cl++){
-            if(satisfiedClausesHard[cl]==true)
-                count++;
-        }
-        std::cout<<count<<" clauses of "<<satisfiedClausesHard.size()<<" are satisfied\n";
+
         variablesUsed[chosenVariable] = true;
         variableValues[chosenVariable] = chosenVariableValue;
-        std::cout<<"variable inx:"<<chosenVariable<<" with value: "<<chosenVariableValue<<"\n";
+
         num_variables_chosen++;
     }
-    std::cout<<"valor 1:"<<variableValues[1]<<" valor 21:"<<variableValues[21]<<"\n";
+
     return variableValues;
 }
 
@@ -247,7 +244,6 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
         //std::cout<<"end soft\n";
         if (isFeasible(current_sol)){
             int v = getSolutionGain(current_sol);
-            cout << "_________________________________ACHEI UMA FEASIBLE FALTA TESTAR_____________________________" << endl;
 
             if (v > best_gain) {
                 best_sol = current_sol;
@@ -431,8 +427,17 @@ vector<bool> WpMaxSAT::updateSolution(vector<bool> imp_solution,
                                       vector<bool> best_solution)
 {
     std::cout << "Updating Solutions" << std::endl;
-    if (getSolutionGain(best_solution) < (getSolutionGain(imp_solution))) {
-        return imp_solution;
+    bool imp_feasible = isFeasible(imp_solution);
+    bool best_feasible = isFeasible(best_solution);
+
+    if (imp_feasible == true) {
+        if (best_feasible == false) {
+            return imp_solution;
+        }
+        if (getSolutionGain(imp_solution) > getSolutionGain(best_solution)) {
+            return imp_solution;
+        }
+        return best_solution;
     } else {
         return best_solution;
     }
