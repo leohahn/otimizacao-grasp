@@ -276,18 +276,21 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
             // TODO: Select the best (not random)
             all_zeros = true;
             for (unsigned int i=1; i<soft_decreasing_vars.size(); ++i) {
-                if (soft_decreasing_vars[i] > 1) {
+                if (soft_decreasing_vars[i] > 0) {
                     all_zeros = false;
                 }
             }
+            //cout << "HARD DECREASING VARS: " <<endl;
+
             if (all_zeros == false) {
                 do {
                     val_index = (rand() % (soft_decreasing_vars.size() - 1)) + 1;
-                    cout << "IMPRIMIR UMA VEZ AHAHAHHAHAHHAHAHHAHAHAHAH" << endl;
+              //      cout << "IMPRIMIR UMA VEZ AHAHAHHAHAHHAHAHHAHAHAHAH" << endl;
 
-                    cout << hard_decreasing_vars[val_index] << endl;
+                  //  printIntVector(hard_decreasing_vars);
                 } while (hard_decreasing_vars[val_index] > 0);
-				std::cout<"sai\n";
+                //cout << "AVABOU O WHILE" << endl;
+
                 value = soft_decreasing_vars[val_index];
 
                 if (current_sol[val_index] == true) {
@@ -612,4 +615,11 @@ bool WpMaxSAT::isFeasible(vector<bool> solution)
 void WpMaxSAT::printSolution(vector<bool> solution)
 {
     std::cout << "Solution: soft: " <<  getSolutionGain(solution)<<" hard: "<<getSolutionGainHard(solution) << std::endl;
+}
+
+void WpMaxSAT::printIntVector(std::vector<int> vec) {
+    for(unsigned int i=0;i<vec.size();i++) {
+        std::cout<<vec[i]<<" ";
+    }
+    std::cout<<"\n";
 }
