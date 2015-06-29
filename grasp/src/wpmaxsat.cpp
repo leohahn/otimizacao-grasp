@@ -172,10 +172,10 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         for(unsigned int i=candidates.size()-1;i>=candidates.size()-sizercl;i++){
             rcl.push_back(candidates[i]);
         }
-        srand (time(NULL));
-        int choice = rand() % sizercl; //chosen which variable will be selected
-        int chosenVariable = rcl[choice].variable_index;
-        bool chosenVariableValue = rcl[choice].value;
+        
+        candidate choice = *select_randomly(rcl.begin(),rcl.end());//chosen which variable will be selected
+        int chosenVariable = choice.variable_index;
+        bool chosenVariableValue = choice.value;
         satisfiedClausesHard = updateClausesSatisfiability(chosenVariable,chosenVariableValue,HARD,satisfiedClausesHard);
         satisfiedClausesSoft = updateClausesSatisfiability(chosenVariable,chosenVariableValue,SOFT,satisfiedClausesSoft);
         variablesUsed[chosenVariable] = true;
