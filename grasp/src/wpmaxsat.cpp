@@ -190,8 +190,6 @@ void WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
     const int MAX_STEPS = 200;
     vector<bool> hardScores(hardClauses.size(), 1);
-    vector<bool> solSoftClauses = createSoftClausesSolution(solution);
-    vector<bool> solHardClauses = createHardClausesSolution(solution);
     vector<bool> best_sol = solution;
     int best_gain = std::numeric_limits<int>::min();
 
@@ -208,23 +206,47 @@ void WpMaxSAT::makeLocalSearch(vector<bool> solution)
         }
 
         if (!hard_decreasing_vars.empty()) {
-            vector<int> foo;
-            v = *select_randomly(hard_decreasing_vars.begin(),
-                                 hard_decreasing_vars.end());
+            bool all_zeros = true;
+            for (int i=0; i<hard_decreasing_vars.size(); ++i) {
+                if (hard_decreasing_vars[i] > 1) {
+                    all_zeros = false;
+                }
+            }
+            if (all_zeros == false) {
+                do {
+                    v = *select_randomly(hard_decreasing_vars.begin(),
+                                         hard_decreasing_vars.end());
+                } while (v == 0);
+            }
         } else if (!soft_decreasing_vars.empty()) {
-
+            // TODO: Select the best (not random)
+            do {
+                v = *select_randomly(soft_decreasing_vars.begin(),
+                                     soft_decreasing_vars.end());
+            } while (hard_decreasing_vars[v] > 0);
+        } else {
+            continue;// Nao faz nada
         }
-
-
+        if (current_sol[v] == true) {
+            current_sol[v] == false;
+        } else {
+            current_sol[v] == true;
+        }
     }
 }
 
-std::vector<bool> WpMaxSAT::createSoftClausesSolution(std::vector<bool> solution) {}
-std::vector<bool> WpMaxSAT::createHardClausesSolution(std::vector<bool> solution) {}
-
 int WpMaxSAT::getSolutionGain(vector<bool> solution)
 {
-
+    int gain = 0;
+    for (unsigned int i=0; i<softClauses.size(); ++i) {
+        for (unsigned int j=1; j<solution.size(); ++j) {
+            if (satisfiesClause(j, int(solution[j]), softClauses[i])) {
+                gain += softClauses[i][0];
+                j = solution.size();
+            }
+        }
+    }
+    return gain;
 }
 
 vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
@@ -234,7 +256,20 @@ vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
 
 vector<int> WpMaxSAT::createSoftDecreasingVariables(vector<bool> solution)
 {
+    vector<int> decreasing_variables;
 
+    for (unsigned int i=1; i<solution.size(); ++i) {
+        vector<bool> aux_sol = solution;
+
+        if (solution[i] == true) {
+            aux_sol[i] = false;
+        } else {
+            aux_sol[i] = true;
+        }
+
+        decreasing_variables.push_back(getSolutionGain(aux_sol));
+    }
+    return decreasing_variables;
 }
 
 bool WpMaxSAT::satisfiesClause(int var, int value, vector<int> clause)
