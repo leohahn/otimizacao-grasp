@@ -56,8 +56,15 @@ void WpMaxSAT::run(int max_iterations)
     vector<bool> best_solution;
     while (iterationsLeft(current_iter, max_iterations)) {
         std::cout << "Current iteration " << current_iter << std::endl;
-        vector<bool> sol = constructGreedyRandomSolution();
+		vector<bool> sol;
+		do {
+			sol = constructGreedyRandomSolution();
+			cout << "Feasible: " << isFeasible(sol) << endl;
+			std::vector<bool> imp_sol = makeLocalSearch(sol);
+		} while(!isFeasible(sol));
         std::cout<<"greedy done\n";;
+		printSolution(sol);
+		cout << "Feasible: " << isFeasible(sol) << endl;
         std::vector<bool> imp_sol = makeLocalSearch(sol);
         std::cout<<"local search done\n";
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
@@ -161,8 +168,8 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
                 int satHardFalse = numOfSatisfiedClauses(varInx, false,HARD, satisfiedClausesHard);
                 int satSoftFalse = numOfSatisfiedClauses(varInx, false,SOFT, satisfiedClausesSoft);
                 //calculates satisfied clauses if = 1
-                int satHardTrue = numOfSatisfiedClauses(varInx, false,HARD, satisfiedClausesHard);
-                int satSoftTrue = numOfSatisfiedClauses(varInx, false,SOFT, satisfiedClausesSoft);
+                int satHardTrue = numOfSatisfiedClauses(varInx, true,HARD, satisfiedClausesHard);
+                int satSoftTrue = numOfSatisfiedClauses(varInx, true,SOFT, satisfiedClausesSoft);
                 if(satHardTrue>satHardFalse){
                     cand.value = true;
                     cand.satisfiedHard = satHardTrue;
@@ -203,12 +210,16 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         variableValues[chosenVariable] = chosenVariableValue;
         num_variables_chosen++;
     }
+    //for(unsigned int i = 0;i<variableValues.size();i++)
+	//{
+	  //std::cout<<variableValues[i]<<" ";
+	//}
     return variableValues;
 }
 
 vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
-    const int MAX_STEPS = 20;
+    const int MAX_STEPS = 200;
     vector<bool> hardScores(hardClauses.size(), 1);
     vector<bool> best_sol = solution;
     int best_gain = std::numeric_limits<int>::min();
