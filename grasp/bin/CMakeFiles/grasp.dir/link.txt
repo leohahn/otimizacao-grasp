@@ -1,1 +1,0 @@
-/usr/bin/c++   -Wall -std=gnu++11 -g    CMakeFiles/grasp.dir/src/wpmaxsat.cpp.o CMakeFiles/grasp.dir/src/main.cpp.o  -o grasp -rdynamic 
