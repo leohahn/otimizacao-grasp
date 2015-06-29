@@ -28,7 +28,7 @@ private:
     int getHardScore(int var, int value, const std::vector<bool>& clauses_val);
     int getSoftScore(int var, int value, const std::vector<bool>& clauses_val);
     bool satisfiesClause(int var, int value, std::vector<int> clause);
-
+    void printSolution(std::vector<bool> solution);
     std::vector<int> createHardDecreasingVariables(std::vector<bool> solution);
     std::vector<int> createSoftDecreasingVariables(std::vector<bool> solution);
     std::vector<bool> createSoftClausesSolution(std::vector<bool> solution);

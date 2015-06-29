@@ -56,9 +56,9 @@ void WpMaxSAT::run(int max_iterations)
     while (iterationsLeft(current_iter, max_iterations) && !isSolutionStale()) {
         std::cout << "Current iteration " << current_iter << std::endl;
         vector<bool> sol = constructGreedyRandomSolution();
-		std::cout<<"greedy done\n";;
+        std::cout<<"greedy done\n";;
         std::vector<bool> imp_sol = makeLocalSearch(sol);
-		std::cout<<"local search done\n";
+        std::cout<<"local search done\n";
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
         std::cout<<"update solution done\n";
 		best_solution = new_sol;
@@ -577,7 +577,7 @@ bool WpMaxSAT::isFeasible(vector<bool> solution)
     return true;
 }
 
-void printSolution(vector<bool> solution)
+void WpMaxSAT::printSolution(vector<bool> solution)
 {
     std::cout << "Solution: " <<  getSolutionGain(solution) << std::endl;
 }
