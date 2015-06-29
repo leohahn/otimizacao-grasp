@@ -36,6 +36,7 @@ private:
     bool isFeasible(std::vector<bool> solution);
     int getSolutionGain(std::vector<bool> solution);
     int getSolutionGainHard(std::vector<bool> solution);
+    void printClause(std::vector<int> clause);
     std::vector<bool> updateClausesSatisfiability(int var, bool var_value,
                                                   ClauseType type,
                                                   std::vector<bool> currentSatisfiability);

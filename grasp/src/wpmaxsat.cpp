@@ -49,20 +49,28 @@ WpMaxSAT::~WpMaxSAT()
 {
 
 }
-
+void WpMaxSAT::printClause(vector<int> clause)
+{
+    for (unsigned int i=0; i<clause.size(); ++i) {
+        cout << "id: " << i << "= " << clause[i] << endl;
+    }
+}
 void WpMaxSAT::run(int max_iterations)
 {
+    for (unsigned int i = 0; i<softClauses.size(); ++i) {
+        printClause(softClauses[i]);
+    }
     int current_iter = 1;
     vector<bool> best_solution;
     while (iterationsLeft(current_iter, max_iterations)) {
         std::cout << "Current iteration " << current_iter << std::endl;
         vector<bool> sol = constructGreedyRandomSolution();
-        std::cout<<"greedy done\n";;
+        //std::cout<<"greedy done\n";
         std::vector<bool> imp_sol = makeLocalSearch(sol);
-        std::cout<<"local search done\n";
+        //std::cout<<"local search done\n";
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
         std::cout<<"update solution done\n";
-		best_solution = new_sol;
+        best_solution = new_sol;
 
         current_iter++;
     }
@@ -216,16 +224,16 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
     vector<bool> current_sol = solution;
     int current_gain = std::numeric_limits<int>::min();
     for (int i=0; i<MAX_STEPS; ++i) {
-        std::cout<<"local search step:"<<i<<"\n";
-        std::cout<<"begin hard\n";
+        //std::cout<<"local search step:"<<i<<"\n";
+        //std::cout<<"begin hard\n";
         vector<int> hard_decreasing_vars = createHardDecreasingVariables(current_sol);
         int val_index;
         int value;
 
-        std::cout<<"end hard\n";
-        std::cout<<"begin soft\n";
+        //std::cout<<"end hard\n";
+        //std::cout<<"begin soft\n";
         vector<int> soft_decreasing_vars = createSoftDecreasingVariables(current_sol);
-        std::cout<<"end soft\n";
+        //std::cout<<"end soft\n";
 
         if (isFeasible(current_sol) && (getSolutionGain(current_sol) > best_gain)) {
             best_sol = current_sol;
