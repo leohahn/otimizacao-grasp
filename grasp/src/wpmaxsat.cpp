@@ -44,12 +44,12 @@ void WpMaxSAT::printClause(vector<int> clause)
 }
 
 void printBoolVector(std::vector<bool>);
-void WpMaxSAT::run(int max_iterations)
+
+void WpMaxSAT::run(int max_iterations)//, String greedySelect)
 {
-    //for (unsigned int i = 0; i<hardClauses.size(); ++i) {
-    //    printClause(hardClauses[i]);
-    //}
+    cout << "NUM HARD CLAUSES:" << hardClauses.size() << endl;
     int current_iter = 1;
+
     vector<bool> best_solution;
     while (iterationsLeft(current_iter, max_iterations)) {
         std::cout << "Current iteration " << current_iter << std::endl;
@@ -63,23 +63,19 @@ void WpMaxSAT::run(int max_iterations)
 		//printBoolVector(sol);
 		
         std::cout<<"greedy done\n---------------------------\n";
+
         std::vector<bool> imp_sol = makeLocalSearch(sol);
-        std::cout<<"local search done\n";
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
-        std::cout<<"update solution done\n";
 
-//        cout << "BestSol: " << endl;
-//        printSolution(best_solution);
-//        cout << "ImpSol: " << endl;
-//        printSolution(imp_sol);
-
-        std::cout<<"new solution status:\n";
+        std::cout<<"New solution status:\n";
         cout << "Feasible: " << isFeasible(new_sol) << endl;
         printSolution(new_sol);
 
         best_solution = new_sol;
 
         current_iter++;
+        cout << "ITER = Current Iter Solution" << endl;
+        printSolution(best_solution);
     }
     cout << "Best solution: " << endl;
     printSolution(best_solution);
@@ -103,8 +99,8 @@ bool candidateSorter(struct candidate const& lhs,struct candidate const& rhs) {
 
 //updates a vector of bools indicating if each clause is satified considering the new variable with a value setup
 std::vector<bool> WpMaxSAT::updateClausesSatisfiability(int var, bool var_value,
-                                      ClauseType type,
-                                      std::vector<bool> currentSatisfiability)
+                                                        ClauseType type,
+                                                        std::vector<bool> currentSatisfiability)
 {
     switch (type) {
     case SOFT:
@@ -205,8 +201,6 @@ std::vector<bool> WpMaxSAT::GSAT()
 			} else {
 				solution[var_index]=true;
 			}
-		cout << "Feasible: " << isFeasible(solution) << endl;
-        printSolution(solution);	
 		}
 		MAX_FLIPS--;	
 		
@@ -274,14 +268,9 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         int sizercl = floor(rclpercentage/100.0 * candidates.size());
         std::sort(candidates.begin(),candidates.end(), &candidateSorter); //ascending order
         for(unsigned int i=candidates.size()-1;i>=candidates.size()-sizercl;i--){
-			rcl.push_back(candidates[i]);
+            rcl.push_back(candidates[i]);
         }
 
-        //std::cout<<"candidates: size:"<<candidates.size()<<"\n";
-		//for(int c = 0; c<candidates.size();c++){
-		//	std::cout<<candidates[c].variable_index<<" - ";
-
-		//}
         int candidateIndex = rand() % candidates.size();
         //candidate choice = *select_randomly(rcl.begin(),rcl.end());//chosen which variable will be selected
         candidate choice = candidates[candidateIndex];
@@ -290,22 +279,14 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         bool chosenVariableValue = choice.value;
         satisfiedClausesHard = updateClausesSatisfiability(chosenVariable,chosenVariableValue,HARD,satisfiedClausesHard);
         satisfiedClausesSoft = updateClausesSatisfiability(chosenVariable,chosenVariableValue,SOFT,satisfiedClausesSoft);
-		int count=0;
-		//for(int cl=0;cl<satisfiedClausesHard.size();cl++){
-		//	if(satisfiedClausesHard[cl]==true)
-		//		count++;
-		//}
-		//std::cout<<count<<" clauses of "<<satisfiedClausesHard.size()<<" are satisfied\n";
+        int count=0;
+
         variablesUsed[chosenVariable] = true;
         variableValues[chosenVariable] = chosenVariableValue;
-		//std::cout<<"variable inx:"<<chosenVariable<<" with value: "<<chosenVariableValue<<"\n";
+
         num_variables_chosen++;
     }
-    //for(unsigned int i = 0;i<variableValues.size();i++)
-	//{
-	//  std::cout<<variableValues[i]<<" ";
-	//}
-	//std::cout<<"\n";
+
     return variableValues;
 }
 
@@ -313,7 +294,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
     cout << "Beginning search solution" << endl;
     printSolution(solution);
-    const int MAX_STEPS = 200;
+    const int MAX_STEPS = 30;
 
     vector<bool> hardScores(hardClauses.size(), 1);
     vector<bool> best_sol = solution;
@@ -328,76 +309,79 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
         vector<int> hard_decreasing_vars = createHardDecreasingVariables(current_sol);
         int val_index;
         int value;
-
+        //printIntVector(hard_decreasing_vars);
         //std::cout<<"end hard\n";
         //std::cout<<"begin soft\n";
         vector<int> soft_decreasing_vars = createSoftDecreasingVariables(current_sol);
-		
-		//std::cout<<"hard:";
-		//printIntVector(hard_decreasing_vars);
-        //std::cout<<"soft:";
-		//printIntVector(soft_decreasing_vars);
-        if (isFeasible(current_sol) && (getSolutionGain(current_sol) > best_gain)) {
-            best_sol = current_sol;
-            best_gain = current_gain;
-            cout << "ACHEI UMA FEASIBLE" << endl;
-        }
 
-        bool all_zeros = true;
-        for (unsigned int i=1; i<hard_decreasing_vars.size(); ++i) {
-            if (hard_decreasing_vars[i] > 0) {
-                all_zeros = false;
+        //std::cout<<"end soft\n";
+        if (isFeasible(current_sol)){
+            int v = getSolutionGain(current_sol);
+
+            if (v > best_gain) {
+                best_sol = current_sol;
+                best_gain = v;
+                current_gain = v;
+                cout << "________________________________ACHEI UMA FEASIBLE_________________________________" << endl;
             }
         }
 
-        if (all_zeros == false) {
+        bool less_or_zeros = true;
+        for (unsigned int i=1; i<hard_decreasing_vars.size(); ++i) {
+            if (hard_decreasing_vars[i] > 0) {
+                less_or_zeros = false;
+            }
+        }
+        //printIntVector(hard_decreasing_vars);
+        if (less_or_zeros == false) {
             do {
                 val_index = (rand() % (hard_decreasing_vars.size() - 1)) + 1;
-
-            } while (hard_decreasing_vars[val_index] == 0);
+            } while (hard_decreasing_vars[val_index] <= 0);
             value = hard_decreasing_vars[val_index];
-            //printIntVector(hard_decreasing_vars);
+
             if (current_sol[val_index] == true) {
                 current_sol[val_index] = false;
             } else {
                 current_sol[val_index] = true;
             }
         } else {
-            all_zeros = true;
+            less_or_zeros = true;
             for (unsigned int i=1; i<soft_decreasing_vars.size(); ++i) {
                 if (soft_decreasing_vars[i] > 0) {
-                    all_zeros = false;
+                    less_or_zeros = false;
                 }
             }
 
-
-            if (all_zeros == false) {
+            if (less_or_zeros == false) {
                 do {
                     val_index = (rand() % (soft_decreasing_vars.size() - 1)) + 1;
-
                 } while (hard_decreasing_vars[val_index] > 0);
-
+                //printIntVector(soft_decreasing_vars);
                 int best_index = 1;
                 for (int i=2; i<soft_decreasing_vars.size(); ++i) {
-                    if (soft_decreasing_vars[i] > soft_decreasing_vars[best_index]) {
+                    if (soft_decreasing_vars[i] > soft_decreasing_vars[best_index] && hard_decreasing_vars[i] == 0) {
                         best_index = i;
                     }
                 }
-                //printIntVector(soft_decreasing_vars);
-                value = soft_decreasing_vars[val_index];
 
-                if (current_sol[best_index] == true) {
-                    current_sol[best_index] = false;
+                if (hard_decreasing_vars[best_index] == 0) {
+                    //printIntVector(soft_decreasing_vars);
+                    value = soft_decreasing_vars[val_index];
+                    if (current_sol[best_index] == true) {
+                        current_sol[best_index] = false;
+                    } else {
+                        current_sol[best_index] = true;
+                    }
                 } else {
-                    current_sol[best_index] = true;
+                    cout << "DEU STALL" << endl;
+                    s = MAX_STEPS;
                 }
             } else {
-
+                //updateWeights();
                 s = MAX_STEPS;
             }
         }
     }
-    cout << "BEST SOLUTION SEARCH: " << endl;
     printSolution(best_sol);
     return best_sol;
 }
@@ -441,10 +425,9 @@ vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
         else
             newSol[i]=true;
         temp = getSolutionGainHard(newSol)-baseline;
-        if(temp<0) {
-            temp = 0;
-        }
+
         results[i] = temp;
+
     }
 
     return results;
@@ -474,19 +457,18 @@ vector<int> WpMaxSAT::createSoftDecreasingVariables(vector<bool> solution)
 
 bool WpMaxSAT::satisfiesClause(int var, int value, vector<int> clause)
 {
-	for(unsigned int i = 1; i<clause.size();i++) {
-		if(clause[i]==var) {
-			 if(value==true){
-				 return true;
-			}
-		} else if(-clause[i] == var) {
-			if(value==false){
-			  return true;
-			}
-		}
-		
-	}
-	return false;
+    for(unsigned int i = 1; i<clause.size();i++) {
+        if(clause[i]==var) {
+            if(value==true){
+                return true;
+            }
+        } else if(-clause[i] == var) {
+            if(value==false){
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
 int WpMaxSAT::getHardScore(int var, int value, const vector<bool>& clauses_val)
@@ -519,8 +501,17 @@ vector<bool> WpMaxSAT::updateSolution(vector<bool> imp_solution,
                                       vector<bool> best_solution)
 {
     std::cout << "Updating Solutions" << std::endl;
-    if (getSolutionGain(best_solution) < (getSolutionGain(imp_solution))) {
-        return imp_solution;
+    bool imp_feasible = isFeasible(imp_solution);
+    bool best_feasible = isFeasible(best_solution);
+
+    if (imp_feasible == true) {
+        if (best_feasible == false) {
+            return imp_solution;
+        }
+        if (getSolutionGain(imp_solution) > getSolutionGain(best_solution)) {
+            return imp_solution;
+        }
+        return best_solution;
     } else {
         return best_solution;
     }
