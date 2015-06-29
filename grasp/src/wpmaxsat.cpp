@@ -57,10 +57,10 @@ void WpMaxSAT::run(int max_iterations)//, String greedySelect)
         //
         //sol = GSAT();
         vector<bool> sol;
-        while (!isFeasible(sol)) {
+        do {
             sol = constructGreedyRandomSolution();
 //            printSolution(sol);
-        }
+        }while (!isFeasible(sol));
         cout << "ACHEI GREEEEEEEDY FEEESABLE" << endl;
 
         cout << "Feasible: " << isFeasible(sol) << endl;
@@ -590,6 +590,7 @@ void WpMaxSAT::parseFile(std::string path)
             hardClauses.push_back(allClauses[i]);
         }
     }
+    std::cout<<"loaded soft clauses:"<<softClauses.size()<<"\n";
     numVariables = numVar;
 }
 

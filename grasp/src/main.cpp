@@ -20,8 +20,8 @@ void run(std::string name){
 int main(int argc, char **argv)
 {
 
-    run("../../instances/original/hamming10-2.clq.wcnf");
-    //run("../../instances/original/MANN_a45.clq.wcnf");
+//    run("../../instances/original/hamming10-2.clq.wcnf");
+    run("../../instances/original/MANN_a45.clq.wcnf");
     //run("../../instances/original/p_hat1000-3.clq.wcnf");
     //run("../../instances/original/hamming8-2.clq.wcnf");
     //run("../../instances/original/p_hat1000-1.clq.wcnf");
