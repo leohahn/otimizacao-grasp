@@ -1,0 +1,23 @@
+set CS := 0 1 2 3;
+set CH := ;
+set V := 1 2 3;
+param h : 1 2 3 :=;
+
+param s : 1 2 3 :=
+0 1 1 0
+1 -1 -1 0
+2 0 1 -1
+3 1 0 1;
+param nh := ;
+param ns := 
+0 0
+1 2
+2 1
+3 0;
+param w := 
+0 3
+1 4
+2 6
+3 13;
+
+end;
