@@ -10,6 +10,7 @@
 #include <limits>
 #include <random>
 #include <iterator>
+#include <omp.h>
 
 using std::vector;
 
@@ -294,10 +295,10 @@ int WpMaxSAT::getSolutionGainHard(vector<bool> solution){
 
 vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
 {
-    std::vector<int> results;
+    std::vector<int> results(solution.size(), 0);
 	int baseline = getSolutionGainHard(solution);
-	int temp;
     for (unsigned i=1; i<solution.size(); ++i) {
+			int temp;
 			vector<bool> newSol(solution);
 			if(newSol[i])
 			  newSol[i]=false;
@@ -307,15 +308,16 @@ vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
 			if(temp<0) {
 				temp = 0;
 			}
-            results.push_back(temp);
+            results[i] = temp;
     }   
     return results;
 }
 
 vector<int> WpMaxSAT::createSoftDecreasingVariables(vector<bool> solution)
 {
-    vector<int> decreasing_variables;
+    vector<int> decreasing_variables(solution.size(),0);
     int gain_solution = getSolutionGain(solution);
+	#pragma omp parallel for shared( decreasing_variables)
     for (unsigned int i=1; i<solution.size(); ++i) {
         vector<bool> aux_sol = solution;
 
@@ -328,7 +330,7 @@ vector<int> WpMaxSAT::createSoftDecreasingVariables(vector<bool> solution)
         if (result < 0) {
             result = 0;
         }
-        decreasing_variables.push_back(result);
+        decreasing_variables[i]= result;
     }
     return decreasing_variables;
 }

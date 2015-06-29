@@ -8,7 +8,7 @@ file(GLOB_RECURSE SRC_FILES ${PROJECT_SOURCE_DIR}/src/*.cpp)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Set flags for compilation
-set(CMAKE_CXX_FLAGS "-Wall -std=gnu++11 -g")
+set(CMAKE_CXX_FLAGS "-Wall -std=gnu++11 -g -fopenmp")
 
 
 # Add files in SRC_FILES in the executable
