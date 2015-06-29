@@ -28,8 +28,8 @@ void printSolution(vector<bool> solution);
 WpMaxSAT::WpMaxSAT(std::string inputFile)
 {
     parseFile(inputFile);
-    std::cout<<"num clauses"<<hardClauses.size()+softClauses.size()<<"\n";
-    std::cout<<"num variable"<<numVariables<<"\n";
+    //std::cout<<"num clauses"<<hardClauses.size()+softClauses.size()<<"\n";
+    //std::cout<<"num variable"<<numVariables<<"\n";
 }
 
 WpMaxSAT::~WpMaxSAT()
@@ -48,7 +48,7 @@ void printBoolVector(std::vector<bool>);
 
 void WpMaxSAT::run(int max_iterations)//, String greedySelect)
 {
-    cout << "NUM HARD CLAUSES:" << hardClauses.size() << endl;
+    //cout << "NUM HARD CLAUSES:" << hardClauses.size() << endl;
     int current_iter = 1;
 
     vector<bool> best_solution;
@@ -57,32 +57,16 @@ void WpMaxSAT::run(int max_iterations)//, String greedySelect)
         //
         //sol = GSAT();
         vector<bool> sol;
-        do {
-            sol = constructGreedyRandomSolution();
-//            printSolution(sol);
-        }while (!isFeasible(sol));
-        cout << "ACHEI GREEEEEEEDY FEEESABLE" << endl;
-
-        cout << "Feasible: " << isFeasible(sol) << endl;
-        printSolution(sol);
-		//printBoolVector(sol);
-
-        std::cout<<"greedy done\n---------------------------\n";
-
+		int MAX_TRIES=4;
+		do{
+			sol = constructGreedyRandomSolution();
+			MAX_TRIES--;
+		} while(!isFeasible(sol) && MAX_TRIES>0);
         std::vector<bool> imp_sol = makeLocalSearch(sol);
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
-
-        //std::cout<<"New solution status:\n";
-        //cout << "Feasible: " << isFeasible(new_sol) << endl;
-        //printSolution(new_sol);
-
         best_solution = new_sol;
-
+		printSolution(best_solution);
         current_iter++;
-
-        cout << "ITER = Current Iter Solution" << endl;
-        printSolution(best_solution);
-
     }
     cout << "Best solution: " << endl;
     printSolution(best_solution);
@@ -313,8 +297,8 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 
 vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
-    cout << "Beginning search solution" << endl;
-    printSolution(solution);
+    //cout << "Beginning search solution" << endl;
+    //printSolution(solution);
     const int MAX_STEPS = 30;
 
     vector<bool> hardScores(hardClauses.size(), 1);
@@ -343,7 +327,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                 best_sol = current_sol;
                 best_gain = v;
                 current_gain = v;
-                cout << "________________________________ACHEI UMA FEASIBLE_________________________________" << endl;
+                //cout << "________________________________ACHEI UMA FEASIBLE_________________________________" << endl;
             }
         }
 
@@ -590,7 +574,7 @@ void WpMaxSAT::parseFile(std::string path)
             hardClauses.push_back(allClauses[i]);
         }
     }
-    std::cout<<"loaded soft clauses:"<<softClauses.size()<<"\n";
+    //std::cout<<"loaded soft clauses:"<<softClauses.size()<<"\n";
     numVariables = numVar;
 }
 
