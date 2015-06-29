@@ -331,8 +331,8 @@ void WpMaxSAT::parseFile(std::string path)
 }
 
 int WpMaxSAT::numOfSatisfiedClauses(int var, bool var_value, ClauseType type, std::vector<bool> satisfiedStatus)
-{c
-        unsigned n_satisf_clauses = 0;
+{
+    unsigned int n_satisf_clauses = 0;
     switch (type) {
     case SOFT:
         for (unsigned i=0; i<softClauses.size(); ++i) {
