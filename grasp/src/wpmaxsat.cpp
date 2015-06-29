@@ -139,6 +139,11 @@ WpMaxSAT::updateClausesSatisfiability(int var, bool var_value,
     return currentSatisfiability;
 }
 
+std::vector<bool> WpMaxSAT::constructGreedyRandomSolution2()
+{
+
+}
+
 std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 {
     std::vector<bool> variableValues(numVariables+1);
@@ -196,14 +201,9 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         int sizercl = floor(rclpercentage/100.0 * candidates.size());
         std::sort(candidates.begin(),candidates.end(), &candidateSorter); //ascending order
         for(unsigned int i=candidates.size()-1;i>=candidates.size()-sizercl;i--){
-			rcl.push_back(candidates[i]);
+            rcl.push_back(candidates[i]);
         }
 
-        //std::cout<<"candidates: size:"<<candidates.size()<<"\n";
-		//for(int c = 0; c<candidates.size();c++){
-		//	std::cout<<candidates[c].variable_index<<" - ";
-
-		//}
         int candidateIndex = rand() % candidates.size();
         //candidate choice = *select_randomly(rcl.begin(),rcl.end());//chosen which variable will be selected
         candidate choice = candidates[candidateIndex];
@@ -216,11 +216,6 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         variableValues[chosenVariable] = chosenVariableValue;
         num_variables_chosen++;
     }
-    //for(unsigned int i = 0;i<variableValues.size();i++)
-	//{
-	//  std::cout<<variableValues[i]<<" ";
-	//}
-	//std::cout<<"\n";
     return variableValues;
 }
 
@@ -248,10 +243,15 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
         //std::cout<<"begin soft\n";
         vector<int> soft_decreasing_vars = createSoftDecreasingVariables(current_sol);
         //std::cout<<"end soft\n";
-        if (isFeasible(current_sol) && (getSolutionGain(current_sol) > best_gain)) {
-            best_sol = current_sol;
-            best_gain = current_gain;
-            cout << "ACHEI UMA FEASIBLE" << endl;
+        if (isFeasible(current_sol)){
+            int v = getSolutionGain(current_sol);
+            if (v > best_gain) {
+                best_sol = current_sol;
+                best_gain = v;
+                current_gain = v;
+                cout << "________________________________ACHEI UMA FEASIBLE_________________________________" << endl;
+                do {} while(true);
+            }
         }
 
         bool all_zeros = true;
@@ -265,7 +265,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                 val_index = (rand() % (hard_decreasing_vars.size() - 1)) + 1;
             } while (hard_decreasing_vars[val_index] == 0);
             value = hard_decreasing_vars[val_index];
-            printIntVector(hard_decreasing_vars);
+            //printIntVector(hard_decreasing_vars);
             if (current_sol[val_index] == true) {
                 current_sol[val_index] = false;
             } else {
@@ -290,7 +290,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                         best_index = i;
                     }
                 }
-                printIntVector(soft_decreasing_vars);
+                //printIntVector(soft_decreasing_vars);
                 value = soft_decreasing_vars[val_index];
 
                 if (current_sol[best_index] == true) {
@@ -299,7 +299,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                     current_sol[best_index] = true;
                 }
             } else {
-
+                //updateWeights();
                 s = MAX_STEPS;
             }
         }
@@ -385,11 +385,14 @@ bool WpMaxSAT::satisfiesClause(int var, int value, vector<int> clause)
     if (it == clause.end()) {
         return false;
     }
-    if (*it < 0 && value == 0) {
-        return true;
+    if (value == 0) {
+        if (*it < 0) {
+            return true;
+        }
     }
     if (value == 1) {
         if (*it > 0) {
+            //cout << "EU ENTRO AQUI" << endl;
             return true;
         }
     } else {
@@ -544,7 +547,7 @@ int WpMaxSAT::findInClause(int clause, int var, ClauseType type)
     int var_value = 0;
     switch (type) {
     case SOFT:
-        it = std::find(softClauses.at(clause).begin(),
+        it = std::find(softClauses.at(clause).begin()+1,
                        softClauses.at(clause).end(), var);
 
         if (it == softClauses.at(clause).end()) {
@@ -555,7 +558,7 @@ int WpMaxSAT::findInClause(int clause, int var, ClauseType type)
         break;
 
     case HARD:
-        it = std::find(hardClauses.at(clause).begin(),
+        it = std::find(hardClauses.at(clause).begin()+1,
                        hardClauses.at(clause).end(), var);
 
         if (it == hardClauses.at(clause).end()) {
