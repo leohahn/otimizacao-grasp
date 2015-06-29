@@ -526,12 +526,19 @@ void WpMaxSAT::parseFile(std::string path)
     std::string line;
     int numVar = 0;
     std::ifstream myfile (path);
+	int top = 0;
     //parses file
+	bool has_top = false;
     if (myfile.is_open()) {
         while ( getline(myfile,line) ) {
             if(line[0]=='p'){
                 std::vector<std::string> columns = tokenize(line);
                 numVar = std::stoi(columns[2]);
+				if(columns.size()==5)
+				{
+					has_top=true;
+					top = std::stoi(columns[4]);
+				}
             }
             else if(line[0]!='c') {
                 //removendo caractere de terminação
@@ -541,7 +548,7 @@ void WpMaxSAT::parseFile(std::string path)
         }
         myfile.close();
     }
-    int top = 0;
+    
     std::vector< std::vector<int> > allClauses;
     for(unsigned int i=0;i<lines.size();i++) {
         //get values in the line
@@ -549,12 +556,10 @@ void WpMaxSAT::parseFile(std::string path)
         //both hard and soft clauses have height
         std::vector<int> clause = stringVectorToInt(tokenize(lines[i]));
         allClauses.push_back(clause);
-        if(clause[0]>top)
-            top = clause[0];
     }
     //puts each clause in its respective list
     for(unsigned int i=0;i<allClauses.size();i++) {
-        if(allClauses[i][0]<top) { //soft
+        if(allClauses[i][0]<top || !has_top) { //soft
             softClauses.push_back(allClauses[i]);
         } else {
             hardClauses.push_back(allClauses[i]);
