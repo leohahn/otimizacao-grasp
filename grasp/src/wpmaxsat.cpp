@@ -44,7 +44,6 @@ void WpMaxSAT::printClause(vector<int> clause)
 }
 void WpMaxSAT::run(int max_iterations)
 {
-	srand (time(NULL));
     //for (unsigned int i = 0; i<softClauses.size(); ++i) {
     //    printClause(softClauses[i]);
     //}
@@ -229,7 +228,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
     cout << "Beginning search solution" << endl;
     printSolution(solution);
-    const int MAX_STEPS = 50;
+    const int MAX_STEPS = 400;
 
     vector<bool> hardScores(hardClauses.size(), 1);
     vector<bool> best_sol = solution;
@@ -323,7 +322,7 @@ int WpMaxSAT::getSolutionGainHard(vector<bool> solution){
     for (unsigned int i=0; i<hardClauses.size(); ++i) {
         for (unsigned int j=1; j<solution.size(); ++j) {
             if (satisfiesClause(j, int(solution[j]), hardClauses[i])) {
-                gain += hardClauses[i][0];
+                gain += 1;//hardClauses[i][0];
                 j = solution.size();
             }
         }
