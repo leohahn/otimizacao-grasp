@@ -55,8 +55,8 @@ void WpMaxSAT::run(int max_iterations)//, String greedySelect)
         std::cout << "Current iteration " << current_iter << std::endl;
         vector<bool> sol;
         //
-		sol = GSAT();
-		//sol = constructGreedyRandomSolution();
+		//sol = GSAT();
+		sol = constructGreedyRandomSolution();
 		
         cout << "Feasible: " << isFeasible(sol) << endl;
         printSolution(sol);
@@ -285,8 +285,10 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         variableValues[chosenVariable] = chosenVariableValue;
 
         num_variables_chosen++;
+		
     }
-
+	std::cout<<"satisfied clauses>:";
+	printBoolVector(satisfiedClausesHard);
     return variableValues;
 }
 
@@ -618,37 +620,26 @@ bool isSolutionStale()
     return false;
 }
 
-// Function that finds a variable in a clause. Returns the value of the variable.
-// If nothing was found, returns -1.
+// Function that finds a variable in a clause. Returns the value of the variable (variable or -variable).
+// If nothing was found, returns 0.
 int WpMaxSAT::findInClause(int clause, int var, ClauseType type)
 {
-    vector<int>::iterator it;
-    int var_value = 0;
-    switch (type) {
-    case SOFT:
-        it = std::find(softClauses.at(clause).begin()+1,
-                       softClauses.at(clause).end(), var);
 
-        if (it == softClauses.at(clause).end()) {
-            return -1; // Not found
-        } else {
-            var_value = *it;
-        }
-        break;
-
-    case HARD:
-        it = std::find(hardClauses.at(clause).begin()+1,
-                       hardClauses.at(clause).end(), var);
-
-        if (it == hardClauses.at(clause).end()) {
-            return -1;
-        } else {
-            var_value = *it;
-        }
-        break;
-    }
-
-    return var_value;
+	std::vector<int> clauseVec;
+	switch(type){
+	  case SOFT:
+		clauseVec = softClauses[clause];
+		break;
+	  case HARD:
+		clauseVec = hardClauses[clause];
+	}
+	
+	for(unsigned int i=1;i<clauseVec.size();i++) {
+		if(clauseVec[i]==var || clauseVec[i]==-var){
+			return clauseVec[i];
+		}
+	}
+	return 0;
 }
 
 std::vector<std::string> tokenize(std::string line)

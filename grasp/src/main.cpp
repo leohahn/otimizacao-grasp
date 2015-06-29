@@ -9,7 +9,7 @@ void printIntVector(std::vector<int> vec){
 }
 
 
-void run(String name){
+void run(std::string name){
 	
   	std::cout<<"START!"<<name;
 	WpMaxSAT wp= WpMaxSAT(name);
@@ -19,13 +19,13 @@ void run(String name){
 
 int main(int argc, char **argv)
 {
-	run("hamming10-2.clq.wcnf");
-	run("MANN_a45.clq.wcnf");
+	run("../../instances/original/hamming10-2.clq.wcnf");
+	/*run("MANN_a45.clq.wcnf");
 	run("p_hat1000-3.clq.wcnf");
 	run("hamming8-2.clq.wcnf");
 	run("p_hat1000-1.clq.wcnf");
 	run("johnson8-4-4.clq.wcnf");
-	run("p_hat1000-2.clq.wcnf");
+	run("p_hat1000-2.clq.wcnf");*/
 }
 
      
