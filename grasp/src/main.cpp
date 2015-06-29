@@ -11,7 +11,7 @@ void printIntVector(std::vector<int> vec){
 int main(int argc, char **argv)
 {
 
-    WpMaxSAT wp= WpMaxSAT("../../instances/original/teste_johson.wcnf");
+    WpMaxSAT wp= WpMaxSAT("../../instances/original/test2.wcnf");
     wp.run(1);
 
 
