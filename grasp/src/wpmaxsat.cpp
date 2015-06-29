@@ -52,11 +52,11 @@ void WpMaxSAT::run(int max_iterations)
     vector<bool> best_solution;
     while (iterationsLeft(current_iter, max_iterations)) {
         std::cout << "Current iteration " << current_iter << std::endl;
-		vector<bool> sol;
-		sol = constructGreedyRandomSolution();
-		cout << "Feasible: " << isFeasible(sol) << endl;
-		printSolution(sol);
-		std::cout<<"greedy done\n";
+        vector<bool> sol;
+        sol = constructGreedyRandomSolution();
+        cout << "Feasible: " << isFeasible(sol) << endl;
+        printSolution(sol);
+        std::cout<<"greedy done\n";
         std::vector<bool> imp_sol = makeLocalSearch(sol);
         std::cout<<"local search done\n";
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
@@ -249,7 +249,6 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
         //std::cout<<"begin soft\n";
         vector<int> soft_decreasing_vars = createSoftDecreasingVariables(current_sol);
         //std::cout<<"end soft\n";
-
         if (isFeasible(current_sol) && (getSolutionGain(current_sol) > best_gain)) {
             best_sol = current_sol;
             best_gain = current_gain;
@@ -261,38 +260,41 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                 all_zeros = false;
             }
         }
+        cout << "ALLZEROS: " << all_zeros << endl;
         if (all_zeros == false) {
-            cout << "SELECIONANDO INDEX" << endl;
             do {
                 val_index = (rand() % (hard_decreasing_vars.size() - 1)) + 1;
+                cout << "index: " << val_index <<endl;
             } while (hard_decreasing_vars[val_index] == 0);
             value = hard_decreasing_vars[val_index];
-            cout << "INDEX = " << value << endl;
 
-            if (current_sol[value] == true) {
-                current_sol[value] = false;
+            if (current_sol[val_index] == true) {
+                current_sol[val_index] = false;
             } else {
-                current_sol[value] = true;
+                current_sol[val_index] = true;
             }
-            continue;
-        }
-        // TODO: Select the best (not random)
-        all_zeros = true;
-        for (unsigned int i=1; i<soft_decreasing_vars.size(); ++i) {
-            if (soft_decreasing_vars[i] > 1) {
-                all_zeros = false;
+        } else {
+            // TODO: Select the best (not random)
+            all_zeros = true;
+            for (unsigned int i=1; i<soft_decreasing_vars.size(); ++i) {
+                if (soft_decreasing_vars[i] > 1) {
+                    all_zeros = false;
+                }
             }
-        }
-        if (all_zeros == false) {
-            do {
-                val_index = (rand() % (soft_decreasing_vars.size() - 1)) + 1;
-            } while (hard_decreasing_vars[val_index] > 0);
-            value = soft_decreasing_vars[val_index];
+            if (all_zeros == false) {
+                do {
+                    val_index = (rand() % (soft_decreasing_vars.size() - 1)) + 1;
+                    cout << "IMPRIMIR UMA VEZ AHAHAHHAHAHHAHAHHAHAHAHAH" << endl;
 
-            if (current_sol[value] == true) {
-                current_sol[value] = false;
-            } else {
-                current_sol[value] = true;
+                    cout << hard_decreasing_vars[val_index] << endl;
+                } while (hard_decreasing_vars[val_index] > 0);
+                value = soft_decreasing_vars[val_index];
+
+                if (current_sol[val_index] == true) {
+                    current_sol[val_index] = false;
+                } else {
+                    current_sol[val_index] = true;
+                }
             }
         }
     }
