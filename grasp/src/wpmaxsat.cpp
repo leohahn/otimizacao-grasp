@@ -349,9 +349,11 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 
         bool less_or_zeros = true;
 
-        for (unsigned int i=1; i<hard_decreasing_vars.size(); ++i) {
-            if (hard_decreasing_vars[i] > 0) {
-                less_or_zeros = false;
+        if (hardClauses.size() != 0) {
+            for (unsigned int i=1; i<hard_decreasing_vars.size(); ++i) {
+                if (hard_decreasing_vars[i] > 0) {
+                    less_or_zeros = false;
+                }
             }
         }
         //printIntVector(hard_decreasing_vars);
@@ -375,9 +377,12 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
             }
 
             if (less_or_zeros == false) {
-                do {
-                    val_index = (rand() % (soft_decreasing_vars.size() - 1)) + 1;
-                } while (hard_decreasing_vars[val_index] > 0);
+                val_index = (rand() % (soft_decreasing_vars.size() - 1)) + 1;
+                if (hard_decreasing_vars.size() != 0) {
+                    while (hard_decreasing_vars[val_index] > 0) {
+                        val_index = (rand() % (soft_decreasing_vars.size() - 1)) + 1;
+                    }
+                }
                 //printIntVector(soft_decreasing_vars);
                 int best_index = 1;
                 for (int i=2; i<soft_decreasing_vars.size(); ++i) {
@@ -386,7 +391,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                     }
                 }
 
-                if (hard_decreasing_vars[best_index] == 0) {
+                if (hard_decreasing_vars.size() == 0 || hard_decreasing_vars[best_index] == 0) {
                     //printIntVector(soft_decreasing_vars);
                     value = soft_decreasing_vars[val_index];
                     if (current_sol[best_index] == true) {
@@ -568,7 +573,7 @@ void WpMaxSAT::parseFile(std::string path)
         }
         myfile.close();
     }
-    
+
     std::vector< std::vector<int> > allClauses;
     for(unsigned int i=0;i<lines.size();i++) {
         //get values in the line
