@@ -261,7 +261,7 @@ int WpMaxSAT::getSolutionGain(vector<bool> solution)
 
 
 
-vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution, int var, int var_value)
+vector<int> WpMaxSAT::createHardDecreasingVariables(vector<bool> solution)
 {
 	std::vector<int> results;
 	for (unsigned i=1; i<solution.size(); ++i) {    
