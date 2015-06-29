@@ -206,7 +206,7 @@ void WpMaxSAT::makeLocalSearch(vector<bool> solution)
 
         if (!hard_decreasing_vars.empty()) {
             bool all_zeros = true;
-            for (int i=0; i<hard_decreasing_vars.size(); ++i) {
+            for (unsigned int i=1; i<hard_decreasing_vars.size(); ++i) {
                 if (hard_decreasing_vars[i] > 1) {
                     all_zeros = false;
                 }
@@ -219,10 +219,20 @@ void WpMaxSAT::makeLocalSearch(vector<bool> solution)
             }
         } else if (!soft_decreasing_vars.empty()) {
             // TODO: Select the best (not random)
-            do {
-                v = *select_randomly(soft_decreasing_vars.begin(),
-                                     soft_decreasing_vars.end());
-            } while (hard_decreasing_vars[v] > 0);
+            bool all_zeros = true;
+            for (unsigned int i=1; i<soft_decreasing_vars.size(); ++i) {
+                if (hard_decreasing_vars[i] > 1) {
+                    all_zeros = false;
+                }
+            }
+            if (all_zeros == false) {
+                do {
+                    v = *select_randomly(soft_decreasing_vars.begin(),
+                                         soft_decreasing_vars.end());
+                } while (hard_decreasing_vars[v] > 0);
+            } else {
+                continue;
+            }
         } else {
             continue;// Nao faz nada
         }
