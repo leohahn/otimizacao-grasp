@@ -19,7 +19,7 @@ public:
     enum ClauseType {SOFT, HARD};
 
 private:
-    int numOfSatisfiedClauses(int var, int var_value, ClauseType type);
+    int numOfSatisfiedClauses(int var, bool var_value, ClauseType type, std::vector<bool> satisfiedStatus);
     int getNumVariables();
     int findInClause(int clause, int var, ClauseType type);
     void parseFile(std::string path);
