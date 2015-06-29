@@ -36,6 +36,7 @@ WpMaxSAT::~WpMaxSAT()
 {
 
 }
+
 void WpMaxSAT::printClause(vector<int> clause)
 {
     for (unsigned int i=0; i<clause.size(); ++i) {
@@ -45,7 +46,7 @@ void WpMaxSAT::printClause(vector<int> clause)
 
 void printBoolVector(std::vector<bool>);
 
-void WpMaxSAT::run(int max_iterations)
+void WpMaxSAT::run(int max_iterations)//, String greedySelect)
 {
     cout << "NUM HARD CLAUSES:" << hardClauses.size() << endl;
     int current_iter = 1;
@@ -53,10 +54,18 @@ void WpMaxSAT::run(int max_iterations)
     vector<bool> best_solution;
     while (iterationsLeft(current_iter, max_iterations)) {
         std::cout << "Current iteration " << current_iter << std::endl;
-        vector<bool> sol = constructGreedyRandomSolution();
+        //
+        //sol = GSAT();
+        vector<bool> sol;
+        while (!isFeasible(sol)) {
+            sol = constructGreedyRandomSolution();
+            printSolution(sol);
+        }
+        cout << "Feasible: " << isFeasible(sol) << endl;
+        printSolution(sol);
+		//printBoolVector(sol);
 
-        //cout << "Greedy Sol Feasible: " << isFeasible(sol) << endl;
-        //printSolution(sol);
+        std::cout<<"greedy done\n---------------------------\n";
 
         std::vector<bool> imp_sol = makeLocalSearch(sol);
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
@@ -68,8 +77,10 @@ void WpMaxSAT::run(int max_iterations)
         best_solution = new_sol;
 
         current_iter++;
-//        cout << "Current Iter Solution" << endl;
-//        printSolution(best_solution);
+
+        cout << "ITER = Current Iter Solution" << endl;
+        printSolution(best_solution);
+
     }
     cout << "Best solution: " << endl;
     printSolution(best_solution);
@@ -136,7 +147,74 @@ std::vector<bool> WpMaxSAT::updateClausesSatisfiability(int var, bool var_value,
 }
 
 
-///std::vector<bool> WpMaxSAT::
+std::vector<bool> WpMaxSAT::GSAT()
+{
+	int walkProb = 20;
+	std::vector<bool> solution;
+	int MAX_FLIPS = numVariables;
+	int numHardClauses = hardClauses.size();
+	for(int i=0;i<numVariables+1;i++){
+			int tmp = rand() % 2;
+			if(tmp==0)
+				solution.push_back(false);
+			else
+				solution.push_back(true);
+
+	}
+	if(isFeasible(solution))
+	{
+	  return solution;
+	}
+	while(MAX_FLIPS>0) {
+		//std::cout<<"entered: flips left"<< MAX_FLIPS<<"\n";
+		//initial random solution
+
+		if(rand()%100 < walkProb){ //picks a clause at random. picks one of tha variables within the clause at random
+			 int clauseInx = rand() % numHardClauses;
+			 int variable = hardClauses[clauseInx][rand() % (hardClauses[clauseInx].size()-1)+1];
+			 if(variable<0){
+				variable= -variable;
+			  }
+			 if(solution[variable]==true) {
+				solution[variable]=false;
+			 } else {
+				solution[variable]=true;
+			 }
+
+		} else {
+			//picks one of the variables with the greatest gain
+
+			//for each variable contains the difference in hard clauses
+			//the invertion of its value would cause
+			vector<int> gain = createHardDecreasingVariables(solution);
+			//gets variables that cause maximum increase
+			vector<int> candidates_variables;
+			int max_gain = 0;
+			for(unsigned int g = 1; g<gain.size();g++){
+				if(gain[g] > max_gain){
+					candidates_variables.clear();
+					candidates_variables.push_back(g);
+					max_gain = gain[g];
+				} else if(gain[g]==max_gain){
+					candidates_variables.push_back(g);
+				}
+			}
+			//selects one of the top variables randomly
+			int var_index = candidates_variables[rand() % candidates_variables.size()];
+			if(solution[var_index]==true){
+				solution[var_index]=false;
+			} else {
+				solution[var_index]=true;
+			}
+		}
+		MAX_FLIPS--;
+
+		if(isFeasible(solution))
+		{
+			return solution;
+		}
+	}
+}
 
 std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 {
@@ -199,6 +277,7 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         }
 
         int candidateIndex = rand() % candidates.size();
+        //cout << "Candidate Chosen: " << candidateIndex << endl;
         //candidate choice = *select_randomly(rcl.begin(),rcl.end());//chosen which variable will be selected
         candidate choice = candidates[candidateIndex];
 
@@ -206,20 +285,31 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         bool chosenVariableValue = choice.value;
         satisfiedClausesHard = updateClausesSatisfiability(chosenVariable,chosenVariableValue,HARD,satisfiedClausesHard);
         satisfiedClausesSoft = updateClausesSatisfiability(chosenVariable,chosenVariableValue,SOFT,satisfiedClausesSoft);
-        int count=0;
+        //cout << "Satisfied clauses" << endl;
+        //cout << "Hard" << endl;
+        //printBoolVector(satisfiedClausesHard);
 
+        //cout << "\n";
+//cout << "Soft" << endl;
+        //printBoolVector(satisfiedClausesSoft);
         variablesUsed[chosenVariable] = true;
+
         variableValues[chosenVariable] = chosenVariableValue;
 
         num_variables_chosen++;
     }
-
+    cout << "SATISFIED HARD CLAUSES" << endl;
+    printBoolVector(satisfiedClausesHard);
+    cout << "COMECANDO A PRINTAR ISFEASIBLE" << endl;
+    cout << isFeasible(variableValues) << endl;
     return variableValues;
 }
 
 vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
-    const int MAX_STEPS = 10;
+    cout << "Beginning search solution" << endl;
+    printSolution(solution);
+    const int MAX_STEPS = 30;
 
     vector<bool> hardScores(hardClauses.size(), 1);
     vector<bool> best_sol = solution;
@@ -610,15 +700,21 @@ std::vector<int> stringVectorToInt(std::vector<std::string> inpt)
 
 bool WpMaxSAT::isFeasible(vector<bool> solution)
 {
+    int aux;
     for (unsigned int i=0; i<hardClauses.size(); ++i) {
         bool last_clause = false;
         for (unsigned int j=1; j<solution.size(); ++j) {
             if (satisfiesClause(j, int(solution[j]), hardClauses[i])) {
                 last_clause = true;
+                aux = j;
                 j = solution.size(); // breaks out of loop;
             }
         }
         if (last_clause == false) {
+            cout << "isFeasible FALHOU: " << endl;
+            printIntVector(hardClauses[i]);
+            cout << "index: " << aux <<", ";
+            cout << "value: " << solution[aux] << endl;
             return false;
         }
     }
