@@ -236,7 +236,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 
     vector<bool> current_sol = solution;
     int current_gain = std::numeric_limits<int>::min();
-    for (int i=0; i<MAX_STEPS; ++i) {
+    for (int s=0; s<MAX_STEPS; ++s) {
         //std::cout<<"local search step:"<<i<<"\n";
         //std::cout<<"begin hard\n";
 
@@ -251,6 +251,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
         if (isFeasible(current_sol) && (getSolutionGain(current_sol) > best_gain)) {
             best_sol = current_sol;
             best_gain = current_gain;
+            cout << "ACHEI UMA FEASIBLE" << endl;
         }
 
         bool all_zeros = true;
@@ -297,6 +298,9 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
                 } else {
                     current_sol[best_index] = true;
                 }
+            } else {
+
+                s = MAX_STEPS;
             }
         }
     }
