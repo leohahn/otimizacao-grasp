@@ -64,9 +64,14 @@ void WpMaxSAT::run(int max_iterations)
     vector<bool> best_solution;
     while (iterationsLeft(current_iter, max_iterations)) {
         std::cout << "Current iteration " << current_iter << std::endl;
-        vector<bool> sol = constructGreedyRandomSolution();
-        //std::cout<<"greedy done\n";
+        vector<bool> sol;
+        sol = constructGreedyRandomSolution();
+        cout << "Feasible: " << isFeasible(sol) << endl;
         std::vector<bool> imp_sol = makeLocalSearch(sol);
+        std::cout<<"greedy done\n";;
+        printSolution(sol);
+        cout << "Feasible: " << isFeasible(sol) << endl;
+
         //std::cout<<"local search done\n";
         vector<bool> new_sol = updateSolution(imp_sol, best_solution);
         std::cout<<"update solution done\n";
@@ -169,8 +174,8 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
                 int satHardFalse = numOfSatisfiedClauses(varInx, false,HARD, satisfiedClausesHard);
                 int satSoftFalse = numOfSatisfiedClauses(varInx, false,SOFT, satisfiedClausesSoft);
                 //calculates satisfied clauses if = 1
-                int satHardTrue = numOfSatisfiedClauses(varInx, false,HARD, satisfiedClausesHard);
-                int satSoftTrue = numOfSatisfiedClauses(varInx, false,SOFT, satisfiedClausesSoft);
+                int satHardTrue = numOfSatisfiedClauses(varInx, true,HARD, satisfiedClausesHard);
+                int satSoftTrue = numOfSatisfiedClauses(varInx, true,SOFT, satisfiedClausesSoft);
                 if(satHardTrue>satHardFalse){
                     cand.value = true;
                     cand.satisfiedHard = satHardTrue;
@@ -211,6 +216,10 @@ std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
         variableValues[chosenVariable] = chosenVariableValue;
         num_variables_chosen++;
     }
+    //for(unsigned int i = 0;i<variableValues.size();i++)
+	//{
+	  //std::cout<<variableValues[i]<<" ";
+	//}
     return variableValues;
 }
 
@@ -218,7 +227,8 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
     cout << "Beginning search solution" << endl;
     printSolution(solution);
-    const int MAX_STEPS = 20;
+    const int MAX_STEPS = 50;
+
     vector<bool> hardScores(hardClauses.size(), 1);
     vector<bool> best_sol = solution;
     int best_gain = std::numeric_limits<int>::min();
@@ -228,6 +238,7 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
     for (int i=0; i<MAX_STEPS; ++i) {
         //std::cout<<"local search step:"<<i<<"\n";
         //std::cout<<"begin hard\n";
+
         vector<int> hard_decreasing_vars = createHardDecreasingVariables(current_sol);
         int val_index;
         int value;
@@ -242,42 +253,41 @@ vector<bool> WpMaxSAT::makeLocalSearch(vector<bool> solution)
             best_gain = current_gain;
         }
 
-        if (!hard_decreasing_vars.empty()) {
-            bool all_zeros = true;
-            for (unsigned int i=1; i<hard_decreasing_vars.size(); ++i) {
-                if (hard_decreasing_vars[i] > 1) {
-                    all_zeros = false;
-                }
+        bool all_zeros = true;
+        for (unsigned int i=1; i<hard_decreasing_vars.size(); ++i) {
+            if (hard_decreasing_vars[i] > 1) {
+                all_zeros = false;
             }
-            if (all_zeros == false) {
-                do {
-                    val_index = (rand() % (hard_decreasing_vars.size() - 1)) + 1;
-                } while (hard_decreasing_vars[val_index] == 0);
-                value = hard_decreasing_vars[val_index];
-            }
-        } else if (!soft_decreasing_vars.empty()) {
-            // TODO: Select the best (not random)
-            bool all_zeros = true;
-            for (unsigned int i=1; i<soft_decreasing_vars.size(); ++i) {
-                if (hard_decreasing_vars[i] > 1) {
-                    all_zeros = false;
-                }
-            }
-            if (all_zeros == false) {
-                do {
-                    val_index = (rand() % (soft_decreasing_vars.size() - 1)) + 1;
-                } while (hard_decreasing_vars[val_index] > 0);
-                value = soft_decreasing_vars[val_index];
-            } else {
-                continue;
-            }
-        } else {
-            continue;// Nao faz nada
         }
-        if (current_sol[value] == true) {
-            current_sol[value] == false;
+        if (all_zeros == false) {
+            cout << "SELECIONANDO INDEX" << endl;
+            do {
+                val_index = (rand() % (hard_decreasing_vars.size() - 1)) + 1;
+            } while (hard_decreasing_vars[val_index] == 0);
+            value = hard_decreasing_vars[val_index];
+            cout << "INDEX = " << value << endl;
+        }
+
+        // TODO: Select the best (not random)
+        all_zeros = true;
+        for (unsigned int i=1; i<soft_decreasing_vars.size(); ++i) {
+            if (hard_decreasing_vars[i] > 1) {
+                all_zeros = false;
+            }
+        }
+        if (all_zeros == false) {
+            do {
+                val_index = (rand() % (soft_decreasing_vars.size() - 1)) + 1;
+            } while (hard_decreasing_vars[val_index] > 0);
+            value = soft_decreasing_vars[val_index];
         } else {
-            current_sol[value] == true;
+            continue;
+        }
+
+        if (current_sol[value] == true) {
+            current_sol[value] = false;
+        } else {
+            current_sol[value] = true;
         }
     }
     return best_sol;
@@ -298,7 +308,7 @@ int WpMaxSAT::getSolutionGain(vector<bool> solution)
 }
 
 int WpMaxSAT::getSolutionGainHard(vector<bool> solution){
-	int gain = 0;
+    int gain = 0;
     for (unsigned int i=0; i<hardClauses.size(); ++i) {
         for (unsigned int j=1; j<solution.size(); ++j) {
             if (satisfiesClause(j, int(solution[j]), hardClauses[i])) {
@@ -335,7 +345,7 @@ vector<int> WpMaxSAT::createSoftDecreasingVariables(vector<bool> solution)
 {
     vector<int> decreasing_variables(solution.size(),0);
     int gain_solution = getSolutionGain(solution);
-	#pragma omp parallel for shared( decreasing_variables)
+#pragma omp parallel for shared( decreasing_variables)
     for (unsigned int i=1; i<solution.size(); ++i) {
         vector<bool> aux_sol = solution;
 
