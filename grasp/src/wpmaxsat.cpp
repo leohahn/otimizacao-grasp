@@ -4,7 +4,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <math.h>
 #include <algorithm>
+#include <time.h>
 #include <assert.h>
 #include <limits>
 #include <random>
@@ -70,57 +72,122 @@ bool candidateSorter(struct candidate const& lhs,struct candidate const& rhs) {
     return false;
 }
 
+//updates a vector of bools indicating if each clause is satified considering the new variable with a value setup
+std::vector<bool> WpMaxSAT::updateClausesSatisfiability(int var, bool var_value, ClauseType type, std::vector<bool> currentSatisfiability)
+{
+    switch (type) {
+    case SOFT:
+        for (unsigned i=0; i<softClauses.size(); ++i) {
+            if(currentSatisfiability[i]==false){
+                int finded_var = findInClause(i, var, SOFT);
+                if(var_value) {
+                    if (finded_var == var) { // If variable is not negated
+                        //satisfies
+                        currentSatisfiability[i] = true;
+                    }
+                } else {
+                    if (finded_var == -var) { // If variable is negated
+                        currentSatisfiability[i] = true;
+                    }
+                }
+            }
+        }
+        break;
+    case HARD:
+        for (unsigned i=0; i<hardClauses.size(); ++i) {
+            if(currentSatisfiability[i]==false){
+                int finded_var = findInClause(i, var, HARD);
+                if(var_value){
+                    if (finded_var == var) { // If variable is not negated
+                        currentSatisfiability[i] = true;
+                    }
+                } else {
+                    if (finded_var == -var) { // If variable is negated
+                        currentSatisfiability[i] = true;
+                    }
+                }
+            }
+
+        }
+        break;
+    }
+    return currentSatisfiability;
+}
+
 std::vector<bool> WpMaxSAT::constructGreedyRandomSolution()
 {
     std::vector<bool> variableValues(numVariables+1);
+    std::vector<bool> variablesUsed(numVariables+1); //indicates if variable has had a value chosen
     std::vector<bool> satisfiedClausesHard(hardClauses.size());
     std::vector<bool> satisfiedClausesSoft(softClauses.size());
+    int num_variables_chosen = 0;
+
     for(unsigned int i = 0;i<hardClauses.size();i++) {
         satisfiedClausesHard.push_back(false);
     }
     for(unsigned int i = 0;i<softClauses.size();i++) {
         satisfiedClausesSoft.push_back(false);
     }
-    variableValues.push_back(0);  //this position is ignored
+    for(unsigned int i = 0;i<=numVariables;i++) {
+        variableValues.push_back(false);
+        variablesUsed.push_back(false);
+    }
 
-    std::vector< struct candidate > candidates;
-
-    for(unsigned int varInx=1;varInx<=numVariables;varInx++) {
-        struct candidate cand;
-        cand.variable_index = varInx;
-        //calculates satisfied clauses if = 0
-        int satHardFalse = numOfSatisfiedClauses(varInx, false,HARD, satisfiedClausesHard);
-        int satSoftFalse = numOfSatisfiedClauses(varInx, false,SOFT, satisfiedClausesSoft);
-        //calculates satisfied clauses if = 1
-        int satHardTrue = numOfSatisfiedClauses(varInx, false,HARD, satisfiedClausesHard);
-        int satSoftTrue = numOfSatisfiedClauses(varInx, false,SOFT, satisfiedClausesSoft);
-        if(satHardTrue>satHardFalse){
-            cand.value = true;
-            cand.satisfiedHard = satHardTrue;
-            cand.satisfiedSoft = satSoftTrue;
-        } else if(satHardFalse > satHardTrue) {
-            cand.value = false;
-            cand.satisfiedHard = satHardFalse;
-            cand.satisfiedSoft = satSoftFalse;
-        } else {
-            if(satSoftTrue>satSoftFalse) {
-                cand.value = true;
-                cand.satisfiedHard = satHardTrue;
-                cand.satisfiedSoft = satSoftTrue;
-            } else {
-                cand.value = false;
-                cand.satisfiedHard = satHardFalse;
-                cand.satisfiedSoft = satSoftFalse;
+    while(num_variables_chosen < numVariables){
+        std::vector< struct candidate > candidates;
+        candidates.clear();
+        for(unsigned int varInx=1;varInx<=numVariables;varInx++) {
+            if(variablesUsed[varInx]==false) {
+                struct candidate cand;
+                cand.variable_index = varInx;
+                //calculates satisfied clauses if = 0
+                int satHardFalse = numOfSatisfiedClauses(varInx, false,HARD, satisfiedClausesHard);
+                int satSoftFalse = numOfSatisfiedClauses(varInx, false,SOFT, satisfiedClausesSoft);
+                //calculates satisfied clauses if = 1
+                int satHardTrue = numOfSatisfiedClauses(varInx, false,HARD, satisfiedClausesHard);
+                int satSoftTrue = numOfSatisfiedClauses(varInx, false,SOFT, satisfiedClausesSoft);
+                if(satHardTrue>satHardFalse){
+                    cand.value = true;
+                    cand.satisfiedHard = satHardTrue;
+                    cand.satisfiedSoft = satSoftTrue;
+                } else if(satHardFalse > satHardTrue) {
+                    cand.value = false;
+                    cand.satisfiedHard = satHardFalse;
+                    cand.satisfiedSoft = satSoftFalse;
+                } else {
+                    if(satSoftTrue>satSoftFalse) {
+                        cand.value = true;
+                        cand.satisfiedHard = satHardTrue;
+                        cand.satisfiedSoft = satSoftTrue;
+                    } else {
+                        cand.value = false;
+                        cand.satisfiedHard = satHardFalse;
+                        cand.satisfiedSoft = satSoftFalse;
+                    }
+                }
             }
         }
-    }
-    std::vector< struct candidate > rcl;
-    int sizercl = 40/100.0 * candidates.size();
-    std::sort(candidates.begin(),candidates.end(), &candidateSorter); //ascending
-    for(unsigned int i=0)
-
-
+        std::vector< struct candidate > rcl;
+        int sizercl = floor(rclpercentage/100.0 * candidates.size());
+        std::sort(candidates.begin(),candidates.end(), &candidateSorter); //ascending order
+        for(unsigned int i=candidates.size()-1;i>=candidates.size()-sizercl;i++){
+            rcl.push_back(candidates[i]);
         }
+        srand (time(NULL));
+        int choice = rand() % sizercl; //chosen which variable will be selected
+        int chosenVariable = rcl[choice].variable_index;
+        bool chosenVariableValue = rcl[choice].value;
+        satisfiedClausesHard = updateClausesSatisfiability(chosenVariable,chosenVariableValue,HARD,satisfiedClausesHard);
+        satisfiedClausesSoft = updateClausesSatisfiability(chosenVariable,chosenVariableValue,SOFT,satisfiedClausesSoft);
+        variablesUsed[chosenVariable] = true;
+        variableValues[chosenVariable] = chosenVariableValue;
+        num_variables_chosen++;
+    }
+    return variableValues;
+}
+
+
+
 
 void WpMaxSAT::makeLocalSearch(vector<bool> solution)
 {
@@ -187,9 +254,6 @@ bool WpMaxSAT::satisfiesClause(int var, int value, vector<int> clause)
             return true;
         }
     }
-    >>>>>>> 0dbd63001bee77e809aa5c4ce271052a014d74f0
-
-                return false;
 }
 
 int WpMaxSAT::getHardScore(int var, int value, const vector<bool>& clauses_val)
